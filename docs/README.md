@@ -2,7 +2,8 @@
 
 **Working title:** I'm Not a Psychic
 **Phase:** PLANNING (requirements). No tech stack or implementation decisions yet — those come in DESIGN.
-**Type:** Proof of concept for a narrative, choice-based game.
+**What the POC really is:** a test of the **workflow** — building a game from scratch with Claude Code,
+docs-first, phase by phase. The game is the vehicle, not the deliverable. See [`vision.md`](./vision.md).
 
 ## The one-line pitch
 

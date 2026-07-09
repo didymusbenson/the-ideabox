@@ -40,16 +40,27 @@ Everything in the game should serve at least one of these. If a feature serves n
 
 ## What this POC is trying to prove
 
-> **Assumption — to be confirmed.** The single riskiest thing to validate is proposed here; the
-> owner should confirm or replace it. Tracked in [`open-questions.md`](./open-questions.md).
+**The proof of concept is about the *workflow*, not the game.** The thing being validated is
+whether we can take a game from a blank repository to something real **from scratch using Claude
+Code** — planning docs-first, then designing and building on top of them. The game
+("I'm Not a Psychic") is the **vehicle** for that experiment, not the deliverable.
 
-Proposed core hypothesis: *"Performing a divination method by its rules is satisfying to learn and
-execute, AND the tension between a perfect reading and a good outcome produces meaningful,
-replayable choices."* If a vertical slice can make both of those true, the game concept works.
+What this means for how we work:
 
-Secondary things a slice could de-risk: whether the sarcastic tone lands over a full session,
-whether clients feel like people worth helping, and whether "getting a client to not need you"
-reads as a satisfying win rather than an anticlimax.
+- **The real success criterion is the process:** does a docs-first, phase-by-phase workflow
+  (PLANNING → DESIGN → IMPLEMENTATION) with Claude Code actually carry a from-scratch game project
+  forward coherently? Are the requirements legible enough to design from? Does each phase build
+  cleanly on the last?
+- **The game only has to be coherent enough to be an honest test.** It does *not* need to be
+  independently validated as "fun." It needs to be real enough — real mechanics, real clients, real
+  choices — that building it exercises the workflow the way a genuine project would. A toy that's too
+  thin wouldn't prove anything about the workflow; that's why the game design is taken seriously.
+- **Artifacts are part of the proof.** These docs, and how well they hold up as the source of truth
+  across sessions and phases, are themselves evidence about whether the workflow works.
+
+So when weighing a game-design decision, the tie-breaker is usually: *which choice makes this a
+better test of building-from-scratch-with-Claude-Code?* — often that means enough depth to be
+representative, without gold-plating the game itself.
 
 ## Touchstones (illustrative, not prescriptive)
 

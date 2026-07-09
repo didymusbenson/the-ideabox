@@ -8,9 +8,11 @@ doc and delete them here.
 
 These came up in the initial pitch conversation and have no answer yet:
 
-- **[POC goal] What must the proof of concept actually prove?** `vision.md` proposes a hypothesis
-  (the reading mechanic is satisfying *and* the Score/Story tension produces meaningful choices) but
-  the owner should confirm or replace it. Everything about slice scope keys off this.
+- **[POC goal] ✅ RESOLVED.** The POC is proving out the **workflow** — building a game from scratch
+  with Claude Code, docs-first, phase by phase. The game is the vehicle, not the deliverable, and
+  only has to be coherent enough to be an honest test. See `vision.md` → "What this POC is trying to
+  prove." (Consequence: slice scope is judged by "does this exercise the workflow representatively,"
+  not by "is the game fun.")
 - **[Platform] Where does the game run?** Web, mobile, desktop, console? Undecided. Affects nothing
   in requirements but blocks DESIGN.
 - **[Audience] Who is this for?** Tone leans adult/wry; target audience not specified.
