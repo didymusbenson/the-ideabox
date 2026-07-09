@@ -12,8 +12,9 @@ Shared vocabulary so the docs stay consistent. Add terms here rather than redefi
   consultation.
 - **Meaning token** — the simplified meaning assigned to a tarot card (*The Tower* → "Big Change"); the
   game's legible version of "the book."
-- **Interpretation option** — an authored dialog choice offered for a drawn card's meaning in a given
-  encounter, tagged faithful-or-distractor and with a story direction.
+- **Interpretation option** — an authored choice offered for a drawn card during the *reading*: the
+  faithful read or a distractor. Picking the faithful one is "doing it right" (the Score). The
+  *application* — which faithful direction — happens later, in the consultation.
 - **Distractor** — an interpretation option that misreads the drawn card; picking it costs accuracy.
   Distractors are how the Score stays real when options are handed to the player.
 - **Lock-in** — once the player selects an interpretation for a drawn card, it is committed and can't
@@ -23,8 +24,12 @@ Shared vocabulary so the docs stay consistent. Add terms here rather than redefi
   [`methods/`](./methods/). See [`divination-methods.md`](./divination-methods.md).
 - **Meanings** — the fixed, canonical significance of a card/feature (e.g., *The Tower* = upheaval);
   "the book." Reading them faithfully earns the Score.
-- **Interpretation choice** — a per-step choice the player makes during a reading: which *valid
-  direction* to apply a feature's fixed meaning toward the client. Drives the Story.
+- **Reading item** — an interpretation the player locked in during the reading; the raw material the
+  consultation applies. Surfaces later as a color-coded keyword.
+- **Application** — the consultation act of applying locked reading items to the client's need — which
+  faithful direction, what advice. Drives the Story.
+- **Keyword** — a color-coded word inside a consultation dialog choice that maps to a specific reading
+  item, grounding what the player says in what they actually drew.
 - **Two-valid-interpretations principle** — a single feature can support multiple *by-the-book*
   interpretations that differ in story impact. Faithfulness ≠ a single fixed conclusion.
 - **Non-scripted / random readings** — hard requirement that the draw be randomized, never authored

@@ -8,9 +8,18 @@
 ## Where tarot sits in the visit
 
 The visit is three beats (see [`../core-loop.md`](../core-loop.md)): **intake → reading →
-consultation.** The client arrives with a stated **intention and question**, *then* the reading is
-performed, *then* the consultation plays out from what was drawn. So the reading is informed by the
-question but committed *before* the deeper conversation — you draw, you lock, then you sell it.
+consultation.** The client arrives with a stated **intention and question**; *then* the reading is
+performed; *then* the consultation plays out.
+
+The two axes split cleanly across the last two beats:
+
+- **The reading = "doing it right."** You interpret the spread correctly. This is the **accuracy**
+  axis (the Score).
+- **The consultation = applying it.** You take the interpretations you locked and apply them to the
+  client through dialog. This is the **Story** axis.
+
+You draw and read first, then sell it — informed by the question, but committed before the deeper
+conversation.
 
 ## Subject
 
@@ -22,98 +31,100 @@ synthesis of the drawn cards across their positions.
 
 Each card is assigned a **simplified meaning token** the game treats as canonical — *The Tower* →
 **"Big Change"**, *The Hermit* → **"Withdraw / Reflect"**, and so on. This keeps the "book" legible
-and learnable, and it's the vocabulary everything else keys off. Reading a card faithfully to its
-meaning token is what earns the **Score**. The player learns these from the in-world tarot reference
-book (see [`../art-direction.md`](../art-direction.md)).
+and learnable. Reading a card faithfully to its meaning token is what earns the **Score**. The player
+learns these from the in-world tarot reference book (see [`../art-direction.md`](../art-direction.md)).
 
-## The model: authored interpretation options per encounter
+## Beat 2 — The reading: read it right, lock it in
 
-This is the decided MVP approach (authored, not model-generated — see "Scaling" below).
-
-- For a given **encounter**, the writer authors — keyed to the client's stated question — a set of
-  **interpretation options** for the meaning tokens that can come up. *At minimum, each encounter
-  defines what the options ARE.*
-- Each option is a line of dialog the player can deliver, tagged with two things:
-  - **faithful or distractor** — does it actually match the drawn card's meaning? (→ the **Score**)
-  - **story direction** — which way it steers the client. (→ the **Story**)
-
-So an encounter is, in essence, a table: *meaning token → a few interpretation options, each tagged.*
-
-### How a reading plays (step by step)
+The reading is purely about **interpreting correctly** — no application to the client yet.
 
 1. Cards are **drawn at random** into the spread. *Which* cards come up is not authored for this
    client.
-2. Cards **turn one at a time.** For each card, the game looks up its meaning token and surfaces this
-   encounter's authored options for that token. The player **picks one, and it locks in** — no
-   take-backs. Then the next card.
-3. When the spread is done, the locked choices **aggregate** into the reading's overall message,
-   which the player then delivers in the consultation, and which feeds the client's story.
+2. Cards **turn one at a time.** For each card, the game offers **interpretation options** — the
+   faithful read of that card plus **distractors** (plausible misreadings). The player picks, and it
+   **locks in** — no take-backs.
+3. Picking the faithful read is **"doing it right"** and earns accuracy; picking a distractor costs
+   it. Each locked interpretation becomes a **reading item** — the raw material the consultation will
+   apply.
 
-### Fixed meaning, chosen direction (the Tower example)
-
-*The Tower* = "Big Change." For a client asking about their marriage, this encounter might author:
-
-- **"This is the end — brace yourself."** *(faithful · ominous direction)*
-- **"An old thing is breaking so a better one can grow."** *(faithful · hopeful direction)*
-- **"The cards say nothing will change."** *(distractor — this misreads 'Big Change')*
-
-The first two are both *by the book* (both honor "Big Change") and score the same on **accuracy**;
-they send the client opposite ways (**Story**). The third is a trap that costs accuracy.
-
-## Where the Score lives: distractors
+### Where the Score lives: distractors
 
 Because the player is handed options, accuracy would evaporate if every option were faithful — there
 would be no wrong answer. So each card's option set includes **distractors**: plausible-looking
-*misreadings* of the drawn card. Picking faithful options protects the Score; the player has to
-actually know the book to tell faithful from distractor. (The ratio and how obvious distractors are is
-an open tuning question.)
+misreadings of the drawn card. The player has to actually know the book to tell faithful from
+distractor. (Ratio and subtlety of distractors is an open tuning question.)
 
-## Coverage: keeping random draws authorable
+## Beat 3 — The consultation: apply it through color-coded keywords
 
-A random draw over the full deck means an encounter could surface a meaning token the writer didn't
-tailor for. Two levers keep authoring tractable without breaking randomness:
+Now the locked reading items get **applied** to the client. The player advises through dialog whose
+choices are **flavored with color-coded keywords that map to specific reading items.** Seeing the
+keywords, the player knows which parts of what they're saying are grounded in the cards they actually
+drew — the visual bridge between reading and consultation.
+
+*How* a reading item is applied is the Story choice, and this is where the two-valid-interpretations
+principle plays out:
+
+> *The Tower* was read (correctly) as **"Big Change"** — that was the reading. In the consultation the
+> player can apply that item as:
+> - **"Brace yourself — something is ending."** *(faithful application · ominous)*
+> - **"An old thing is breaking so a better one can grow."** *(faithful application · hopeful)*
+>
+> Both faithfully apply "Big Change"; they send the client opposite ways.
+
+**Open lever — grounding.** Whether the player may also say things *not* grounded in their reading
+(make things up) — and whether that's penalized or is a valid "lie to help them" move — is an open
+design question tying straight into the Score/Story theme.
+
+## Aggregation → outcome → story
+
+- **Accuracy** aggregates from the **reading**: how many faithful vs. distractor picks (→ the Score /
+  scorecard).
+- **Story** aggregates from the **consultation**: the lean of how reading items were applied (ominous
+  ↔ hopeful, act ↔ wait, …) selects which authored **story outcome** the client walks away with.
+
+How exactly the aggregate application maps onto authored story branches is an open question.
+
+## Authoring, and keeping random draws authorable
+
+Authored per encounter (not model-generated — see "Scaling" below):
+
+- **Reading options** per card meaning: the faithful read + distractors.
+- **Consultation dialog**: keyword-flavored options that apply the reading items to *this* client's
+  question.
+
+A random draw over the full deck could surface a meaning the writer didn't tailor. Two levers keep
+authoring tractable without breaking randomness:
 
 - **A small deck / vocabulary** — fewer meaning tokens to author per encounter.
 - **Generic fallback options** — for tokens an encounter didn't specifically author, fall back to
-  generic faithful/distractor options for that meaning. Off-topic cards still read coherently; only
-  the *story-bearing* tokens need bespoke authoring.
-
-Exact deck size, vocabulary size, and how much is bespoke vs. fallback are open tuning questions.
+  generic reading/consultation options. Off-topic cards still read coherently; only the *story-bearing*
+  tokens need bespoke authoring.
 
 ## Hard requirement: non-scripted
 
 The draw must be **random**, never pre-arranged per client. A player must not be able to look up "this
-client draws these cards → say this." The authored part is the *option pool keyed to the question and
+client draws these cards → say this." The authored part is the *option pools keyed to the question and
 the card meanings* — not a fixed card sequence.
-
-## Aggregation → outcome → story
-
-The locked choices sum along two lines:
-
-- **Accuracy** — how many faithful vs. distractor picks (→ the Score / scorecard).
-- **Story direction** — the aggregate lean of the faithful picks (ominous ↔ hopeful, act ↔ wait,
-  etc.) selects which authored **story outcome** the client walks away with, feeding their arc.
-
-How exactly the aggregate maps onto authored story branches is an open question.
 
 ## Scaling (post-MVP, not now): SLM-generated options
 
 The authoring cost of bespoke options is the main drawback of the authored model. Post-MVP, a **small
-language model** could generate interpretation options from the drawn card + the client's question,
-removing that cost and scaling to any card/client. It's explicitly **out of the MVP** — we prove the
-loop is fun with authored options first, then consider the model as a scaling path. Tracked in
-[`../open-questions.md`](../open-questions.md).
+language model** could generate reading and/or consultation options from the drawn card + the client's
+question, removing that cost and scaling to any card/client. It's explicitly **out of the MVP** — prove
+the loop is fun with authored options first. Tracked in [`../open-questions.md`](../open-questions.md).
 
 ## Open questions specific to tarot
 
+- **Grounding** — may the player apply keywords *not* backed by their reading (make things up)? Penalty,
+  or a deliberate lever?
 - **Deck & vocabulary size** vs. authoring cost per encounter.
-- **Distractor design** — how many per card, and how obvious/subtle they are.
+- **Distractor design** — how many per card, and how obvious/subtle.
 - **Spread design** — size and shape; fixed, or chosen by player/scenario? How do positions modify a
   card's meaning token?
 - **Reversed cards?** A second meaning layer, or upright-only for the MVP?
-- **Aggregation rule** — how locked choices map onto authored story branches.
-- **Consultation-after agency** — how much choice the delivery beat has vs. just playing out the
-  locked reading.
+- **Aggregation rule** — how applied reading items map onto authored story branches.
+- **Consultation authoring** — how much keyword dialog per encounter, and how many reading items a
+  single consultation typically weaves together.
 - **Fallback coherence** — keeping generic fallback options from feeling generic.
-- **The "fudge" hook** — if the [shop](../shop-and-economy.md) ships, arranging the draw is the
-  obvious tarot cheat; costs/risks TBD there.
+- **The "fudge" hook** — if the [shop](../shop-and-economy.md) ships, arranging the draw is the obvious
+  tarot cheat; costs/risks TBD there.

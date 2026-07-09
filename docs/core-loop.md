@@ -19,27 +19,28 @@ reading is **informed, not blind**.
    the deeper conversation comes *after* the reading. This is their *presenting concern*, and it may
    or may not be their real need (see [`clients-and-narrative.md`](./clients-and-narrative.md)).
 
-### Beat 2 — The reading (separate scene)
+### Beat 2 — The reading (separate scene) — *doing it right*
 
-2. **Perform the reading, step by step.** In a dedicated scene (a dim overlay or a transition to the
+2. **Interpret the spread correctly.** In a dedicated scene (a dim overlay or a transition to the
    reading table; see [`art-direction.md`](./art-direction.md)), the spread is **drawn at random**. As
-   each card turns, the game surfaces this encounter's authored **interpretation options** for that
-   card's meaning, keyed to the client's stated question. The player picks one and it **locks in**;
-   then the next card. See [`methods/tarot.md`](./methods/tarot.md).
-3. **Aggregate.** The locked-in choices across the spread aggregate into the reading's overall
-   message.
+   each card turns, the player **reads it correctly** — picking the faithful interpretation from
+   options that include plausible misreadings — and it **locks in**. Getting these right is the
+   **accuracy** axis (the Score). The locked interpretations become the **reading items** the
+   consultation is built from. This beat is *only* about reading the cards right. See
+   [`methods/tarot.md`](./methods/tarot.md).
 
-### Beat 3 — Consultation (delivery)
+### Beat 3 — Consultation (application) — *what it means for them*
 
-4. **Play the scene out.** The visit returns to the two-hander. The player delivers the reading, the
-   client reacts and opens up, and the scene plays out from what was drawn and locked. The outcome
-   feeds the client's story; the in-the-moment reaction lands now, while longer-term consequences
-   surface on later days.
+3. **Apply the reading through dialog.** The visit returns to the two-hander, and the player advises
+   the client through dialog whose choices are **flavored with color-coded keywords that map to
+   specific reading items** — the interpretations locked during the reading. *How* those items are
+   applied to the client's need — which faithful direction, what advice — is the **Story** axis. The
+   outcome feeds the client's story; the in-the-moment reaction lands now, while longer-term
+   consequences surface on later days.
 
-> **Requirement:** the reading must expose *both* a "did I read it faithfully / by the book" decision
-> (accuracy → the Score) and a "which valid direction did I steer it" decision (→ the Story). Because
-> the player commits interpretations before the full consultation, **the delivered reading is the
-> material the consultation is played from.**
+> **The two axes split across the two beats:** the reading tests *did I read it right* (accuracy → the
+> Score); the consultation tests *how I apply it to this person* (→ the Story). You interpret first,
+> then apply what you locked.
 
 ## The day loop
 

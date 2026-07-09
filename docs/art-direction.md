@@ -38,6 +38,11 @@ A split-screen two-hander (echoes a JRPG battle framing):
 - **Client:** top-left, lit and expressive — the "encounter."
 - **Player:** bottom-right, a dark **silhouette / profile** — guarded, in keeping with the character.
 - **Dialogue choices:** boxed along the bottom.
+- **Color-coded keywords in dialogue.** During the consultation, dialogue choices are flavored with
+  **color-coded keywords** that map to specific *reading items* (the interpretations locked during the
+  reading), so the player can see which parts of what they're saying are grounded in the cards they
+  drew. This is the visual bridge between the reading and the consultation. See
+  [`methods/tarot.md`](./methods/tarot.md).
 - **Reference / menu access:** menus to open reference material (e.g., a tarot explainer book) as
   diegetic objects.
 

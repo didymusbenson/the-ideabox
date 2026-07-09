@@ -30,42 +30,52 @@ Inside the reading scene, the method is *performed*, not selected from a list:
   time, palm lines are identified in sequence, chart placements resolve in order.
 - Getting the *procedure* right has a **technical, pseudo-puzzle quality** — the reading has to be
   conducted correctly for it to hold together.
-- **At each step the player makes an interpretation choice** about what the revealed feature means
-  for *this* client.
+- **At each step the player interprets the revealed feature** — reading it correctly, or misreading
+  it. This is the "doing it right" / accuracy layer; *applying* those interpretations to the client
+  happens afterward, in the consultation.
 
-## The core model: random draw · fixed meaning · chosen direction
+## The core model: random draw · read it right · apply it
 
-This is the mechanism that makes readings work. Three layers, kept separate:
+This is the mechanism that makes readings work — layers kept separate, and **split across the two
+beats** of a visit:
 
-1. **The draw is random.** Which cards come up, which features are salient — randomized per reading,
-   **not authored per client.** (Hard requirement; see below.)
-2. **Meanings are fixed rules.** Each card or feature has a canonical core meaning — *The Tower*
-   always means sudden upheaval, chaos, revelation. This is **"the book,"** and reading it faithfully
-   is the **Score** (see [`scoring-and-story.md`](./scoring-and-story.md)).
-3. **The player chooses the direction.** A fixed meaning can be validly applied in more than one
-   direction for this client. The player picks which. This is where the **Story** branches.
+1. **The draw is random.** Which cards come up is randomized per reading, **not authored per client.**
+   (Hard requirement; see below.)
+2. **Read it right — the reading beat.** Each card has a canonical meaning — *The Tower* = sudden
+   upheaval. This is **"the book."** In the reading, the player interprets each card correctly (or
+   misreads it); doing it right is the **Score** (see [`scoring-and-story.md`](./scoring-and-story.md)).
+   Correct interpretations **lock in** as *reading items.*
+3. **Apply it — the consultation beat.** A locked interpretation can be applied to the client in more
+   than one faithful direction. In the consultation the player does this through dialog whose choices
+   are **flavored with color-coded keywords mapping to the reading items.** How the player applies them
+   is where the **Story** branches.
 
-**The reading aggregates.** The player's per-step interpretation choices sum into a single final
-outcome / piece of advice, and *that* is what feeds the client's story.
+**Aggregation.** The reading's correctness aggregates into the accuracy score; the consultation's
+applications aggregate into the outcome that feeds the client's story.
 
 ### How the MVP realizes this (authored option pools)
 
-For the MVP, "the player chooses the direction" is concrete: each encounter **authors a pool of
-interpretation options** keyed to the client's question and to the card meanings, the player picks one
-per drawn card, and picks **lock in** as the spread is dealt. To keep the accuracy axis real when
-options are handed to the player, pools include **distractors** — plausible misreadings that cost the
-Score. Full detail lives in [`methods/tarot.md`](./methods/tarot.md). A model-generated alternative
-(an SLM producing options on the fly) is a **post-MVP scaling path**, not the MVP.
+For the MVP this is concrete and authored per encounter:
+
+- **In the reading**, each card offers **interpretation options** — the faithful read plus
+  **distractors** (plausible misreadings that cost the Score). The player picks; correct picks lock in
+  as reading items.
+- **In the consultation**, authored dialog options are **flavored with color-coded keywords that map
+  to those reading items**, and applying them toward the client's need is the Story choice.
+
+Full detail lives in [`methods/tarot.md`](./methods/tarot.md). A model-generated alternative (an SLM
+producing options on the fly) is a **post-MVP scaling path**, not the MVP.
 
 ### The two-valid-interpretations principle
 
-A single feature often supports **multiple correct interpretations that diverge in story impact.**
+A single interpretation, once locked, can be **applied in more than one faithful direction** — and
+that application happens in the consultation.
 
-> *The Tower* means unexpected upheaval. The player can frame that as **"a disaster to brace
-> against"** or **"a necessary collapse that clears the way."** Both are faithful to the card — both
-> are *by the book*. They send the client in opposite directions.
+> *The Tower* reads as unexpected upheaval (getting that right is the reading). Applying it, the player
+> can frame it as **"a disaster to brace against"** or **"a necessary collapse that clears the way"** —
+> both faithful, opposite advice.
 
-The Score doesn't care which faithful direction you chose; the Story cares a great deal.
+The Score cares whether you *read* it right; the Story cares how you *apply* it.
 
 ## Hard requirement: readings are NOT scripted
 

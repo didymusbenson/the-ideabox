@@ -13,10 +13,10 @@ how well the player is doing**, they are judged by different standards, and they
   [`core-loop.md`](./core-loop.md)).
 - **A perfect rating** comes from following the psychic rules by the book — every reading
   method-accurate, no shading, no bending.
-- **In the authored MVP model** (see [`methods/tarot.md`](./methods/tarot.md)): accuracy is protected
-  by **distractors** — some interpretation options offered are faithful to the drawn card, others are
-  plausible misreadings. Picking faithful options keeps the Score; the player has to know the book to
-  tell them apart.
+- **Where it's decided:** in the **reading** beat — "doing it right." In the authored MVP model (see
+  [`methods/tarot.md`](./methods/tarot.md)) accuracy is protected by **distractors** — each drawn card
+  offers the faithful read plus plausible misreadings. Picking the faithful read keeps the Score; the
+  player has to know the book to tell them apart.
 
 ## Axis 2 — The Story (outcome / humanity)
 
@@ -38,13 +38,13 @@ The method-correct reading and the genuinely-helpful advice are **not always the
 - Telling a client exactly what the method dictates can keep them dependent; telling them what they
   need can cost you accuracy points but set them free.
 
-Crucially, the split shows up *within a faithful reading*, not only when the player breaks the rules.
-A single feature usually supports **more than one by-the-book interpretation** (the
-two-valid-interpretations principle in [`divination-methods.md`](./divination-methods.md)): *The
-Tower* faithfully means upheaval, but "brace for disaster" and "a necessary collapse" are both
-accurate and send the client opposite ways. So the **Score cares whether you read the meaning
-faithfully; the Story cares which faithful direction you chose** — and the player is choosing
-directions step by step as the reading is performed, then living with the aggregate.
+Crucially, the two axes map onto the two later beats of a visit. In the **reading** you either read
+each card right or misread it — that's the Score. In the **consultation** you *apply* the locked
+interpretations, and a single interpretation supports more than one faithful application (the
+two-valid-interpretations principle in [`divination-methods.md`](./divination-methods.md)): *The Tower*
+faithfully means upheaval, but applying it as "brace for disaster" versus "a necessary collapse" sends
+the client opposite ways. So the **Score cares whether you read it right; the Story cares how you apply
+it** — you interpret first, then live with how you apply what you locked.
 
 So on any given reading the player faces a real choice:
 

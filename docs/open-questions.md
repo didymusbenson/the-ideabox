@@ -19,7 +19,9 @@ These came up in the initial pitch conversation and have no answer yet:
 **Resolved:** MVP is **Tarot only** (palmistry/astrology deferred). Interpretation options are
 **authored per encounter** for the MVP (SLM generation is a post-MVP scaling path). The
 random-vs-authored reconciliation uses fixed meaning tokens + authored option pools (with distractors)
-+ generic fallbacks for un-authored tokens. See [`methods/tarot.md`](./methods/tarot.md).
++ generic fallbacks for un-authored tokens. The two axes **split across the beats**: the **reading** is
+"doing it right" (accuracy, with distractors); the **consultation** *applies* the locked reading items
+via **color-coded keyword** dialog (story). See [`methods/tarot.md`](./methods/tarot.md).
 
 Still open:
 
@@ -30,8 +32,12 @@ Still open:
 - **Aggregation rule** — how the locked per-card choices map onto the client's authored story branches.
 - **Fallback coherence** — keeping generic fallback options (for un-authored meaning tokens) from
   feeling generic or breaking tone.
-- **Consultation-after agency** — how much choice the delivery beat carries vs. just playing out the
-  locked reading.
+- **Keyword grounding** — may the player invoke keywords/advice *not* supported by their reading (make
+  things up), and is that penalized, or is it a valid "lie to help them" lever tying into the
+  Score/Story theme? (Consultation *agency* itself is resolved: the consultation is where all Story
+  application happens.)
+- **Consultation authoring** — how the color-coded keyword dialog is authored per encounter and mapped
+  to reading items, and how many reading items a single consultation typically weaves together.
 - **How much of tarot's real ruleset we adopt** (reversed cards? position modifiers?) vs. a
   game-legible subset — the book must be learnable in a few readings.
 - **[Post-MVP] SLM-generated options** — if/when we add it, how to keep faithful-vs-distractor honest
