@@ -16,13 +16,38 @@ These came up in the initial pitch conversation and have no answer yet:
 
 ## Divination methods
 
-- **Which methods make the first slice?** Proposed: 1–2 done well (palm and/or tarot). Confirm.
+- **[Big one] Reconciling random readings with authored story.** Readings must be randomized and
+  non-look-up-able, yet still produce authored, per-client story branches. Working model
+  (`divination-methods.md`): fixed meanings + player's chosen *interpretive direction* + aggregation,
+  so branches key off the player's stance, not the specific cards. Needs validation and a concrete
+  aggregation rule.
+- **Constraining randomness without re-scripting.** Can a fully random draw be incoherent or tonally
+  wrong for a client? If we weight/limit the draw to keep readings coherent, how without
+  re-introducing look-up-ability?
+- **Which methods make the first slice?** Proposed: 1–2 done well (tarot lead, optionally palm).
+  Confirm.
 - **How much of each method's real-world ruleset do we adopt** vs. invent a game-legible subset? The
   "book" needs to be learnable in a few readings, which may mean simplifying real palmistry/tarot.
-- **How random is tarot (and other draw-based methods)?** Fully random draws vs. authored/weighted
-  draws that guarantee a designed choice. Affects how tightly narrative can be authored.
+- **Tarot specifics** (in [`methods/tarot.md`](./methods/tarot.md)): reversed cards? spread
+  size/shape? how many valid directions per card, and are they authored or derived from a few
+  interpretive axes? how do per-card choices aggregate into one outcome?
+- **Palmistry & astrology: where does the randomness live** given their subjects (a hand, a
+  birth-derived chart) are less obviously random than a shuffled deck? See the method stubs.
 - **Are the backlog methods** (tea leaves, numerology, runes, scrying, pendulum) ever in scope, or
   flavor only?
+
+## Art direction
+
+Confirmed: hi-res pixel art; split-screen consultation (client top-left, player silhouette
+bottom-right, dialogue along the bottom); the reading is a separate scene; artifacts get personality;
+cool blues/blacks/purples lead. Open:
+
+- **Reading-scene presentation.** Dim-background modal overlay vs. a full transition to a reading
+  table. Both keep it tactile; pick one (or allow both contextually).
+- **Artifact rendering treatment.** Ornate/illustrated (Zachtronics-style, deliberate contrast) vs.
+  in-world hi-res pixel. Either way, personality is the goal.
+- **Warm/cool degree.** How far to push warm candlelight/artifacts against the cool room, vs. keeping
+  it cool top to bottom.
 
 ## Core loop
 

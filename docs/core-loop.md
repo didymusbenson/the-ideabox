@@ -6,28 +6,33 @@ clients plus an end-of-day reckoning).
 
 ## The client loop
 
-For each client who sits down at the table:
+Each client visit unfolds as **two distinct scenes** — a consultation, then the reading.
 
-1. **Arrival & concern.** The client presents themselves and states what they came in about — a
-   worry, a decision, a question about their future ("Should I take the job?", "Is he cheating?",
-   "Will my mother be okay?"). This is their *presenting concern*. It may or may not be their real
-   need (see [`clients-and-narrative.md`](./clients-and-narrative.md)).
-2. **Choose / perform the method.** A divination method is used — some clients or scenarios call
-   for a specific one; sometimes the player chooses. The player then *performs* that method: reads
-   the hand, deals and reads the spread, draws the chart. This is the mechanical heart of a turn.
-   See [`divination-methods.md`](./divination-methods.md).
-3. **Interpret by the rules.** The player draws conclusions from what the method produced, using
-   that method's ruleset. There is a method-correct interpretation; the player can hit it, miss it,
-   or knowingly depart from it.
-4. **Construct the advice.** The player turns the interpretation into guidance aimed at *this
-   client's* concern. This is where the two axes split: the player can deliver the reading the
-   method calls for, or shade the advice toward what the person actually needs to hear.
-5. **Deliver & react.** The advice is given. The client responds in the moment. Consequences that
-   play out over days are recorded but not necessarily revealed yet.
+### Scene 1 — The consultation (chat)
 
-> **Requirement:** every client turn must expose *both* a "did I read it correctly" decision and a
-> "what do I actually tell them" decision. A turn that only tests one axis undercuts the core
-> tension.
+1. **Arrival & concern.** The client presents themselves and, through a **choice-driven back-and-forth
+   conversation**, states what they came in about — a worry, a decision, a question about their future
+   ("Should I take the job?", "Is he cheating?", "Will my mother be okay?"). This is their
+   *presenting concern*; it may or may not be their real need (see
+   [`clients-and-narrative.md`](./clients-and-narrative.md)). Tone and character live here.
+2. **Into the reading.** When the consultation is done, the visit moves into the reading — a separate
+   scene (a dim modal overlay or a transition to the reading table; see
+   [`art-direction.md`](./art-direction.md)).
+
+### Scene 2 — The reading
+
+3. **Perform the reading, step by step.** In this dedicated scene the method is *performed* as a
+   pseudo-puzzle: randomized features are revealed progressively (cards turn, palm lines are
+   identified, chart placements resolve), and **at each step the player makes an interpretation
+   choice** — applying the method's fixed meanings in one valid direction toward this client. See
+   [`divination-methods.md`](./divination-methods.md).
+4. **Aggregate & deliver.** The per-step interpretation choices are **aggregated into a single final
+   outcome / advice**, delivered to the client. Their in-the-moment reaction plays out now;
+   longer-term consequences are recorded and revealed on later days.
+
+> **Requirement:** the reading must expose *both* a "did I read it faithfully / by the book" decision
+> (accuracy → the Score) and a "which valid direction did I steer it" decision (→ the Story). A turn
+> that only tests one axis undercuts the core tension.
 
 ## The day loop
 

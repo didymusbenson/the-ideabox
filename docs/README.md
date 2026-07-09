@@ -29,8 +29,10 @@ Each file is self-contained and scoped to one concern. Load only what your task 
 | File | What it covers | Read it when you need… |
 |------|----------------|------------------------|
 | [`vision.md`](./vision.md) | Fantasy, tone, design pillars, references | The "why" and the feel |
-| [`core-loop.md`](./core-loop.md) | The per-client and per-day gameplay loop, session flow, the day scorecard | How a session actually plays |
-| [`divination-methods.md`](./divination-methods.md) | Each reading system as a mechanic (palm, tarot, astrology, backlog) | Anything about the reading mechanics |
+| [`art-direction.md`](./art-direction.md) | Visual style, palette, composition, the reading scene, reference-book UI | Anything about how the game looks |
+| [`core-loop.md`](./core-loop.md) | The per-client and per-day gameplay loop, the two-scene visit, the day scorecard | How a session actually plays |
+| [`divination-methods.md`](./divination-methods.md) | The **shared reading framework** — how every reading works (scene, steps, random/rules/choice) | The reading mechanics in general |
+| [`methods/`](./methods/) | One doc per method: [`tarot`](./methods/tarot.md) (fleshed), [`palmistry`](./methods/palmistry.md) + [`astrology`](./methods/astrology.md) (stubs) | The specifics of one method |
 | [`clients-and-narrative.md`](./clients-and-narrative.md) | Client model, one-off vs. recurring arcs, memory/consequence, happy endings | Characters, story, branching |
 | [`scoring-and-story.md`](./scoring-and-story.md) | The two axes in detail — how craft accuracy and narrative outcome are tracked and how they conflict | The tension mechanic, feedback, endings |
 | [`shop-and-economy.md`](./shop-and-economy.md) | **WIP / isolated.** Clients paying, satisfaction, a between-days shop, and "fudge" upgrades | The money layer (still being figured out) |

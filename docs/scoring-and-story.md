@@ -34,10 +34,18 @@ The method-correct reading and the genuinely-helpful advice are **not always the
 - Telling a client exactly what the method dictates can keep them dependent; telling them what they
   need can cost you accuracy points but set them free.
 
+Crucially, the split shows up *within a faithful reading*, not only when the player breaks the rules.
+A single feature usually supports **more than one by-the-book interpretation** (the
+two-valid-interpretations principle in [`divination-methods.md`](./divination-methods.md)): *The
+Tower* faithfully means upheaval, but "brace for disaster" and "a necessary collapse" are both
+accurate and send the client opposite ways. So the **Score cares whether you read the meaning
+faithfully; the Story cares which faithful direction you chose** — and the player is choosing
+directions step by step as the reading is performed, then living with the aggregate.
+
 So on any given reading the player faces a real choice:
 
 > **Play it by the book (protect the Score) — or say what this person needs to hear (serve the
-> Story)?**
+> Story)?** — and, even when staying by the book, *which faithful direction* to steer toward.
 
 A run that chases a perfect Score may leave a trail of "accurate" readings that didn't help anyone.
 A run that chases good outcomes may be a mess of method-inaccurate readings. The interesting space
