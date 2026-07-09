@@ -52,7 +52,7 @@ A day is a curated set of client turns:
 - A **day**: a handful of clients (enough to feel like a working shift, few enough that each one
   matters).
 - A **run / full game**: multiple days forming a season, over which arc clients rise and resolve.
-- **POC slice**: a small number of days that can demonstrate the full loop end-to-end, including at
+- **First slice**: a small number of days that can demonstrate the full loop end-to-end, including at
   least one arc client who returns and visibly changes based on prior advice.
 
 ## What the loop must deliver each pass

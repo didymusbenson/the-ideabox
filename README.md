@@ -12,13 +12,6 @@ The heart of the game is a tension between two ways of "winning":
 
 Sometimes the advice a client needs to hear isn't the advice the fortune calls for.
 
-## What this actually is
-
-The real proof of concept is the **workflow**: taking a game from a blank repo to something real,
-from scratch, using Claude Code — planning docs-first, then design, then implementation. The game is
-the **vehicle** for that experiment, not the end goal. It only has to be coherent enough to be an
-honest test. See [`docs/vision.md`](./docs/vision.md) → "What this POC is trying to prove."
-
 ## Project phase
 
 **PLANNING.** This repo currently holds requirements only — no code, no tech-stack decisions yet.

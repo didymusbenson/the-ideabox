@@ -61,7 +61,7 @@ Candidates noted in the pitch as possible additional methods. Not committed; par
 tea-leaf reading (tasseography), numerology, rune casting, scrying / crystal ball, pendulum reading.
 Each would need the full five-part definition above before it's in scope.
 
-## POC scope for methods
+## First-slice scope for methods
 
 > **Assumption — to be confirmed** (see [`open-questions.md`](./open-questions.md)).
 

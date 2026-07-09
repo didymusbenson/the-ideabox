@@ -69,7 +69,7 @@ because they reach straight into the core tension:
   cost, detection risk, satisfaction penalty if caught, narrative consequence?
 - **Is money a soft flavor layer or a real pressure?** Can the player go broke? Does the business
   itself have stakes (rent, staying open), or is money purely an upgrade currency?
-- **Shop scope for the POC.** Does the proof of concept need the shop at all, or is it a
+- **Shop scope for the first slice.** Does the first slice need the shop at all, or is it a
   post-slice addition? (Given its WIP status, likely *out* of the first slice — confirm.)
 
 ## Touchpoints to reconcile later (kept out of the other docs for now)

@@ -2,8 +2,7 @@
 
 **Working title:** I'm Not a Psychic
 **Phase:** PLANNING (requirements). No tech stack or implementation decisions yet — those come in DESIGN.
-**What the POC really is:** a test of the **workflow** — building a game from scratch with Claude Code,
-docs-first, phase by phase. The game is the vehicle, not the deliverable. See [`vision.md`](./vision.md).
+**Type:** A narrative, choice-based game.
 
 ## The one-line pitch
 
@@ -29,7 +28,7 @@ Each file is self-contained and scoped to one concern. Load only what your task 
 
 | File | What it covers | Read it when you need… |
 |------|----------------|------------------------|
-| [`vision.md`](./vision.md) | Fantasy, tone, design pillars, references, POC intent | The "why" and the feel |
+| [`vision.md`](./vision.md) | Fantasy, tone, design pillars, references | The "why" and the feel |
 | [`core-loop.md`](./core-loop.md) | The per-client and per-day gameplay loop, session flow, the day scorecard | How a session actually plays |
 | [`divination-methods.md`](./divination-methods.md) | Each reading system as a mechanic (palm, tarot, astrology, backlog) | Anything about the reading mechanics |
 | [`clients-and-narrative.md`](./clients-and-narrative.md) | Client model, one-off vs. recurring arcs, memory/consequence, happy endings | Characters, story, branching |

@@ -8,20 +8,15 @@ doc and delete them here.
 
 These came up in the initial pitch conversation and have no answer yet:
 
-- **[POC goal] ✅ RESOLVED.** The POC is proving out the **workflow** — building a game from scratch
-  with Claude Code, docs-first, phase by phase. The game is the vehicle, not the deliverable, and
-  only has to be coherent enough to be an honest test. See `vision.md` → "What this POC is trying to
-  prove." (Consequence: slice scope is judged by "does this exercise the workflow representatively,"
-  not by "is the game fun.")
 - **[Platform] Where does the game run?** Web, mobile, desktop, console? Undecided. Affects nothing
   in requirements but blocks DESIGN.
 - **[Audience] Who is this for?** Tone leans adult/wry; target audience not specified.
 - **[Scope] Solo or team? Timeline? Constraints?** No team size, deadline, or hard constraints
-  captured. Needed to right-size the POC slice.
+  captured. Needed to right-size the first slice.
 
 ## Divination methods
 
-- **Which methods make the POC slice?** Proposed: 1–2 done well (palm and/or tarot). Confirm.
+- **Which methods make the first slice?** Proposed: 1–2 done well (palm and/or tarot). Confirm.
 - **How much of each method's real-world ruleset do we adopt** vs. invent a game-legible subset? The
   "book" needs to be learnable in a few readings, which may mean simplifying real palmistry/tarot.
 - **How random is tarot (and other draw-based methods)?** Fully random draws vs. authored/weighted
