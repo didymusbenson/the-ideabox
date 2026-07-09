@@ -16,22 +16,27 @@ These came up in the initial pitch conversation and have no answer yet:
 
 ## Divination methods
 
-- **[Big one] Reconciling random readings with authored story.** Readings must be randomized and
-  non-look-up-able, yet still produce authored, per-client story branches. Working model
-  (`divination-methods.md`): fixed meanings + player's chosen *interpretive direction* + aggregation,
-  so branches key off the player's stance, not the specific cards. Needs validation and a concrete
-  aggregation rule.
-- **Constraining randomness without re-scripting.** Can a fully random draw be incoherent or tonally
-  wrong for a client? If we weight/limit the draw to keep readings coherent, how without
-  re-introducing look-up-ability?
-- **Which methods make the first slice?** Proposed: 1–2 done well (tarot lead, optionally palm).
-  Confirm.
-- **How much of each method's real-world ruleset do we adopt** vs. invent a game-legible subset? The
-  "book" needs to be learnable in a few readings, which may mean simplifying real palmistry/tarot.
-- **Tarot specifics** (in [`methods/tarot.md`](./methods/tarot.md)): reversed cards? spread
-  size/shape? how many valid directions per card, and are they authored or derived from a few
-  interpretive axes? how do per-card choices aggregate into one outcome?
-- **Palmistry & astrology: where does the randomness live** given their subjects (a hand, a
+**Resolved:** MVP is **Tarot only** (palmistry/astrology deferred). Interpretation options are
+**authored per encounter** for the MVP (SLM generation is a post-MVP scaling path). The
+random-vs-authored reconciliation uses fixed meaning tokens + authored option pools (with distractors)
++ generic fallbacks for un-authored tokens. See [`methods/tarot.md`](./methods/tarot.md).
+
+Still open:
+
+- **Deck & vocabulary size** vs. per-encounter authoring cost. Smaller = cheaper to author, less
+  variety; larger = more authoring or more reliance on generic fallbacks.
+- **Distractor design** — how many misreadings per card and how obvious/subtle, so accuracy stays a
+  real test without feeling like gotchas.
+- **Aggregation rule** — how the locked per-card choices map onto the client's authored story branches.
+- **Fallback coherence** — keeping generic fallback options (for un-authored meaning tokens) from
+  feeling generic or breaking tone.
+- **Consultation-after agency** — how much choice the delivery beat carries vs. just playing out the
+  locked reading.
+- **How much of tarot's real ruleset we adopt** (reversed cards? position modifiers?) vs. a
+  game-legible subset — the book must be learnable in a few readings.
+- **[Post-MVP] SLM-generated options** — if/when we add it, how to keep faithful-vs-distractor honest
+  and outputs on-tone and safe with a model in the loop.
+- **[Post-MVP] Palmistry & astrology: where does the randomness live** given their subjects (a hand, a
   birth-derived chart) are less obviously random than a shuffled deck? See the method stubs.
 - **Are the backlog methods** (tea leaves, numerology, runes, scrying, pendulum) ever in scope, or
   flavor only?
@@ -51,11 +56,16 @@ cool blues/blacks/purples lead. Open:
 
 ## Core loop
 
+**Resolved:** visit order is **intake → reading → consultation** (read *then* consult, but the client
+opens with an intention and question, so the reading is informed).
+
+Still open:
+
 - **How many clients per day, and how many days per run?** Placeholders only right now.
 - **Do earlier readings in a day affect later ones** (fatigue, mood, carried information), or is each
   turn independent within the day?
-- **Can the player choose the method,** or is it dictated by the client/scenario? Pitch implies
-  sometimes-chosen; needs a rule.
+- **Method choice** is moot for the MVP (Tarot only). Revisit when a second method exists: does the
+  player choose the method, or is it dictated by the client/scenario?
 
 ## Clients & narrative
 

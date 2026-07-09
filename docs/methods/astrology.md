@@ -1,8 +1,9 @@
 # Method: Astrology / Star Charts
 
-> **Status: STUB.** Placeholder capturing the method's skeleton against the shared framework in
-> [`../divination-methods.md`](../divination-methods.md). To be detailed like
-> [`tarot.md`](./tarot.md) when this method is scheduled.
+> **Status: STUB · POST-MVP (deferred).** The MVP ships Tarot only; astrology comes later. This
+> placeholder captures the method's skeleton against the shared framework in
+> [`../divination-methods.md`](../divination-methods.md). To be detailed like [`tarot.md`](./tarot.md)
+> when this method is scheduled.
 
 Astrology is the **"synthesis of a structured system"** method — many parts (signs, houses,
 placements) that must be read *together* into a coherent whole. More combinatorial than tarot or

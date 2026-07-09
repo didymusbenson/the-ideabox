@@ -4,9 +4,20 @@ Shared vocabulary so the docs stay consistent. Add terms here rather than redefi
 
 - **Reading** — a single performance of a divination method for a client, played out in its own
   **scene** as a step-by-step pseudo-puzzle. One client visit produces one reading.
-- **Consultation** — the choice-driven chat scene *before* the reading, where the client's concern is
-  drawn out. The first of a visit's two scenes; the reading is the second.
-- **Scene** — a distinct mode of a visit. A visit has two: the consultation (chat) and the reading.
+- **Intake** — the brief opening beat where the client states their intention and question. The first
+  of a visit's three beats.
+- **Consultation** — the delivery scene *after* the reading, where the player delivers the reading and
+  the scene plays out from what was drawn. The third beat of a visit.
+- **Scene / beat** — a distinct part of a visit. A visit has three beats: intake, the reading, and the
+  consultation.
+- **Meaning token** — the simplified meaning assigned to a tarot card (*The Tower* → "Big Change"); the
+  game's legible version of "the book."
+- **Interpretation option** — an authored dialog choice offered for a drawn card's meaning in a given
+  encounter, tagged faithful-or-distractor and with a story direction.
+- **Distractor** — an interpretation option that misreads the drawn card; picking it costs accuracy.
+  Distractors are how the Score stays real when options are handed to the player.
+- **Lock-in** — once the player selects an interpretation for a drawn card, it is committed and can't
+  be changed; selections lock as the spread is dealt.
 - **Method / divination method** — a system of fortune-telling the player performs (palm reading,
   tarot, astrology, …). Each has its own ruleset and its own doc under
   [`methods/`](./methods/). See [`divination-methods.md`](./divination-methods.md).

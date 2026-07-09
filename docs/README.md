@@ -3,6 +3,7 @@
 **Working title:** I'm Not a Psychic
 **Phase:** PLANNING (requirements). No tech stack or implementation decisions yet — those come in DESIGN.
 **Type:** A narrative, choice-based game.
+**MVP method:** Tarot only — other divination methods are deferred (see [`methods/`](./methods/)).
 
 ## The one-line pitch
 
@@ -30,7 +31,7 @@ Each file is self-contained and scoped to one concern. Load only what your task 
 |------|----------------|------------------------|
 | [`vision.md`](./vision.md) | Fantasy, tone, design pillars, references | The "why" and the feel |
 | [`art-direction.md`](./art-direction.md) | Visual style, palette, composition, the reading scene, reference-book UI | Anything about how the game looks |
-| [`core-loop.md`](./core-loop.md) | The per-client and per-day gameplay loop, the two-scene visit, the day scorecard | How a session actually plays |
+| [`core-loop.md`](./core-loop.md) | The per-client and per-day loop, the three-beat visit (intake → reading → consultation), the day scorecard | How a session actually plays |
 | [`divination-methods.md`](./divination-methods.md) | The **shared reading framework** — how every reading works (scene, steps, random/rules/choice) | The reading mechanics in general |
 | [`methods/`](./methods/) | One doc per method: [`tarot`](./methods/tarot.md) (fleshed), [`palmistry`](./methods/palmistry.md) + [`astrology`](./methods/astrology.md) (stubs) | The specifics of one method |
 | [`clients-and-narrative.md`](./clients-and-narrative.md) | Client model, one-off vs. recurring arcs, memory/consequence, happy endings | Characters, story, branching |

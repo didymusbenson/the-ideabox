@@ -10,13 +10,17 @@ detail.
 
 ## A reading is its own scene
 
-A client visit unfolds as **two scenes** (see [`core-loop.md`](./core-loop.md)):
+A client visit unfolds as **three beats** (see [`core-loop.md`](./core-loop.md)):
 
-1. **The consultation** — a choice-driven back-and-forth chat where the player draws out the client's
-   concern (and hints of their true need).
-2. **The reading** — a **separate scene** where the divination is actually performed. It pulls focus,
-   either as a dim-background modal overlay or a full transition to a reading table (presentation is
-   an open question; see [`art-direction.md`](./art-direction.md)).
+1. **Intake** — the client states their intention and question (short; enough to know the concern).
+2. **The reading** — a **separate scene** where the divination is performed and interpretations are
+   committed. It pulls focus, either as a dim-background modal overlay or a full transition to a
+   reading table (presentation is an open question; see [`art-direction.md`](./art-direction.md)).
+3. **Consultation** — the visit returns to the two-hander and plays out *from the reading*: the player
+   delivers it and the client reacts.
+
+The reading comes **before** the full consultation — commit, then sell — but because the client opens
+with a question, the reading is informed, not blind.
 
 ## A reading is a step-by-step pseudo-puzzle
 
@@ -43,6 +47,15 @@ This is the mechanism that makes readings work. Three layers, kept separate:
 
 **The reading aggregates.** The player's per-step interpretation choices sum into a single final
 outcome / piece of advice, and *that* is what feeds the client's story.
+
+### How the MVP realizes this (authored option pools)
+
+For the MVP, "the player chooses the direction" is concrete: each encounter **authors a pool of
+interpretation options** keyed to the client's question and to the card meanings, the player picks one
+per drawn card, and picks **lock in** as the spread is dealt. To keep the accuracy axis real when
+options are handed to the player, pools include **distractors** — plausible misreadings that cost the
+Score. Full detail lives in [`methods/tarot.md`](./methods/tarot.md). A model-generated alternative
+(an SLM producing options on the fly) is a **post-MVP scaling path**, not the MVP.
 
 ### The two-valid-interpretations principle
 
@@ -84,15 +97,16 @@ Each method's own doc must define all of these:
 
 | Method | Doc | Character | Status |
 |--------|-----|-----------|--------|
-| Tarot | [`methods/tarot.md`](./methods/tarot.md) | Sequential interpretation of drawn cards | First fleshed-out method |
-| Palm reading | [`methods/palmistry.md`](./methods/palmistry.md) | Close observation of a fixed subject | Stub — to be detailed |
-| Astrology / star charts | [`methods/astrology.md`](./methods/astrology.md) | Synthesis of a structured chart | Stub — to be detailed |
+| Tarot | [`methods/tarot.md`](./methods/tarot.md) | Sequential interpretation of drawn cards | **MVP — the focus method** |
+| Palm reading | [`methods/palmistry.md`](./methods/palmistry.md) | Close observation of a fixed subject | Post-MVP (deferred) |
+| Astrology / star charts | [`methods/astrology.md`](./methods/astrology.md) | Synthesis of a structured chart | Post-MVP (deferred) |
 
 Backlog "possibly others" (tea leaves, numerology, runes, scrying, pendulum) remain unconfirmed; each
 would need the full contract above before it's in scope.
 
-## First-slice scope for methods
+## MVP scope for methods
 
-A first slice does **not** need every method. Proposed: implement **one or two** fully and well —
-tarot is the lead candidate (its own doc is the most developed), optionally paired with palm reading
-as a contrasting "observe a fixed subject" method. Confirm in [`open-questions.md`](./open-questions.md).
+**The MVP ships Tarot and only Tarot.** Prove the reading loop is fun with one well-built method
+before adding others. Palmistry and astrology are deferred (their docs are skeletons), and the
+model-generated (SLM) option approach is a post-MVP scaling path. See
+[`methods/tarot.md`](./methods/tarot.md).

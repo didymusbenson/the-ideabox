@@ -13,6 +13,10 @@ how well the player is doing**, they are judged by different standards, and they
   [`core-loop.md`](./core-loop.md)).
 - **A perfect rating** comes from following the psychic rules by the book — every reading
   method-accurate, no shading, no bending.
+- **In the authored MVP model** (see [`methods/tarot.md`](./methods/tarot.md)): accuracy is protected
+  by **distractors** — some interpretation options offered are faithful to the drawn card, others are
+  plausible misreadings. Picking faithful options keeps the Score; the player has to know the book to
+  tell them apart.
 
 ## Axis 2 — The Story (outcome / humanity)
 

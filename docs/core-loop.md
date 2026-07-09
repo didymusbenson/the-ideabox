@@ -6,33 +6,40 @@ clients plus an end-of-day reckoning).
 
 ## The client loop
 
-Each client visit unfolds as **two distinct scenes** — a consultation, then the reading.
+Each client visit unfolds as **three beats**: a short intake, the reading, then the consultation.
+The reading comes *before* the full consultation — the player commits to interpretations and only
+then plays the scene out — but the client still arrives with a stated intention and question, so the
+reading is **informed, not blind**.
 
-### Scene 1 — The consultation (chat)
+### Beat 1 — Intake (arrival)
 
-1. **Arrival & concern.** The client presents themselves and, through a **choice-driven back-and-forth
-   conversation**, states what they came in about — a worry, a decision, a question about their future
-   ("Should I take the job?", "Is he cheating?", "Will my mother be okay?"). This is their
-   *presenting concern*; it may or may not be their real need (see
-   [`clients-and-narrative.md`](./clients-and-narrative.md)). Tone and character live here.
-2. **Into the reading.** When the consultation is done, the visit moves into the reading — a separate
-   scene (a dim modal overlay or a transition to the reading table; see
-   [`art-direction.md`](./art-direction.md)).
+1. **Intention & question.** The client sits down and states, briefly, their **intention** (what
+   they're hoping for) and the **question** they want the cards to answer ("Should I take the job?",
+   "Is he cheating?", "Will my mother be okay?"). This is enough for the player to know the concern;
+   the deeper conversation comes *after* the reading. This is their *presenting concern*, and it may
+   or may not be their real need (see [`clients-and-narrative.md`](./clients-and-narrative.md)).
 
-### Scene 2 — The reading
+### Beat 2 — The reading (separate scene)
 
-3. **Perform the reading, step by step.** In this dedicated scene the method is *performed* as a
-   pseudo-puzzle: randomized features are revealed progressively (cards turn, palm lines are
-   identified, chart placements resolve), and **at each step the player makes an interpretation
-   choice** — applying the method's fixed meanings in one valid direction toward this client. See
-   [`divination-methods.md`](./divination-methods.md).
-4. **Aggregate & deliver.** The per-step interpretation choices are **aggregated into a single final
-   outcome / advice**, delivered to the client. Their in-the-moment reaction plays out now;
-   longer-term consequences are recorded and revealed on later days.
+2. **Perform the reading, step by step.** In a dedicated scene (a dim overlay or a transition to the
+   reading table; see [`art-direction.md`](./art-direction.md)), the spread is **drawn at random**. As
+   each card turns, the game surfaces this encounter's authored **interpretation options** for that
+   card's meaning, keyed to the client's stated question. The player picks one and it **locks in**;
+   then the next card. See [`methods/tarot.md`](./methods/tarot.md).
+3. **Aggregate.** The locked-in choices across the spread aggregate into the reading's overall
+   message.
+
+### Beat 3 — Consultation (delivery)
+
+4. **Play the scene out.** The visit returns to the two-hander. The player delivers the reading, the
+   client reacts and opens up, and the scene plays out from what was drawn and locked. The outcome
+   feeds the client's story; the in-the-moment reaction lands now, while longer-term consequences
+   surface on later days.
 
 > **Requirement:** the reading must expose *both* a "did I read it faithfully / by the book" decision
-> (accuracy → the Score) and a "which valid direction did I steer it" decision (→ the Story). A turn
-> that only tests one axis undercuts the core tension.
+> (accuracy → the Score) and a "which valid direction did I steer it" decision (→ the Story). Because
+> the player commits interpretations before the full consultation, **the delivered reading is the
+> material the consultation is played from.**
 
 ## The day loop
 
