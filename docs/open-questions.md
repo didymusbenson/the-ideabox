@@ -14,43 +14,40 @@ These came up in the initial pitch conversation and have no answer yet:
 - **[Scope] Solo or team? Timeline? Constraints?** No team size, deadline, or hard constraints
   captured. Needed to right-size the first slice.
 
-## Divination methods
+## The reading & instruments
 
-**Resolved:** MVP is **Tarot only** (palmistry/astrology deferred). Interpretation options are
-**authored per encounter** for the MVP (SLM generation is a post-MVP scaling path). The
-random-vs-authored reconciliation uses fixed meaning tokens + authored option pools (with distractors)
-+ generic fallbacks for un-authored tokens. The two axes **split across the beats**: the **reading** is
-"doing it right" (accuracy, with distractors); the **consultation** *applies* the locked reading items
-via **color-coded keyword** dialog (story). See [`methods/tarot.md`](./methods/tarot.md).
+**Resolved (major pivot):** readings are **predetermined and hand-authored per client** — no
+randomness. Play is **deduction**: cross-reference a toolkit of **instruments** (tarot spread, star
+chart, palmistry, observation, ID/wallet) to solve the correct reading, then advise. **Alignment** of
+advice with the solved reading = client **satisfaction** (Score); **deliberate misalignment** = the
+Story. All instruments are in the MVP (tarot centerpiece); palmistry/astrology no longer deferred. The
+old random-draw machinery (distractor pools, fallbacks, SLM scaling) is **retired**. See
+[`reading.md`](./reading.md).
 
 Still open:
 
-- **Deck & vocabulary size** vs. per-encounter authoring cost. Smaller = cheaper to author, less
-  variety; larger = more authoring or more reliance on generic fallbacks.
-- **Distractor design** — how many misreadings per card and how obvious/subtle, so accuracy stays a
-  real test without feeling like gotchas.
-- **Aggregation rule** — how the locked per-card choices map onto the client's authored story branches.
-- **Fallback coherence** — keeping generic fallback options (for un-authored meaning tokens) from
-  feeling generic or breaking tone.
-- **Keyword grounding** — may the player invoke keywords/advice *not* supported by their reading (make
-  things up), and is that penalized, or is it a valid "lie to help them" lever tying into the
-  Score/Story theme? (Consultation *agency* itself is resolved: the consultation is where all Story
-  application happens.)
-- **Consultation authoring** — how the color-coded keyword dialog is authored per encounter and mapped
-  to reading items, and how many reading items a single consultation typically weaves together.
-- **How much of tarot's real ruleset we adopt** (reversed cards? position modifiers?) vs. a
-  game-legible subset — the book must be learnable in a few readings.
-- **[Post-MVP] SLM-generated options** — if/when we add it, how to keep faithful-vs-distractor honest
-  and outputs on-tone and safe with a model in the loop.
-- **[Post-MVP] Palmistry & astrology: where does the randomness live** given their subjects (a hand, a
-  birth-derived chart) are less obviously random than a shuffled deck? See the method stubs.
-- **Are the backlog methods** (tea leaves, numerology, runes, scrying, pendulum) ever in scope, or
-  flavor only?
+- **Per-client authoring cost.** Every client is a bespoke puzzle (spread + evidence + correct
+  synthesis + dialog). How expensive is that, and how many clients can we realistically author?
+- **Difficulty scaling** — how many instruments a client's puzzle forces the player to cross-reference,
+  and how that ramps across the game.
+- **Distinguishing the three misalignment states** — does the game mechanically tell apart *aligned*,
+  *misaligned-by-error*, and *misaligned-on-purpose*? Or do the error and the humane deviation look
+  identical on the satisfaction meter (leaning: identical, which is thematically sharp)?
+- **How evidence is surfaced** — clickable tells on the portrait, free exploration of the ID/wallet,
+  guided inspection? (Also an art/UX question.)
+- **Contradiction & withholding** — can instruments disagree, or facts be missing/deceptive, to deepen
+  the deduction (a Papers-Please discrepancy hunt)? How much?
+- **How much real tarot / astrology / palmistry** to adopt vs. a game-legible subset the player can
+  learn in a few readings.
+- **Instrument weighting** — can tarot alone solve a client, or is corroboration from the others always
+  required?
+- **Backlog instruments** (tea leaves, numerology, runes, scrying, pendulum) — ever in scope, or flavor
+  only?
 
 ## Art direction
 
-Confirmed: hi-res pixel art; split-screen consultation (client top-left, player silhouette
-bottom-right, dialogue along the bottom); the reading is a separate scene; artifacts get personality;
+Confirmed: hi-res pixel art; split-screen view (client top-left, player silhouette bottom-right,
+dialogue along the bottom); the reading is a separate scene; instruments/artifacts get personality;
 cool blues/blacks/purples lead. Open:
 
 - **Reading-scene presentation.** Dim-background modal overlay vs. a full transition to a reading
@@ -62,16 +59,17 @@ cool blues/blacks/purples lead. Open:
 
 ## Core loop
 
-**Resolved:** visit order is **intake → reading → consultation** (read *then* consult, but the client
-opens with an intention and question, so the reading is informed).
+**Resolved:** the visit is **two beats — intake → reading.** Intake gathers evidence (question,
+ID/wallet, appearance); the reading is where the player consults instruments and chooses aligned (or
+misaligned) dialog. Solving and advising interleave.
 
 Still open:
 
 - **How many clients per day, and how many days per run?** Placeholders only right now.
 - **Do earlier readings in a day affect later ones** (fatigue, mood, carried information), or is each
   turn independent within the day?
-- **Method choice** is moot for the MVP (Tarot only). Revisit when a second method exists: does the
-  player choose the method, or is it dictated by the client/scenario?
+- **Instrument availability** — are all instruments always on hand, or are some unlocked/limited (and
+  does the shop gate any)?
 
 ## Clients & narrative
 
@@ -84,7 +82,8 @@ Still open:
 ## Scoring & the two axes
 
 - **Is the Story axis an explicit meter or purely felt** through consequences? (Leaning: felt.)
-- **Does the game tell the player when the method and the need diverge,** or must they infer it?
+- **Does the game tell the player when the accurate reading and the client's need diverge,** or must
+  they infer it?
 - **How do the two axes resolve at the end** — graded separately, reconciled, or Story-over-Score?
 - **What are the failure states** on each axis, and can either end a run?
 

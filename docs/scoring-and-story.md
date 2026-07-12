@@ -3,20 +3,19 @@
 This is the mechanic the whole game is built to produce. There are **two independent measures of
 how well the player is doing**, they are judged by different standards, and they routinely conflict.
 
-## Axis 1 — The Score (craft / accuracy)
+## Axis 1 — The Score (accuracy / satisfaction)
 
-- **What it measures:** how correctly the player performed the divination *by the book* — did they
-  read the method's subject accurately and give the interpretation the method's rules call for.
-- **How it's judged:** against each method's ruleset (the "correctness check" in
-  [`divination-methods.md`](./divination-methods.md)). Objective and rules-based.
-- **When it's surfaced:** primarily at the **end-of-day scorecard** (see
-  [`core-loop.md`](./core-loop.md)).
-- **A perfect rating** comes from following the psychic rules by the book — every reading
-  method-accurate, no shading, no bending.
-- **Where it's decided:** in the **reading** beat — "doing it right." In the authored MVP model (see
-  [`methods/tarot.md`](./methods/tarot.md)) accuracy is protected by **distractors** — each drawn card
-  offers the faithful read plus plausible misreadings. Picking the faithful read keeps the Score; the
-  player has to know the book to tell them apart.
+- **What it measures:** whether the player **solved the client's puzzle and said it straight** — advice
+  that *aligns* with what the instruments actually support.
+- **How it's judged:** by **alignment** between the chosen dialog and the correct reading derived from
+  the instruments (see [`reading.md`](./reading.md)). Solid alignment → a satisfied client. Objective:
+  there is a correct reading to hit.
+- **When it's surfaced:** per visit as **client satisfaction**, and at the **end-of-day scorecard**
+  (see [`core-loop.md`](./core-loop.md)).
+- **A perfect rating** comes from correctly cross-referencing the instruments and delivering the
+  aligned reading — no misreads, no deliberate shading.
+- **Getting it wrong** means the deduction failed: you advise from a mistaken read, the dialog
+  misaligns, and the client leaves unsatisfied.
 
 ## Axis 2 — The Story (outcome / humanity)
 
@@ -30,30 +29,31 @@ how well the player is doing**, they are judged by different standards, and they
 
 ## Why they conflict
 
-The method-correct reading and the genuinely-helpful advice are **not always the same thing.**
+The **accurate** reading and the **genuinely-helpful** advice are **not always the same thing.**
 
-- The cards may call for a grim, "accurate" verdict that would crush a client who needs hope.
-- The by-the-book palm reading might tell someone to stay the course when what they need is
-  permission to leave.
-- Telling a client exactly what the method dictates can keep them dependent; telling them what they
-  need can cost you accuracy points but set them free.
+- The cards may support a grim, accurate verdict that would crush a client who needs hope.
+- The instruments might all point to "stay the course" when what the person needs is permission to
+  leave.
+- Aligning perfectly can keep a client dependent; telling them what they need can cost you their
+  satisfaction but set them free.
 
-Crucially, the two axes map onto the two later beats of a visit. In the **reading** you either read
-each card right or misread it — that's the Score. In the **consultation** you *apply* the locked
-interpretations, and a single interpretation supports more than one faithful application (the
-two-valid-interpretations principle in [`divination-methods.md`](./divination-methods.md)): *The Tower*
-faithfully means upheaval, but applying it as "brace for disaster" versus "a necessary collapse" sends
-the client opposite ways. So the **Score cares whether you read it right; the Story cares how you apply
-it** — you interpret first, then live with how you apply what you locked.
+Both axes live in the **same dialog choices** during the reading. Aligning your advice with the
+solved puzzle satisfies the client (Score). **Deliberately misaligning** — saying what they need
+instead of what the instruments support — costs satisfaction but can steer their story (Story). This
+is the design's central knot: the game rewards you (satisfaction, money, a clean scorecard) for the
+*accurate* answer, while the *humane* answer often asks you to throw that reward away.
 
-So on any given reading the player faces a real choice:
+There is also a third state that keeps the choice honest: **misaligning by mistake.** Get the
+deduction wrong and you also leave the client unsatisfied — but you help no one. Only a *knowing*
+deviation, made after you've actually solved the puzzle, is a real act of care.
 
-> **Play it by the book (protect the Score) — or say what this person needs to hear (serve the
-> Story)?** — and, even when staying by the book, *which faithful direction* to steer toward.
+> **Play it straight (satisfy the client, protect the Score) — or say what this person needs to hear
+> (serve the Story)?** — knowing that a wrong answer looks the same on the satisfaction meter as a
+> kind one.
 
-A run that chases a perfect Score may leave a trail of "accurate" readings that didn't help anyone.
-A run that chases good outcomes may be a mess of method-inaccurate readings. The interesting space
-is in between, and in deciding — client by client — which one this moment is worth.
+A run that chases a perfect Score may leave a trail of accurate readings that didn't help anyone. A
+run that chases good outcomes may be a mess of dissatisfied clients. The interesting space is in
+between, deciding — client by client — which one this moment is worth.
 
 > **Requirement:** the two axes must be **separable and independently legible**. The player has to
 > be able to feel "I nailed the reading but it was the wrong thing to say," and vice versa. If a

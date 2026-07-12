@@ -38,26 +38,30 @@ A split-screen two-hander (echoes a JRPG battle framing):
 - **Client:** top-left, lit and expressive — the "encounter."
 - **Player:** bottom-right, a dark **silhouette / profile** — guarded, in keeping with the character.
 - **Dialogue choices:** boxed along the bottom.
-- **Color-coded keywords in dialogue.** During the consultation, dialogue choices are flavored with
-  **color-coded keywords** that map to specific *reading items* (the interpretations locked during the
-  reading), so the player can see which parts of what they're saying are grounded in the cards they
-  drew. This is the visual bridge between the reading and the consultation. See
-  [`methods/tarot.md`](./methods/tarot.md).
-- **Reference / menu access:** menus to open reference material (e.g., a tarot explainer book) as
-  diegetic objects.
+- **Color-coded keywords in dialogue.** Dialogue choices are flavored with **color-coded keywords**
+  that map to specific *fortune facts* the player derived from the instruments (a card meaning, a sign,
+  a tell, an ID detail), so the player can see which parts of what they're saying are grounded in the
+  reading. Alignment of those keywords with the correct reading is what satisfies the client. This is
+  the visual bridge between solving and saying. See [`reading.md`](./reading.md).
+- **Interactable evidence:** the client's **ID / wallet** is a pick-up-and-explore object, and
+  **appearance tells** are things the player can inspect on the client (see
+  [`instruments/identity.md`](./instruments/identity.md),
+  [`instruments/observation.md`](./instruments/observation.md)).
+- **Reference / menu access:** menus to open the instruments' reference material (tarot book, star
+  chart / calendar, palmistry guide) as diegetic objects.
 
 ## The reading — a separate scene
 
-Performing a reading is **its own scene**, distinct from the consultation chat. Presentation is one
-of (open question):
+Performing a reading is **its own scene**, distinct from the intake. Presentation is one of (open
+question):
 
 - a **dim-background modal overlay** (the reading interface layers over the parlor), or
 - a **full transition** to a dedicated reading-table view.
 
 Either way it's a distinct scene, and either keeps the reading tactile and focused. The reading table
-is the game's **Papers-Please-style workspace**: the deck / hand / chart and the open reference books
-laid out, with steps proceeding tactilely — cards turning, palm lines tracing, chart placements
-resolving.
+is the game's **Papers-Please-style workspace**: the **predetermined spread**, the client's hand, the
+star chart / calendar, and the open reference books laid out — the player physically cross-references
+them to solve the client.
 
 ## Divination artifacts have personality
 
@@ -68,10 +72,10 @@ in hi-res pixel is an open call (see open-questions); either way, **personality 
 
 ## Reference-material UI
 
-Each divination type has an in-world **reference book / menu** — a tarot explainer, a palmistry
-guide, an astrology table. These are diegetic objects the player opens during a reading, and they
-double as how the player *learns each method's "book."* See
-[`divination-methods.md`](./divination-methods.md).
+Each divination instrument has an in-world **reference book / menu** — a tarot explainer, a palmistry
+guide, a star chart / calendar. These are diegetic objects the player opens while solving a reading,
+and they double as how the player *learns each instrument's "book."* See
+[`reading.md`](./reading.md) and [`instruments/`](./instruments/).
 
 ## Touchstones (for feel, not prescription)
 

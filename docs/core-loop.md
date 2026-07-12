@@ -6,41 +6,35 @@ clients plus an end-of-day reckoning).
 
 ## The client loop
 
-Each client visit unfolds as **three beats**: a short intake, the reading, then the consultation.
-The reading comes *before* the full consultation — the player commits to interpretations and only
-then plays the scene out — but the client still arrives with a stated intention and question, so the
-reading is **informed, not blind**.
+Each client visit is a **hand-authored deduction puzzle** played across **two beats**: an intake, then
+the reading. See [`reading.md`](./reading.md) for the reading model and
+[`instruments/`](./instruments/) for the toolkit.
 
-### Beat 1 — Intake (arrival)
+### Beat 1 — Intake (the initial consultation)
 
-1. **Intention & question.** The client sits down and states, briefly, their **intention** (what
-   they're hoping for) and the **question** they want the cards to answer ("Should I take the job?",
-   "Is he cheating?", "Will my mother be okay?"). This is enough for the player to know the concern;
-   the deeper conversation comes *after* the reading. This is their *presenting concern*, and it may
-   or may not be their real need (see [`clients-and-narrative.md`](./clients-and-narrative.md)).
+1. **Take the client in.** The client sits down and states their **intention** and the **question**
+   they want answered ("Should I take the job?", "Is he cheating?"). They hand over an **interactable
+   ID / wallet** the player can pick up and **explore**, and they present an **appearance** the player
+   can read (see [`instruments/identity.md`](./instruments/identity.md) and
+   [`instruments/observation.md`](./instruments/observation.md)). This is where evidence is gathered.
+   Their stated concern is their *presenting concern*; it may or may not be their real need (see
+   [`clients-and-narrative.md`](./clients-and-narrative.md)).
 
-### Beat 2 — The reading (separate scene) — *doing it right*
+### Beat 2 — The reading (solve, then say it)
 
-2. **Interpret the spread correctly.** In a dedicated scene (a dim overlay or a transition to the
-   reading table; see [`art-direction.md`](./art-direction.md)), the spread is **drawn at random**. As
-   each card turns, the player **reads it correctly** — picking the faithful interpretation from
-   options that include plausible misreadings — and it **locks in**. Getting these right is the
-   **accuracy** axis (the Score). The locked interpretations become the **reading items** the
-   consultation is built from. This beat is *only* about reading the cards right. See
-   [`methods/tarot.md`](./methods/tarot.md).
+2. **Consult the instruments and advise.** In a dedicated scene (a dim overlay or a transition to the
+   reading table; see [`art-direction.md`](./art-direction.md)), the client's **predetermined tarot
+   spread** is laid out. The player **consults their instruments** — the tarot book, the star-chart
+   calendar, palmistry, and the evidence gathered at intake — to work out the correct reading, and
+   **chooses dialog** to deliver it. Dialog choices carry **color-coded keywords** mapping to fortune
+   facts. Solving and advising interleave: you consult devices as you decide what to say. See
+   [`instruments/tarot.md`](./instruments/tarot.md).
 
-### Beat 3 — Consultation (application) — *what it means for them*
-
-3. **Apply the reading through dialog.** The visit returns to the two-hander, and the player advises
-   the client through dialog whose choices are **flavored with color-coded keywords that map to
-   specific reading items** — the interpretations locked during the reading. *How* those items are
-   applied to the client's need — which faithful direction, what advice — is the **Story** axis. The
-   outcome feeds the client's story; the in-the-moment reaction lands now, while longer-term
-   consequences surface on later days.
-
-> **The two axes split across the two beats:** the reading tests *did I read it right* (accuracy → the
-> Score); the consultation tests *how I apply it to this person* (→ the Story). You interpret first,
-> then apply what you locked.
+> **The two axes, in the dialog choices:** saying what the instruments actually support (**alignment**)
+> earns satisfaction — the accuracy axis, the Score. Knowingly saying what the client *needs* instead
+> (**deliberate misalignment**) costs satisfaction but can steer their story — the Story axis. Getting
+> the deduction *wrong* also misaligns, but helps no one. See
+> [`scoring-and-story.md`](./scoring-and-story.md).
 
 ## The day loop
 
@@ -52,8 +46,8 @@ A day is a curated set of client turns:
   ones (mood, fatigue, information the player has picked up) — the extent of this is an open
   question, but the day is a deliberately shaped sequence, not an unordered list.
 - **End-of-day scorecard.** When the day ends, the player receives a **scorecard** summarizing the
-  readings they gave and their **accuracy according to method** — how "by the book" they played.
-  This is the Score axis surfaced. See [`scoring-and-story.md`](./scoring-and-story.md).
+  readings they gave and how well they **aligned with the methodology** — i.e. their clients'
+  satisfaction. This is the Score axis surfaced. See [`scoring-and-story.md`](./scoring-and-story.md).
 - **Between days.** Narrative state advances: arc clients' situations move based on the advice they
   were given, returning clients are scheduled, and new clients enter. The consequences of yesterday
   become the setup for a future day.
@@ -70,8 +64,8 @@ A day is a curated set of client turns:
 
 ## What the loop must deliver each pass
 
-- A **mechanical challenge** (perform the method correctly) — the Score.
-- A **human choice** (what to actually tell them) — the Story.
-- **Legible feedback** — at end of day for craft accuracy; over subsequent days for narrative
-  outcome.
+- A **deduction challenge** (solve the client's puzzle from the instruments) — the Score.
+- A **human choice** (say what's accurate, or what they need) — the Story.
+- **Legible feedback** — per visit and at end of day for alignment/satisfaction; over subsequent days
+  for narrative outcome.
 - **Memory** — recurring clients must reflect what the player told them before.

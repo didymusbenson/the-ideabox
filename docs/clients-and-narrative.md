@@ -1,19 +1,25 @@
 # Clients & Narrative
 
-Clients are the point of the game. The divination methods are the verb; the clients are the reason
-to care about getting it right — or getting it *wrong on purpose*.
+Clients are the point of the game. The reading is the verb; the clients are the reason to care about
+getting it right — or getting it *wrong on purpose*.
 
 ## The client model
 
-Every client is built from roughly these parts (intent, not a data schema):
+Every client is a **hand-authored puzzle** (see [`reading.md`](./reading.md)), built from roughly
+these parts (intent, not a data schema):
 
-- **Identity & presentation** — who they are and how they come across at the table.
+- **Identity & presentation** — who they are and how they come across at the table, including the
+  **appearance** the player can read and the **ID/wallet** they hand over (see
+  [`instruments/observation.md`](./instruments/observation.md),
+  [`instruments/identity.md`](./instruments/identity.md)).
 - **Presenting concern** — the question or worry they walk in with and state out loud.
-- **True need** — what they actually need, which may differ from the presenting concern and may be
-  hidden from the player at first. *"Sometimes the advice the client needs to hear isn't the advice
-  the fortune calls for"* lives in the gap between presenting concern, true need, and method-correct
-  reading.
-- **Method fit** — which divination method(s) their situation calls for.
+- **True need** — what they actually need, which may differ from the presenting concern. *"Sometimes
+  the advice the client needs to hear isn't the accurate reading"* lives in the gap between presenting
+  concern, true need, and the correct reading.
+- **The predetermined reading** — their hard-set tarot spread and the **correct synthesis** the
+  instruments cohere into. The solvable puzzle.
+- **Instruments in play** — which of the toolkit (tarot, star chart, palmistry, observation,
+  identity) this client's puzzle expects the player to lean on.
 - **Backstory** — context that may surface over time, especially for recurring clients.
 
 ## One-off clients vs. arc clients

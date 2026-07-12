@@ -15,20 +15,22 @@ Clients are paying customers. Running the psychic business has a money layer:
 3. **Money is spent between days.** Earnings accumulate across a day and can be spent in a
    between-days **shop** on **upgrades**.
 4. **Some upgrades let the player cheat.** Notably, upgrades exist that let the protagonist **fudge
-   the results of a fortune-telling** — bending what the method produces rather than what he says
-   about it.
+   the reading** — e.g. peeking at or rigging the predetermined spread, a cheat-sheet that reveals a
+   client's correct read, or a tool that manufactures a tell — bending the puzzle rather than just
+   what he says about it.
 
-## New concept this introduces: the visit score
+## Satisfaction is now the core Score
 
-This adds a **per-visit** measure of client satisfaction that is separate from the existing
-end-of-day method-accuracy scorecard (the "Score" in [`scoring-and-story.md`](./scoring-and-story.md)).
+Since the reading overhaul, **client satisfaction is the per-visit expression of the Score** — it
+comes from **alignment** between the player's advice and the correct reading (see
+[`reading.md`](./reading.md) and [`scoring-and-story.md`](./scoring-and-story.md)). So the money layer
+plugs into an axis that already exists rather than introducing a new one:
 
-- **Method accuracy** = did you read it by the book. Judged at end of day.
-- **Client satisfaction** = did the client feel good about their visit. Judged per visit.
+- **Solve + align** → satisfied client → (plausibly) better pay.
+- **Misalign** — by error or on purpose — → less satisfied → less pay.
 
-These are not the same thing, and that's interesting: a method-accurate reading can leave a client
-miserable, and a satisfying visit can be method-nonsense. How satisfaction relates to the two
-existing axes is an **open question** (see below), not yet resolved.
+That makes the money layer a **pressure on the Score/Story choice**: helping a client by deliberately
+misaligning now has a visible cost in coin, not just in the scorecard.
 
 ## The "fudge" upgrades — why they matter
 
@@ -53,16 +55,14 @@ because they reach straight into the core tension:
 - **Spend:** a between-days shop offers upgrades.
 - **Upgrade categories (candidates, not committed):**
   - *Quality-of-life* — things that make readings easier, clearer, or faster.
-  - *Capability* — unlock new methods or deeper reads.
+  - *Capability* — unlock new instruments or deeper reads.
   - *Fudging* — bend or pre-arrange divination results (the loaded one; see guardrail above).
 
 ## Open questions specific to this feature
 
-- **Satisfaction vs. the two axes.** Is satisfaction a third independent axis, an input to the
-  Score, an input to the Story, or its own thing entirely? How does it relate to giving a client the
-  method-correct reading vs. what they need to hear?
-- **Does payment scale with satisfaction, accuracy, both, or neither?** What exactly turns a visit
-  into money?
+- **Does payment scale with satisfaction (alignment), and how steeply?** Satisfaction *is* the Score
+  now (see above) — so what exactly turns a visit into money, and how hard does deliberate misalignment
+  hit the wallet?
 - **What can the player *do* about a poor payer** — nothing, or does money pressure push them toward
   crowd-pleasing (or fudging)?
 - **Fudging cost/risk model.** What makes fudging a real trade-off rather than a free win? Money
@@ -80,7 +80,7 @@ When this feature firms up, these are the docs it will need to reach into:
   two axes; account for fudging's effect on the Score.
 - [`core-loop.md`](./core-loop.md) — add "client pays" to the client loop and a "between-days shop"
   step to the day loop.
-- [`divination-methods.md`](./divination-methods.md) — define what "fudging" a method's result
-  actually means per method.
+- [`reading.md`](./reading.md) / [`instruments/`](./instruments/) — define what "fudging" actually
+  means per instrument (rigging the spread, revealing the read, faking a tell).
 - [`open-questions.md`](./open-questions.md) — promote the cross-cutting questions above once they're
   real decisions.

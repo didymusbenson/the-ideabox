@@ -28,9 +28,10 @@ the character.
 
 Everything in the game should serve at least one of these. If a feature serves none, cut it.
 
-1. **Divination is a real mechanic, not a cutscene.** Each method is a distinct, learnable
-   system with its own rules the player performs and can get right or wrong. Reading is *play*,
-   not a menu of pre-written outcomes.
+1. **The reading is a deduction puzzle.** Each client is a hand-authored puzzle: the player
+   cross-references a toolkit of **instruments** (tarot spread, star chart, palmistry, what they wear,
+   what's in their wallet) to solve the correct reading, then decides what to say. Reading is *play* —
+   real deduction with a right answer — not a menu of pre-written outcomes.
 2. **The Skeptic's Voice.** The protagonist's disbelief is ever-present and is the primary source
    of humor and character. The player is always in on the joke that this is theater.
 3. **Rules vs. Compassion.** The Score (do the method correctly) and the Story (help the person)

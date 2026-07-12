@@ -2,57 +2,67 @@
 
 Shared vocabulary so the docs stay consistent. Add terms here rather than redefining them per file.
 
-- **Reading** — a single performance of a divination method for a client, played out in its own
-  **scene** as a step-by-step pseudo-puzzle. One client visit produces one reading.
-- **Intake** — the brief opening beat where the client states their intention and question. The first
-  of a visit's three beats.
-- **Consultation** — the delivery scene *after* the reading, where the player delivers the reading and
-  the scene plays out from what was drawn. The third beat of a visit.
-- **Scene / beat** — a distinct part of a visit. A visit has three beats: intake, the reading, and the
-  consultation.
-- **Meaning token** — the simplified meaning assigned to a tarot card (*The Tower* → "Big Change"); the
-  game's legible version of "the book."
-- **Interpretation option** — an authored choice offered for a drawn card during the *reading*: the
-  faithful read or a distractor. Picking the faithful one is "doing it right" (the Score). The
-  *application* — which faithful direction — happens later, in the consultation.
-- **Distractor** — an interpretation option that misreads the drawn card; picking it costs accuracy.
-  Distractors are how the Score stays real when options are handed to the player.
-- **Lock-in** — once the player selects an interpretation for a drawn card, it is committed and can't
-  be changed; selections lock as the spread is dealt.
-- **Method / divination method** — a system of fortune-telling the player performs (palm reading,
-  tarot, astrology, …). Each has its own ruleset and its own doc under
-  [`methods/`](./methods/). See [`divination-methods.md`](./divination-methods.md).
-- **Meanings** — the fixed, canonical significance of a card/feature (e.g., *The Tower* = upheaval);
-  "the book." Reading them faithfully earns the Score.
-- **Reading item** — an interpretation the player locked in during the reading; the raw material the
-  consultation applies. Surfaces later as a color-coded keyword.
-- **Application** — the consultation act of applying locked reading items to the client's need — which
-  faithful direction, what advice. Drives the Story.
-- **Keyword** — a color-coded word inside a consultation dialog choice that maps to a specific reading
-  item, grounding what the player says in what they actually drew.
-- **Two-valid-interpretations principle** — a single feature can support multiple *by-the-book*
-  interpretations that differ in story impact. Faithfulness ≠ a single fixed conclusion.
-- **Non-scripted / random readings** — hard requirement that the draw be randomized, never authored
-  per client, so readings can't be looked up. See [`divination-methods.md`](./divination-methods.md).
-- **The book / by the book** — the canonical ruleset of a method; the standard the Score is judged
-  against. Playing "by the book" means giving the method-correct interpretation.
-- **The Score** — Axis 1. How accurately the player performed the method. Objective, rules-based,
-  surfaced on the end-of-day scorecard. See [`scoring-and-story.md`](./scoring-and-story.md).
-- **The Story** — Axis 2. Whether the player's advice actually helped the client. Subjective,
-  outcome-based, revealed over time.
-- **Scorecard** — the end-of-day summary of the player's readings and their method accuracy.
+## The reading
+
+- **Reading** — the act of solving and delivering a client's fortune: consult the instruments to work
+  out the correct read, then advise through dialog. One client visit = one reading. See
+  [`reading.md`](./reading.md).
+- **Client puzzle / deduction** — each client is a **hand-authored puzzle**; play is cross-referencing
+  instruments to find the correct reading for this specific person.
+- **Intake** — the first beat of a visit: the client states their intention and question, hands over an
+  interactable ID/wallet, and presents an appearance to read.
+- **The reading (beat)** — the second beat: consult the instruments against the predetermined spread
+  and choose dialog to deliver the reading.
+- **Beat** — a distinct part of a visit. A visit has **two**: intake, then the reading.
+- **Predetermined spread** — the hard-set tarot cards for a client. Not random — authored per client.
+
+## Instruments
+
+- **Instrument** — a tool the player leans on to solve a reading. See [`instruments/`](./instruments/).
+- **Divination instrument** — tarot, astrology, palmistry; each carries a **"book"** of fixed meanings.
+- **Evidence instrument** — observation and identity; supplies **facts about the person**, not book
+  meanings.
+- **The book / by the book** — the fixed, canonical meanings a divination instrument carries (e.g.,
+  *The Tower* = upheaval); the standard for a correct reading.
+- **Tell** — a fact inferred from a client's appearance (see
+  [`instruments/observation.md`](./instruments/observation.md)).
+- **Fortune fact** — any fact derived from an instrument (a card meaning, a sign, a tell, an ID detail)
+  that dialog can reference.
+- **Keyword** — a color-coded word inside a dialog choice that maps to a fortune fact, showing which
+  parts of what the player says are grounded in the reading.
+
+## Scoring & story
+
+- **Alignment** — agreement between the player's chosen dialog and the correct reading. Solid alignment
+  → a satisfied client.
+- **Satisfaction** — how happy a client is with their visit; the per-visit expression of the **Score**,
+  driven by alignment.
+- **Misalignment** — dialog that doesn't match the correct reading. **By error** (a wrong deduction —
+  unsatisfying and unhelpful) or **on purpose** (a knowing, humane deviation — the Story).
+- **The Score** — Axis 1: accuracy — solving the puzzle and aligning your advice, surfaced as
+  satisfaction and on the scorecard. See [`scoring-and-story.md`](./scoring-and-story.md).
+- **The Story** — Axis 2: whether the advice actually helped the client; served by deliberate
+  misalignment; revealed over time.
+- **Scorecard** — the end-of-day summary of the player's readings and how well they aligned
+  (client satisfaction).
+
+## Clients & narrative
+
 - **Client** — a person who comes in for a reading. See [`clients-and-narrative.md`](./clients-and-narrative.md).
 - **Presenting concern** — the question/worry a client states when they arrive.
-- **True need** — what a client actually needs, which may differ from their presenting concern and
-  from the method-correct reading.
+- **True need** — what a client actually needs, which may differ from their presenting concern and from
+  the correct reading.
 - **One-off client** — a client with a single self-contained appearance.
 - **Arc client** — one of a small handful of recurring clients whose storyline spans the game and
   changes based on the player's advice.
-- **Advice** — the guidance the player constructs for a client from a reading. The point where the
-  Score and the Story can diverge.
-- **Day / session** — one shift of client appointments; the unit the game is structured around.
-- **Run** — a full playthrough across multiple days.
-- **The protagonist / the psychic** — the player character: a skeptic who doesn't believe in
-  divination but runs a psychic business.
+- **Advice** — the guidance the player gives through dialog. The point where the Score and the Story
+  can diverge.
 - **Happy ending** — a narrative-success outcome for a client; the strongest form is a client who
   **no longer needs the psychic**.
+
+## World
+
+- **Day / session** — one shift of client appointments; the unit the game is structured around.
+- **Run** — a full playthrough across multiple days.
+- **The protagonist / the psychic** — the player character: a skeptic who doesn't believe in divination
+  but runs a psychic business.
