@@ -26,8 +26,6 @@ old random-draw machinery (distractor pools, fallbacks, SLM scaling) is **retire
 
 Still open:
 
-- **Per-client authoring cost.** Every client is a bespoke puzzle (spread + evidence + correct
-  synthesis + dialog). How expensive is that, and how many clients can we realistically author?
 - **Difficulty scaling** — how many instruments a client's puzzle forces the player to cross-reference,
   and how that ramps across the game.
 - **Distinguishing the three misalignment states** — does the game mechanically tell apart *aligned*,
