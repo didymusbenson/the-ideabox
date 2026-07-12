@@ -7,13 +7,14 @@ their lives — a shaky marriage, a job that's going nowhere, grief they can't p
 want you to tell them what happens next. You perform the ritual: you take the hand, you deal the
 cards, you draw the chart. You read it "correctly." You deliver the verdict.
 
-You don't believe in any of it. Not for a second. But you are good at it, because the *methods*
-are consistent and the *people* are legible, and somewhere in the theater of it you realize you
-can actually change how these lives go — not with magic, but with the words you choose to attach
-to the magic.
+You don't believe in any of it. Not for a second. You are running a **grift** — reading the person,
+working the props, and keeping the mark believing just long enough to send them off happy. But you're
+good at it, because the *methods* are consistent and the *people* are legible, and somewhere in the
+theater of it you realize you can actually change how these lives go — not with magic, but with the
+words you choose to attach to the magic.
 
-The player is a **skeptic who is nonetheless in the business of belief.** That contradiction is
-the character.
+The player is a **con artist who is nonetheless in the business of belief.** That contradiction is
+the character: you work people for a living, and you can either fleece them or, quietly, help them.
 
 ## Tone
 
@@ -28,10 +29,12 @@ the character.
 
 Everything in the game should serve at least one of these. If a feature serves none, cut it.
 
-1. **The reading is a deduction puzzle.** Each client is a hand-authored puzzle: the player
-   cross-references a toolkit of **instruments** (tarot spread, star chart, palmistry, what they wear,
-   what's in their wallet) to solve the correct reading, then decides what to say. Reading is *play* —
-   real deduction with a right answer — not a menu of pre-written outcomes.
+1. **The reading is a deduction puzzle, played as a grift.** Each client is a hand-authored puzzle:
+   the player cross-references a toolkit of **instruments** (tarot spread, star chart, palmistry, what
+   they wear, what's in their wallet) to solve the correct reading — while managing a live
+   **suggestibility** meter, the mark's belief, that noticed errors and visible fumbling drain toward a
+   walk-out. Reading is *play*: real deduction with a right answer, under the pressure of not getting
+   caught.
 2. **The Skeptic's Voice.** The protagonist's disbelief is ever-present and is the primary source
    of humor and character. The player is always in on the joke that this is theater.
 3. **Rules vs. Compassion.** The Score (do the method correctly) and the Story (help the person)

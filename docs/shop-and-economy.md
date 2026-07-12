@@ -1,9 +1,9 @@
 # Shop & Economy (WORK IN PROGRESS — isolated)
 
-> **Status: EXPLORATORY.** This feature is not fully worked out. It is kept in its own document on
-> purpose so it can evolve (or be cut) without disturbing the core requirements. Do not treat
-> anything here as settled, and do not wire it deeply into the other docs yet — the touchpoints
-> below are noted as open questions, not committed integrations.
+> **Status: EXPLORATORY, but now load-bearing.** The details here are still unsettled, but the shop is
+> no longer isolated: **suggestibility** (a core reading mechanic — see
+> [`reading.md`](./reading.md#suggestibility--the-grift-meter)) depends on shop aids like incense. Treat
+> suggestibility itself as core; treat the specific shop items and economy tuning below as WIP.
 
 ## The idea
 
@@ -18,6 +18,11 @@ Clients are paying customers. Running the psychic business has a money layer:
    the reading** — e.g. peeking at or rigging the predetermined spread, a cheat-sheet that reveals a
    client's correct read, or a tool that manufactures a tell — bending the puzzle rather than just
    what he says about it.
+5. **Some upgrades work the mark.** **Incense** and similar ambiance items raise clients'
+   **suggestibility** — a higher starting meter and/or a slower drain — making them easier to keep
+   believing (see [`reading.md`](./reading.md#suggestibility--the-grift-meter)). Cheat-sheets also
+   indirectly help by cutting the time spent flipping through books, which is itself a suggestibility
+   drain.
 
 ## Satisfaction is now the core Score
 
@@ -54,9 +59,12 @@ because they reach straight into the core tension:
 - **Bank:** money carries across days.
 - **Spend:** a between-days shop offers upgrades.
 - **Upgrade categories (candidates, not committed):**
-  - *Quality-of-life* — things that make readings easier, clearer, or faster.
+  - *Suggestibility aids* — incense, ambiance, patter — raise the mark's belief or slow its drain (the
+    most core category now; see [`reading.md`](./reading.md#suggestibility--the-grift-meter)).
+  - *Quality-of-life* — things that make readings easier, clearer, or faster (and so cut suggestibility-
+    draining book time).
   - *Capability* — unlock new instruments or deeper reads.
-  - *Fudging* — bend or pre-arrange divination results (the loaded one; see guardrail above).
+  - *Fudging* — bend or pre-arrange the reading (the loaded one; see guardrail above).
 
 ## Open questions specific to this feature
 

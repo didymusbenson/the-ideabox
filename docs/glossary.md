@@ -39,8 +39,18 @@ Shared vocabulary so the docs stay consistent. Add terms here rather than redefi
   driven by alignment.
 - **Misalignment** — dialog that doesn't match the correct reading. **By error** (a wrong deduction —
   unsatisfying and unhelpful) or **on purpose** (a knowing, humane deviation — the Story).
-- **The Score** — Axis 1: accuracy — solving the puzzle and aligning your advice, surfaced as
-  satisfaction and on the scorecard. See [`scoring-and-story.md`](./scoring-and-story.md).
+- **Suggestibility** — the live per-visit meter of how much the client believes the psychic right now;
+  the currency of the grift. Drained by **noticed errors** and by **time spent flipping through the
+  instruments' books**; buffered by shop aids like incense. Hits zero → **walk-out**. See
+  [`reading.md`](./reading.md#suggestibility--the-grift-meter).
+- **Noticed error** — something the player says that the client *catches* as wrong (contradicts what
+  they know, or is transparently generic). The sharp drain on suggestibility.
+- **Walk-out** — a client whose suggestibility hits zero cuts the session short and leaves
+  dissatisfied; the hard per-visit fail state.
+- **The grift** — the player's real activity: keeping the mark believing long enough to send them off
+  satisfied, whether the reading is accurate or not.
+- **The Score** — Axis 1: accuracy — solving the puzzle and aligning your advice so the client keeps
+  believing, surfaced as satisfaction and on the scorecard. See [`scoring-and-story.md`](./scoring-and-story.md).
 - **The Story** — Axis 2: whether the advice actually helped the client; served by deliberate
   misalignment; revealed over time.
 - **Scorecard** — the end-of-day summary of the player's readings and how well they aligned

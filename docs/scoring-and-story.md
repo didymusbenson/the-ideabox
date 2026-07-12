@@ -16,6 +16,10 @@ how well the player is doing**, they are judged by different standards, and they
   aligned reading — no misreads, no deliberate shading.
 - **Getting it wrong** means the deduction failed: you advise from a mistaken read, the dialog
   misaligns, and the client leaves unsatisfied.
+- **The live currency is [suggestibility](./reading.md#suggestibility--the-grift-meter)** — the mark's
+  belief, drained by noticed errors and by fumbling through the books. Keep it up and the client leaves
+  satisfied; run it to zero and they walk out mid-session (the hard fail). Satisfaction is the grift's
+  scoreboard; suggestibility is how you're doing at the table.
 
 ## Axis 2 — The Story (outcome / humanity)
 

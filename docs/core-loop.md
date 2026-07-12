@@ -22,13 +22,17 @@ the reading. See [`reading.md`](./reading.md) for the reading model and
 
 ### Beat 2 — The reading (solve, then say it)
 
-2. **Consult the instruments and advise.** In a dedicated scene (a dim overlay or a transition to the
-   reading table; see [`art-direction.md`](./art-direction.md)), the client's **predetermined tarot
-   spread** is laid out. The player **consults their instruments** — the tarot book, the star-chart
-   calendar, palmistry, and the evidence gathered at intake — to work out the correct reading, and
-   **chooses dialog** to deliver it. Dialog choices carry **color-coded keywords** mapping to fortune
-   facts. Solving and advising interleave: you consult devices as you decide what to say. See
-   [`instruments/tarot.md`](./instruments/tarot.md).
+2. **Consult the instruments and advise — against a draining meter.** In a dedicated scene (a dim
+   overlay or a transition to the reading table; see [`art-direction.md`](./art-direction.md)), the
+   client's **predetermined tarot spread** is laid out. The player **consults their instruments** — the
+   tarot book, the star-chart calendar, palmistry, and the evidence gathered at intake — to work out
+   the correct reading, and **chooses dialog** to deliver it. Dialog choices carry **color-coded
+   keywords** mapping to fortune facts. Solving and advising interleave: you consult devices as you
+   decide what to say. See [`instruments/tarot.md`](./instruments/tarot.md).
+   - **The whole beat runs against a live [suggestibility](./reading.md#suggestibility--the-grift-meter)
+     meter** — the mark's belief. Noticed errors and time spent flipping through the books both drain
+     it; if it hits zero the client **walks out dissatisfied** (the per-visit fail state). Incense and
+     other shop aids buffer it.
 
 > **The two axes, in the dialog choices:** saying what the instruments actually support (**alignment**)
 > earns satisfaction — the accuracy axis, the Score. Knowingly saying what the client *needs* instead

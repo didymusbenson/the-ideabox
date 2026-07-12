@@ -33,6 +33,14 @@ Still open:
 - **Distinguishing the three misalignment states** — does the game mechanically tell apart *aligned*,
   *misaligned-by-error*, and *misaligned-on-purpose*? Or do the error and the humane deviation look
   identical on the satisfaction meter (leaning: identical, which is thematically sharp)?
+- **Suggestibility tuning** — starting values (per client, per incense), drain rates for noticed errors
+  vs. book-fumbling time, and whether it can ever *recover* mid-session or only fall.
+- **What counts as a "noticed" error** — the client catches contradictions of what *they* know
+  (facts, their situation) but presumably not obscure tarot misreadings they can't verify. Where's the
+  line, and how is it made legible to the player?
+- **Suggestibility → satisfaction mapping** — is the ending meter level the satisfaction score, or is
+  a walk-out the only hard consequence and satisfaction otherwise driven by alignment? How do the two
+  combine?
 - **How evidence is surfaced** — clickable tells on the portrait, free exploration of the ID/wallet,
   guided inspection? (Also an art/UX question.)
 - **Contradiction & withholding** — can instruments disagree, or facts be missing/deceptive, to deepen
