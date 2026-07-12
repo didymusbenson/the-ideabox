@@ -49,14 +49,17 @@ A split-screen two-hander (echoes a JRPG battle framing):
   [`instruments/observation.md`](./instruments/observation.md)).
 - **Reference / menu access:** menus to open the instruments' reference material (tarot book, star
   chart / calendar, palmistry guide) as diegetic objects.
-- **Suggestibility meter.** A live, always-visible readout of the client's belief that drains as the
-  visit runs (see [`reading.md`](./reading.md#suggestibility--the-grift-meter)). It wants to feel
-  diegetic and tense — read on the *client* (their patience/attention slipping) rather than as a bald
-  game bar, if possible. Incense and ambiance upgrades should have a visible presence in the parlor.
+- **Feedback is the client, not a bar.** Success and progress are shown through the client's
+  **non-verbal reactions** — their **sprite updates** as they grow more satisfied or more skeptical,
+  and that *is* the suggestibility readout (see
+  [`reading.md`](./reading.md#suggestibility--the-grift-meter)). No bald game meter: you read the mark's
+  face and posture. This puts real weight on **expressive client sprites** — a range of belief/mood
+  states per client is core, not polish. Incense and ambiance upgrades should have a visible presence in
+  the parlor.
 
 ## The reading — a separate scene
 
-Performing a reading is **its own scene**, distinct from the intake. Presentation is one of (open
+Performing a reading is **its own scene**, distinct from the consultation. Presentation is one of (open
 question):
 
 - a **dim-background modal overlay** (the reading interface layers over the parlor), or

@@ -12,14 +12,16 @@ these parts (intent, not a data schema):
   **appearance** the player can read and the **ID/wallet** they hand over (see
   [`instruments/observation.md`](./instruments/observation.md),
   [`instruments/identity.md`](./instruments/identity.md)).
-- **Presenting concern** — the question or worry they walk in with and state out loud.
+- **Presenting concern & wants** — the question or worry they walk in with, and **what they want read**.
 - **True need** — what they actually need, which may differ from the presenting concern. *"Sometimes
   the advice the client needs to hear isn't the accurate reading"* lives in the gap between presenting
   concern, true need, and the correct reading.
+- **Suggestibility default** — how credulous they start (their margin for error). See
+  [`reading.md`](./reading.md#suggestibility--the-grift-meter).
+- **Method affinity** — which instruments they believe in, and which they **reject** (using a rejected
+  method is a noticed error). Shapes how the player can work them.
 - **The predetermined reading** — their hard-set tarot spread and the **correct synthesis** the
-  instruments cohere into. The solvable puzzle.
-- **Instruments in play** — which of the toolkit (tarot, star chart, palmistry, observation,
-  identity) this client's puzzle expects the player to lean on.
+  accepted instruments cohere into. The solvable puzzle.
 - **Backstory** — context that may surface over time, especially for recurring clients.
 
 ## One-off clients vs. arc clients

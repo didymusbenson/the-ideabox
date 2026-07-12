@@ -30,7 +30,7 @@ harder clients require cross-referencing more of them. Each has its own doc unde
 | **Star chart / calendar** | Astrological facts from the client's birth date (sign, placements) | [`instruments/astrology.md`](./instruments/astrology.md) |
 | **Palmistry** | Meanings read from the client's hand | [`instruments/palmistry.md`](./instruments/palmistry.md) |
 | **Observation** | Tells from what the client wears and how they present | [`instruments/observation.md`](./instruments/observation.md) |
-| **Identity (ID / wallet)** | Hard facts about the person, explored as an interactable object at intake | [`instruments/identity.md`](./instruments/identity.md) |
+| **Identity (ID / wallet)** | Hard facts about the person, explored as an interactable object in the consultation | [`instruments/identity.md`](./instruments/identity.md) |
 
 **Two kinds.** *Divination instruments* (tarot, astrology, palmistry) carry a **"book"** of fixed
 meanings. *Evidence instruments* (observation, identity) supply **facts about the person**. The puzzle
@@ -41,10 +41,12 @@ up into one reading.
 
 See [`core-loop.md`](./core-loop.md) for the full loop; in brief:
 
-1. **Intake** — the client states their intention and question, hands over an **interactable
-   ID/wallet** the player can explore, and presents an appearance the player can read.
+1. **Consultation (the interview)** — the player gathers evidence at their own pace: the client states
+   their intention, their question, and **what they want read**; the player inspects the interactable
+   **ID/wallet** and reads the client's **appearance**. When done inspecting, the player says
+   **"let's get started"** — the deliberate transition into the reading.
 2. **The reading** — the predetermined spread is laid out. The player **consults the instruments** to
-   work out the correct reading, and **chooses dialog** that reflects it — all against a draining
+   work out the correct reading, and **chooses dialog** that reflects it — now against a draining
    suggestibility meter. Solving and advising interleave: you consult devices as you decide what to say.
 
 ## Suggestibility — the grift meter
@@ -52,11 +54,13 @@ See [`core-loop.md`](./core-loop.md) for the full loop; in brief:
 Every visit has a live **suggestibility** meter: how much the client believes the psychic *right now*.
 It is the currency of the grift, and managing it is the moment-to-moment game.
 
-- **It starts** at a value set by the client (some people are more credulous than others) and by shop
-  aids like **incense** that make people more suggestible (see [`shop-and-economy.md`](./shop-and-economy.md)).
+- **Defaults are per client** — some people are simply more credulous than others. Buffs and debuffs
+  (incense and the like, from the [shop](./shop-and-economy.md)) are TBD.
 - **It drains from two things:**
-  - **Noticed errors** — saying something flat-out wrong that the client *catches* (it contradicts
-    what they know about themselves, or is transparently generic). Sharp drops.
+  - **Noticed errors** (sharp drops). A noticed error is any of:
+    1. you **say something the client knows is wrong**;
+    2. you **read a thing they're familiar with wrong** (misreading something they'd recognize); or
+    3. you **use a method they don't support** (see method affinity below).
   - **Fumbling** — time spent flipping through the instruments' reference books in front of the client.
     A real psychic wouldn't need to look everything up, so visible searching slowly **burns** belief.
 - **Hit zero → walk-out.** If suggestibility empties mid-session, the client cuts it short and leaves
@@ -78,6 +82,27 @@ Suggestibility is the mechanic behind the grift: **you can say whatever you like
 that the client *notices* it's wrong. A lie that fits what they know rides free; a lie or mistake that
 contradicts their reality costs belief. That's what makes deliberately misaligning to help someone (the
 Story, below) a *gamble* — a bet that the humane thing won't get caught.
+
+## Method affinity — what clients believe in
+
+Clients don't treat the instruments equally. Each client has **affinities**:
+
+- **Preferred methods** they believe in (a client who lives by the stars wants the star chart).
+- **Rejected methods** they don't buy — and **using a rejected method is a noticed error**, draining
+  suggestibility for the session.
+
+So part of solving a client is figuring out *which instruments to work them with* and which to leave in
+the drawer. See [`instruments/`](./instruments/).
+
+## What makes a client easy or hard
+
+Difficulty is per-client, and it's about **people, not puzzle complexity**:
+
+- **Suggestibility default** — a low-belief client gives you almost no margin for error.
+- **Wants vs. what's inferable** — the gap between what the client *wants read* and what you can
+  actually deduce about them from the evidence and accepted methods. A big gap is a hard client.
+- **Method affinity** — narrow acceptance (few methods they'll believe, or one they actively reject)
+  boxes in how you can work them.
 
 ## Alignment = satisfaction (the Score)
 

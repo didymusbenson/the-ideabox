@@ -6,33 +6,36 @@ clients plus an end-of-day reckoning).
 
 ## The client loop
 
-Each client visit is a **hand-authored deduction puzzle** played across **two beats**: an intake, then
-the reading. See [`reading.md`](./reading.md) for the reading model and
+Each client visit is a **hand-authored deduction puzzle** played across **two beats**: the
+consultation, then the reading. See [`reading.md`](./reading.md) for the reading model and
 [`instruments/`](./instruments/) for the toolkit.
 
-### Beat 1 — Intake (the initial consultation)
+### Beat 1 — The consultation (the interview)
 
-1. **Take the client in.** The client sits down and states their **intention** and the **question**
-   they want answered ("Should I take the job?", "Is he cheating?"). They hand over an **interactable
-   ID / wallet** the player can pick up and **explore**, and they present an **appearance** the player
-   can read (see [`instruments/identity.md`](./instruments/identity.md) and
-   [`instruments/observation.md`](./instruments/observation.md)). This is where evidence is gathered.
-   Their stated concern is their *presenting concern*; it may or may not be their real need (see
-   [`clients-and-narrative.md`](./clients-and-narrative.md)).
+1. **Interview and inspect, at your own pace.** The client sits down and states their **intention**,
+   their **question** ("Should I take the job?", "Is he cheating?"), and **what they want read**. This
+   beat is **evidence-gathering**: the player picks up and **explores** the interactable **ID / wallet**
+   and reads the client's **appearance** (see [`instruments/identity.md`](./instruments/identity.md) and
+   [`instruments/observation.md`](./instruments/observation.md)). Their stated concern is their
+   *presenting concern*; it may or may not be their real need (see
+   [`clients-and-narrative.md`](./clients-and-narrative.md)). The player takes as long as they want here
+   — no suggestibility pressure yet — and ends the beat by saying **"let's get started."**
 
 ### Beat 2 — The reading (solve, then say it)
 
 2. **Consult the instruments and advise — against a draining meter.** In a dedicated scene (a dim
    overlay or a transition to the reading table; see [`art-direction.md`](./art-direction.md)), the
    client's **predetermined tarot spread** is laid out. The player **consults their instruments** — the
-   tarot book, the star-chart calendar, palmistry, and the evidence gathered at intake — to work out
-   the correct reading, and **chooses dialog** to deliver it. Dialog choices carry **color-coded
+   tarot book, the star-chart calendar, palmistry, and the evidence gathered in the interview — to work
+   out the correct reading, and **chooses dialog** to deliver it. Dialog choices carry **color-coded
    keywords** mapping to fortune facts. Solving and advising interleave: you consult devices as you
    decide what to say. See [`instruments/tarot.md`](./instruments/tarot.md).
-   - **The whole beat runs against a live [suggestibility](./reading.md#suggestibility--the-grift-meter)
-     meter** — the mark's belief. Noticed errors and time spent flipping through the books both drain
-     it; if it hits zero the client **walks out dissatisfied** (the per-visit fail state). Incense and
-     other shop aids buffer it.
+   - **This beat runs against a live [suggestibility](./reading.md#suggestibility--the-grift-meter)
+     meter** — the mark's belief. Noticed errors (saying something they know is wrong, misreading
+     something familiar, or using a **method they reject**) and time spent flipping through the books
+     both drain it; if it hits zero the client **walks out dissatisfied** (the per-visit fail state).
+     Progress is read off the **client's own reactions** — their sprite shifts as belief rises or falls
+     (see [`art-direction.md`](./art-direction.md)).
 
 > **The two axes, in the dialog choices:** saying what the instruments actually support (**alignment**)
 > earns satisfaction — the accuracy axis, the Score. Knowingly saying what the client *needs* instead

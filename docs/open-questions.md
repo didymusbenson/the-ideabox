@@ -6,13 +6,14 @@ doc and delete them here.
 
 ## Unconfirmed — needs an owner decision
 
-These came up in the initial pitch conversation and have no answer yet:
+**Resolved:** **Platform** = Steam-first (desktop), mobile-minded for a future port; engine leaning
+**Godot 4** (final pick is DESIGN). **Scope** = **solo** project.
 
-- **[Platform] Where does the game run?** Web, mobile, desktop, console? Undecided. Affects nothing
-  in requirements but blocks DESIGN.
+Still open:
+
 - **[Audience] Who is this for?** Tone leans adult/wry; target audience not specified.
-- **[Scope] Solo or team? Timeline? Constraints?** No team size, deadline, or hard constraints
-  captured. Needed to right-size the first slice.
+- **[Timeline/constraints]** No deadline or hard constraints captured. Needed to right-size the first
+  slice.
 
 ## The reading & instruments
 
@@ -24,23 +25,25 @@ Story. All instruments are in the MVP (tarot centerpiece); palmistry/astrology n
 old random-draw machinery (distractor pools, fallbacks, SLM scaling) is **retired**. See
 [`reading.md`](./reading.md).
 
+**Resolved:** difficulty is **per-client and about people, not puzzle size** — driven by their
+suggestibility default, the gap between what they *want read* and what's inferable, and their **method
+affinities** (preferred vs. rejected instruments; a rejected method is a noticed error). A **noticed
+error** is: saying something they know is wrong, misreading something familiar, or using a rejected
+method. Suggestibility **defaults are per client** (buffs/debuffs TBD). Feedback is **non-verbal —
+the client's sprite reacts** (no bald meter).
+
 Still open:
 
-- **Difficulty scaling** — how many instruments a client's puzzle forces the player to cross-reference,
-  and how that ramps across the game.
 - **Distinguishing the three misalignment states** — does the game mechanically tell apart *aligned*,
   *misaligned-by-error*, and *misaligned-on-purpose*? Or do the error and the humane deviation look
-  identical on the satisfaction meter (leaning: identical, which is thematically sharp)?
-- **Suggestibility tuning** — starting values (per client, per incense), drain rates for noticed errors
-  vs. book-fumbling time, and whether it can ever *recover* mid-session or only fall.
-- **What counts as a "noticed" error** — the client catches contradictions of what *they* know
-  (facts, their situation) but presumably not obscure tarot misreadings they can't verify. Where's the
-  line, and how is it made legible to the player?
-- **Suggestibility → satisfaction mapping** — is the ending meter level the satisfaction score, or is
-  a walk-out the only hard consequence and satisfaction otherwise driven by alignment? How do the two
+  identical (leaning: identical, which is thematically sharp)?
+- **Suggestibility numbers** — drain rates for noticed errors vs. book-fumbling time, buff/debuff
+  values, and whether it can ever *recover* mid-session or only fall.
+- **Suggestibility → satisfaction mapping** — is the ending belief level the satisfaction score, or is
+  walk-out the only hard consequence and satisfaction otherwise driven by alignment? How do they
   combine?
 - **How evidence is surfaced** — clickable tells on the portrait, free exploration of the ID/wallet,
-  guided inspection? (Also an art/UX question.)
+  guided inspection? (Art/UX.)
 - **Contradiction & withholding** — can instruments disagree, or facts be missing/deceptive, to deepen
   the deduction (a Papers-Please discrepancy hunt)? How much?
 - **How much real tarot / astrology / palmistry** to adopt vs. a game-legible subset the player can
@@ -54,7 +57,8 @@ Still open:
 
 Confirmed: hi-res pixel art; split-screen view (client top-left, player silhouette bottom-right,
 dialogue along the bottom); the reading is a separate scene; instruments/artifacts get personality;
-cool blues/blacks/purples lead. Open:
+cool blues/blacks/purples lead; **feedback is non-verbal — the client's sprite reacts** (needs a range
+of belief/mood states per client). Open:
 
 - **Reading-scene presentation.** Dim-background modal overlay vs. a full transition to a reading
   table. Both keep it tactile; pick one (or allow both contextually).
@@ -65,9 +69,10 @@ cool blues/blacks/purples lead. Open:
 
 ## Core loop
 
-**Resolved:** the visit is **two beats — intake → reading.** Intake gathers evidence (question,
-ID/wallet, appearance); the reading is where the player consults instruments and chooses aligned (or
-misaligned) dialog. Solving and advising interleave.
+**Resolved:** the visit is **two beats — consultation (interview) → reading.** The consultation is
+player-paced evidence-gathering (question, wants, ID/wallet, appearance) with no suggestibility
+pressure, ended by the player saying **"let's get started."** The reading is where the player consults
+instruments and chooses aligned (or misaligned) dialog against the draining meter.
 
 Still open:
 
@@ -87,7 +92,6 @@ Still open:
 
 ## Scoring & the two axes
 
-- **Is the Story axis an explicit meter or purely felt** through consequences? (Leaning: felt.)
 - **Does the game tell the player when the accurate reading and the client's need diverge,** or must
   they infer it?
 - **How do the two axes resolve at the end** — graded separately, reconciled, or Story-over-Score?
@@ -97,7 +101,8 @@ Still open:
 
 Listed so they're not mistaken for open *requirements* questions:
 
-- Tech stack, engine, and platform-specific implementation.
+- Engine lock (leaning Godot 4) and platform-specific implementation. Platform *target* is set
+  (Steam-first, mobile-future); the engine decision itself is DESIGN.
 - Exact UI, controls, and how a hand/spread/chart is presented and manipulated.
 - Art direction and audio.
 - Concrete scoring formulas and numeric tuning.

@@ -1,8 +1,10 @@
 # "I'm Not a Psychic" — Documentation
 
 **Working title:** I'm Not a Psychic
-**Phase:** PLANNING (requirements). No tech stack or implementation decisions yet — those come in DESIGN.
-**Type:** A narrative, choice-based **deduction** game.
+**Phase:** PLANNING (requirements). Implementation finalized in DESIGN.
+**Type:** A narrative, choice-based **deduction** game — you play a con artist running a psychic parlor.
+**Target:** **Steam** first (desktop), built **mobile-minded** for a future port. **Solo** project.
+Engine leaning **Godot 4** (2D-strong, solo-friendly, exports to both) — final pick is a DESIGN call.
 **The reading:** each client is a hand-authored puzzle solved with a toolkit of **instruments** —
 tarot spread (centerpiece), star chart, palmistry, observation, and ID/wallet (see
 [`reading.md`](./reading.md) and [`instruments/`](./instruments/)).
@@ -36,7 +38,7 @@ Each file is self-contained and scoped to one concern. Load only what your task 
 |------|----------------|------------------------|
 | [`vision.md`](./vision.md) | Fantasy, tone, design pillars, references | The "why" and the feel |
 | [`art-direction.md`](./art-direction.md) | Visual style, palette, composition, the reading scene, instrument/reference UI | Anything about how the game looks |
-| [`core-loop.md`](./core-loop.md) | The per-client and per-day loop, the two-beat visit (intake → reading), the day scorecard | How a session actually plays |
+| [`core-loop.md`](./core-loop.md) | The per-client and per-day loop, the two-beat visit (consultation → reading), the day scorecard | How a session actually plays |
 | [`reading.md`](./reading.md) | The **client puzzle** — predetermined readings, the instrument toolkit, alignment = satisfaction | The reading mechanics in general |
 | [`instruments/`](./instruments/) | One doc per instrument: [`tarot`](./instruments/tarot.md), [`astrology`](./instruments/astrology.md), [`palmistry`](./instruments/palmistry.md), [`observation`](./instruments/observation.md), [`identity`](./instruments/identity.md) | The specifics of one instrument |
 | [`clients-and-narrative.md`](./clients-and-narrative.md) | Client model, one-off vs. recurring arcs, memory/consequence, happy endings | Characters, story, branching |

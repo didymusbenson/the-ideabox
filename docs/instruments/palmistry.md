@@ -20,6 +20,12 @@ Palmistry is another **corroborating instrument.** A hand that "confirms" what t
 suggest tightens the correct read; a hand that seems to contradict them is a signal the player has to
 reconcile. Like the others, it feeds facts (surfaced as color-coded keywords) into the dialog.
 
+## Client affinity
+
+Some clients put stock in palm reading; others **reject** it, in which case taking their hand is a
+**noticed error** that drains suggestibility (see
+[`../reading.md`](../reading.md#method-affinity--what-clients-believe-in)).
+
 ## Open questions
 
 - **Availability** — is the hand always offered/inspectable, or only for some clients?

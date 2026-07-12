@@ -24,6 +24,12 @@ means something different for a widow than for a newlywed, and the correct read 
 with the sign (astrology), the hand (palmistry), and the tells (observation, identity). Getting that
 synthesis right is "solving" the tarot half of the puzzle; dialog that reflects it aligns.
 
+## Client affinity
+
+Even as the centerpiece, tarot isn't universal: a client may believe in it strongly or **reject** it.
+Using a method a client rejects is a **noticed error** that drains suggestibility (see
+[`../reading.md`](../reading.md#method-affinity--what-clients-believe-in)).
+
 ## Open questions
 
 - **Spread size and positions** — fixed spread for the MVP, or varying per client?

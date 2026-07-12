@@ -1,12 +1,12 @@
 # Instrument: Identity (ID / Wallet)
 
 > Builds on [`../reading.md`](../reading.md). An **evidence instrument** — the interactable object the
-> player explores at intake. Not a divination method.
+> player explores in the consultation. Not a divination method.
 
 ## What it is
 
-During the initial intake, the client provides an **interactable object** — an ID, a wallet, or
-something like it — that the player can **pick up and explore**. This is the game's Papers-Please
+During the consultation (the interview), the client provides an **interactable object** — an ID, a
+wallet, or something like it — that the player can **pick up and explore**. This is the game's Papers-Please
 document-inspection beat: poke around and pull **hard facts** out of it.
 
 Likely contents (varies per client): **name, birth date, address, occupation, photos, receipts,

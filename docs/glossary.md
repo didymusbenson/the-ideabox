@@ -9,11 +9,14 @@ Shared vocabulary so the docs stay consistent. Add terms here rather than redefi
   [`reading.md`](./reading.md).
 - **Client puzzle / deduction** — each client is a **hand-authored puzzle**; play is cross-referencing
   instruments to find the correct reading for this specific person.
-- **Intake** — the first beat of a visit: the client states their intention and question, hands over an
-  interactable ID/wallet, and presents an appearance to read.
+- **Consultation (the interview)** — the first beat of a visit: the player gathers evidence at their
+  own pace — the client states their intention, question, and **what they want read**; the player
+  inspects the ID/wallet and reads appearance. No suggestibility pressure yet.
+- **"Let's get started"** — the player-triggered transition that ends the consultation and begins the
+  reading (and the suggestibility pressure).
 - **The reading (beat)** — the second beat: consult the instruments against the predetermined spread
-  and choose dialog to deliver the reading.
-- **Beat** — a distinct part of a visit. A visit has **two**: intake, then the reading.
+  and choose dialog to deliver the reading, against a draining suggestibility meter.
+- **Beat** — a distinct part of a visit. A visit has **two**: the consultation, then the reading.
 - **Predetermined spread** — the hard-set tarot cards for a client. Not random — authored per client.
 
 ## Instruments
@@ -26,6 +29,8 @@ Shared vocabulary so the docs stay consistent. Add terms here rather than redefi
   *The Tower* = upheaval); the standard for a correct reading.
 - **Tell** — a fact inferred from a client's appearance (see
   [`instruments/observation.md`](./instruments/observation.md)).
+- **Method affinity** — a client's belief in each instrument: methods they **prefer** vs. ones they
+  **reject**. Using a rejected method is a noticed error.
 - **Fortune fact** — any fact derived from an instrument (a card meaning, a sign, a tell, an ID detail)
   that dialog can reference.
 - **Keyword** — a color-coded word inside a dialog choice that maps to a fortune fact, showing which
@@ -43,8 +48,9 @@ Shared vocabulary so the docs stay consistent. Add terms here rather than redefi
   the currency of the grift. Drained by **noticed errors** and by **time spent flipping through the
   instruments' books**; buffered by shop aids like incense. Hits zero → **walk-out**. See
   [`reading.md`](./reading.md#suggestibility--the-grift-meter).
-- **Noticed error** — something the player says that the client *catches* as wrong (contradicts what
-  they know, or is transparently generic). The sharp drain on suggestibility.
+- **Noticed error** — anything the client *catches*: (1) saying something they know is wrong, (2)
+  misreading something they're familiar with, or (3) using a method they reject. The sharp drain on
+  suggestibility.
 - **Walk-out** — a client whose suggestibility hits zero cuts the session short and leaves
   dissatisfied; the hard per-visit fail state.
 - **The grift** — the player's real activity: keeping the mark believing long enough to send them off

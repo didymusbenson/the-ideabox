@@ -22,6 +22,12 @@ client's sign is one the guide associates with resistance to change, the correct
 particular way. When a client's birth date is available, checking the chart is often what separates an
 accurate reading from a plausible-sounding wrong one.
 
+## Client affinity
+
+Some clients live by the stars and want the chart; others **reject** astrology, in which case leaning
+on it is a **noticed error** that drains suggestibility (see
+[`../reading.md`](../reading.md#method-affinity--what-clients-believe-in)).
+
 ## Open questions
 
 - **How much real astrology** to adopt vs. a legible game subset.
