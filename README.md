@@ -9,7 +9,7 @@ added, reshaped, or dropped as thinking evolves.
 | Folder | Idea | Status |
 |--------|------|--------|
 | [`psychic-poc/`](./psychic-poc/) | *I'm Not a Psychic* — a narrative, choice-based deduction game where you run a psychic parlor without believing a word of it | Planning (requirements drafted) |
-| [`the-deposit-manhwa/`](./the-deposit-manhwa/) | *The Deposit* — a manhwa concept | Brainstorming (just started) |
+| [`the-deposit-manhwa/`](./the-deposit-manhwa/) | *The Deposit* (전세 게임) — a Squid-Game-style thriller where a landlord who gambled away his tenants' jeonse deposits must win them back in an underground tournament against the tenants themselves | Planning (series bible drafted) |
 
 ## How this repo is organized
 
