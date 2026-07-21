@@ -1,8 +1,10 @@
 # The Ideabox
 
-A brainstorming space for early-stage project ideas. Each idea lives in its own folder with its
-own docs, notes, and requirements — nothing here is committed to being built, and folders can be
-added, reshaped, or dropped as thinking evolves.
+A brainstorming space. Individual ideas — stories, games, code projects, pitches, anything — get
+gathered here and specced out, each in its own folder. Some stay as a one-page pitch. Others grow
+into full design docs, and some go all the way to working prototypes or full implementations. Nothing
+here is committed to being built; the point is to give an idea a home the moment it's worth writing
+down, and let it develop as far as it wants to.
 
 ## Projects
 
@@ -13,7 +15,22 @@ added, reshaped, or dropped as thinking evolves.
 
 ## How this repo is organized
 
-- Every project gets a top-level folder named for the idea.
-- A project folder holds its own `README.md` as the entry point, plus whatever docs it needs
-  (`docs/`, notes, references).
-- This root README is the index — add a row above when you start a new idea.
+- Every idea gets a top-level folder named for it.
+- A folder holds its own `README.md` as the entry point, plus whatever the idea needs — design docs
+  (`docs/`), notes, references, and eventually source code if it grows into a prototype or build.
+- This root README is the index — add a row to the table above when you start a new idea.
+
+## Contributing
+
+**Additive work goes straight to `main`.** Starting a brand-new idea, or building out an idea you
+started — new folders, new docs, deeper specs, prototype code, anything that *adds* — commit it to
+`main`. No review gate; the whole space is meant to grow freely.
+
+**Overwriting someone else's pitch goes through a PR.** If you're reworking, re-pitching, or
+otherwise replacing the existing direction of an idea that **another contributor** originally pushed,
+open a pull request so the original author can review the change first. This only applies when you're
+overwriting someone else's contribution — reshaping your own idea, or adding a *new* exploration
+alongside an existing one (a new folder, a clearly-marked alternate take) without discarding what's
+there, stays additive and belongs on `main`.
+
+In short: **add freely on `main`; only overwrite another person's idea by PR.**
