@@ -19,7 +19,9 @@ down, and let it develop as far as it wants to.
 
 - Every idea gets a top-level folder named for it.
 - A folder holds its own `README.md` as the entry point, plus whatever the idea needs — design docs
-  (`docs/`), notes, references, and eventually source code if it grows into a prototype or build.
+  (`docs/`), references, and eventually source code if it grows into a prototype or build.
+- **Every project also gets a `notes.md`** — the standing place for feedback, reactions, and open
+  questions about the idea (see *Feedback* below). Create it with the folder, even if it starts empty.
 - This root README is the index — add a row to the table above when you start a new idea.
 
 ## Contributing
@@ -36,3 +38,18 @@ alongside an existing one (a new folder, a clearly-marked alternate take) withou
 there, stays additive and belongs on `main`.
 
 In short: **add freely on `main`; only overwrite another person's idea by PR.**
+
+## Feedback
+
+The pitch — a project's `README.md` and its `docs/` — belongs to the idea's author. When you have
+feedback on someone else's idea, **don't rewrite their pitch to register it.** Put it in that
+project's **`notes.md`** instead: critiques, questions, suggestions, "have you considered," reactions.
+That keeps the author's vision intact and gathers every outside perspective in one predictable place.
+
+- `notes.md` is append-only in spirit — add your thoughts, sign them so it's clear who's talking, and
+  leave others' notes as they are.
+- Writing in a `notes.md` is always additive work, so it lands on `main` — no PR needed, even on
+  another contributor's project.
+- If feedback earns its way into the actual design, that's when the author (or a PR against their
+  pitch) folds it into the `README`/`docs`. `notes.md` is where ideas get argued; the pitch is where
+  they get committed to.
