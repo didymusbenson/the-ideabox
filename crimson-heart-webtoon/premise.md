@@ -58,9 +58,9 @@ The team is themed on the **card suits**. Season one is a **core four**, one per
 | Suit | Magical name | Civilian calling |
 |------|-------------|------------------|
 | ♥ Hearts | **Crimson Heart** (Bunny) | Stay-at-home mother of two (the protagonist) |
-| ♠ Spades | **Raven Spade** | Space researcher *or* single mother — binding TBD |
-| ♦ Diamonds | **Amber Diamond** | Nightclub dancer, using her magical-girl alias as her stage name |
-| ♣ Clubs | **Onyx Club** | Space researcher *or* single mother — binding TBD |
+| ♠ Spades | **Raven Spade** | Space researcher |
+| ♦ Diamonds | **Amber Diamond** | Single mother |
+| ♣ Clubs | **Onyx Club** | Nightclub dancer, using her magical-girl alias as her stage name |
 
 The warm/red suits carry warm names (**Crimson** Heart, **Amber** Diamond) and the
 black suits carry dark names (**Raven** Spade, **Onyx** Club).
@@ -71,24 +71,23 @@ Bunny's former teammates have all moved on and built civilian lives. They're
 herself, and she's generally right about that.
 
 **Callings.** With the **clergy/priest role removed** (folded into the single
-mother), the three teammate callings are: **space researcher**, **single mother**,
-and **nightclub dancer**. Amber Diamond is the dancer (she carries "Amber" forward
-from the old *Amber Embrace*). Which of **Raven Spade** and **Onyx Club** is the
-space researcher versus the single mother is still open.
+mother), the three teammate callings are settled: **Raven Spade** is the space
+researcher, **Amber Diamond** is the single mother, and **Onyx Club** is the
+nightclub dancer (her magical alias doubles as her stage name).
 
 **Possible expansion (post–season one).** The author may add **Swords** and **Cups**
 as **secondary suits** later — new characters, *not* part of the season-one core four.
 
 > **Lineage note:** this suit-based team supersedes the roster in the [original
 > chapter 1 concept](./chapter-1-concept.md) (Scarlet Soul / Sapphire Mind /
-> Emerald Fist / Amber Embrace). That transcription is kept as a historical draft;
-> the mapping is roughly Amber Embrace → Amber Diamond (performer), Sapphire Mind's
-> space-researcher calling and Emerald Fist's single-mother calling carry over to
-> Raven Spade / Onyx Club, and Scarlet Soul's clergy role is dropped.
+> Emerald Fist / Amber Embrace). That transcription is kept as a historical draft.
+> The old *callings* were reshuffled onto the new names: Sapphire Mind's
+> space-researcher role → **Raven Spade**, Emerald Fist's single-mother role →
+> **Amber Diamond**, and Amber Embrace's performer role → **Onyx Club** (pop singer
+> reworked into nightclub dancer). Scarlet Soul's clergy role is dropped.
 
 ## Threads still open
 
-- Whether **Raven Spade** or **Onyx Club** is the space researcher vs. the single mother.
 - Real-life (civilian) names for each teammate behind the magical aliases.
 - If/when the **Swords** and **Cups** secondary suits get added, and who they are.
 - The nature of the returning enemy (the chapter 1 concept shows a shooting star

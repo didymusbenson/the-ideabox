@@ -41,9 +41,9 @@ in seconds, so the real story can be about family, friendship, PTSD, and healing
 - **The former teammates** — a **suit-themed core four**, grown up into civilian
   lives, all noticing the threats creeping back:
   - ♥ **Crimson Heart** (Bunny) — stay-at-home mom, the protagonist
-  - ♠ **Raven Spade** — space researcher *or* single mother (TBD)
-  - ♦ **Amber Diamond** — nightclub dancer, magical alias doubling as her stage name
-  - ♣ **Onyx Club** — space researcher *or* single mother (TBD)
+  - ♠ **Raven Spade** — space researcher
+  - ♦ **Amber Diamond** — single mother
+  - ♣ **Onyx Club** — nightclub dancer, magical alias doubling as her stage name
 
   Possible **Swords** and **Cups** secondary suits may come *after* season one. See
   [`premise.md`](./premise.md) for the calling assignments and the lineage from the
@@ -57,7 +57,6 @@ healing. The action is deliberately anticlimactic — the cost of winning is the
 
 ## Threads still open
 
-- Whether Raven Spade or Onyx Club is the space researcher vs. the single mother
 - Real-life (civilian) names behind the four aliases
 - Whether/when the Swords and Cups secondary suits join
 - The nature and scale of the returning enemy
