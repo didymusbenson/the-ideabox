@@ -29,6 +29,10 @@ genes / magic / whatever to join the fight. Bunny's answer is "fuck that," and s
 So now we've got a moody, trauma-filled, **endgame-powered** magical girl fighting
 off these threats — and she is *piiiiiiiissed*.
 
+The enemy behind it all is themed on **Mughal Ganjifa** — eight big-bad archetypes
+in a strong (leadership/power) and weak (bureaucracy/grunt work) group, doubling as
+the enemy leaders defeated across the arc. See [`antagonists.md`](./antagonists.md).
+
 ## What the story is actually about
 
 The threats are not the point. The story centers on **Crim (Bunny) navigating the
