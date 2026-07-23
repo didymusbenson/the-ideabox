@@ -156,8 +156,12 @@ call; the point is a lightweight, portable, math-heavy client — not a heavy ga
 - Don't add a second tier until the first tier's automation payoff genuinely lands.
 - Keep number growth readable — resist adding mechanics that require a spreadsheet to enjoy.
 
-## Reference
+## Docs
 
+- [`docs/progression.md`](docs/progression.md) — the macro tech progression: the resource-tree trunk
+  and the branches it unlocks (automation at clay, smelting/alloys at metals, power & machinery, and
+  a farming branch that opens when seeds drop), plus the resource→infrastructure economy loop and the
+  push toward large-scale automated production.
 - [`docs/inspiration-sky-factory-4.md`](docs/inspiration-sky-factory-4.md) — a captured (partial)
   snapshot of Sky Factory 4's advancement system, kept as inspiration for TFT's progression and
   advancement design. Includes what to borrow (sapling-per-resource spine, combine-to-unlock trees,
