@@ -27,7 +27,8 @@ in seconds, so the real story can be about family, friendship, PTSD, and healing
 | [`premise.md`](./premise.md) | The premise & pitch — setup, themes, tone, the grown-up team |
 | [`roster.md`](./roster.md) | The three suit-themed teams — core four, Swiss/German suits, and the minor-arcana new generation |
 | [`antagonists.md`](./antagonists.md) | The enemy — eight tujeon-based Generals, each commanding their suit's rank-and-file |
-| [`open-questions.md`](./open-questions.md) | Parking lot — unresolved decisions and ideas to explore (e.g. Tujeon as another deck) |
+| [`pacing.md`](./pacing.md) | Page-by-page beat breakdown of the opening (Ch. 1 "Milk and Eggs" + Ch. 2), 19 pages each |
+| [`open-questions.md`](./open-questions.md) | Parking lot — unresolved decisions and ideas to explore |
 | [`chapter-1-concept.md`](./chapter-1-concept.md) | Verbatim notebook transcription of the original chapter 1 concept (raw source material / historical draft) |
 
 ## Cast so far
