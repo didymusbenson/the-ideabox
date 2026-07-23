@@ -25,6 +25,7 @@ in seconds, so the real story can be about family, friendship, PTSD, and healing
 | File | What it is |
 |------|-----------|
 | [`premise.md`](./premise.md) | The premise & pitch — setup, themes, tone, the grown-up team |
+| [`roster.md`](./roster.md) | The three suit-themed teams — core four, Swiss/German suits, and the minor-arcana new generation |
 | [`chapter-1-concept.md`](./chapter-1-concept.md) | Verbatim notebook transcription of the original chapter 1 concept (raw source material / historical draft) |
 
 ## Cast so far
@@ -45,9 +46,11 @@ in seconds, so the real story can be about family, friendship, PTSD, and healing
   - ♦ **Amber Diamond** — single mother
   - ♣ **Onyx Club** — nightclub dancer, magical alias doubling as her stage name
 
-  Possible **Swords** and **Cups** secondary suits may come *after* season one. See
-  [`premise.md`](./premise.md) for the calling assignments and the lineage from the
-  original chapter 1 roster.
+  Two further suit-themed groups expand the roster: a **Swiss/German-suits** team
+  (Shields/Roses/Acorns/Bells, future stories) and the **tarot minor-arcana** group
+  (Wands/Cups/Swords/Pentacles) — the **new generation the cat is recruiting,
+  including Bunny's daughter.** See [`roster.md`](./roster.md) for all three teams and
+  [`premise.md`](./premise.md) for the calling assignments and lineage.
 
 ## Themes
 
@@ -57,8 +60,9 @@ healing. The action is deliberately anticlimactic — the cost of winning is the
 
 ## Threads still open
 
-- Real-life (civilian) names behind the four aliases
-- Whether/when the Swords and Cups secondary suits join
+- Real-life (civilian) names behind the aliases
+- Which minor-arcana suit is Bunny's daughter, and the rest of the new generation
+- Who the Swiss/German-suits group are and when they enter
 - The nature and scale of the returning enemy
 - The dead love interest — name and how present he stays in flashbacks
 - Serialization plan, art direction, target platform

@@ -75,8 +75,10 @@ mother), the three teammate callings are settled: **Raven Spade** is the space
 researcher, **Amber Diamond** is the single mother, and **Onyx Club** is the
 nightclub dancer (her magical alias doubles as her stage name).
 
-**Possible expansion (post–season one).** The author may add **Swords** and **Cups**
-as **secondary suits** later — new characters, *not* part of the season-one core four.
+**Roster expansion.** Beyond the season-one core four there are two further
+suit-themed groups — a **Swiss/German-suits** team (future stories) and a **tarot
+minor-arcana** group that is the **new generation the cat is recruiting, including
+Bunny's daughter.** See [`roster.md`](./roster.md) for all three groups.
 
 > **Lineage note:** this suit-based team supersedes the roster in the [original
 > chapter 1 concept](./chapter-1-concept.md) (Scarlet Soul / Sapphire Mind /
@@ -89,7 +91,8 @@ as **secondary suits** later — new characters, *not* part of the season-one co
 ## Threads still open
 
 - Real-life (civilian) names for each teammate behind the magical aliases.
-- If/when the **Swords** and **Cups** secondary suits get added, and who they are.
+- Which minor-arcana suit **Bunny's daughter** is, and the rest of that new generation.
+- Who the **Swiss/German-suits** group are and when they enter (see [`roster.md`](./roster.md)).
 - The nature of the returning enemy (the chapter 1 concept shows a shooting star
   possessing a civilian — is that the whole shape of the threat, or an opening
   skirmish?).
