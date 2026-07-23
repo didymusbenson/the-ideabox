@@ -27,6 +27,7 @@ in seconds, so the real story can be about family, friendship, PTSD, and healing
 | [`premise.md`](./premise.md) | The premise & pitch — setup, themes, tone, the grown-up team |
 | [`roster.md`](./roster.md) | The three suit-themed teams — core four, Swiss/German suits, and the minor-arcana new generation |
 | [`antagonists.md`](./antagonists.md) | The enemy — eight Ganjifa-based big-bad archetypes (strong vs. weak groups) |
+| [`open-questions.md`](./open-questions.md) | Parking lot — unresolved decisions and ideas to explore (e.g. Tujeon as another deck) |
 | [`chapter-1-concept.md`](./chapter-1-concept.md) | Verbatim notebook transcription of the original chapter 1 concept (raw source material / historical draft) |
 
 ## Cast so far
@@ -61,9 +62,12 @@ healing. The action is deliberately anticlimactic — the cost of winning is the
 
 ## Threads still open
 
+Tracked in full in [`open-questions.md`](./open-questions.md). Highlights:
+
 - Real-life (civilian) names behind the aliases
 - Which minor-arcana suit is Bunny's daughter, and the rest of the new generation
 - Who the Swiss/German-suits group are and when they enter
-- The nature and scale of the returning threat (the eight Ganjifa big-bads are set in [`antagonists.md`](./antagonists.md); the mechanics of how they manifest are still open)
+- **Tujeon** (Korean deck) as another possible suit-system to explore
+- The mechanics of how the returning threat manifests (the eight Ganjifa big-bads are set in [`antagonists.md`](./antagonists.md))
 - The dead love interest — name and how present he stays in flashbacks
 - Serialization plan, art direction, target platform
