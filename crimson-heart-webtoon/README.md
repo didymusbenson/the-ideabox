@@ -38,12 +38,16 @@ in seconds, so the real story can be about family, friendship, PTSD, and healing
 - **Kitty** — the talking-cat mascot who ropes chosen girls into the fight
 - **The love interest** — tuxedo-mask analog, killed in the final battle saving
   Bunny; the root of her trauma
-- **The former teammates** — grown up, living civilian lives, all noticing the
-  threats creeping back. From the chapter 1 concept: **Scarlet Soul** (Clergy →
-  priest), **Sapphire Mind** (Space Researcher), **Emerald Fist** (Single Mother),
-  **Amber Embrace** (Pop Singer → nightclub dancer using her alias as a stage name).
-  *(Team size — three vs. four — is an open question; see the reconciliation note in
-  [`premise.md`](./premise.md).)*
+- **The former teammates** — a **suit-themed core four**, grown up into civilian
+  lives, all noticing the threats creeping back:
+  - ♥ **Crimson Heart** (Bunny) — stay-at-home mom, the protagonist
+  - ♠ **Raven Spade** — space researcher *or* single mother (TBD)
+  - ♦ **Amber Diamond** — nightclub dancer, magical alias doubling as her stage name
+  - ♣ **Onyx Club** — space researcher *or* single mother (TBD)
+
+  Possible **Swords** and **Cups** secondary suits may come *after* season one. See
+  [`premise.md`](./premise.md) for the calling assignments and the lineage from the
+  original chapter 1 roster.
 
 ## Themes
 
@@ -53,8 +57,9 @@ healing. The action is deliberately anticlimactic — the cost of winning is the
 
 ## Threads still open
 
-- Team size (three vs. four) and whether the performer is a pop singer or nightclub dancer
-- Real-life names/aliases for each former teammate
+- Whether Raven Spade or Onyx Club is the space researcher vs. the single mother
+- Real-life (civilian) names behind the four aliases
+- Whether/when the Swords and Cups secondary suits join
 - The nature and scale of the returning enemy
 - The dead love interest — name and how present he stays in flashbacks
 - Serialization plan, art direction, target platform

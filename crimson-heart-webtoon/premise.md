@@ -51,31 +51,46 @@ ultimate attack.** The action is deliberately anticlimactic so the weight lands 
 the aftermath: the domestic life, the relationships, the grief. The tension isn't
 "can she win the fight," it's "what does winning keep costing her."
 
-## The old team, now grown
+## The team — a suit of four
+
+The team is themed on the **card suits**. Season one is a **core four**, one per suit:
+
+| Suit | Magical name | Civilian calling |
+|------|-------------|------------------|
+| ♥ Hearts | **Crimson Heart** (Bunny) | Stay-at-home mother of two (the protagonist) |
+| ♠ Spades | **Raven Spade** | Space researcher *or* single mother — binding TBD |
+| ♦ Diamonds | **Amber Diamond** | Nightclub dancer, using her magical-girl alias as her stage name |
+| ♣ Clubs | **Onyx Club** | Space researcher *or* single mother — binding TBD |
+
+The warm/red suits carry warm names (**Crimson** Heart, **Amber** Diamond) and the
+black suits carry dark names (**Raven** Spade, **Onyx** Club).
 
 Bunny's former teammates have all moved on and built civilian lives. They're
 **noticing the patterns too** — that the threats are creeping back. Bunny
 **initially tries to keep everyone out of it** because she can handle the threats
-herself, and she's generally right about that. Known callings so far:
+herself, and she's generally right about that.
 
-- one became a **space researcher**
-- one became a **priest**
-- one became a **nightclub dancer**, using her **magical girl alias as her stage
-  name**
+**Callings.** With the **clergy/priest role removed** (folded into the single
+mother), the three teammate callings are: **space researcher**, **single mother**,
+and **nightclub dancer**. Amber Diamond is the dancer (she carries "Amber" forward
+from the old *Amber Embrace*). Which of **Raven Spade** and **Onyx Club** is the
+space researcher versus the single mother is still open.
 
-> **Reconciliation note (author, please confirm):** the [original chapter 1
-> concept](./chapter-1-concept.md) lists **four** teammates — Scarlet Soul (Clergy),
-> Sapphire Mind (Space Researcher), Emerald Fist (Single Mother), and Amber Embrace
-> (Pop Singer). This later premise names **three** callings — space researcher
-> (≈ Sapphire Mind), priest (≈ Scarlet Soul), and nightclub dancer using her alias
-> as a stage name (≈ Amber Embrace, "pop singer" → "nightclub dancer"). Open
-> questions: is the team four or three now, does Emerald Fist / the single mother
-> still exist, and is the performer a pop singer or a nightclub dancer?
+**Possible expansion (post–season one).** The author may add **Swords** and **Cups**
+as **secondary suits** later — new characters, *not* part of the season-one core four.
+
+> **Lineage note:** this suit-based team supersedes the roster in the [original
+> chapter 1 concept](./chapter-1-concept.md) (Scarlet Soul / Sapphire Mind /
+> Emerald Fist / Amber Embrace). That transcription is kept as a historical draft;
+> the mapping is roughly Amber Embrace → Amber Diamond (performer), Sapphire Mind's
+> space-researcher calling and Emerald Fist's single-mother calling carry over to
+> Raven Spade / Onyx Club, and Scarlet Soul's clergy role is dropped.
 
 ## Threads still open
 
-- Real-life names/aliases for each former teammate (the chapter 1 concept left the
-  "Alias:" fields blank).
+- Whether **Raven Spade** or **Onyx Club** is the space researcher vs. the single mother.
+- Real-life (civilian) names for each teammate behind the magical aliases.
+- If/when the **Swords** and **Cups** secondary suits get added, and who they are.
 - The nature of the returning enemy (the chapter 1 concept shows a shooting star
   possessing a civilian — is that the whole shape of the threat, or an opening
   skirmish?).
