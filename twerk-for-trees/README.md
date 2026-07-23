@@ -155,3 +155,10 @@ call; the point is a lightweight, portable, math-heavy client — not a heavy ga
 - Don't build the economy until the twerk itself is fun on its own.
 - Don't add a second tier until the first tier's automation payoff genuinely lands.
 - Keep number growth readable — resist adding mechanics that require a spreadsheet to enjoy.
+
+## Reference
+
+- [`docs/inspiration-sky-factory-4.md`](docs/inspiration-sky-factory-4.md) — a captured (partial)
+  snapshot of Sky Factory 4's advancement system, kept as inspiration for TFT's progression and
+  advancement design. Includes what to borrow (sapling-per-resource spine, combine-to-unlock trees,
+  ages-as-prestige-units) and what to leave (its literal names and mod IP).
