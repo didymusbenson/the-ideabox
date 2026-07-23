@@ -1,41 +1,60 @@
 # Crimson Heart (working title)
 
 **Type:** Webtoon / serialized comic
-**Phase:** SEED — capturing source material. Premise and pitch still incoming from the author.
+**Phase:** SEED — capturing premise and source material.
+
+## Logline
+
+A magical-girl team saved the world and grew up. Years later the threats return —
+and the retired, endgame-powered, grief-scarred **Crimson Heart** has to suit back
+up, not to relive her glory days, but to keep the fight from swallowing her
+daughter and the quiet life she fought to build.
 
 ## What this is
 
-A magical-girl webtoon about **Bunny Westlake**, an every-day stay-at-home mother
-of two who was once **Crimson Heart**, the magical girl who defeated the Demon
-Gang and then hung up the transformation stick to raise a family. Years later a
-new enemy — shooting stars, a talking cat, the whole thing she thought she left
-behind — drags her back into the fight, this time with a husband, kids, and a
-grocery run to protect.
+A magical-girl webtoon about **Bunny Westlake**, once **Crimson Heart**, leader-ish
+of the team that defeated the Demon Gang. In the final battle her tuxedo-mask-analog
+love interest died saving her; she moved to the US to escape the grief, married, and
+had two kids. When the threats come back, the talking cat that first recruited her
+tries to recruit her **daughter** — and Bunny powers back up instead. The result is
+a moody, fully-powered, trauma-filled magical *woman* whose monster fights are over
+in seconds, so the real story can be about family, friendship, PTSD, and healing.
 
-## Status of the docs
-
-Right now this folder holds a single artifact: the author's **original chapter 1
-concept**, transcribed from a notebook. It's raw source material, not a spec. The
-fuller premise, cast details, tone, and pitch are still to be described.
+## The docs
 
 | File | What it is |
 |------|-----------|
-| [`chapter-1-concept.md`](./chapter-1-concept.md) | Verbatim notebook transcription of the original chapter 1 concept |
+| [`premise.md`](./premise.md) | The premise & pitch — setup, themes, tone, the grown-up team |
+| [`chapter-1-concept.md`](./chapter-1-concept.md) | Verbatim notebook transcription of the original chapter 1 concept (raw source material / historical draft) |
 
-## Known cast (from the chapter 1 concept)
+## Cast so far
 
-- **Bunny Westlake / Crimson Heart** — protagonist; retired magical girl, now a mom of 2
-- **Kitty** — the talking cat / mascot who pulls her back into duty
-- **The husband** — civilian, unaware (so far) of her past
-- Former teammates, now living civilian lives (aliases TBD):
-  - **Scarlet Soul** — Clergy
-  - **Sapphire Mind** — Space Researcher
-  - **Emerald Fist** — Single Mother
-  - **Amber Embrace** — Pop Singer
+- **Bunny Westlake / Crimson Heart** — protagonist; retired, endgame-powered
+  magical girl, now a US mom of two, carrying the trauma of her old life
+- **Her daughter** — right age and the right genes/magic; the cat wants to recruit
+  her, and Bunny is determined to stop that
+- **The husband** — civilian; still thinks her magical-girl past is just bedtime
+  stories (until he doesn't)
+- **Kitty** — the talking-cat mascot who ropes chosen girls into the fight
+- **The love interest** — tuxedo-mask analog, killed in the final battle saving
+  Bunny; the root of her trauma
+- **The former teammates** — grown up, living civilian lives, all noticing the
+  threats creeping back. From the chapter 1 concept: **Scarlet Soul** (Clergy →
+  priest), **Sapphire Mind** (Space Researcher), **Emerald Fist** (Single Mother),
+  **Amber Embrace** (Pop Singer → nightclub dancer using her alias as a stage name).
+  *(Team size — three vs. four — is an open question; see the reconciliation note in
+  [`premise.md`](./premise.md).)*
 
-## Open threads (to fill in as the author describes more)
+## Themes
 
-- Full premise / logline and intended tone
-- Real-name aliases for the four former teammates
-- The new enemy and the shape of the returning threat
+Being a magical *woman* rather than a girl · protecting family from the life ·
+getting a spouse to believe · reconnecting with old friends · processing trauma and
+healing. The action is deliberately anticlimactic — the cost of winning is the point.
+
+## Threads still open
+
+- Team size (three vs. four) and whether the performer is a pop singer or nightclub dancer
+- Real-life names/aliases for each former teammate
+- The nature and scale of the returning enemy
+- The dead love interest — name and how present he stays in flashbacks
 - Serialization plan, art direction, target platform
