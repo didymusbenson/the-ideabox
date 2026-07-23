@@ -14,6 +14,7 @@ down, and let it develop as far as it wants to.
 | [`the-deposit-manhwa/`](./the-deposit-manhwa/) | *The Deposit* (전세 게임) — a Squid-Game-style thriller where a landlord who gambled away his tenants' jeonse deposits must win them back in an underground tournament against the tenants themselves | Planning (series bible drafted) |
 | [`physics-and-sorcery/`](./physics-and-sorcery/) | *Physics & Sorcery* — a physics-driven strategy game inspired by the adventure-map and army-building loops of classic fantasy strategy games | Planning (MVP and art-pipeline gate drafted) |
 | [`deepstead/`](./deepstead/) | *Deepstead* — a cozy dwarven farming, mining, community, and automation game set in a reclaimed underground hold | Planning (vertical slice drafted) |
+| [`twerk-for-trees/`](./twerk-for-trees/) | *Twerk for Trees* (TFT) — an incremental/idle game that turns every grind into a resource tree and then automates it, loosely mirroring the Sky Factory 4 progression loop | Planning (vertical slice drafted) |
 
 ## How this repo is organized
 
