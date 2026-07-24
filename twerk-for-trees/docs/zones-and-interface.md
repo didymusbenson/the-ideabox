@@ -51,8 +51,10 @@ no hundreds of equipment pieces. The model:
 - On **death**, a **cooldown** before the player can fight again.
 - Unlockables progress it from **manual fighting → auto-battle → mob-grinders** that fight with no
   manual input at all (the same "earn the right to stop tapping" arc as the Orchard's automation).
-- Presumably yields **combat-only resources** (to define) that other zones need, so combat isn't a
-  side quest but a supply line.
+- Yields **mob drops** — unique items available *only* through combat — which are **required for
+  certain unlocks elsewhere**, notably some **zone upgrades** and certain **Factory machines**. That
+  puts the Arena on the **critical path**, not off to the side: you can't fully progress other zones
+  without fighting (or automating the fighting).
 
 *(More zones may be added later; the tab model is built to extend.)*
 
@@ -65,8 +67,9 @@ no hundreds of equipment pieces. The model:
   unlocks and upgrades → unlocks open new zones and better tasks → those generate more materials.
   Progression is a loop that keeps passing through the Workshop.
 - **Zones interlock.** Later zones consume earlier zones' outputs (the Factory needs Quarry metals, Farm
-  inputs, Orchard resources; smelting needs ore, etc.), so no zone is an island — this is the concrete
-  form of the cross-branch dependency the progression doc leans toward.
+  inputs, Orchard resources; smelting needs ore; some upgrades and machines need **Arena mob drops**),
+  so no zone is an island — this is the concrete form of the cross-branch dependency the progression doc
+  leans toward.
 
 ## How this maps onto the progression branches
 
@@ -88,8 +91,11 @@ unlocks:
 - **Zone unlock order & gates.** What's the intended sequence (Farm / Quarry / Factory / Arena) and the
   gate material or milestone for each?
 - **Signature tasks per zone.** What are each zone's concrete idle vs. active actions?
-- **Arena's economic role.** What does combat *produce* that other zones need — and is it optional
-  flavor or on the critical path to the Singularity?
+- **Arena's economic role — decided.** Combat produces **mob drops**: unique, combat-only items gating
+  some zone upgrades and certain Factory machines, so the Arena is on the critical path. Still to
+  define: *which* specific upgrades/machines require mob drops, whether drops are mob-type-specific
+  (different enemies → different drops), and how the drop economy scales once auto-battle/mob-grinders
+  make combat passive.
 - **Quarry vs. ore-trees.** Does the Quarry fully replace resource-tree mining, or do slow ore-trees
   stay as an early fallback / for tree-only variants?
 - **How many zones, ultimately**, and does the Singularity live only in the Factory or draw from every
