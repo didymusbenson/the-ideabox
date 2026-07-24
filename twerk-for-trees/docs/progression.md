@@ -65,10 +65,30 @@ quality, power/machinery multiplies throughput, farming widens the input base.
 ## Direction — toward large-scale automated production
 
 The through-line is the transformation the pitch promises, at macro scale: **from hand-tapping one tree
-to running an automated factory that produces most resources on its own.** The endgame is some
-**large-scale progression goal** that can only be met by broad, automated output across every branch —
-and **prestige ("replant the world")** resets the trunk with permanent multipliers so each cycle
-bootstraps and scales faster than the last.
+to running an automated factory that produces most resources on its own.** Everything the player builds
+across the branches is, ultimately, a multiplier funnelled at the endgame below.
+
+## Endgame — the Singularity (Universal Paperclips lineage)
+
+The terminal goal is borrowed from **Universal Paperclips**: the entire operation exists to mass-produce
+**one specific resource — the *singularity resource*** — in absurd, ever-accelerating quantity. Every
+branch is really a lever on how fast that one resource is produced: automation harvests faster,
+smelting/alloys and power/machinery multiply throughput, farming widens the input base. Reaching a
+threshold quantity of the singularity resource triggers the **Singularity** — the run's win state.
+
+At the Singularity, the player chooses:
+
+- **Endless mode — keep grinding.** Stay in the world and push the number higher forever. There's no
+  further progression to unlock, but you can keep optimizing — including **maxing/capping every other
+  resource** for completion's sake. Pure number-go-up, for players who want it.
+- **New world — prestige.** Start over in a fresh world carrying a **permanent prestige upgrade**, so the
+  next run bootstraps and scales faster. This is the meaningful "replant the world" the rest of the
+  design points at.
+
+**Tone bonus worth leaning into:** Universal Paperclips is a cheerful optimizer quietly converting the
+universe into paperclips. TFT's cute-not-sexy twist — a wholesome twerking farmer who accidentally turns
+a whole world into a monoculture of one resource — is the same joke in a greener coat of paint, and the
+writing can wink at it.
 
 ## Branch map
 
@@ -92,15 +112,29 @@ bootstraps and scales faster than the last.
                                  │ scale it up  │
                                  └──────┬───────┘
                                         ▼
-                        large-scale automated production goal
+                   funnel all output → the SINGULARITY RESOURCE
                                         ▼
-                          prestige → replant with multipliers
+                     produce an ungodly amount → SINGULARITY (win)
+                                        ▼
+                 ┌──────────────────────┴───────────────────────┐
+                 ▼                                               ▼
+        endless mode: number-go-up,               new world: prestige upgrade,
+        max/cap other resources                   replant & scale faster
 ```
 
 ## Open questions
 
-- **What is the large-scale endgame goal, concretely?** A megastructure, escaping/filling the void, a
-  production quota, a final tree? Undefined — and it anchors the whole late game, so worth deciding.
+- **Which resource is the singularity resource?** The endgame *shape* is decided (mass-produce one
+  terminal resource → Singularity → endless-vs-prestige fork), but the resource itself is undefined. Is
+  it a top-tier material the tree economy naturally funnels into, or a bespoke end-resource (e.g. a
+  "World Seed" / "Life" currency) crafted only from broad automated output? Its identity also sets the
+  win-screen fantasy.
+- **Is there prestige *before* the Singularity?** The current framing ties prestige to reaching the
+  Singularity (win, then optionally replant). Decide whether a smaller partial-prestige exists earlier
+  for players who stall — and note the MVP tests a scaled-down proxy of this loop, not the full
+  singularity threshold.
+- **Endless-mode caps.** What exactly can still be maxed/capped in endless mode, and is hitting every
+  cap its own (cosmetic?) completion reward?
 - **Exact gate materials and order.** Clay → automation is fixed; which *metal tier* opens smelting,
   and whether power strictly requires alloys, is still to pin down.
 - **Do branches gate each other?** e.g. does Power & Machinery require Alloys as an input, making the
