@@ -43,6 +43,20 @@ age here is what kicks off **true automation and the race toward the Singularity
 endgame engine, converting broad resource output into the terminal singularity resource (see the
 endgame section of [`progression.md`](progression.md)).
 
+### The Power Grid — *the shared power supply (unlocked)*
+Build **various types of generators** from collected resources; together they produce the game's
+**power supply**. Power is a **global constraint on automation**: every automation machine — the
+Orchard's auto-twerkers, the Farm's and Quarry's automation, the Arena's auto-battlers, and all Factory
+machines — **draws power while it runs**, and the Grid must generate at least as much as those machines
+demand.
+
+Each automation machine can be **toggled on/off**, and a machine that's off draws nothing. So the player
+manages a **power budget**: if total demand exceeds supply (an accidental over-draw), you **power down**
+lower-priority machines to bring demand back under the Grid's output — or expand the Grid with more and
+better generators to run everything at once. This turns automation from "unlock and forget" into an
+ongoing **supply-vs-demand balancing act**, and makes growing generation a progression goal in its own
+right.
+
 ### The Arena — *idle combat (unlocked)*
 Simulated combat in the **Melvor Idle** lineage, deliberately **simplified** — no rich combat triangle,
 no hundreds of equipment pieces. The model:
@@ -70,6 +84,10 @@ no hundreds of equipment pieces. The model:
   inputs, Orchard resources; smelting needs ore; some upgrades and machines need **Arena mob drops**),
   so no zone is an island — this is the concrete form of the cross-branch dependency the progression doc
   leans toward.
+- **Power is the global automation budget.** Automation isn't free: every running machine across every
+  zone draws from the **Power Grid**, which must out-produce total demand. Machines toggle on/off, so
+  when supply is tight the player chooses which automation runs — load-shedding by hand, or building more
+  generation. Power is the constraint that keeps "just automate everything" from being trivial.
 
 ## How this maps onto the progression branches
 
@@ -82,7 +100,7 @@ unlocks:
 | Automation (gate: clay) | Cross-zone upgrades bought in **the Workshop** (self-harvesting trees, later auto-battle, auto-machines) |
 | Farming (gate: seeds) | **The Farm** |
 | Smelting & alloys (gate: metals) | **The Workshop** (recipes) fed by **the Quarry**, flowing into **the Factory** |
-| Power & machinery | **The Factory** |
+| Power & machinery | **The Power Grid** (generation) + **the Factory** (machines) |
 | *(new)* High-throughput minerals | **The Quarry** — not in the original branch list; the efficient replacement for slow ore-trees |
 | *(new)* Combat | **The Arena** — a new pillar the branch model didn't cover |
 
@@ -100,5 +118,15 @@ unlocks:
   stay as an early fallback / for tree-only variants?
 - **How many zones, ultimately**, and does the Singularity live only in the Factory or draw from every
   zone's output at once?
-- **UI scale.** With six+ tabs each running idle/active tasks, how much can happen at once before the
+- **UI scale.** With seven+ tabs each running idle/active tasks, how much can happen at once before the
   player's attention (and the "active is faster" promise) breaks down?
+- **Power Grid unlock timing.** When does the Grid come online, and does *all* automation require power —
+  including the earliest clay-gated self-harvesting trees — or only later "powered" automation? (Needs
+  reconciling with the automation gate in [`progression.md`](progression.md); one option: early
+  automation is hand-cranked/mechanical and the Grid arrives with the tech age.)
+- **Over-draw behavior.** In the moment demand exceeds supply before the player intervenes, what
+  happens — do machines auto-shut in a priority order, run slower, or does the Grid "trip"? Is there a
+  player-set priority / auto-load-shedding option so it's not pure manual babysitting?
+- **Generators: build cost vs. fuel.** Do generators just cost resources to build, or also consume
+  ongoing fuel (coal, etc.) to run — and are there clean vs. dirty generator tiers with trade-offs?
+- **One grid or many.** Is power a single global pool, or per-zone grids the player balances separately?

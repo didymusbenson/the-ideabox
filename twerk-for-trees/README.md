@@ -10,8 +10,8 @@ resource economy out of it. Players begin by working basic trees for wood, unloc
 that fruit metals and materials, then branch into technology tiers and automation — each unlock
 feeding the next — until the manual grind of the early game is running itself and you're steering a
 factory instead of shaking a sapling. It's structured as a **tabbed, multi-zone idle game** (Orchard,
-Workshop, Farm, Quarry, Factory, Arena — more to come), each zone with its own idle/active tasks and the
-Workshop as the hub where materials are spent to unlock everything else. See
+Workshop, Farm, Quarry, Factory, Power Grid, Arena — more to come), each zone with its own idle/active
+tasks and the Workshop as the hub where materials are spent to unlock everything else. See
 [`docs/zones-and-interface.md`](docs/zones-and-interface.md).
 
 The name is the hook: every **plot** has a **little animated character** who **twerks — throws ass —
@@ -162,8 +162,9 @@ call; the point is a lightweight, portable, math-heavy client — not a heavy ga
 ## Docs
 
 - [`docs/zones-and-interface.md`](docs/zones-and-interface.md) — the tabbed interface and its zones
-  (Orchard, Workshop, Farm, Quarry, Factory, Arena), each with idle/active tasks; the Workshop as the
-  central unlock hub; how zones interlock; and how the progression branches map onto them.
+  (Orchard, Workshop, Farm, Quarry, Factory, Power Grid, Arena), each with idle/active tasks; the
+  Workshop as the central unlock hub; power as the global automation budget; how zones interlock; and
+  how the progression branches map onto them.
 - [`docs/progression.md`](docs/progression.md) — the macro tech progression: the resource-tree trunk
   and the branches it unlocks (automation at clay, smelting/alloys at metals, power & machinery, and
   a farming branch that opens when seeds drop), plus the resource→infrastructure economy loop and the

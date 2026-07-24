@@ -30,9 +30,11 @@ advancing at once.
 > These branches are *realized* as the game's tabbed **zones**, with unlocks purchased in the Workshop
 > — see [`zones-and-interface.md`](zones-and-interface.md) for the interface. In short: the trunk is the
 > **Orchard**, automation is a **Workshop** upgrade family, farming is the **Farm**, smelting/alloys run
-> through the **Workshop → Factory** (fed by the Quarry), and power/machinery is the **Factory**. Two
-> pillars below aren't captured in the original branch list: the **Quarry** (high-throughput ores, coal,
-> and gems — the fast replacement for slow ore-trees) and the **Arena** (simplified idle combat).
+> through the **Workshop → Factory** (fed by the Quarry), power generation is the **Power Grid** and
+> machinery is the **Factory**. Pillars below not captured in the original branch list: the **Quarry**
+> (high-throughput ores, coal, and gems — the fast replacement for slow ore-trees), the **Arena**
+> (simplified idle combat), and the **Power Grid** (a shared power supply that every automation machine
+> draws from — see [`zones-and-interface.md`](zones-and-interface.md)).
 
 1. **Automation — gate: Clay.**
    The first branch. Reaching clay unlocks **simple automation: faster / self-harvesting trees**
