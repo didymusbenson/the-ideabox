@@ -15,6 +15,8 @@ down, and let it develop as far as it wants to.
 | [`physics-and-sorcery/`](./physics-and-sorcery/) | *Physics & Sorcery* — a physics-driven strategy game inspired by the adventure-map and army-building loops of classic fantasy strategy games | Planning (MVP and art-pipeline gate drafted) |
 | [`deepstead/`](./deepstead/) | *Deepstead* — a cozy dwarven farming, mining, community, and automation game set in a reclaimed underground hold | Planning (vertical slice drafted) |
 | [`twerk-for-trees/`](./twerk-for-trees/) | *Twerk for Trees* (TFT) — an incremental/idle game that turns every grind into a resource tree and then automates it, loosely mirroring the Sky Factory 4 progression loop | Planning (vertical slice drafted) |
+| [`crimson-heart-webtoon/`](./crimson-heart-webtoon/) | *Crimson Heart* — a magical-girl webtoon about a retired, endgame-powered heroine, now a US mom, who suits back up when old threats return so a talking cat can't recruit her daughter; the monster fights end in seconds so the real story is family, PTSD, and healing | Seed (premise & docs drafted) |
+| [`loom-studio/`](./loom-studio/) | *Loom Studio* — a local, non-developer writing environment for Loom projects: a manuscript-centerpiece editor with alternate "timelines" (git branches as parallel story versions) and a woven-loom history view, presenting version control in author-friendly terms | Planning (requirements drafted; direction set) |
 
 ## How this repo is organized
 
