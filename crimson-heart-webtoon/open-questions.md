@@ -40,10 +40,11 @@ decks are on the table as future flavor:
 
 ## Tooling
 
-- **loom persistence.** [`loom/`](./loom/) is attached as a submodule pointing at
-  upstream WintersRain/loom, so story content authored *inside* loom won't be tracked
-  by `the-ideabox`. Decide how to persist loom-authored work: (a) vendor loom (commit
-  its tree into this repo), (b) fork loom and repoint the submodule at the fork, or
-  (c) keep loom read-only and copy finished prose back out into the idea's own docs.
-- **loom config.** `loom/.claude/hooks/config.py` still has placeholder MC/POV values;
-  set these (or use book-project mode) before a real session.
+- **loom persistence — RESOLVED.** [`loom/`](./loom/) was **vendored** (committed
+  directly into this repo, no longer a submodule), so all loom-authored content is
+  tracked and pushed here. Trade-off accepted: we no longer get a one-command pull of
+  upstream WintersRain/loom updates; re-syncing upstream would be a manual merge.
+- **loom config — RESOLVED.** `config.py` set for ensemble authoring
+  (`MC_NAME="MC"`, `CHARACTER_POV="all characters"`). See the README's *Tooling* section.
+- Remaining: actually kick off the Crimson Heart **book project** in loom and start
+  drafting (e.g. adapt the [pacing](./pacing.md) beats into scenes).

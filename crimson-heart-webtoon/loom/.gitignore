@@ -1,0 +1,16 @@
+# Loom runtime state — ephemeral session pointers, regenerated on the fly.
+# Keep the folder (via .gitkeep) but ignore its live contents.
+.writing/state/*
+!.writing/state/.gitkeep
+
+# Python cruft from the hooks
+__pycache__/
+*.py[cod]
+
+# OS / editor cruft
+.DS_Store
+*.swp
+*~
+
+# NOTE: creative content is intentionally TRACKED — _books/, _sessions/,
+# _characters/, and scenes/ hold the actual story work and must be committed.

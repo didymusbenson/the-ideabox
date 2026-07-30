@@ -33,20 +33,29 @@ in seconds, so the real story can be about family, friendship, PTSD, and healing
 
 ## Tooling — loom
 
-[`loom/`](./loom/) is a **git submodule** pointing at upstream
+[`loom/`](./loom/) is a **vendored copy** of
 [WintersRain/loom](https://github.com/WintersRain/loom) — a Claude Code–native
 writing system (orchestrates writer/analyzer/creator sub-agents, tracks characters
-and scenes) we use to develop this story. To use it: start Claude Code **inside**
-`crimson-heart-webtoon/loom/` so its `CLAUDE.md`, hooks, and skills take effect, then
-describe what you want to write. For a serialized comic, its **book-project** mode
-(`_books/`, via the `new-book` skill) fits better than the single-MC roleplay mode.
+and scenes) we use to develop this story. It's committed directly into this repo (not
+a submodule), so **everything loom authors — `_books/`, `_sessions/`, character
+sheets — is tracked and pushed** with the rest of the idea.
 
-> **Persistence caveat:** as a submodule the parent repo only records loom's commit
-> SHA — files created *inside* loom (config, `_books/`, `_sessions/`) are **not**
-> tracked by `the-ideabox`. To persist loom-authored story content in this repo we'd
-> need to vendor loom (commit its tree directly) or point the submodule at a fork you
-> own. Flagging before any real writing happens there. See
-> [`open-questions.md`](./open-questions.md).
+**How to run it:** start Claude Code **inside** `crimson-heart-webtoon/loom/` (so its
+`CLAUDE.md`, hooks, and skills load as the project root), then describe what you want
+to write. For a serialized comic, use its **book-project** mode (`_books/`, via the
+`new-book` skill) rather than the single-MC roleplay mode.
+
+**Retrofits applied for living in this repo:**
+- Loom's hooks resolve their root from the file location, so they work while nested —
+  verified. Just launch Claude *from the `loom/` directory*.
+- [`loom/.claude/hooks/config.py`](./loom/.claude/hooks/config.py) is set for
+  **ensemble authoring**: `MC_NAME="MC"` (anonymous — no protected player-character,
+  so the whole cast incl. Bunny is writable) and `CHARACTER_POV="all characters"`.
+- [`loom/.gitignore`](./loom/.gitignore) drops ephemeral runtime state
+  (`.writing/state/`) while keeping all creative content tracked.
+- On the very first launch (before any book project exists) loom will offer a one-time
+  "set your MC name" prompt — just say we're authoring in book mode; it stops once a
+  project is active.
 
 ## Cast so far
 
