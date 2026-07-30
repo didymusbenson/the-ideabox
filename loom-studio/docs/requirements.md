@@ -59,6 +59,25 @@ Creating a new project stands up a fresh project directory containing the boiler
 
 **Simpler-but-softer alternative:** have Studio write a single `RECENT_CHANGES.md` and instruct the agent (via `CLAUDE.md`) to read it each turn. Less plumbing (no consume-tracking hook), but it reverts to best-effort compliance — the exact softness §5 is trying to eliminate. Injection is preferred.
 
+### Target scenario & the lightweight-pull goal (owner-confirmed)
+The owner's primary workflow, and the case this must optimize:
+
+1. The owner prompts the agent to write a chapter; the agent works through a long turn.
+2. During or after that turn, the owner makes human edits in the Studio editor. Studio **saves** them — persists the edit to the project file on disk *and* records it as a human-originated delta in the change-log (coalesced per editing session, not per keystroke; echo-suppressed from the agent's own writes).
+3. When the owner returns and prompts again, the accumulated deltas are injected at `UserPromptSubmit`, and the agent picks up where the human left it.
+
+**Turn-gated delivery is acceptable here by design.** The owner does not expect, or want, mid-turn interruption; edits made while the agent writes simply wait for the next prompt. So `UserPromptSubmit` injection (§5) is the primary path for this workflow; §7's `PreToolUse` / autonomous-run handling stays a recorded edge case, not the target.
+
+**The win is content-level, not just scoping.** The goal is not merely "re-read fewer files" but "**do not re-read the lengthy files at all**." Two grades of light:
+- *Lighter:* inject "world.md changed" → the agent re-reads world.md (skips unchanged files, but still re-reads the lengthy changed one).
+- *Lightest (the goal):* inject the **diff itself** → the agent patches its understanding from those few lines and does not re-open the file.
+
+So change-log entries must carry the **changed content** (a diff / the edited region), and the injection inlines that diff — not just a "these files changed" pointer.
+
+**Why inlining the diff is sound:** the agent already holds the pre-edit version of the file in context (it read it when it started the chapter), so the diff is meaningful against that baseline and no full re-read is needed.
+
+**Fallback:** if the baseline is not in context — after a compaction, or for a file the agent never read this session — a bare diff has nothing to anchor to. Rule: **diff-first, fall back to a targeted file-read only when the baseline is missing.**
+
 ## 6. One backbone, many features (architectural observation)
 *(Forward-looking observation, to validate in design — not a locked decision.)*
 
