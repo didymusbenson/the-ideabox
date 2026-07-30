@@ -20,19 +20,21 @@ Creating a new project stands up a fresh project directory containing the boiler
 - **Claude-first.** Design and build against Claude tooling first.
 - **OpenAI (and others) next.** Expand to the OpenAI spec after a working proof of concept; other assistants follow.
 
-## 5. Human-in-the-loop consistency — PROBLEM TO SOLVE
-**Want:** when a human edits a project file out-of-band (in vim / Obsidian / the Studio editor / etc.), the agent should be made aware and kept consistent — *without* the agent having to re-read edited files on every turn.
+## 5. Human-in-the-loop consistency
+**Want:** when a human edits a project file out-of-band (in vim / Obsidian / the Studio editor / etc.), the agent should stay consistent with that edit — ideally *without* paying to re-read every file on every turn.
 
-**Upstream reality (verified against `WintersRain/loom` @ HEAD, 2026-07):** loom does **not** do this, and its design is the inverse.
-- Wired hooks: `UserPromptSubmit`, `Stop`, `PostToolUse(Write|Edit)`, `SessionStart`.
-- `PostToolUse(Write|Edit)` → `auto_save.py` fires only on the **agent's own** Write/Edit tool calls (it stamps session state); a human edit fires no tool event, so nothing detects it.
-- There is **no filesystem watcher** — no watchdog/inotify/mtime/hash/diff logic anywhere in the hooks.
-- loom's consistency strategy is exactly the "re-read every time" behavior this want tries to avoid: `UserPromptSubmit` reminds the model to "READ character sheets before writing," and `CLAUDE.md` declares the on-disk sheets "the AUTHORITATIVE source of truth… after compaction, re-read sheets."
+**Does the edit-then-prompt flow already work upstream? Mostly yes.** If the user edits a file and *then* sends a prompt, loom's `UserPromptSubmit` hook re-injects an orchestrator protocol that instructs the agent to "EXPLORE FIRST: Read characters/, tracking files, scene state" before writing (and `CLAUDE.md` declares the on-disk files the authoritative source of truth). So the agent is told to re-read those files on the next turn and generally picks up the human's edit. Consistency is maintained for that flow.
 
-**Root cause:** Claude Code's hook model has no event that fires on an external/human file change — hooks fire on session lifecycle and on the agent's own tool use — so upstream loom cannot notify the agent of a human edit when it happens; the earliest it re-reads is the next `UserPromptSubmit` (or `SessionStart`).
+**But the guarantee is soft, and it is exactly the re-read cost the want tries to avoid:**
+- **Prose-instructed, not mechanical.** Nothing *detects* the edit; the agent only re-reads because a reminder tells it to. Compliance is best-effort — under context pressure, or when the model "remembers" a file from earlier in the conversation, it can answer from stale in-context content and miss the edit.
+- **Scoped to the files loom names.** The protocol covers `characters/`, tracking files, and scene state. An edit to a file outside those classes is not guaranteed to be re-read.
+- **Costs a full re-read every turn.** Consistency is bought by re-reading everything each response — the token/latency tax the want explicitly wants to shed.
+- **Nothing mid-turn.** The earliest re-read is the next `UserPromptSubmit`; an edit made while the agent is working is not seen until the user prompts again. (Fine for edit-then-prompt; a gap for edit-during-turn.)
 
-**Therefore:** mid-conversation "agent stays consistent with human edits without constant re-reads" is an **open problem Loom Studio must solve**, not something inherited. (This aligns with the README's own §3 note that filesystem watching is the "safety net" because "hooks only cover agent-originated writes," including "the user's own edits.") Solution directions are deferred to the design phase.
+**Verified upstream facts:** loom wires `UserPromptSubmit`, `Stop`, `PostToolUse(Write|Edit)`, `SessionStart`. `PostToolUse(Write|Edit)` → `auto_save.py` fires only on the agent's **own** Write/Edit calls; a human edit fires no tool event. There is **no filesystem watcher** anywhere in the hooks. Root cause: Claude Code's hook model has no event for an external/human file change, so nothing can notify the agent at the moment a human edits a file.
+
+**Loom Studio's opportunity:** make edit-awareness *mechanical and cheap* instead of *blanket and prose-driven* — e.g. Studio watches the filesystem, knows exactly which file a human changed, and can surface or target just that delta — rather than relying on the agent re-reading everything every turn and hoping it complies. Solution directions deferred to the design phase.
 
 ## Open tensions (to revisit during gap analysis)
 - The README's observability mechanism (HTTP hooks, transcript tailing, subagent visibility) is Claude Code-specific, but the multi-assistant scaffolding want (§3) is broader. How "observe a running session" generalizes beyond Claude is unresolved and deferred.
-- §5 human-edit awareness is unsolved upstream and bounded by Claude Code's hook events; carrying it to other assistants (§4) compounds it.
+- §5 human-edit awareness is only softly handled upstream (best-effort re-read on the next prompt, scoped to named files, at full re-read cost) and bounded by Claude Code's hook events; carrying it to other assistants (§4) compounds it.
