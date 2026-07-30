@@ -31,6 +31,23 @@ in seconds, so the real story can be about family, friendship, PTSD, and healing
 | [`open-questions.md`](./open-questions.md) | Parking lot — unresolved decisions and ideas to explore |
 | [`chapter-1-concept.md`](./chapter-1-concept.md) | Verbatim notebook transcription of the original chapter 1 concept (raw source material / historical draft) |
 
+## Tooling — loom
+
+[`loom/`](./loom/) is a **git submodule** pointing at upstream
+[WintersRain/loom](https://github.com/WintersRain/loom) — a Claude Code–native
+writing system (orchestrates writer/analyzer/creator sub-agents, tracks characters
+and scenes) we use to develop this story. To use it: start Claude Code **inside**
+`crimson-heart-webtoon/loom/` so its `CLAUDE.md`, hooks, and skills take effect, then
+describe what you want to write. For a serialized comic, its **book-project** mode
+(`_books/`, via the `new-book` skill) fits better than the single-MC roleplay mode.
+
+> **Persistence caveat:** as a submodule the parent repo only records loom's commit
+> SHA — files created *inside* loom (config, `_books/`, `_sessions/`) are **not**
+> tracked by `the-ideabox`. To persist loom-authored story content in this repo we'd
+> need to vendor loom (commit its tree directly) or point the submodule at a fork you
+> own. Flagging before any real writing happens there. See
+> [`open-questions.md`](./open-questions.md).
+
 ## Cast so far
 
 - **Bunny Westlake / Crimson Heart** — protagonist; retired, endgame-powered

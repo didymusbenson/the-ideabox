@@ -37,3 +37,13 @@ decks are on the table as future flavor:
 
 - The dead love interest — name, and how present he stays in flashbacks.
 - Serialization plan, art direction, and target platform for the webtoon.
+
+## Tooling
+
+- **loom persistence.** [`loom/`](./loom/) is attached as a submodule pointing at
+  upstream WintersRain/loom, so story content authored *inside* loom won't be tracked
+  by `the-ideabox`. Decide how to persist loom-authored work: (a) vendor loom (commit
+  its tree into this repo), (b) fork loom and repoint the submodule at the fork, or
+  (c) keep loom read-only and copy finished prose back out into the idea's own docs.
+- **loom config.** `loom/.claude/hooks/config.py` still has placeholder MC/POV values;
+  set these (or use book-project mode) before a real session.
