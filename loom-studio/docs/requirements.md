@@ -176,6 +176,28 @@ Tabs and pages organized by **content category**, with the **manuscript as the p
 - **The agent writes into whatever timeline is checked out.** Switching timeline swaps the files on disk, which the agent re-reads (ties to §5). Studio must make the active timeline unmissable, so an agent never writes prose into the wrong version — a mis-scoped write here is costly. First-class UX concern, not a detail.
 - **Autosave / shadow history and snapshots resolve against the active timeline** and must not leak across timelines.
 
+## 10. Loom View — the branch visualizer (git history as a woven loom)
+*(Owner want. The signature visual, and the payoff of a loom-themed name: the git commit graph rendered as an actual loom.)*
+
+**The picture:** the project's git history drawn as a **weave** — timelines are the threads running through the project, **bookmarks** (commits) are the knots along each thread, and fork / merge points are where threads split off and weave back together. The git DAG is a loom; Loom View simply draws it as one. This is the home base for managing the §9 alternate timelines, and the concrete reason a loom-themed name fits.
+
+**What it shows:** the story's development over time — every timeline, where each forked, where any merged back, which timeline is active now, and *what happened* along the way: human vs. agent edits and which agent (the provenance already written into commit trailers, per README §8).
+
+**Interactive, in author language (git primitives, zero git words):**
+- **Hop** — click a thread to switch to that timeline (git: checkout).
+- **Go back to a bookmark** — return to an earlier save point (see the safety rule below).
+- **New timeline from here** — fork a parallel version from any bookmark (git: branch); the §9 "new timeline from here."
+- **Compare** — select two bookmarks or timelines to diff, via the prose-aware diff layer.
+
+**Bookmarks = commits, with a message.** A deliberate save prompts the author for a **bookmark message** (the writer-facing commit message). Loom View surfaces those messages — hover a knot to read one, or toggle labels on to see them along the threads. ("Bookmark" is the same concept the version-control model calls a curated snapshot / save point; the term will be unified when that section is written.)
+
+**Only bookmarks and timelines are woven.** Deliberate saves (bookmarks) and named timelines are the only things drawn on the loom. Autosaves stay in the silent background shadow layer and are never rendered as threads — otherwise thousands of keystroke-commits bury the weave and it stops being readable.
+
+**Design constraints to honor:**
+- **"Go back to a bookmark" must be non-destructive.** A naive rollback (git hard reset) silently discards everything after that point — catastrophic for a writer. Going back must restore *forward-safely* — fork a new timeline from the bookmark, or restore it into a new save — and never discard later work unless the author explicitly chooses to.
+- **The weave must stay legible.** Real git graphs get tangled; Loom View renders only named timelines + bookmarks, with collapsing / filtering so a long project does not become spaghetti. (Reinforces the shadow-autosave separation above.)
+- **Provenance markers.** Indicate on threads / knots whether a change was human- or agent-authored (and which agent), so "what happened throughout the project" is legible at a glance.
+
 ## Open tensions (to revisit during gap analysis)
 - The README's observability mechanism (HTTP hooks, transcript tailing, subagent visibility) is Claude Code-specific, but the multi-assistant scaffolding want (§3) is broader. How "observe a running session" generalizes beyond Claude is unresolved and deferred.
 - §5 human-edit awareness is only softly handled upstream (best-effort re-read on the next prompt, scoped to named files, at full re-read cost) and bounded by Claude Code's hook events; carrying it to other assistants (§4) compounds it.
