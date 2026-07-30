@@ -123,6 +123,38 @@ Nearly every Studio feature is A, B, or A+B:
 
 **The kernel worth keeping — inject at `PreToolUse`, not only `UserPromptSubmit`.** The real gap the watcher idea chases is *long autonomous runs*: the agent works many internal turns with no user prompts, so `UserPromptSubmit` never fires and human edits pile up unseen. The platform-native fix is not a polling agent but an additional injection point — a Studio `PreToolUse` hook that, before each Write/Edit, drains unconsumed human deltas from the §5 log and returns them as `additionalContext`. It is deterministic, fires at every tool call, costs nothing when the log is empty, and needs no background process. Detection stays in Studio; the trigger stays in hooks; the §5 log is the shared state. Net rule: inject at **both** `UserPromptSubmit` (turn start) **and** `PreToolUse` (each tool call) to close the autonomous-run hole.
 
+## 8. Interface layout & the manuscript centerpiece (owner sketch)
+*(From an owner-provided wireframe; an initial approximation, to refine. Transcribed here as ASCII + prose since the source image is not stored in-repo.)*
+
+Tabs and pages organized by **content category**, with the **manuscript as the primary centerpiece** and reference material kept visually available alongside it.
+
+```
++-------------+------------------+--------------------------+----------------+
+| LEFT RAIL   | REFERENCE PANEL  | MANUSCRIPT (centerpiece) | RIGHT RAIL     |
+|             |                  |                          |                |
+| Worldbuild- | Open worldbuild- | Open manuscript page,    | Story Pages /  |
+| ing tabs    | ing file, shown  | navigated by PAGE-TURN   | Table of       |
+| ----------- | in full and kept | (prev / next chapter or  | Contents       |
+| Project /   | visible alongside | file)                   | directory      |
+| Meta files  | the manuscript   |                          |                |
+| tab         |                  | [ Editing toolbar, nav,  |                |
+|             |                  |   controls ]             |                |
++-------------+------------------+--------------------------+----------------+
+```
+
+### Regions
+1. **Left rail — category navigation (tabbed).** Content grouped by category: a **Worldbuilding tabs** group and a **Project / Meta files** group. Selecting an entry opens it in the reference panel. Navigation is organized by category, not one flat file tree.
+2. **Reference panel — an open info / wiki / worldbuilding file, in full.** These files open here and **stay visually available** next to the manuscript, so lore is on-screen while reading or writing. A persistent companion pane — not a modal or a transient popover.
+3. **Manuscript — the centerpiece.** Its own **special view**, distinct from the other panels, with the prose as the focus. Navigated by **page-turning** — previous / next loads the adjacent chapter or file rather than scrolling one long document or clicking through a tree. An **editing toolbar + nav + controls** anchors the bottom of this view. The manuscript is editable here, and owner edits made in this pane are exactly the human edits §5 logs and pulls — the centerpiece view and the change-log/inline-diff loop are the same surface.
+4. **Right rail — story structure.** A **Story Pages / Table of Contents** directory of the manuscript (chapters / scenes / files), used to jump within the book.
+
+### Notes & things to pin down later
+- **Manuscript vs. reference are deliberately different surfaces** — a book-like page-turning reader/editor for prose, versus persistent reference panes for worldbuilding/meta. Not one generic file viewer.
+- **Page-turn order needs a source of truth.** "Previous / next chapter" implies a defined sequence — resolve it from the manifest and/or frontmatter (`scene_number`, chapter) per §4, not filename sort alone.
+- **Maps onto the README §7 panels, re-arranged:** manuscript ≈ Scene editor (promoted to centerpiece); reference panel ≈ World / Characters / Observations; right rail ≈ Scene log / project explorer.
+- **Not yet placed in this sketch:** the Activity panel (live agent observer) and the pending-write / diff surface from README §7 — where they live (a collapsible strip, a toggled mode, etc.) is an open layout question.
+- Whether multiple reference files can be open at once is also open.
+
 ## Open tensions (to revisit during gap analysis)
 - The README's observability mechanism (HTTP hooks, transcript tailing, subagent visibility) is Claude Code-specific, but the multi-assistant scaffolding want (§3) is broader. How "observe a running session" generalizes beyond Claude is unresolved and deferred.
 - §5 human-edit awareness is only softly handled upstream (best-effort re-read on the next prompt, scoped to named files, at full re-read cost) and bounded by Claude Code's hook events; carrying it to other assistants (§4) compounds it.
