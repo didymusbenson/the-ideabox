@@ -198,6 +198,33 @@ Tabs and pages organized by **content category**, with the **manuscript as the p
 - **The weave must stay legible.** Real git graphs get tangled; Loom View renders only named timelines + bookmarks, with collapsing / filtering so a long project does not become spaghetti. (Reinforces the shadow-autosave separation above.)
 - **Provenance markers.** Indicate on threads / knots whether a change was human- or agent-authored (and which agent), so "what happened throughout the project" is legible at a glance.
 
+## 11. First-time setup — git readiness (detect first, prompt only if needed)
+*(Owner want. A one-time onboarding check that Loom's git substrate is usable, run before it matters.)*
+
+Every version-control-backed capability (§3 git init, §9 timelines, §10 Loom View, bookmarks, autosave) needs a working, identity-configured git. Most users arrive already set up — anyone who has used Cowork, Codex, or Claude Code almost certainly has git and an identity — so this must be **silent when things are fine, and surface only when something is actually missing.**
+
+**Detection first (the default is: do nothing).** On first launch, Studio probes:
+- `git` is present and runnable (`git --version`).
+- A committer identity exists (`git config user.name` and `user.email` both resolve to non-empty values).
+
+If both hold, git is usable — **Studio says nothing and never shows the setup UI.** No nag, no wizard. (Owner requirement.)
+
+**Prompt only for what is missing:**
+- **No git →** a plain explainer ("Loom uses git to track your progress and power your timelines") plus per-platform install guidance. A hard blocker — git is the substrate — so it is explained, not glossed. Studio cannot silently install git; it points the user and re-checks.
+- **No identity →** a two-field in-app form (name, email) that Studio applies via `git config`. "What name should we sign your saves with?" No account, no signup, no server — a local identity is all local commits need. This is the simplest path and the default.
+
+**Optional: connect GitHub.** The prompt may offer to connect a GitHub account for backup / sharing / pushing timelines off-machine. Clearly optional and skippable; local-only is fully functional without it.
+
+**Three kinds of "credential" — keep them straight (important):**
+- **Git identity** (name + email) — not a secret, just commit authorship. Studio sets this. Required for commits.
+- **GitHub auth** (optional) — a real credential, but only for git *remote* push, never for model access. To preserve the "Studio never stores or transmits credentials" property (README §1), Studio must **delegate to the system git credential helper / `gh` / OS keychain and never store or transmit the token itself.**
+- **Model-provider credentials** (Anthropic / OpenAI keys, Claude auth) — Studio **never** touches these. This is the §1 constraint that keeps Loom out of third-party authentication restrictions, and nothing in first-run setup changes it. Git identity and optional GitHub auth are unrelated to model auth.
+
+**Notes to pin down later:**
+- Whether to support the optional GitHub connect **in the POC** or defer it — it adds credential-helper plumbing and platform variance for a non-essential (local git is enough). Candidate defer.
+- The identity Studio sets here tags **human** commits on the Loom View; agent (Claude Code) commits carry their own identity — the human-vs-agent provenance §10 draws depends on these being separate.
+- Re-probe on each launch (cheap), so a later-broken setup (e.g. identity cleared) is caught — still silent when fine.
+
 ## Open tensions (to revisit during gap analysis)
 - The README's observability mechanism (HTTP hooks, transcript tailing, subagent visibility) is Claude Code-specific, but the multi-assistant scaffolding want (§3) is broader. How "observe a running session" generalizes beyond Claude is unresolved and deferred.
 - §5 human-edit awareness is only softly handled upstream (best-effort re-read on the next prompt, scoped to named files, at full re-read cost) and bounded by Claude Code's hook events; carrying it to other assistants (§4) compounds it.
