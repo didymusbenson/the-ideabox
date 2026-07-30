@@ -16,6 +16,8 @@ The user can:
 ## 3. Project scaffolding — multi-assistant boilerplate
 Creating a new project stands up a fresh project directory containing the boilerplate "AI docs" that AI tools require to operate on the project — targeting the broader assistant ecosystem (Claude, ChatGPT/Codex, Gemini, etc.), not a single vendor.
 
+**Project creation also initializes version control.** Scaffolding runs `git init` and makes an initial commit as part of setting up the project, so the repo exists from commit one. This is a hard prerequisite, not an optional step: every version-control-backed capability — named snapshots, the Track-Changes-style review flow, and Alternate Timelines (§9) — depends on the project being a git repo from the start. Scaffolding also writes a `.gitignore` covering Studio's `settings.local.json` and the ephemeral session change-log, so local and ephemeral state never enters the project's history. For **Open Existing Project**, if the folder is not already a git repo, Studio offers to initialize one — version-control-backed features stay unavailable until it is.
+
 ## 4. Scope & phasing
 - **Claude-first.** Design and build against Claude tooling first.
 - **OpenAI (and others) next.** Expand to the OpenAI spec after a working proof of concept; other assistants follow.
@@ -154,6 +156,25 @@ Tabs and pages organized by **content category**, with the **manuscript as the p
 - **Maps onto the README §7 panels, re-arranged:** manuscript ≈ Scene editor (promoted to centerpiece); reference panel ≈ World / Characters / Observations; right rail ≈ Scene log / project explorer.
 - **Not yet placed in this sketch:** the Activity panel (live agent observer) and the pending-write / diff surface from README §7 — where they live (a collapsible strip, a toggled mode, etc.) is an open layout question.
 - Whether multiple reference files can be open at once is also open.
+
+## 9. Alternate Timelines — parallel story versions (core value proposition)
+*(Owner-elevated to a headline value prop. Surfaces git branches as writer-facing "timelines"; the word "branch" never appears in the UI.)*
+
+**The pitch:** a writer can keep **more than one version of their story alive at once** and **hop freely between them**. "What if she takes the deal" and "what if she doesn't" are two timelines the writer maintains in parallel — switches between, compares side by side, and carries work forward in whichever they prefer — without copying files, renaming folders, or losing either version. No other authoring tool offers this, because none store prose as plain files in a repo; Loom does, so Studio gets it almost for free. This is one of the two headline capabilities that *are* git, and a core reason git is the chosen substrate rather than a bespoke store — not a nice-to-have.
+
+**Core interactions (writer vocabulary; git stays hidden):**
+- **New timeline from here** — fork a parallel version from any snapshot or point in the story (git: branch).
+- **Switch / hop** — jump between timelines; the manuscript centerpiece shows the active one (git: checkout).
+- **Compare** — view two timelines side by side and diff them (e.g. chapter 9 in "Darker ending" vs "Original"), using the prose-aware diff from the version-control layer.
+- **Bring across** — pull a scene / chapter from one timeline into another, or merge a whole timeline back into the main one (git: cherry-pick / merge), through the same accept / review flow used for agent proposed-revisions.
+- **Name & curate** — timelines carry writer names ("Darker ending," "Romance subplot"), never ref names.
+
+**Relationship to agent "proposed revisions":** both are git branches underneath, but different lifecycles and UX — *proposed revisions* are short-lived agent drafts you accept or discard; *alternate timelines* are long-lived parallel versions you deliberately maintain and hop between. Keep them visually distinct so they do not blur. (The proposed-revisions / Track-Changes review model is discussed and pending its own section.)
+
+**Design notes to pin down later:**
+- **Divergence point matters.** A timeline forks from a specific snapshot; that anchor is what makes "compare timelines" meaningful. Track it and show it.
+- **The agent writes into whatever timeline is checked out.** Switching timeline swaps the files on disk, which the agent re-reads (ties to §5). Studio must make the active timeline unmissable, so an agent never writes prose into the wrong version — a mis-scoped write here is costly. First-class UX concern, not a detail.
+- **Autosave / shadow history and snapshots resolve against the active timeline** and must not leak across timelines.
 
 ## Open tensions (to revisit during gap analysis)
 - The README's observability mechanism (HTTP hooks, transcript tailing, subagent visibility) is Claude Code-specific, but the multi-assistant scaffolding want (§3) is broader. How "observe a running session" generalizes beyond Claude is unresolved and deferred.
