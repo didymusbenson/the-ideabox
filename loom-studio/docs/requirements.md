@@ -91,6 +91,19 @@ Nearly every Studio feature is A, B, or A+B:
 - **§5 is the natural vertical slice.** It is the first feature that threads both primitives end-to-end (fs-watch → log → inject), so building it proves the whole architecture rather than a corner of it.
 - **Cross-assistant (§4).** Both primitives are, today, plumbed through Claude Code's hook/transcript model. The *concepts* (observe a session; inject at defined control points) should carry to ChatGPT/Codex/Gemini, but the *channels* will differ per assistant. Claude-first now; treat A and B as the portable abstractions and re-implement their transports later.
 
+## 7. Considered & set aside — an in-session "log-watcher" agent
+*(Evaluated during requirements capture; not adopted. Recorded so it is not re-proposed. Includes the refinement it motivates.)*
+
+**The idea:** run a background subagent inside the session that polls the change-log for hash changes and pipes detected human edits back to the primary agent — giving mid-run awareness without waiting for the user's next prompt.
+
+**Why it does not beat the §5 hook approach:**
+- **Same turn-gating.** A subagent cannot inject into the primary agent's *active* context. Its findings reach the primary only as a returned result / background-task notification, which the primary absorbs at a step boundary — never mid-generation. (Directly observable: background helper agents report back at turn boundaries, not mid-response.) The watcher relocates *where* watching happens, not *when* the primary can absorb it — and `UserPromptSubmit` / `PreToolUse` already provide that boundary for free.
+- **Worse detector than Studio.** Detection belongs in Studio, which watches the filesystem mechanically (real OS events, no polling) and knows write-origin for echo suppression. An in-session polling loop re-implements this less accurately, cannot cleanly tell human writes from agent writes, and burns tokens every iteration.
+- **Breaks the core separation.** The design keeps Studio observing and the agent writing, converging on the same bytes with no protocol between them. Putting a watcher *inside* the agent runtime couples the two and loses that.
+- **No better cross-assistant story.** A Claude subagent poller is as Claude-specific as a hook, and more fragile.
+
+**The kernel worth keeping — inject at `PreToolUse`, not only `UserPromptSubmit`.** The real gap the watcher idea chases is *long autonomous runs*: the agent works many internal turns with no user prompts, so `UserPromptSubmit` never fires and human edits pile up unseen. The platform-native fix is not a polling agent but an additional injection point — a Studio `PreToolUse` hook that, before each Write/Edit, drains unconsumed human deltas from the §5 log and returns them as `additionalContext`. It is deterministic, fires at every tool call, costs nothing when the log is empty, and needs no background process. Detection stays in Studio; the trigger stays in hooks; the §5 log is the shared state. Net rule: inject at **both** `UserPromptSubmit` (turn start) **and** `PreToolUse` (each tool call) to close the autonomous-run hole.
+
 ## Open tensions (to revisit during gap analysis)
 - The README's observability mechanism (HTTP hooks, transcript tailing, subagent visibility) is Claude Code-specific, but the multi-assistant scaffolding want (§3) is broader. How "observe a running session" generalizes beyond Claude is unresolved and deferred.
 - §5 human-edit awareness is only softly handled upstream (best-effort re-read on the next prompt, scoped to named files, at full re-read cost) and bounded by Claude Code's hook events; carrying it to other assistants (§4) compounds it.
