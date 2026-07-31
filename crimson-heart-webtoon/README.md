@@ -45,6 +45,13 @@ sheets — is tracked and pushed** with the rest of the idea.
 to write. For a serialized comic, use its **book-project** mode (`_books/`, via the
 `new-book` skill) rather than the single-MC roleplay mode.
 
+**Project is scaffolded and ready.** A book project lives at
+[`loom/_books/crimson-heart/`](./loom/_books/crimson-heart/), seeded from our docs:
+`world.md` (story bible), `OUTLINE.md` (the 6-episode opening from `pacing.md`), and
+`CHARACTERS/` (10 cast sheets — Bunny, family, the core four, Kitty, the North Star).
+To pick up: launch Claude in `loom/` and say *"work on the Crimson Heart book"* — it
+resumes the project. Then e.g. *"draft Episode 1 from the outline."*
+
 **Retrofits applied for living in this repo:**
 - Loom's hooks resolve their root from the file location, so they work while nested —
   verified. Just launch Claude *from the `loom/` directory*.

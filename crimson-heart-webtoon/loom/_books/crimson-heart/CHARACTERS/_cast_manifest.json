@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "generated": "2026-07-31T14:17:06.178402",
+  "characters": {
+    "amber-diamond": {
+      "name": "Amber Diamond",
+      "role": "npc",
+      "status": "active",
+      "tags": [
+        "team",
+        "diamonds",
+        "single-mother",
+        "core-four"
+      ],
+      "file": "amber-diamond.md",
+      "created": "2026-07-31",
+      "updated": "2026-07-31"
+    },
+    "crimson-heart-bunny-westlake": {
+      "name": "Crimson Heart (Bunny Westlake)",
+      "role": "npc",
+      "status": "active",
+      "tags": [
+        "protagonist",
+        "hearts",
+        "crimson-heart",
+        "magical-woman",
+        "mother",
+        "core-four"
+      ],
+      "file": "crimson-heart-bunny-westlake.md",
+      "created": "2026-07-31",
+      "updated": "2026-07-31"
+    },
+    "elder-daughter": {
+      "name": "Elder Daughter",
+      "role": "npc",
+      "status": "active",
+      "tags": [
+        "family",
+        "recruit-target",
+        "minor-arcana",
+        "next-generation"
+      ],
+      "file": "elder-daughter.md",
+      "created": "2026-07-31",
+      "updated": "2026-07-31"
+    },
+    "kitty": {
+      "name": "Kitty",
+      "role": "npc",
+      "status": "active",
+      "tags": [
+        "mascot",
+        "mentor",
+        "recruiter"
+      ],
+      "file": "kitty.md",
+      "created": "2026-07-31",
+      "updated": "2026-07-31"
+    },
+    "onyx-club": {
+      "name": "Onyx Club",
+      "role": "npc",
+      "status": "active",
+      "tags": [
+        "team",
+        "clubs",
+        "nightclub-dancer",
+        "core-four"
+      ],
+      "file": "onyx-club.md",
+      "created": "2026-07-31",
+      "updated": "2026-07-31"
+    },
+    "raven-spade": {
+      "name": "Raven Spade",
+      "role": "npc",
+      "status": "active",
+      "tags": [
+        "team",
+        "spades",
+        "space-researcher",
+        "core-four"
+      ],
+      "file": "raven-spade.md",
+      "created": "2026-07-31",
+      "updated": "2026-07-31"
+    },
+    "the-husband": {
+      "name": "The Husband",
+      "role": "npc",
+      "status": "active",
+      "tags": [
+        "family",
+        "civilian"
+      ],
+      "file": "the-husband.md",
+      "created": "2026-07-31",
+      "updated": "2026-07-31"
+    },
+    "the-love-interest": {
+      "name": "The Love Interest",
+      "role": "npc",
+      "status": "deceased",
+      "tags": [
+        "backstory",
+        "love-interest",
+        "deceased",
+        "tuxedo-mask-analog"
+      ],
+      "file": "the-love-interest.md",
+      "created": "2026-07-31",
+      "updated": "2026-07-31"
+    },
+    "the-north-star": {
+      "name": "The North Star",
+      "role": "antagonist",
+      "status": "active",
+      "tags": [
+        "tujeon",
+        "star-suit",
+        "general",
+        "first-foe"
+      ],
+      "file": "the-north-star.md",
+      "created": "2026-07-31",
+      "updated": "2026-07-31"
+    },
+    "younger-daughter": {
+      "name": "Younger Daughter",
+      "role": "npc",
+      "status": "active",
+      "tags": [
+        "family",
+        "minor"
+      ],
+      "file": "younger-daughter.md",
+      "created": "2026-07-31",
+      "updated": "2026-07-31"
+    }
+  }
+}

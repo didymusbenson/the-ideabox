@@ -1,0 +1,28 @@
+{
+  "project_name": "crimson-heart",
+  "working_title": "Crimson Heart",
+  "genre": "fantasy",
+  "status": "outlining",
+  "created": "2026-07-31T14:13:36.743759",
+  "last_edited": "2026-07-31T14:13:36.743774",
+  "total_sessions": 0,
+  "last_position": null,
+  "open_threads": [
+    "Civilian/real names for the whole cast (husband, daughters, teammates, love interest)",
+    "Which daughter is the cat's recruit target (elder assumed)",
+    "How present the dead love interest stays in flashbacks",
+    "Order Crim faces Generals 2-8 (North Star is first)",
+    "Whether the enemy is the Demon Gang returned or a new power",
+    "Persist loom output to git; derive SCENES from OUTLINE.md / ../../pacing.md"
+  ],
+  "character_focus": [
+    "crimson-heart-bunny-westlake",
+    "the-husband",
+    "elder-daughter",
+    "younger-daughter",
+    "kitty",
+    "the-north-star"
+  ],
+  "current_arc": "Opening arc — Chapters 1–2 ('Milk and Eggs'): Bunny's forced return",
+  "session_history": []
+}

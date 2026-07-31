@@ -3,6 +3,9 @@
 .writing/state/*
 !.writing/state/.gitkeep
 
+# Ephemeral book-project backups (project.json itself stays tracked)
+_books/*/.state/backups/
+
 # Python cruft from the hooks
 __pycache__/
 *.py[cod]

@@ -46,5 +46,6 @@ decks are on the table as future flavor:
   upstream WintersRain/loom updates; re-syncing upstream would be a manual merge.
 - **loom config — RESOLVED.** `config.py` set for ensemble authoring
   (`MC_NAME="MC"`, `CHARACTER_POV="all characters"`). See the README's *Tooling* section.
-- Remaining: actually kick off the Crimson Heart **book project** in loom and start
-  drafting (e.g. adapt the [pacing](./pacing.md) beats into scenes).
+- **Book project — SCAFFOLDED.** `loom/_books/crimson-heart/` is seeded (world bible,
+  6-episode outline, 10 cast sheets). Remaining: start **drafting** scenes into
+  `SCENES/` (adapt the [pacing](./pacing.md) beats), and lock the TBD names as we go.
