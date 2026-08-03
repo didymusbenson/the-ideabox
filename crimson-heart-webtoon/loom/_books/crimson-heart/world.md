@@ -38,17 +38,21 @@ swallowing her daughter and the quiet life she fought to build.
   failing to find her own path**; the friends show her paths *exist*. **Kitty's return
   is the crack in the wall** — the thing that finally forces the processing she dodged
   for years.
-- **On the two-mothers overlap (Bunny & Amber):** not redundant — it's a deliberate
-  mirror. Same facet (motherhood), opposite relationship to the past: Amber (single mom)
-  stayed **committed to her path** and did some of the work; Bunny used **family as the
-  wall** to avoid hers. Keep them contrasting, not doubled.
+- **On the two-mothers overlap (Bunny & Amber) — PROVISIONAL.** *If* Amber stays a
+  single mother, the fix for redundancy is contrast, not overlap: same facet
+  (motherhood), opposite relationship to the past — Amber committed to her path and did
+  some of the work; Bunny used **family as the wall** to avoid hers. **But Amber's whole
+  role is under review** (see her sheet) and may change entirely, so don't build the arc
+  on this mirror yet, and don't lean on "single mom" as her defining trait elsewhere
+  until it's settled. The *mirror principle* (each friend reflects a facet of Bunny) is
+  safe; the *specific motherhood mirror* is on hold.
 
 ## Factions & Groups
 
 ### The heroes — three suit-themed generations
 - **Core four (French suits)** — the original, grown-up team:
   ♥ **Crimson Heart** (Bunny, protagonist), ♠ **Raven Spade** (space researcher),
-  ♦ **Amber Diamond** (single mother), ♣ **Onyx Club** (nightclub dancer / stage name).
+  ♦ **Amber Diamond** (single mother — *role under review, may change*), ♣ **Onyx Club** (nightclub dancer / stage name).
 - **Swiss/German suits** — 🛡 Shields, 🌹 Roses, 🌰 Acorns, 🔔 Bells. Future-story
   expansion; identities TBD.
 - **Minor arcana (tarot)** — 🪄 Wands, 🏆 Cups, ⚔ Swords, ⭐ Pentacles. The **new

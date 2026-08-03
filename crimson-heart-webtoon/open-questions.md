@@ -27,6 +27,11 @@ decks are on the table as future flavor:
   locked; **no story beats depend on her nationality yet.** (Note: a Japanese surname
   cuts against the earlier idea of tying her homeland to the Korean *tujeon* enemy — fine,
   just don't rely on that thread.)
+- **Amber Diamond's role — under review.** "Single mother" is inherited from the early
+  roster and may be **replaced entirely.** Until settled: keep it contained to her sheet;
+  don't make it load-bearing for other arcs (esp. the Bunny/Amber motherhood mirror,
+  which is parked as provisional). Once locked, re-open the "how are Bunny and Amber
+  different" mirror question.
 - Real-life (civilian) names behind every magical alias.
 - Which tarot minor-arcana suit is **Bunny's daughter**, and the rest of that new generation.
 - Who the **Swiss/German-suits** group are and when they enter.
