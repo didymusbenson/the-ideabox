@@ -2,9 +2,9 @@
 name: Crimson Heart (Bunny Westlake)
 role: npc
 status: active
-tags: [protagonist, hearts, crimson-heart, magical-woman, mother, core-four]
+tags: [protagonist, hearts, crimson-heart, magical-woman, mother, core-four, chronic-illness, pots]
 created: 2026-07-31
-updated: 2026-07-31
+updated: 2026-08-03
 ---
 
 # Crimson Heart (Bunny Westlake)
@@ -26,7 +26,9 @@ Blunt and sardonic; curses when rattled ('SHIT'). In hero mode she flips to decl
 
 ## Background
 Won the war as Crimson Heart. Her tuxedo-mask-analog love interest died in the final battle saving her — the root of her PTSD. Fled to the US, married, had two daughters, hid her transformation stick. Powers back up when the threats return, partly to keep the cat from recruiting her daughter.
-**Powers:** endgame-tier — fights end in seconds via her ultimate attack ('EXPLOSIVE HEART DEVASTATION' / 'SHINE HEART POWER! SPARKLE!').
+**Powers:** endgame-tier — already fully leveled (all her upgrades/forms happened off-page, pre-retirement), so she enters every fight at max power and ends it instantly with her ultimate ('EXPLOSIVE HEART DEVASTATION' / 'SHINE HEART POWER! SPARKLE!'). No training arc; the hero doesn't grow stronger.
+**Her magic:** unlocked, not granted — Kitty opened magic already hidden in her because she was flagged as having "a pure heart, full of love." Origins/original exploits are deliberately vague; she's buried them.
+**The cost (chronic illness, not a magic tax):** Bunny has **POTS**. Transforming and channeling magic spike her heart rate; the magic sustains her *through* the action, but the moment she powers down the crash hits — dizziness, lightheadedness, losing her balance. Winning always bills her afterward, quietly. Play it as a real disability, not a power gauge.
 
 ## Relationships
 - **The Husband** — spouse; still thinks her magical past is just bedtime stories.
