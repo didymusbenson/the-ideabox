@@ -21,6 +21,11 @@ swallowing her daughter and the quiet life she fought to build.
 - **Protecting her daughter** from being recruited.
 - Reconnecting with **old friends** who have their own lives.
 - Throughline: **processing trauma and healing.**
+- **No one's trauma is "more valid."** All four lived through the same war and carry
+  their own scars and coping mechanisms. Bunny was hit **hardest** (she's our lens, and
+  she lost Jack), but the story never frames hers as *more real* than her friends'. Each
+  teammate copes her **own way** — write them as peers in grief, not as a support staff
+  orbiting the "real" victim.
 
 ## Factions & Groups
 
@@ -32,6 +37,20 @@ swallowing her daughter and the quiet life she fought to build.
   expansion; identities TBD.
 - **Minor arcana (tarot)** — 🪄 Wands, 🏆 Cups, ⚔ Swords, ⭐ Pentacles. The **new
   generation** the cat is recruiting — **Bunny's daughter is one of the four.**
+
+#### How the core four fight (define details later)
+Bunny **led**; the team handled many threats together over the years. Combat has three tiers:
+- **Solo signature attacks** — each member has her own (Crim's is her endgame finisher).
+- **Team-up attacks** — paired/partial combos.
+- **The combined ultimate** — all four channeling together; reserved for the biggest
+  enemies. The **final battle** needed exactly this (Bunny's full strength + the magic,
+  love, and support of her friends) — and it's where **Jack** died.
+- **Leave the specifics TBD.** Name individual signatures and team-ups **as teammates
+  enter the story**, not before. What's fixed: *together they are stronger*, and the
+  worst threats can't be soloed even by an endgame Crim.
+- **Escalation hook.** As present-day conflicts scale, teammates start showing up — not
+  always because Crim *needs* them, sometimes just because they're *there* when an attack
+  hits. That's the on-ramp for reintroducing each of them.
 
 ### The enemy — the Tujeon Generals
 Built on **Tujeon** (투전): eight suits, each nine numeral ranks led by a **General

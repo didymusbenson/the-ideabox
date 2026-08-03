@@ -31,6 +31,11 @@ decks are on the table as future flavor:
 - Which tarot minor-arcana suit is **Bunny's daughter**, and the rest of that new generation.
 - Who the **Swiss/German-suits** group are and when they enter.
 - Whether the three hero suit-systems are rivals, allies, successors, or something else.
+- **Per-teammate specifics — define as each enters the story:** civilian name, signature
+  attack, team-up combos, and her **own coping mechanism** for the shared war trauma
+  (each distinct; none is "supporting Bunny"). Fixed now: team combat has solo /
+  team-up / combined-ultimate tiers; together they're stronger; the worst threats can't
+  be soloed. See `world.md` → *How the core four fight*.
 
 ## Enemy
 
