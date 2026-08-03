@@ -32,7 +32,9 @@ decks are on the table as future flavor:
   don't make it load-bearing for other arcs (esp. the Bunny/Amber motherhood mirror,
   which is parked as provisional). Once locked, re-open the "how are Bunny and Amber
   different" mirror question.
-- Real-life (civilian) names behind every magical alias.
+- Real-life (civilian) names behind every magical alias. *(Husband **resolved: Matthew
+  "Matty" Shinzo**, WFH software engineer — see his sheet. Teammates' civilian names still
+  TBD.)*
 - Which tarot minor-arcana suit is **Bunny's daughter**, and the rest of that new generation.
 - Who the **Swiss/German-suits** group are and when they enter.
 - Whether the three hero suit-systems are rivals, allies, successors, or something else.
@@ -49,6 +51,19 @@ decks are on the table as future flavor:
 - Whether the enemy is the **Demon Gang returned** or a new power, and how tujeon ties to that history.
 - How broadly the Star suit's **falling-star possession** works beyond the chapter 1 opener.
 - Locking a **canonical** tujeon suit/General list + romanization (sources vary slightly).
+
+## Continuity to reconcile (author owns the rewrite)
+
+- **RN Bunny + WFH Matty vs. the SAHM pilot — CONTRADICTION, flagged not fixed.** New
+  canon: Bunny is a **registered nurse by choice**; **Matty Shinzo** is a **work-from-home
+  software engineer** whose income supports the family and who's often the daytime parent.
+  The **drafted opening still says otherwise** — Bunny as a **stay-at-home mom**, Matty
+  **leaving for work** (reachable "at lunch," then driving home). Spots to revise when the
+  author reworks the plot: `chapter-1-concept.md`, `pacing.md` (Ch.1 morning + errands
+  logistics — e.g. who's home with the kids, why Ms. Neighbor is needed), and the
+  "stay-at-home mother" descriptors in `premise.md`, `roster.md`, `README.md`. **Do not
+  auto-rewrite the pilot copy.** Hooks this unlocks: hospital-stress as a pressure valve;
+  Matty being *home* changes the Ch.1 anxiety-attack/childcare blocking.
 
 ## Story / craft
 

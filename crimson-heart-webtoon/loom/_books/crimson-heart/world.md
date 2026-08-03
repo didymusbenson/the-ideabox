@@ -171,8 +171,30 @@ not toward lore.
   Bunny's love interest (tuxedo-mask analog, *working name*) — stepped in and sacrificed
   himself during it. She saved everyone **except him**, and for the battle to end his
   death had to be **permanent**: the one thing her fix-everything magic could not undo.
-- Bunny emigrated to the **US**, married, had two daughters, and buried the past —
+- Bunny emigrated to the **US**, met **Matty Shinzo** on a dating app while starting
+  over, married him ~1 year into nursing school, had two daughters, and buried the past —
   until the shooting stars and the talking cat came back.
+
+### The marriage & home life (present day)
+- **Matty Shinzo** — husband, **software engineer, works from home**; a green-flag
+  partner who shares parenting/housework/cooking and supports Bunny's walls **without
+  prying.** His no-questions steadiness is the cornerstone of her new life.
+- **Bunny is a registered nurse — by choice.** They can live on Matty's income; she
+  nurses to help people and keep her mind busy. **Hospital stress** is a deliberate
+  drama-source that compounds as magical-girl duties intrude on a work-life balance she'd
+  otherwise figured out.
+- **The secret between them:** Matty knows Bunny has a hard past (and a boyfriend who
+  died) but **no specifics**, and **nothing** about the magical-girl life. Her fear:
+  telling him = being seen as **crazy or a liar.** Central marital arc = getting him to
+  **believe**, then support her through things over his head.
+
+> ⚠ **Pilot continuity note (author to reconcile — do NOT auto-rewrite).** The above
+> **contradicts the drafted opening**, which frames Bunny as a **stay-at-home mom** and
+> Matty as **leaving for work** (then reachable "at lunch," then driving home). Affected
+> copy: `../../chapter-1-concept.md`, `../../pacing.md` (Ch.1 morning/among-errands
+> beats), and the SAHM descriptors in `../../premise.md`, `../../roster.md`,
+> `../../README.md`. New intent: RN Bunny + WFH Matty (likely the daytime parent). The
+> **author owns the plot rewrite**; treat pilot copy as provisional until then.
 
 ### Trauma — the two layers (drafting guide)
 Bunny's PTSD isn't a single event; it's why the "action-light" tone matters.

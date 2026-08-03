@@ -10,7 +10,18 @@ updated: 2026-08-03
 # Crimson Heart (Bunny Shinzo)
 
 ## Identity
-**Civilian:** Bunny Shinzo — stay-at-home mother of two, living in the US.
+**Civilian:** Bunny Shinzo — married mother of two in the US; works as a **registered nurse (RN).**
+> ⚠ **Occupation is NEW CANON and conflicts with the drafted pilot** (Ch.1 concept +
+> pacing frame her as a *stay-at-home mom*). RN-by-choice is now the intent; author will
+> reconcile the pilot copy. See the *Pilot continuity* note in world.md / open-questions.md.
+
+## Civilian life & marriage
+Met **Matty Shinzo** on a dating app while putting herself "out there" to leave her teen
+years behind; she was in **nursing school**, he in **software engineering.** Married ~1
+year in; she became an **RN**, he a developer. **They can live on Matty's WFH income —
+Bunny nurses by choice**, to help people and keep her mind busy. She's built a **solid
+work-life balance** — which **magical-girl duties now intrude on**, and **hospital stress**
+is a deliberate pressure-source to fuel drama as everything else escalates.
 **Magical name:** Crimson Heart (♥ Hearts).
 **Was:** the magical girl who led the team that defeated the Demon Gang, then retired.
 
@@ -46,7 +57,7 @@ that finally forces the processing she dodged for years.
   that a path is possible.
 
 ## Relationships
-- **The Husband** — spouse; still thinks her magical past is just bedtime stories.
+- **Matty Shinzo** — husband; green-flag, no-prying support and her cornerstone. Knows she has a hard past but no specifics; doesn't know about the magical-girl life at all. She fears telling him = him thinking she's crazy or a liar.
 - **Elder daughter** — the cat's recruit target; Bunny is determined to stop that.
 - **Younger daughter (4)** — present through the chapter-1 events.
 - **Kitty** — the cat who recruited her; she resents it.

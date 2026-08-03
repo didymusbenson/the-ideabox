@@ -16,5 +16,5 @@ Bunny's older daughter — school-age (Kid 1, dropped off at school in ch.1). **
 Presumed **recruit target**: the cat wants her for the new-generation (tarot minor-arcana) team because she's about the right age and carries the genes/magic. Which daughter is the target isn't hard-locked — see open-questions.
 
 ## Relationships
-- Bunny (mother), the Husband (father), younger sister.
+- Bunny (mother), Matty Shinzo (father), younger sister.
 - **Kitty** — wants to recruit her.

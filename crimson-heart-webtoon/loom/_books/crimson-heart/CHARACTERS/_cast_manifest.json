@@ -89,17 +89,19 @@
       "created": "2026-07-31",
       "updated": "2026-07-31"
     },
-    "the-husband": {
-      "name": "The Husband",
+    "matty-shinzo": {
+      "name": "Matthew \"Matty\" Shinzo",
       "role": "npc",
       "status": "active",
       "tags": [
         "family",
-        "civilian"
+        "civilian",
+        "husband",
+        "green-flag"
       ],
-      "file": "the-husband.md",
+      "file": "matty-shinzo.md",
       "created": "2026-07-31",
-      "updated": "2026-07-31"
+      "updated": "2026-08-03"
     },
     "jack-the-love-interest": {
       "name": "Jack (The Love Interest)",

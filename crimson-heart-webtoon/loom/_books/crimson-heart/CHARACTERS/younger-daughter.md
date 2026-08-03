@@ -16,4 +16,4 @@ Bunny's younger daughter — **4 years old** (Kid 2). With Bunny on the shopping
 Observant and guileless — spots the shooting star; scolds Bunny for saying 'shit.'
 
 ## Relationships
-- Bunny (mother), the Husband (father), older sister.
+- Bunny (mother), Matty Shinzo (father), older sister.
