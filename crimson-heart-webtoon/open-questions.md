@@ -52,18 +52,24 @@ decks are on the table as future flavor:
 - How broadly the Star suit's **falling-star possession** works beyond the chapter 1 opener.
 - Locking a **canonical** tujeon suit/General list + romanization (sources vary slightly).
 
-## Continuity to reconcile (author owns the rewrite)
+## Continuity (reconciled)
 
-- **RN Bunny + WFH Matty vs. the SAHM pilot — CONTRADICTION, flagged not fixed.** New
-  canon: Bunny is a **registered nurse by choice**; **Matty Shinzo** is a **work-from-home
-  software engineer** whose income supports the family and who's often the daytime parent.
-  The **drafted opening still says otherwise** — Bunny as a **stay-at-home mom**, Matty
-  **leaving for work** (reachable "at lunch," then driving home). Spots to revise when the
-  author reworks the plot: `chapter-1-concept.md`, `pacing.md` (Ch.1 morning + errands
-  logistics — e.g. who's home with the kids, why Ms. Neighbor is needed), and the
-  "stay-at-home mother" descriptors in `premise.md`, `roster.md`, `README.md`. **Do not
-  auto-rewrite the pilot copy.** Hooks this unlocks: hospital-stress as a pressure valve;
-  Matty being *home* changes the Ch.1 anxiety-attack/childcare blocking.
+- **Bunny/Matty occupations vs. the SAHM pilot — RESOLVED.** Settled shape: **Matty** is
+  an **office-based** software engineer (commutes out); **Bunny** is a **hospice /
+  home-health aide** and self-paced nursing student who, **at story start, is on an
+  extended break and parenting full-time.** This **matches the drafted Ch.1** (husband
+  leaves for work / "at lunch" / drives home; Bunny home with the kids; Ms. Neighbor
+  still needed) — **no rewrite required.** The "stay-at-home mother" tags in
+  `premise.md`, `roster.md`, `README.md` remain true for story-start; when convenient,
+  enrich them to "caregiver on break," but nothing is broken. *(Supersedes the earlier
+  RN-practicing / WFH-Matty draft, which had created the conflict.)*
+
+## Deliberate in-text threads (raise, don't pre-answer)
+
+- **Should Bunny go back to work?** She's on an extended break (hospice/home-health aide)
+  and parenting full-time. Her possible return is a **character question to explore in the
+  story** — tangled with POTS, trauma, the magical-girl intrusion, and her need to be of
+  use beyond the home. Don't resolve it in the bible; let scenes earn it.
 
 ## Story / craft
 

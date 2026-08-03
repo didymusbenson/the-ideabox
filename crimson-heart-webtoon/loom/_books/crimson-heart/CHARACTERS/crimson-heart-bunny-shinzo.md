@@ -10,18 +10,29 @@ updated: 2026-08-03
 # Crimson Heart (Bunny Shinzo)
 
 ## Identity
-**Civilian:** Bunny Shinzo — married mother of two in the US; works as a **registered nurse (RN).**
-> ⚠ **Occupation is NEW CANON and conflicts with the drafted pilot** (Ch.1 concept +
-> pacing frame her as a *stay-at-home mom*). RN-by-choice is now the intent; author will
-> reconcile the pilot copy. See the *Pilot continuity* note in world.md / open-questions.md.
+**Civilian:** Bunny Shinzo — married mother of two in the US. A **caregiver by nature and
+by trade**: a **home-health / hospice aide** who's also been working toward an **RN on her
+own terms.** Her worth was never the credential — she's simply, visibly, the person who
+shows up and takes care of people. **At story start she's on an extended break from work,
+parenting full-time** *(the reasons why aren't something we dig into)*.
 
 ## Civilian life & marriage
 Met **Matty Shinzo** on a dating app while putting herself "out there" to leave her teen
 years behind; she was in **nursing school**, he in **software engineering.** Married ~1
-year in; she became an **RN**, he a developer. **They can live on Matty's WFH income —
-Bunny nurses by choice**, to help people and keep her mind busy. She's built a **solid
-work-life balance** — which **magical-girl duties now intrude on**, and **hospital stress**
-is a deliberate pressure-source to fuel drama as everything else escalates.
+year in. She built a vocation as a **hospice / home-health aide** — hands-on healing, the
+civilian channel for what made her a hero — with the **RN license as a long, self-paced
+goal she holds lightly**, no grief attached: POTS + trauma + a full life mean she paces
+herself **by choice, not defeat**, and Matty's income means she never had to grind. This
+is explicitly **not a deferred dream** — she already *does* the thing she's for.
+- **Now:** on an **extended break**, full-time parenting. Whether she should **go back to
+  work** is a **live in-text question** we let the story raise, not something resolved up
+  front.
+- **Care doesn't clock out.** Even off the job her caregiver instinct shows in how she
+  looks after her **community** — e.g., her bond with **Ms. Neighbor**.
+> ✅ **Pilot continuity:** with Matty in an **office** and Bunny **on leave / parenting
+> full-time**, the drafted Ch.1 "stay-at-home mom + husband leaves for work" framing now
+> **holds** — the hospice-aide vocation is backstory/subtext, not a contradiction. (Supersedes
+> the earlier RN/WFH draft.)
 **Magical name:** Crimson Heart (♥ Hearts).
 **Was:** the magical girl who led the team that defeated the Demon Gang, then retired.
 

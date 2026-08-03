@@ -176,25 +176,27 @@ not toward lore.
   until the shooting stars and the talking cat came back.
 
 ### The marriage & home life (present day)
-- **Matty Shinzo** — husband, **software engineer, works from home**; a green-flag
-  partner who shares parenting/housework/cooking and supports Bunny's walls **without
-  prying.** His no-questions steadiness is the cornerstone of her new life.
-- **Bunny is a registered nurse — by choice.** They can live on Matty's income; she
-  nurses to help people and keep her mind busy. **Hospital stress** is a deliberate
-  drama-source that compounds as magical-girl duties intrude on a work-life balance she'd
-  otherwise figured out.
+- **Matty Shinzo** — husband, **software engineer with an office job** (commutes out
+  daily); a green-flag partner who shares parenting/housework/cooking and supports Bunny's
+  walls **without prying.** His no-questions steadiness is the cornerstone of her new life.
+- **Bunny is a caregiver by trade** — a **hospice / home-health aide**, with an **RN she's
+  pursued at her own pace** (health + a full life, by choice not defeat; her worth was
+  never the credential). **At story start she's on an extended break, parenting
+  full-time** — reasons unexplored. Whether she **returns to work** is a **live in-text
+  question**, not a thing to resolve up front. Her care shows anyway in how she looks after
+  her **community** (e.g., **Ms. Neighbor**).
 - **The secret between them:** Matty knows Bunny has a hard past (and a boyfriend who
   died) but **no specifics**, and **nothing** about the magical-girl life. Her fear:
   telling him = being seen as **crazy or a liar.** Central marital arc = getting him to
   **believe**, then support her through things over his head.
 
-> ⚠ **Pilot continuity note (author to reconcile — do NOT auto-rewrite).** The above
-> **contradicts the drafted opening**, which frames Bunny as a **stay-at-home mom** and
-> Matty as **leaving for work** (then reachable "at lunch," then driving home). Affected
-> copy: `../../chapter-1-concept.md`, `../../pacing.md` (Ch.1 morning/among-errands
-> beats), and the SAHM descriptors in `../../premise.md`, `../../roster.md`,
-> `../../README.md`. New intent: RN Bunny + WFH Matty (likely the daytime parent). The
-> **author owns the plot rewrite**; treat pilot copy as provisional until then.
+> ✅ **Pilot continuity — reconciled.** Matty **in an office** + Bunny **on leave /
+> full-time parenting** matches the drafted Ch.1 (he leaves for work, is reachable "at
+> lunch," drives home; she's home with the kids). The hospice-aide vocation is
+> **backstory/subtext**, not a contradiction. The SAHM descriptors in `../../premise.md`,
+> `../../roster.md`, `../../README.md` still read true for *story-start*; deepen them with
+> "caregiver on break, not just a homemaker" whenever those docs get a pass — no urgent
+> rewrite required.
 
 ### Trauma — the two layers (drafting guide)
 Bunny's PTSD isn't a single event; it's why the "action-light" tone matters.

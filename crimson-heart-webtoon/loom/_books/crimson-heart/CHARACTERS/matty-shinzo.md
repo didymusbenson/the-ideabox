@@ -10,8 +10,8 @@ updated: 2026-08-03
 # Matthew "Matty" Shinzo
 
 ## Identity
-Bunny's husband. Civilian, no powers. **Software engineer** who **works from home** —
-which lets him carry a lot of the kid/household load. Comfort and stability incarnate.
+Bunny's husband. Civilian, no powers. **Software engineer** with an **office job** (commutes
+out daily) whose income comfortably supports the family. Comfort and stability incarnate.
 
 ## How they met
 On a **dating app**, back when Bunny — freshly trying to leave her teen years behind —
@@ -23,6 +23,8 @@ After that: Bunny became an **RN**, Matty broke into **development.**
 - **Fiercely protective** of Bunny, in the healthy way: shows up, has her back, never
   controlling.
 - **Shares the load** — parenting, housework, cooking. A true partner, not a "helper."
+  He's out at the office by day (Bunny carries the daytime while she's on leave), but he
+  pulls his full weight mornings, evenings, and weekends — no "second shift" dumped on her.
 - **Listens and supports without prying.** This is his defining trait and the reason he
   became the **cornerstone of Bunny's new life:** when he hits one of her walls, he reads
   it as a **boundary to respect, not a problem to solve.** He gives her safety, not
@@ -44,11 +46,11 @@ his trying to support her through problems (trauma, illness, an actual war) that
 **way over his head** once he does know.
 
 ## Family logistics (drafting-relevant)
-Matty's WFH dev income can support the family on its own. **Bunny works as an RN by
-choice** — to help people and keep her mind busy — not out of necessity. He's the
-default daytime parent because he's home. *(See the pilot-continuity note in
-world.md / open-questions.md — the drafted Ch.1 still frames Bunny as a stay-at-home
-mom and Matty as leaving for work; author to reconcile.)*
+Matty's office-dev income supports the family on its own. **Bunny is on an extended break
+from her hospice/home-health work and parents full-time at story start** (see her sheet).
+So the day splits cleanly: **Matty commutes out; Bunny holds the home front** — which is
+exactly the drafted Ch.1 setup (he leaves for work, is reachable "at lunch," drives home).
+No pilot contradiction here.
 
 ## Relationships
 - **Bunny** — wife; he's her safe harbor. Married ~1 yr into her nursing school.
