@@ -10,6 +10,13 @@ Two ~19-page chapters → **6 webtoon episodes**, each ending on a hook. This is
 Bunny's forced return: an ordinary day cracks open, the old life comes for her
 daughter, and she suits back up.
 
+> ⚠ **Pilot adjustment pending — cast is now ONE daughter (~8), not two.** The Ep. 1–6
+> beats below still describe the **two-kid** draft (older kid to school; the *younger
+> girl* in the car/store; a *4yo* watching TV at the end). Reblock these for a single
+> ~8-year-old — e.g. no school-dropoff split; the daughter is *with* Bunny for the star
+> sighting, the store, the cat, and the couch. **Author owns this rewrite;** beats left
+> as-is on purpose. See `open-questions.md` → *Continuity*.
+
 ### Chapter 1
 - **Ep. 1 — The bedtime story.** Cold-open on the "Final Crisis" flashback → reveal
   it's Bunny telling her daughters. Title-page couch beat: the "did they live happily
@@ -37,4 +44,9 @@ daughter, and she suits back up.
   open). Each is a short fight wrapped in a domestic/relationship story.
 - Reconnecting with **Raven Spade, Amber Diamond, Onyx Club** as they notice the return.
 - The **husband learning the truth**; the **cat's pursuit of the daughter** escalating.
+- **The daughter's pull.** She *wants* the calling — and once the **real Crimson Heart**
+  goes public (the downtown fight, the news), she's **determined to find out who the hero
+  is and meet her**, not knowing it's her mom. Forces Bunny to **tell Matty and the
+  daughter the truth**; even then Bunny **urges her not to let Kitty enlist her.** The
+  reveal reframes the conflict rather than ending it.
 - Season/volume shape and where the new-generation (minor-arcana) team enters.

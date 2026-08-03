@@ -54,7 +54,7 @@ No pilot contradiction here.
 
 ## Relationships
 - **Bunny** — wife; he's her safe harbor. Married ~1 yr into her nursing school.
-- **Elder & younger daughters** — hands-on dad; often the one at home with them.
+- **The daughter (~8)** — their only child; hands-on dad, especially evenings/weekends.
 - **Jack** — knows him only as "a boyfriend who died," nothing more.
 
 ## Naming note

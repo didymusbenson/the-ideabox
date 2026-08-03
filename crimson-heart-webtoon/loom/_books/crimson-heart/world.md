@@ -117,12 +117,16 @@ color of a superhero's cape. Deliberately hand-waved.
   mechanism. We do **not** dramatize Bunny's origins or her original exploits; she's
   spent years burying them, and the narrative honors that by leaving them vague.
 - **Recruitment = the threat to the daughter.** The same pitch is now aimed at Bunny's
-  elder daughter — Kitty can allude to it flatly ("your daughter's got a pure heart —
-  her magic would be *so* strong"). It doesn't need to make mechanical sense; it needs
-  to be the thing Bunny will burn everything down to prevent. **Keep the stakes
-  emotional, not procedural** — don't invent consent rules, inheritance genetics, or a
-  way for Bunny to "shield" her by powering up. The horror is simply that the offer
-  exists and the kid might say yes.
+  **daughter (~8, her only child)** — Kitty can allude to it flatly ("your daughter's got
+  a pure heart — her magic would be *so* strong"). It doesn't need to make mechanical
+  sense; it needs to be the thing Bunny will burn everything down to prevent. **Keep the
+  stakes emotional, not procedural** — don't invent consent rules, inheritance genetics,
+  or a way for Bunny to "shield" her by powering up. The horror is simply that the offer
+  exists — **and the kid would say yes in a heartbeat.** She *wants* it (loves the Crimson
+  Heart bedtime stories, thinks powers would be amazing), which is what makes it terrifying:
+  Bunny isn't protecting a reluctant child, she's standing between an eager one and the
+  exact life that broke her. And the daughter is **the same age Bunny was when Kitty
+  recruited her** — the past arriving on schedule.
 
 ### "Endgame" — maxed out, not invincible
 
@@ -171,9 +175,11 @@ not toward lore.
   Bunny's love interest (tuxedo-mask analog, *working name*) — stepped in and sacrificed
   himself during it. She saved everyone **except him**, and for the battle to end his
   death had to be **permanent**: the one thing her fix-everything magic could not undo.
-- Bunny emigrated to the **US**, met **Matty Shinzo** on a dating app while starting
-  over, married him ~1 year into nursing school, had two daughters, and buried the past —
-  until the shooting stars and the talking cat came back.
+- **Bunny's magical-girl timeline:** recruited by Kitty at **age 8**, served **~10 years**,
+  retired around **18** ("leaving her teen years behind"). Emigrated to the **US**, met
+  **Matty Shinzo** on a dating app while starting over, married him ~1 year into nursing
+  school, had **one daughter**, and buried the past — until the shooting stars and the
+  talking cat came back. **The daughter is now ~8 — the age Bunny was when it began.**
 
 ### The marriage & home life (present day)
 - **Matty Shinzo** — husband, **software engineer with an office job** (commutes out

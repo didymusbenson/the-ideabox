@@ -8,8 +8,8 @@
   "total_sessions": 0,
   "last_position": null,
   "open_threads": [
-    "Civilian/real names for the whole cast (husband, daughters, teammates, love interest)",
-    "Which daughter is the cat's recruit target (elder assumed)",
+    "Civilian/real names for the whole cast (daughter, teammates)",
+    "PILOT ADJUST: cast is now ONE daughter (~8), not two — reconcile Ch.1 two-kid beats",
     "Jack's whispered last words — author-held reveal; keep blank while drafting",
     "Revisit Bunny's surname (working: Shinzo) — multicultural project, nothing depends on it yet",
     "Order Crim faces Generals 2-8 (North Star is first)",
@@ -19,8 +19,7 @@
   "character_focus": [
     "crimson-heart-bunny-shinzo",
     "matty-shinzo",
-    "elder-daughter",
-    "younger-daughter",
+    "the-daughter",
     "kitty",
     "the-north-star"
   ],

@@ -52,7 +52,18 @@ decks are on the table as future flavor:
 - How broadly the Star suit's **falling-star possession** works beyond the chapter 1 opener.
 - Locking a **canonical** tujeon suit/General list + romanization (sources vary slightly).
 
-## Continuity (reconciled)
+## Continuity
+
+- **ONE daughter, not two — PILOT ADJUST NEEDED (note only, do not auto-rewrite).** Cast
+  is now a **single ~8-year-old daughter** (only child), the same age Bunny was when Kitty
+  recruited her. The **drafted opening is built around two kids** and needs reblocking:
+  `chapter-1-concept.md` and `pacing.md` (older kid to school + *younger girl* spots the
+  star + Bunny & *Kid 2* to the store + *4yo* watching TV at the end), the "mother of
+  two" / "two kids" lines in `premise.md` + `README.md`, and the two-kid phrasing in this
+  project's `OUTLINE.md` (flagged there too). Simplest reblock: the one daughter is with
+  Bunny throughout (star sighting, store, cat, couch) — **author owns the copy.**
+
+### Reconciled
 
 - **Bunny/Matty occupations vs. the SAHM pilot — RESOLVED.** Settled shape: **Matty** is
   an **office-based** software engineer (commutes out); **Bunny** is a **hospice /

@@ -23,4 +23,4 @@ Embodies the duty Bunny fled. Reveals the 'addict' from the store was the enemy,
 
 ## Relationships
 - **Bunny** — former (and would-be current) charge; she resents it.
-- **Elder daughter** — recruitment target.
+- **The daughter (~8)** — recruitment target; the same age Bunny was when Kitty first recruited *her*. Unlike Bunny, the kid *wants* the calling.

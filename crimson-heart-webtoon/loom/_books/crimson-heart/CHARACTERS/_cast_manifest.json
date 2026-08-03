@@ -34,19 +34,20 @@
       "created": "2026-07-31",
       "updated": "2026-08-03"
     },
-    "elder-daughter": {
-      "name": "Elder Daughter",
+    "the-daughter": {
+      "name": "The Daughter",
       "role": "npc",
       "status": "active",
       "tags": [
         "family",
         "recruit-target",
         "minor-arcana",
-        "next-generation"
+        "next-generation",
+        "only-child"
       ],
-      "file": "elder-daughter.md",
+      "file": "the-daughter.md",
       "created": "2026-07-31",
-      "updated": "2026-07-31"
+      "updated": "2026-08-03"
     },
     "kitty": {
       "name": "Kitty",
@@ -129,18 +130,6 @@
         "first-foe"
       ],
       "file": "the-north-star.md",
-      "created": "2026-07-31",
-      "updated": "2026-07-31"
-    },
-    "younger-daughter": {
-      "name": "Younger Daughter",
-      "role": "npc",
-      "status": "active",
-      "tags": [
-        "family",
-        "minor"
-      ],
-      "file": "younger-daughter.md",
       "created": "2026-07-31",
       "updated": "2026-07-31"
     }

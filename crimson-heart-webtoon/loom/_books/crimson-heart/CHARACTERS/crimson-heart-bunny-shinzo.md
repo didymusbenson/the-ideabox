@@ -10,7 +10,7 @@ updated: 2026-08-03
 # Crimson Heart (Bunny Shinzo)
 
 ## Identity
-**Civilian:** Bunny Shinzo — married mother of two in the US. A **caregiver by nature and
+**Civilian:** Bunny Shinzo — married mother of one in the US. A **caregiver by nature and
 by trade**: a **home-health / hospice aide** who's also been working toward an **RN on her
 own terms.** Her worth was never the credential — she's simply, visibly, the person who
 shows up and takes care of people. **At story start she's on an extended break from work,
@@ -41,13 +41,14 @@ Civilian look: TBD.
 As Crimson Heart: full magical-girl regalia — styled hair, bows, miniskirt (per the transformation sequence).
 
 ## Personality
-Moody, trauma-scarred, and fiercely protective. Endgame-powered and DONE with the life — furious to be dragged back in. Dry, exhausted, sweary under pressure; tender with her kids.
+Moody, trauma-scarred, and fiercely protective. Endgame-powered and DONE with the life — furious to be dragged back in. Dry, exhausted, sweary under pressure; tender with her daughter.
 
 ## Voice
 Blunt and sardonic; curses when rattled ('SHIT'). In hero mode she flips to declarative, knowingly-corny magical-girl lines ('I am CRIMSON HEART. I'll stop you with the POWER OF LOVE!').
 
 ## Background
-Won the war as Crimson Heart. Fled to the US, married, had two daughters, hid her transformation stick. Powers back up when the threats return, partly to keep the cat from recruiting her daughter.
+Won the war as Crimson Heart. Fled to the US, married, had **one daughter**, hid her transformation stick. Powers back up when the threats return, partly to keep the cat from recruiting that daughter.
+**Timeline:** Kitty recruited Bunny at **age 8**; she served **~10 years** as a magical girl and retired around **18** (which is what "leaving her teen years behind" points at). **Her daughter is now ~8 — the exact age Bunny was when it started for her.** That symmetry is deliberate: the cat is back, right on cue.
 
 ## Trauma (two layers)
 Her PTSD is **not** just one battle. It's the accumulated horror of everything the forces of evil did while she fought them: monsters eating children, maiming bystanders, devouring souls, mind-controlling crowds. A typical magical-girl story glosses this with glitter and an "I fixed everything" wave — Bunny **watched all of it happen.** Her magic could clean up the mess in a blink, but that never unsaw, unheard, or unfelt it. Winning left an **invisible stain** the sparkle can't reach.
@@ -57,7 +58,7 @@ And then **Jack.** Her love interest (tuxedo-mask analog) sacrificed himself dur
 **The cost (chronic illness, not a magic tax):** Bunny has **POTS**. Transforming and channeling magic spike her heart rate; the magic sustains her *through* the action, but the moment she powers down the crash hits — dizziness, lightheadedness, losing her balance. Winning always bills her afterward, quietly. Play it as a real disability, not a power gauge.
 
 ## Arc — the avoider who looks the most healed
-Bunny's life is genuinely good: happy marriage, happy daughters. But she built it by
+Bunny's life is genuinely good: happy marriage, happy kid. But she built it by
 **burying the past and refusing to process any of it** — the good life *is* the
 avoidance. She looks the most settled of the four and is actually the least healed. She's
 **trying and failing to find her own path** while Amber, Raven, and Onyx have each been
@@ -69,8 +70,7 @@ that finally forces the processing she dodged for years.
 
 ## Relationships
 - **Matty Shinzo** — husband; green-flag, no-prying support and her cornerstone. Knows she has a hard past but no specifics; doesn't know about the magical-girl life at all. She fears telling him = him thinking she's crazy or a liar.
-- **Elder daughter** — the cat's recruit target; Bunny is determined to stop that.
-- **Younger daughter (4)** — present through the chapter-1 events.
+- **The daughter (~8)** — her only child, bold/kind/energetic just like Bunny, and the cat's recruit target. The kid *wants in* (loves the Crimson Heart stories, thinks powers would be amazing); Bunny is determined to stop her from living what she lived. The central domestic tug-of-war.
 - **Kitty** — the cat who recruited her; she resents it.
 - **The Love Interest** — dead; unresolved grief.
 - **Raven Spade / Amber Diamond / Onyx Club** — old teammates she initially keeps at arm's length.
