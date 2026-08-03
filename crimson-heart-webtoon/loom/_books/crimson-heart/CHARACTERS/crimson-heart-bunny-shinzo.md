@@ -34,6 +34,17 @@ And then **Jack.** Her love interest (tuxedo-mask analog) sacrificed himself dur
 **Her magic:** unlocked, not granted — Kitty opened magic already hidden in her because she was flagged as having "a pure heart, full of love." Origins/original exploits are deliberately vague; she's buried them.
 **The cost (chronic illness, not a magic tax):** Bunny has **POTS**. Transforming and channeling magic spike her heart rate; the magic sustains her *through* the action, but the moment she powers down the crash hits — dizziness, lightheadedness, losing her balance. Winning always bills her afterward, quietly. Play it as a real disability, not a power gauge.
 
+## Arc — the avoider who looks the most healed
+Bunny's life is genuinely good: happy marriage, happy daughters. But she built it by
+**burying the past and refusing to process any of it** — the good life *is* the
+avoidance. She looks the most settled of the four and is actually the least healed. She's
+**trying and failing to find her own path** while Amber, Raven, and Onyx have each been
+doing at least *some* of the work on theirs. **Kitty's return is the crack in the wall**
+that finally forces the processing she dodged for years.
+- **The friends mirror her.** She sees a facet of herself in each of them — and each is
+  further down a road she never started. Reconnecting = watching people she loves model
+  that a path is possible.
+
 ## Relationships
 - **The Husband** — spouse; still thinks her magical past is just bedtime stories.
 - **Elder daughter** — the cat's recruit target; Bunny is determined to stop that.

@@ -26,6 +26,22 @@ swallowing her daughter and the quiet life she fought to build.
   she lost Jack), but the story never frames hers as *more real* than her friends'. Each
   teammate copes her **own way** — write them as peers in grief, not as a support staff
   orbiting the "real" victim.
+- **The friends are mirrors — Bunny's the one who *avoided* the work.** Here's the twist
+  on the arc: the difference between Bunny and her friends isn't *how much* they hurt,
+  it's that **Amber, Raven, and Onyx have each been doing at least *some* of the healing**
+  — each committed to a path, a life they're actually building and moving through. Bunny
+  looks the most settled (happy marriage, happy kid) but got there the one wrong way:
+  **she buried everything and refused to process it at all.** Her good life is real *and*
+  it's an avoidance strategy.
+- **She sees herself in all of them.** Each friend reflects a facet Bunny recognizes —
+  and each is further down a road she never started walking. Bunny is **trying and
+  failing to find her own path**; the friends show her paths *exist*. **Kitty's return
+  is the crack in the wall** — the thing that finally forces the processing she dodged
+  for years.
+- **On the two-mothers overlap (Bunny & Amber):** not redundant — it's a deliberate
+  mirror. Same facet (motherhood), opposite relationship to the past: Amber (single mom)
+  stayed **committed to her path** and did some of the work; Bunny used **family as the
+  wall** to avoid hers. Keep them contrasting, not doubled.
 
 ## Factions & Groups
 
