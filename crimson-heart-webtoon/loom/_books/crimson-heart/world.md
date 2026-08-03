@@ -127,10 +127,29 @@ not toward lore.
 
 ## History & Lore
 - Crimson Heart's team beat the **Demon Gang** and disbanded into civilian life.
-- In the **final battle**, Bunny's love interest (tuxedo-mask analog) died saving her.
-  Her trauma is **survivor's guilt + PTSD** from the suffering of that fight and his loss.
+- The **core four's combined ultimate.** Ending the final battle took Crim + the other
+  three senshi (Diamond, Club, Spade) firing a combined finisher together. **Jack** —
+  Bunny's love interest (tuxedo-mask analog, *working name*) — stepped in and sacrificed
+  himself during it. She saved everyone **except him**, and for the battle to end his
+  death had to be **permanent**: the one thing her fix-everything magic could not undo.
 - Bunny emigrated to the **US**, married, had two daughters, and buried the past —
   until the shooting stars and the talking cat came back.
+
+### Trauma — the two layers (drafting guide)
+Bunny's PTSD isn't a single event; it's why the "action-light" tone matters.
+1. **The invisible stain.** Across her whole career she *witnessed* what a glitter-and-
+   wand story usually skips — monsters eating children, maiming bystanders, devouring
+   souls, mind-controlling crowds. Her magic cleaned up the mess in a blink, but never
+   unsaw/unheard/unfelt it. **Winning cleans the scene and leaves the stain.**
+2. **Jack, the irreversible one.** His loss hurts *more* than all of it precisely
+   because it's the one wound she couldn't magic better — permanent, un-fixable.
+- **The whispered last words.** Jack said one cryptic final thing as he died. In
+  flashbacks and trauma-flashbacks it renders as **illegible, wordless speech** — Bunny
+  **repressed** it (couldn't accept it), so she genuinely can't recall it. It's a
+  **fixed, author-held line revealed slowly** as she heals; **never invent or paraphrase
+  its content** while drafting. (Details on Jack's sheet.)
+- **What the husband knows:** only that she had a **high-school boyfriend who died** —
+  and, at story start, *nothing* about her magical-girl life.
 
 ## Open worldbuilding threads
 > Magic system is now **settled** — see *Magic & the Chosen* above. It's deliberately

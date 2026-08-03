@@ -101,19 +101,20 @@
       "created": "2026-07-31",
       "updated": "2026-07-31"
     },
-    "the-love-interest": {
-      "name": "The Love Interest",
+    "jack-the-love-interest": {
+      "name": "Jack (The Love Interest)",
       "role": "npc",
       "status": "deceased",
       "tags": [
         "backstory",
         "love-interest",
         "deceased",
-        "tuxedo-mask-analog"
+        "tuxedo-mask-analog",
+        "jack"
       ],
-      "file": "the-love-interest.md",
+      "file": "jack-the-love-interest.md",
       "created": "2026-07-31",
-      "updated": "2026-07-31"
+      "updated": "2026-08-03"
     },
     "the-north-star": {
       "name": "The North Star",

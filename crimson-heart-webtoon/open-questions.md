@@ -20,6 +20,13 @@ decks are on the table as future flavor:
 
 ## Cast / roster
 
+- **Bunny's surname — revisit (working: Shinzo).** *Shinzō* (心臓) is Japanese for
+  "heart," a nice fit for Crimson Heart; we're keeping it **for now**. This is a
+  deliberately **multicultural** project, though, so the choice is worth a second pass —
+  e.g. a Korean route would land closer to **Maeum** (마음, "heart/mind"). Pinned, not
+  locked; **no story beats depend on her nationality yet.** (Note: a Japanese surname
+  cuts against the earlier idea of tying her homeland to the Korean *tujeon* enemy — fine,
+  just don't rely on that thread.)
 - Real-life (civilian) names behind every magical alias.
 - Which tarot minor-arcana suit is **Bunny's daughter**, and the rest of that new generation.
 - Who the **Swiss/German-suits** group are and when they enter.
@@ -35,7 +42,9 @@ decks are on the table as future flavor:
 
 ## Story / craft
 
-- The dead love interest — name, and how present he stays in flashbacks.
+- The love interest — **working name "Jack"** (may change); core beats settled (see his
+  sheet). Still open: **the content of his whispered last words** — an author-held,
+  fixed line to be revealed slowly; keep it blank in drafting until we decide the reveal.
 - Serialization plan, art direction, and target platform for the webtoon.
 
 ## Tooling
