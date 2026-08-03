@@ -1,5 +1,5 @@
 ---
-name: Crimson Heart (Bunny Westlake)
+name: Crimson Heart (Bunny Shinzo)
 role: npc
 status: active
 tags: [protagonist, hearts, crimson-heart, magical-woman, mother, core-four, chronic-illness, pots]
@@ -7,10 +7,10 @@ created: 2026-07-31
 updated: 2026-08-03
 ---
 
-# Crimson Heart (Bunny Westlake)
+# Crimson Heart (Bunny Shinzo)
 
 ## Identity
-**Civilian:** Bunny Westlake — stay-at-home mother of two, living in the US.
+**Civilian:** Bunny Shinzo — stay-at-home mother of two, living in the US.
 **Magical name:** Crimson Heart (♥ Hearts).
 **Was:** the magical girl who led the team that defeated the Demon Gang, then retired.
 

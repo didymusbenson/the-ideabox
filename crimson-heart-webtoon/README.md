@@ -12,7 +12,7 @@ daughter and the quiet life she fought to build.
 
 ## What this is
 
-A magical-girl webtoon about **Bunny Westlake**, once **Crimson Heart**, leader-ish
+A magical-girl webtoon about **Bunny Shinzo**, once **Crimson Heart**, leader-ish
 of the team that defeated the Demon Gang. In the final battle her tuxedo-mask-analog
 love interest died saving her; she moved to the US to escape the grief, married, and
 had two kids. When the threats come back, the talking cat that first recruited her
@@ -66,7 +66,7 @@ resumes the project. Then e.g. *"draft Episode 1 from the outline."*
 
 ## Cast so far
 
-- **Bunny Westlake / Crimson Heart** — protagonist; retired, endgame-powered
+- **Bunny Shinzo / Crimson Heart** — protagonist; retired, endgame-powered
   magical girl, now a US mom of two, carrying the trauma of her old life
 - **Her daughter** — right age and the right genes/magic; the cat wants to recruit
   her, and Bunny is determined to stop that

@@ -7,7 +7,7 @@
 ## Premise (one breath)
 
 A magical-girl team saved the world and grew up. Years later the threats return —
-and the retired, endgame-powered, grief-scarred **Crimson Heart** (Bunny Westlake)
+and the retired, endgame-powered, grief-scarred **Crimson Heart** (Bunny Shinzo)
 has to suit back up: not to relive her glory days, but to keep the fight from
 swallowing her daughter and the quiet life she fought to build.
 
@@ -120,7 +120,7 @@ a literal war) that are **way over his head.** When in doubt, cut toward *those*
 not toward lore.
 
 ## Locations
-- **The Westlake home** (US suburb) — couch, kitchen, the front door the cat scratches at.
+- **The Shinzo home** (US suburb) — couch, kitchen, the front door the cat scratches at.
 - **Ms. Neighbor's house** — next door; emergency childcare.
 - **The grocery store** — egg-price lament; the star-struck man's first scene.
 - **Main Street (downtown)** — the crash/chaos; site of Crim's first on-page fight.

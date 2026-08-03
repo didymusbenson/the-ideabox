@@ -16,8 +16,8 @@
       "created": "2026-07-31",
       "updated": "2026-07-31"
     },
-    "crimson-heart-bunny-westlake": {
-      "name": "Crimson Heart (Bunny Westlake)",
+    "crimson-heart-bunny-shinzo": {
+      "name": "Crimson Heart (Bunny Shinzo)",
       "role": "npc",
       "status": "active",
       "tags": [
@@ -26,11 +26,13 @@
         "crimson-heart",
         "magical-woman",
         "mother",
-        "core-four"
+        "core-four",
+        "chronic-illness",
+        "pots"
       ],
-      "file": "crimson-heart-bunny-westlake.md",
+      "file": "crimson-heart-bunny-shinzo.md",
       "created": "2026-07-31",
-      "updated": "2026-07-31"
+      "updated": "2026-08-03"
     },
     "elder-daughter": {
       "name": "Elder Daughter",
