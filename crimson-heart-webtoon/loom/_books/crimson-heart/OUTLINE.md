@@ -12,10 +12,12 @@ daughter, and she suits back up.
 
 > ⚠ **Pilot adjustment pending — cast is now ONE daughter (~8), not two.** The Ep. 1–6
 > beats below still describe the **two-kid** draft (older kid to school; the *younger
-> girl* in the car/store; a *4yo* watching TV at the end). Reblock these for a single
-> ~8-year-old — e.g. no school-dropoff split; the daughter is *with* Bunny for the star
-> sighting, the store, the cat, and the couch. **Author owns this rewrite;** beats left
-> as-is on purpose. See `open-questions.md` → *Continuity*.
+> girl* in the car/store; a *4yo* watching TV at the end). Reblock for a single
+> ~8-year-old. **Leading approach:** keep the **school drop-off** (kid safely out of the
+> danger) and make **Kitty the menace** — either lurking through the drop-off with Bunny
+> clocking her at the last minute, or shadowing the daughter *pre-contact* until Bunny
+> intercepts. **Author owns this rewrite;** beats left as-is on purpose. Candidate
+> approaches + affected files in `open-questions.md` → *Continuity*.
 
 ### Chapter 1
 - **Ep. 1 — The bedtime story.** Cold-open on the "Final Crisis" flashback → reveal

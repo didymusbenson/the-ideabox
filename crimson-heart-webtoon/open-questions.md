@@ -60,8 +60,20 @@ decks are on the table as future flavor:
   `chapter-1-concept.md` and `pacing.md` (older kid to school + *younger girl* spots the
   star + Bunny & *Kid 2* to the store + *4yo* watching TV at the end), the "mother of
   two" / "two kids" lines in `premise.md` + `README.md`, and the two-kid phrasing in this
-  project's `OUTLINE.md` (flagged there too). Simplest reblock: the one daughter is with
-  Bunny throughout (star sighting, store, cat, couch) — **author owns the copy.**
+  project's `OUTLINE.md` (flagged there too). **Author owns the copy.**
+  - **Candidate reblock approaches (for the rewrite — not locked):**
+    1. **Keep the school drop-off; make the cat the menace.** The daughter still gets
+       dropped at school (so she's safely out of the store/downtown danger). **Kitty is
+       present/lurking through the drop-off, and Bunny only recognizes her at the last
+       minute** — dread spikes as she clocks the familiar cat near her kid. Bunny then
+       handles the store + fight without the child present.
+    2. **The cat was shadowing the kid, pre-contact.** Kitty had been **following the
+       daughter but hadn't spoken to her yet** when Bunny catches her — so recruitment
+       hasn't started; Bunny intercepts *before* first contact. Preserves the drop-off
+       and the "circling my daughter" horror.
+    - *(Alt, heavier rewrite: the one daughter stays with Bunny all day — but then she
+      witnesses the star, the cat, and the panic firsthand, which changes how hard the
+      secret is to keep. Approaches 1–2 avoid that.)*
 
 ### Reconciled
 
