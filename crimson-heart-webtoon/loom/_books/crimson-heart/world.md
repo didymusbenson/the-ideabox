@@ -98,8 +98,16 @@ threat the Demon Gang *returned*, or a new power wearing tujeon's structure?
   civilians and hijack them (the ch.1 "star-struck man"). Crim's attack shatters the
   star and frees the host. This is the **Star suit / North Star's** calling card;
   whether all Generals work this way is TBD.
-- **Transformation.** Bunny transforms with a hidden **transformation stick** (kept in
-  a secret compartment of her purse). Call: **"SHINE HEART POWER! SPARKLE!"**
+- **Transformation.** Bunny transforms with a hidden **transformation stick / heart wand**
+  (kept in a secret compartment of her purse; has a **compact** and an **extended** mode).
+  Call: **"SHINE HEART POWER! SPARKLE!"** She transforms into **magical-girl regalia** —
+  see the two costume designs below.
+- **Costumes — two of them (design canon).** ♥ **Teen costume:** her original red/blue/
+  white teenage fit, now **"a little too tight"** (great pilot beat). ♥ **Adult costume:**
+  a crimson, lace-and-corset redesign **"for the woman she is now."** The swap is
+  **character growth, not a power upgrade** — it does not touch the endgame/no-progression
+  rule. Full model sheets live in `../../assets/character-designs/`. Bunny keeps her
+  **glasses** in hero mode.
 - **Power level.** Crim is endgame-tier from page one; her ultimate ("EXPLOSIVE HEART
   DEVASTATION") ends fights instantly. Tension is emotional, not martial. See **Magic
   & the Chosen** below for what "endgame" means and what it costs her.

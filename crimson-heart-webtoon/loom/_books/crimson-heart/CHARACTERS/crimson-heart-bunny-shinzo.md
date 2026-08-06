@@ -37,8 +37,12 @@ is explicitly **not a deferred dream** — she already *does* the thing she's fo
 **Was:** the magical girl who led the team that defeated the Demon Gang, then retired.
 
 ## Appearance
-Civilian look: TBD.
-As Crimson Heart: full magical-girl regalia — styled hair, bows, miniskirt (per the transformation sequence).
+**Age 30.** Long, voluminous **curly auburn / red-brown hair** (bangs, side part); warm brown eyes; **glasses** — thin-rimmed, worn in **both civilian and hero mode** (a signature: the magical girl who kept her glasses). Curvy adult build. Wide, expressive emotional range.
+**Two costumes** (full model sheets in `assets/character-designs/`):
+- **Teen costume (original):** red halter crop top w/ heart gem, red-over-blue pleated skirt with white ruffle, white opera gloves, white thigh-high heart boots — classic red/blue/white/gold. *Canonically "a little too tight now."*
+- **Adult costume (new — "for the woman she is now"):** deeper crimson, sheer red lace sleeves, black underbust corset, asymmetric layered lace skirt, black lace-up heeled boots, draped heart chain. Confident, graceful, grown-up.
+- Two-costume split = **character growth, not a power upgrade** (does not touch the "endgame / no progression" rule). Likely beat: old fit in the pilot, adult redesign earned later.
+**Heart Wand:** compact + extended modes; treat as the same object as her "transformation stick" unless we split them (see open-questions).
 
 ## Personality
 Moody, trauma-scarred, and fiercely protective. Endgame-powered and DONE with the life — furious to be dragged back in. Dry, exhausted, sweary under pressure; tender with her daughter.
@@ -48,7 +52,7 @@ Blunt and sardonic; curses when rattled ('SHIT'). In hero mode she flips to decl
 
 ## Background
 Won the war as Crimson Heart. Fled to the US, married, had **one daughter**, hid her transformation stick. Powers back up when the threats return, partly to keep the cat from recruiting that daughter.
-**Timeline:** Kitty recruited Bunny at **age 8**; she served **~10 years** as a magical girl and retired around **18** (which is what "leaving her teen years behind" points at). **Her daughter is now ~8 — the exact age Bunny was when it started for her.** That symmetry is deliberate: the cat is back, right on cue.
+**Timeline:** Kitty recruited Bunny at **age 8**; she served **~10 years** as a magical girl and retired around **18** (which is what "leaving her teen years behind" points at). **She's 30 now** (~12 years out), and **her daughter is ~8 — the exact age Bunny was when it started for her.** That symmetry is deliberate: the cat is back, right on cue.
 
 ## Trauma (two layers)
 Her PTSD is **not** just one battle. It's the accumulated horror of everything the forces of evil did while she fought them: monsters eating children, maiming bystanders, devouring souls, mind-controlling crowds. A typical magical-girl story glosses this with glitter and an "I fixed everything" wave — Bunny **watched all of it happen.** Her magic could clean up the mess in a blink, but that never unsaw, unheard, or unfelt it. Winning left an **invisible stain** the sparkle can't reach.

@@ -94,6 +94,18 @@ decks are on the table as future flavor:
   story** — tangled with POTS, trauma, the magical-girl intrusion, and her need to be of
   use beyond the home. Don't resolve it in the bible; let scenes earn it.
 
+## Design / visual (from the author's model sheets — see `assets/`)
+
+- **Bunny is 30**, curly auburn hair, **glasses in both modes** — now locked from the
+  reference sheets. (Resolves her prior "age TBD / civilian look TBD.")
+- **Two costumes exist:** the too-tight **teen** fit and an **adult** crimson-lace
+  redesign. **Open:** *when/how* she moves to the adult costume in-story — pilot uses the
+  old one; the redesign is an earned identity beat, placement TBD. Keep it emotional, not
+  a power tier.
+- **Wand vs. "transformation stick":** the sheets show a **heart wand** (compact +
+  extended); lore calls her transform item a **stick** in her purse. Treat them as the
+  **same object** unless we deliberately split (e.g. purse-stick → summons the wand). Minor.
+
 ## Story / craft
 
 - The love interest — **working name "Jack"** (may change); core beats settled (see his
