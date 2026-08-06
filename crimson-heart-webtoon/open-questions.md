@@ -20,10 +20,29 @@ decks are on the table as future flavor:
 
 ## Cast / roster
 
-- Real-life (civilian) names behind every magical alias.
+- **Bunny's surname — revisit (working: Shinzo).** *Shinzō* (心臓) is Japanese for
+  "heart," a nice fit for Crimson Heart; we're keeping it **for now**. This is a
+  deliberately **multicultural** project, though, so the choice is worth a second pass —
+  e.g. a Korean route would land closer to **Maeum** (마음, "heart/mind"). Pinned, not
+  locked; **no story beats depend on her nationality yet.** (Note: a Japanese surname
+  cuts against the earlier idea of tying her homeland to the Korean *tujeon* enemy — fine,
+  just don't rely on that thread.)
+- **Amber Diamond's role — under review.** "Single mother" is inherited from the early
+  roster and may be **replaced entirely.** Until settled: keep it contained to her sheet;
+  don't make it load-bearing for other arcs (esp. the Bunny/Amber motherhood mirror,
+  which is parked as provisional). Once locked, re-open the "how are Bunny and Amber
+  different" mirror question.
+- Real-life (civilian) names behind every magical alias. *(Husband **resolved: Matthew
+  "Matty" Shinzo**, WFH software engineer — see his sheet. Teammates' civilian names still
+  TBD.)*
 - Which tarot minor-arcana suit is **Bunny's daughter**, and the rest of that new generation.
 - Who the **Swiss/German-suits** group are and when they enter.
 - Whether the three hero suit-systems are rivals, allies, successors, or something else.
+- **Per-teammate specifics — define as each enters the story:** civilian name, signature
+  attack, team-up combos, and her **own coping mechanism** for the shared war trauma
+  (each distinct; none is "supporting Bunny"). Fixed now: team combat has solo /
+  team-up / combined-ultimate tiers; together they're stronger; the worst threats can't
+  be soloed. See `world.md` → *How the core four fight*.
 
 ## Enemy
 
@@ -33,7 +52,75 @@ decks are on the table as future flavor:
 - How broadly the Star suit's **falling-star possession** works beyond the chapter 1 opener.
 - Locking a **canonical** tujeon suit/General list + romanization (sources vary slightly).
 
+## Continuity
+
+- **ONE daughter, not two — PILOT ADJUST NEEDED (note only, do not auto-rewrite).** Cast
+  is now a **single ~8-year-old daughter** (only child), the same age Bunny was when Kitty
+  recruited her. The **drafted opening is built around two kids** and needs reblocking:
+  `chapter-1-concept.md` and `pacing.md` (older kid to school + *younger girl* spots the
+  star + Bunny & *Kid 2* to the store + *4yo* watching TV at the end), the "mother of
+  two" / "two kids" lines in `premise.md` + `README.md`, and the two-kid phrasing in this
+  project's `OUTLINE.md` (flagged there too). **Author owns the copy.**
+  - **Candidate reblock approaches (for the rewrite — not locked):**
+    1. **Keep the school drop-off; make the cat the menace.** The daughter still gets
+       dropped at school (so she's safely out of the store/downtown danger). **Kitty is
+       present/lurking through the drop-off, and Bunny only recognizes her at the last
+       minute** — dread spikes as she clocks the familiar cat near her kid. Bunny then
+       handles the store + fight without the child present.
+    2. **The cat was shadowing the kid, pre-contact.** Kitty had been **following the
+       daughter but hadn't spoken to her yet** when Bunny catches her — so recruitment
+       hasn't started; Bunny intercepts *before* first contact. Preserves the drop-off
+       and the "circling my daughter" horror.
+    - *(Alt, heavier rewrite: the one daughter stays with Bunny all day — but then she
+      witnesses the star, the cat, and the panic firsthand, which changes how hard the
+      secret is to keep. Approaches 1–2 avoid that.)*
+
+### Reconciled
+
+- **Bunny/Matty occupations vs. the SAHM pilot — RESOLVED.** Settled shape: **Matty** is
+  an **office-based** software engineer (commutes out); **Bunny** is a **hospice /
+  home-health aide** and self-paced nursing student who, **at story start, is on an
+  extended break and parenting full-time.** This **matches the drafted Ch.1** (husband
+  leaves for work / "at lunch" / drives home; Bunny home with the kids; Ms. Neighbor
+  still needed) — **no rewrite required.** The "stay-at-home mother" tags in
+  `premise.md`, `roster.md`, `README.md` remain true for story-start; when convenient,
+  enrich them to "caregiver on break," but nothing is broken. *(Supersedes the earlier
+  RN-practicing / WFH-Matty draft, which had created the conflict.)*
+
+## Deliberate in-text threads (raise, don't pre-answer)
+
+- **Should Bunny go back to work?** She's on an extended break (hospice/home-health aide)
+  and parenting full-time. Her possible return is a **character question to explore in the
+  story** — tangled with POTS, trauma, the magical-girl intrusion, and her need to be of
+  use beyond the home. Don't resolve it in the bible; let scenes earn it.
+
+## Design / visual (from the author's model sheets — see `assets/`)
+
+- **Bunny is 30**, curly auburn hair, **glasses in both modes** — now locked from the
+  reference sheets. (Resolves her prior "age TBD / civilian look TBD.")
+- **Two costumes exist:** the too-tight **teen** fit and an **adult** crimson-lace
+  redesign. **Open:** *when/how* she moves to the adult costume in-story — pilot uses the
+  old one; the redesign is an earned identity beat, placement TBD. Keep it emotional, not
+  a power tier.
+- **Wand vs. "transformation stick":** the sheets show a **heart wand** (compact +
+  extended); lore calls her transform item a **stick** in her purse. Treat them as the
+  **same object** unless we deliberately split (e.g. purse-stick → summons the wand). Minor.
+
 ## Story / craft
 
-- The dead love interest — name, and how present he stays in flashbacks.
+- The love interest — **working name "Jack"** (may change); core beats settled (see his
+  sheet). Still open: **the content of his whispered last words** — an author-held,
+  fixed line to be revealed slowly; keep it blank in drafting until we decide the reveal.
 - Serialization plan, art direction, and target platform for the webtoon.
+
+## Tooling
+
+- **loom persistence — RESOLVED.** [`loom/`](./loom/) was **vendored** (committed
+  directly into this repo, no longer a submodule), so all loom-authored content is
+  tracked and pushed here. Trade-off accepted: we no longer get a one-command pull of
+  upstream WintersRain/loom updates; re-syncing upstream would be a manual merge.
+- **loom config — RESOLVED.** `config.py` set for ensemble authoring
+  (`MC_NAME="MC"`, `CHARACTER_POV="all characters"`). See the README's *Tooling* section.
+- **Book project — SCAFFOLDED.** `loom/_books/crimson-heart/` is seeded (world bible,
+  6-episode outline, 10 cast sheets). Remaining: start **drafting** scenes into
+  `SCENES/` (adapt the [pacing](./pacing.md) beats), and lock the TBD names as we go.

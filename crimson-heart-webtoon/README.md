@@ -12,7 +12,7 @@ daughter and the quiet life she fought to build.
 
 ## What this is
 
-A magical-girl webtoon about **Bunny Westlake**, once **Crimson Heart**, leader-ish
+A magical-girl webtoon about **Bunny Shinzo**, once **Crimson Heart**, leader-ish
 of the team that defeated the Demon Gang. In the final battle her tuxedo-mask-analog
 love interest died saving her; she moved to the US to escape the grief, married, and
 had two kids. When the threats come back, the talking cat that first recruited her
@@ -31,9 +31,42 @@ in seconds, so the real story can be about family, friendship, PTSD, and healing
 | [`open-questions.md`](./open-questions.md) | Parking lot — unresolved decisions and ideas to explore |
 | [`chapter-1-concept.md`](./chapter-1-concept.md) | Verbatim notebook transcription of the original chapter 1 concept (raw source material / historical draft) |
 
+## Tooling — loom
+
+[`loom/`](./loom/) is a **vendored copy** of
+[WintersRain/loom](https://github.com/WintersRain/loom) — a Claude Code–native
+writing system (orchestrates writer/analyzer/creator sub-agents, tracks characters
+and scenes) we use to develop this story. It's committed directly into this repo (not
+a submodule), so **everything loom authors — `_books/`, `_sessions/`, character
+sheets — is tracked and pushed** with the rest of the idea.
+
+**How to run it:** start Claude Code **inside** `crimson-heart-webtoon/loom/` (so its
+`CLAUDE.md`, hooks, and skills load as the project root), then describe what you want
+to write. For a serialized comic, use its **book-project** mode (`_books/`, via the
+`new-book` skill) rather than the single-MC roleplay mode.
+
+**Project is scaffolded and ready.** A book project lives at
+[`loom/_books/crimson-heart/`](./loom/_books/crimson-heart/), seeded from our docs:
+`world.md` (story bible), `OUTLINE.md` (the 6-episode opening from `pacing.md`), and
+`CHARACTERS/` (10 cast sheets — Bunny, family, the core four, Kitty, the North Star).
+To pick up: launch Claude in `loom/` and say *"work on the Crimson Heart book"* — it
+resumes the project. Then e.g. *"draft Episode 1 from the outline."*
+
+**Retrofits applied for living in this repo:**
+- Loom's hooks resolve their root from the file location, so they work while nested —
+  verified. Just launch Claude *from the `loom/` directory*.
+- [`loom/.claude/hooks/config.py`](./loom/.claude/hooks/config.py) is set for
+  **ensemble authoring**: `MC_NAME="MC"` (anonymous — no protected player-character,
+  so the whole cast incl. Bunny is writable) and `CHARACTER_POV="all characters"`.
+- [`loom/.gitignore`](./loom/.gitignore) drops ephemeral runtime state
+  (`.writing/state/`) while keeping all creative content tracked.
+- On the very first launch (before any book project exists) loom will offer a one-time
+  "set your MC name" prompt — just say we're authoring in book mode; it stops once a
+  project is active.
+
 ## Cast so far
 
-- **Bunny Westlake / Crimson Heart** — protagonist; retired, endgame-powered
+- **Bunny Shinzo / Crimson Heart** — protagonist; retired, endgame-powered
   magical girl, now a US mom of two, carrying the trauma of her old life
 - **Her daughter** — right age and the right genes/magic; the cat wants to recruit
   her, and Bunny is determined to stop that

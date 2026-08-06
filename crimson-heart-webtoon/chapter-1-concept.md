@@ -7,7 +7,7 @@
 
 ---
 
-Bunny Westlake is your average every-day stay at home mother of 2, but once upon a time she was Crimson Heart, the magical girl who protected the world from the forces of evil known as the Demon Gang. After defeating them once and for all, there was nothing to do but settle down and start a family. Some of her friends from those days also moved on with their lives.
+Bunny Shinzo is your average every-day stay at home mother of 2, but once upon a time she was Crimson Heart, the magical girl who protected the world from the forces of evil known as the Demon Gang. After defeating them once and for all, there was nothing to do but settle down and start a family. Some of her friends from those days also moved on with their lives.
 
 Scarlet Soul – Clergy – Alias:
 Sapphire Mind – Space Researcher – Alias:
