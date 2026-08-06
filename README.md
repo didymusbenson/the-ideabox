@@ -1,29 +1,58 @@
-# I'm Not a Psychic
+# The Ideabox
 
-A proof of concept for a narrative, choice-based game. You are *not* a psychic — but you run a
-psychic business. Clients bring you real problems; you perform readings (palm, tarot, star charts,
-and more), interpret them by the rules of each method, and hand out advice. You don't believe any of
-it. They do.
+A brainstorming space. Individual ideas — stories, games, code projects, pitches, anything — get
+gathered here and specced out, each in its own folder. Some stay as a one-page pitch. Others grow
+into full design docs, and some go all the way to working prototypes or full implementations. Nothing
+here is committed to being built; the point is to give an idea a home the moment it's worth writing
+down, and let it develop as far as it wants to.
 
-The heart of the game is a tension between two ways of "winning":
+## Projects
 
-- **The Score** — perform each divination correctly, by the book.
-- **The Story** — actually help the person, ideally until they no longer need you.
+| Folder | Idea | Status |
+|--------|------|--------|
+| [`psychic-poc/`](./psychic-poc/) | *I'm Not a Psychic* — a narrative, choice-based deduction game where you run a psychic parlor without believing a word of it | Planning (requirements drafted) |
+| [`the-deposit-manhwa/`](./the-deposit-manhwa/) | *The Deposit* (전세 게임) — a Squid-Game-style thriller where a landlord who gambled away his tenants' jeonse deposits must win them back in an underground tournament against the tenants themselves | Planning (series bible drafted) |
+| [`physics-and-sorcery/`](./physics-and-sorcery/) | *Physics & Sorcery* — a physics-driven strategy game inspired by the adventure-map and army-building loops of classic fantasy strategy games | Planning (MVP and art-pipeline gate drafted) |
+| [`deepstead/`](./deepstead/) | *Deepstead* — a cozy dwarven farming, mining, community, and automation game set in a reclaimed underground hold | Planning (vertical slice drafted) |
+| [`twerk-for-trees/`](./twerk-for-trees/) | *Twerk for Trees* (TFT) — an incremental/idle game that turns every grind into a resource tree and then automates it, loosely mirroring the Sky Factory 4 progression loop | Planning (vertical slice drafted) |
+| [`crimson-heart-webtoon/`](./crimson-heart-webtoon/) | *Crimson Heart* — a magical-girl webtoon about a retired, endgame-powered heroine, now a US mom, who suits back up when old threats return so a talking cat can't recruit her daughter; the monster fights end in seconds so the real story is family, PTSD, and healing | Seed (premise & docs drafted) |
+| [`loom-studio/`](./loom-studio/) | *Loom Studio* — a local, non-developer writing environment for Loom projects: a manuscript-centerpiece editor with alternate "timelines" (git branches as parallel story versions) and a woven-loom history view, presenting version control in author-friendly terms | Planning (requirements drafted; direction set) |
 
-Sometimes the advice a client needs to hear isn't the advice the fortune calls for.
+## How this repo is organized
 
-## Project phase
+- Every idea gets a top-level folder named for it.
+- A folder holds its own `README.md` as the entry point, plus whatever the idea needs — design docs
+  (`docs/`), references, and eventually source code if it grows into a prototype or build.
+- **Every project also gets a `notes.md`** — the standing place for feedback, reactions, and open
+  questions about the idea (see *Feedback* below). Create it with the folder, even if it starts empty.
+- This root README is the index — add a row to the table above when you start a new idea.
 
-**PLANNING.** This repo currently holds requirements only — no code, no tech-stack decisions yet.
-Those come in the DESIGN and IMPLEMENTATION phases.
+## Contributing
 
-## Documentation
+**Additive work goes straight to `main`.** Starting a brand-new idea, or building out an idea you
+started — new folders, new docs, deeper specs, prototype code, anything that *adds* — commit it to
+`main`. No review gate; the whole space is meant to grow freely.
 
-Start with [`docs/README.md`](./docs/README.md), which maps the full doc set. Quick links:
+**Overwriting someone else's pitch goes through a PR.** If you're reworking, re-pitching, or
+otherwise replacing the existing direction of an idea that **another contributor** originally pushed,
+open a pull request so the original author can review the change first. This only applies when you're
+overwriting someone else's contribution — reshaping your own idea, or adding a *new* exploration
+alongside an existing one (a new folder, a clearly-marked alternate take) without discarding what's
+there, stays additive and belongs on `main`.
 
-- [Vision](./docs/vision.md) — fantasy, tone, design pillars, POC intent
-- [Core loop](./docs/core-loop.md) — how a session and a day play
-- [Divination methods](./docs/divination-methods.md) — the reading mechanics
-- [Clients & narrative](./docs/clients-and-narrative.md) — characters, arcs, consequences
-- [Scoring & story](./docs/scoring-and-story.md) — the two-axis tension in detail
-- [Glossary](./docs/glossary.md) · [Open questions](./docs/open-questions.md)
+In short: **add freely on `main`; only overwrite another person's idea by PR.**
+
+## Feedback
+
+The pitch — a project's `README.md` and its `docs/` — belongs to the idea's author. When you have
+feedback on someone else's idea, **don't rewrite their pitch to register it.** Put it in that
+project's **`notes.md`** instead: critiques, questions, suggestions, "have you considered," reactions.
+That keeps the author's vision intact and gathers every outside perspective in one predictable place.
+
+- `notes.md` is append-only in spirit — add your thoughts, sign them so it's clear who's talking, and
+  leave others' notes as they are.
+- Writing in a `notes.md` is always additive work, so it lands on `main` — no PR needed, even on
+  another contributor's project.
+- If feedback earns its way into the actual design, that's when the author (or a PR against their
+  pitch) folds it into the `README`/`docs`. `notes.md` is where ideas get argued; the pitch is where
+  they get committed to.
