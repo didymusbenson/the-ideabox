@@ -54,6 +54,8 @@ a later implementation begins. No commercial game data was inspected in this pas
 - [Unity profiler markers](https://docs.unity.com/en-us/engine/6000.5/manual/analysis/profiler/markers) — used in [engine-evaluation.md](engine-evaluation.md)
 - [Unity custom instrumentation](https://docs.unity.com/en-us/engine/6000.6/manual/analysis/profiler/customizing/adding-information-code/intro) — used in [engine-evaluation.md](engine-evaluation.md)
 
+- [UAssetGUI](https://github.com/atenfyr/UAssetGUI) — conditional scope in [toolchain-research.md](toolchain-research.md)
+
 ## Implementation evidence record template
 
 - Claim ID and plain-language claim

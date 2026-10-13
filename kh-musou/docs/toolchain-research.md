@@ -88,6 +88,16 @@ Ghidra translates instructions through p-code for analysis; its C-like output do
 
 Stopping rule: investigate one stated blocker with an observable result. If unresolved, document a bounded adaptation and continue; full-game decompilation is not a gate.
 
+## Conditional Unreal-asset tooling
+
+[UAssetGUI](https://github.com/atenfyr/UAssetGUI) supports low-level inspection/editing of Unreal
+assets and JSON conversion with explicit engine-version and optional mapping inputs. It is not a
+KH2/BBS parser or a recovered combat runtime. Consider it only if KH3 or DW3 Remastered later becomes
+a selected research source; this pass does not verify either game's exact package compatibility.
+Confirm source-game build, cooked engine version, mappings and applicable access/asset permissions
+before using it. It is unnecessary for the initial KH2/OpenKH route and does not determine the engine
+of this new standalone game. No such assets were opened in this research.
+
 ## Provenance and distribution
 
 The checked OpenKH LICENSE is Apache-2.0. Reused tool code needs applicable license/attribution/notices and change notices; inspect dependency/submodule licenses separately. This does not grant rights to commercial models, animation, audio, scripts, executables or branding acquired elsewhere. Tool availability and owning a game do not by themselves establish redistribution permission. [LICENSE](https://github.com/OpenKH/OpenKh/blob/master/LICENSE)
