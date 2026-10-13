@@ -1,6 +1,6 @@
 # KH2-first toolchain and combat fidelity research
 
-Research date: 2026-10-13. Public documentation/source inspection only. No commercial executable, disc image, asset or extracted game script was downloaded or processed. No engine is selected here. Proposed behaviors and numerical fidelity targets are not measured findings.
+Research date: 2026-10-13. Public documentation/source inspection only. No commercial executable, disc image, asset or extracted game script was downloaded or processed. The user subsequently selected Unreal Engine and PC; this research does not establish engine/runtime readiness. Proposed behaviors and numerical fidelity targets are not measured findings.
 
 ## Research starting point, not a combat-route decision
 
@@ -65,7 +65,7 @@ exported asset was executed or validated in this pass.
 
 ### Optional smallest asset-and-behavior spike
 
-**Recommendation, not a selected character, route, engine or approved implementation task:** test
+**Recommendation, not a selected character, combat route or approved implementation task:** test
 Ventus with Strike Raid, including idle and whichever constituent clips that command actually uses.
 On an authorized exact-edition reference copy:
 
@@ -99,6 +99,20 @@ The PAM header's 30-FPS value still does not establish remaster gameplay tick ra
 - **B6:** [Command parameters stored in the executable](https://openkh.dev/bbs/executable/CommandParam.html)
 - **B7:** [EPD implementation](https://github.com/OpenKH/OpenKh/blob/7a3b945c538d32c6a285128c98aefba093f52ceb/OpenKh.Bbs/Epd.cs)
 - **B8:** [PmoConverter importer source](https://github.com/OpenKH/OpenKh/tree/7a3b945c538d32c6a285128c98aefba093f52ceb/OpenKh.Command.PmoConverter)
+
+## Current source and development-host choice
+
+The user selected **Steam** as the reference distribution and their **MacBook Pro** as the intended
+development host, available later. Exact game/edition/build, installed local files and Mac
+model/chip/RAM remain unverified. The intended Mac is not the current secondary computer; a device
+catalog alone must not be treated as proof that it is connected. Mac development and the selected PC
+build target are separate, with Windows only an initial target assumption.
+
+For actual asset work, identify the necessary local reference files when that machine is available;
+do not request Steam credentials or a whole-game upload. Steam selection does not prove macOS game
+availability, local installation, OpenKH GUI compatibility or a working Unreal target-build route.
+Those require their own checks. Original placeholders and public research do not depend on importing
+commercial assets.
 
 ## Exact-edition gate
 

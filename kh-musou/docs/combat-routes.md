@@ -1,7 +1,8 @@
 # Alternate combat routes: three Knights or Sora
 
 Updated 2026-10-13. **Both routes remain open.** This records the user's alternate design directions,
-not a selected engine, approved implementation milestone, fixed input scheme, or measured combat result.
+not an approved implementation milestone, fixed input scheme, or measured combat result. Unreal
+Engine and PC were subsequently selected; that does not decide between these combat routes.
 The [original brief](charter.md#original-brief) is preserved unchanged.
 
 ## User direction
@@ -202,4 +203,5 @@ Additional proposed fixtures:
 - Drive entry/expiry during a combo, guard, hit reaction, jump or landing preserves valid player and
   enemy state; no health resets, phantom hits or form-only actions persisting unintentionally.
 
-No crowd-size claim, engine selection, shipped roster, or fidelity pass is established by this plan.
+No crowd-size claim, shipped roster or fidelity pass is established by this plan. Unreal Engine and
+PC are selected independently of the still-open combat-route choice.

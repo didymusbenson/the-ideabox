@@ -1,6 +1,6 @@
 # Kingdom Hearts Musou
 
-**Working title. Status:** Research / planning; no implementation yet. **Engine:** undecided.
+**Working title. Status:** Research / planning; no implementation yet. **Engine:** Unreal Engine (version TBD). **Target:** PC.
 
 A standalone action game interpreting **Kingdom Hearts × Dynasty Warriors**: the expressive movement,
 aerial combat, magic, defenses, and recognizable Heartless encounters of Kingdom Hearts, organized
@@ -17,6 +17,15 @@ toward it **or attacking it at long range** must produce the correct interaction
 Distance-based processing is allowed only if it preserves identity, position, relevant state, and
 correct interactions. Scale, rendering quality, battlefield size, and roster breadth must yield to
 this requirement rather than disguising its failure.
+
+## Engine and platform decisions
+
+The user selected **Unreal Engine** and **PC** on 2026-10-13. Windows is an initial-build assumption,
+not an explicitly selected operating system. Exact Unreal version, minimum hardware, graphics budget,
+input support and target frame rate remain open. The reference distribution is Steam, with exact
+game/build still to verify. Development is planned on the user’s MacBook Pro, a separate machine
+from the current secondary computer; Mac host and PC build target are distinct. These decisions authorize no installation or game
+implementation by themselves. See the [engine record and validation gates](docs/engine-evaluation.md).
 
 ## Combat routes under consideration
 
@@ -42,7 +51,7 @@ The desired scope is a research direction, not a promise to reproduce either com
 - [Enemy fidelity](docs/enemy-fidelity.md): evidence and behavior specification workflow
 - [Interactive horde](docs/interactive-horde.md): persistent entities and correctness tests
 - [Toolchain research](docs/toolchain-research.md): OpenKH-first research and escalation limits
-- [Engine evaluation](docs/engine-evaluation.md): candidates and evidence needed before choosing
+- [Engine record](docs/engine-evaluation.md): Unreal/PC decision, historical comparison and validation gates
 - [Prototype plan](docs/prototype-plan.md): executable work packages and acceptance gates
 - [Open questions](docs/open-questions.md): unresolved choices, explicitly not invented answers
 - [Sources](docs/sources.md): evidence register and reproduction requirements

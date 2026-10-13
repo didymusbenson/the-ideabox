@@ -28,6 +28,14 @@ specific code limitations, not executed conversions, passing tests or validated 
 supersedes the earlier “converter projects exist” level of assessment without claiming a complete
 combat import pipeline.
 
+## Unreal/PC decision follow-up — 2026-10-13
+
+User decisions select Unreal Engine and PC; Windows is only an initial-build assumption. The engine
+record retains comparison research as history and adds these official references for a proposed
+small controller/one-enemy slice, without claiming implementation or selecting an exact UE release:
+- [Third Person template](https://dev.epicgames.com/documentation/en-us/unreal-engine/third-person-template-in-unreal-engine)
+- [Animation Montages](https://dev.epicgames.com/documentation/en-us/unreal-engine/animation-montage-in-unreal-engine)
+
 ## Public primary sources
 
 - [Object Editor](https://openkh.dev/tool/GUI.Kh2ObjectEditor/) — used in [toolchain-research.md](toolchain-research.md)

@@ -17,8 +17,25 @@ three-Knight route may remain distinct, become combo enders with reaction follow
 charged ultimates. These are alternatives, not a route selection. See [combat routes](combat-routes.md).
 
 The initial brief's KH2-focused research wording remains historical context. KH2 tool maturity does
-not decide the combat design, and no engine or exact source edition has been selected. Both routes
+not decide the combat design. At that point no engine or exact source edition had been selected;
+the later Unreal/PC decision below supersedes the engine uncertainty. Both routes
 retain the original interactive-horde and standalone-implementation requirements.
+
+## Later engine and platform decisions — 2026-10-13
+
+The user explicitly selected **Unreal Engine** (“unreal is the right target.”) and **PC** (“pc as
+target”). Windows is a planning assumption for an initial build, not an explicit operating-system
+choice. Engine version, hardware/frame budget and final combat route remain unresolved. The original
+brief above is historical and remains verbatim; its “not selected yet” sentence is superseded here.
+
+The user also selected **Steam** for the reference distribution and identified their **MacBook Pro**
+as the intended development machine, available later. It is not the current secondary computer.
+Exact source game/build and Mac model/chip/RAM are unknown; no connection to that specific Mac is
+assumed. The development host does not change the PC target or settle its operating system.
+
+These choices do not authorize installation, asset extraction, code, builds or deployment. The current
+smaller proof-of-concept discussion concerns base-Sora-inspired movement, basic attacks and one enemy;
+it is a proposed first experiment, not selection of the full Sora route or approval to implement it.
 
 ## What this documentation adds
 
@@ -30,7 +47,9 @@ must remain an open question rather than silently becoming a requirement.
 ## Deliverable boundaries
 
 This pass adds a new project to The Ideabox and supplies a later implementation handoff. It does not
-build the game, select an engine, extract commercial assets, decompile executables, or deploy a site.
+build the game, install the selected engine, extract commercial assets, decompile executables, or
+deploy a site. It records the user’s engine/platform decisions without treating them as implementation
+authorization.
 A locally owned game copy is not treated as a redistribution license. Tool licenses and game-content
 rights are separate; keep commercial source files outside this public repository and use original or
 appropriately licensed assets for a distributable prototype. Before any later extraction or sharing,

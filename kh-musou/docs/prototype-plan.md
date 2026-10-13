@@ -2,7 +2,30 @@
 
 These are next work packages, not work performed during this research pass. Complete the correctness
 and feel gates before growing the campaign. Select tools/versions only when the implementation
-environment is available; the engine is not preselected by this plan.
+environment is available. Unreal Engine and PC are selected; exact Unreal version, PC operating
+system and hardware budget remain to be established. Windows is only an initial-build assumption.
+Steam is the reference distribution. The intended development host is the user's MacBook Pro, not
+the current secondary computer; its exact model/specifications and connection must be verified later.
+
+## Current first-step discussion: small Unreal proof of concept
+
+The proposed starting slice is base-Sora-inspired movement, basic attacks and one enemy, using a
+Third Person foundation, Animation Montages, authored input/combo/movement rules and explicit hit
+queries. Prove that loop before expanding to the two-enemy/horde/battlefield gates below. This smaller
+step does not select the full Sora route, discard the three-Knight alternative, or authorize builds,
+installs, extraction or code. Record the approved scope before implementation begins.
+
+Keep the first enemy simple and persistent; defer Mass and other crowd infrastructure until profiling
+justifies them. A one-enemy proof establishes neither horde performance nor two-enemy fidelity.
+See the [Unreal implementation direction](engine-evaluation.md#proposed-first-proof-of-concept).
+
+### Reference and host preparation boundary
+
+When the intended development Mac is available, verify its identity and tooling before setup. For
+actual asset work, identify the relevant locally installed Steam reference files and exact build.
+Do not request Steam credentials or a whole-game upload. Placeholder work and independent research
+can proceed without commercial assets when separately authorized. The Steam choice does not establish
+that the selected game is locally installed, native on macOS, or accessible on the current machine.
 
 ## P0a — Choose the combat experiment, not a default winner
 
@@ -21,7 +44,8 @@ A tool-support advantage is recorded as evidence, not treated as the user's comb
 **Inputs:** exact source edition/build, legal local source availability, target hardware, target frame
 budget, desired starting crowd count and prototype controls.
 
-**Deliverables:** source/provenance manifest; two enemy evidence records; engine comparison decision;
+**Deliverables:** source/provenance manifest; two enemy evidence records for the broader prototype;
+pinned Unreal version/toolchain and PC validation setup;
 small reproducible benchmark scenarios; explicit unknowns. Pin tool versions and cite source commits.
 
 **Exit:** there is enough verified behavior to implement two contrasting enemies, and the team knows
@@ -90,7 +114,8 @@ change engine/architecture, or stop. A campaign plan is justified only by that e
 Read `kh-musou/README.md`, the charter, combat-routes, enemy-fidelity, interactive-horde, toolchain-research,
 engine-evaluation and open-questions docs. Inspect repository instructions and the selected local
 workspace before editing. Confirm exact source edition and provenance; do not import commercial
-assets into the public repository. Establish target hardware/frame budget and engine spike choice.
+assets into the public repository. Use the selected Unreal/PC direction; establish version/toolchain,
+PC operating system, target hardware/frame budget and approved spike scope.
 Confirm the chosen route or bounded comparison and payoff experiment. Implement only the approved
 next milestone using original placeholders and reproducible tests.
 Preserve the every-visible-enemy invariant, including attacks at long range. Record source evidence,

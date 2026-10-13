@@ -1,14 +1,59 @@
 # Engine evaluation
 
-Research checked 2026-10-13. Proposed engineering evaluation, not an engine decision or measured capacity claim. Hardware, target resolution, platform and final enemy-count target remain unknown. Documentation versions differ; pin and test an actual released editor/package combination. A documentation selector is not proof of a production-ready release.
+Research checked 2026-10-13. **Current decision: Unreal Engine, targeting PC**, selected explicitly by
+the user. Windows is an initial-build assumption; the PC operating system was not explicitly chosen.
+No exact Unreal version, minimum hardware, resolution, frame rate or enemy-count target is selected.
+This is a design/target decision, not a measured capacity claim or approval to install or implement.
+Documentation versions differ; pin and validate a released editor/toolchain combination before work.
 
-## Shortlist
+## Decision record
 
-Keep **Unreal Engine and Unity** on the primary shortlist. Unreal is the first candidate to test if close-up animation authoring and action feel dominate; Unity is the first if a code-oriented C# workflow and explicit data-oriented simulation dominate. **Godot is a conditional third candidate** if open-source ownership, lightweight iteration or existing familiarity outweigh extra custom horde infrastructure. These are engineering judgments, not measured rankings. Evaluate setup feasibility, then give the two viable finalists the same small benchmark rather than building three full vertical slices.
+- User: “unreal is the right target.”
+- User: “pc as target”
+- Confirmed: Unreal Engine and PC; Steam reference distribution; intended development on the user’s
+  MacBook Pro, separate from the current secondary machine.
+- Assumed, awaiting clarification when needed: Windows as the first build target.
+- Still open: combat route, engine version, target PC specification, frame budget, keyboard/mouse and
+  controller requirements, exact Steam game/build, Mac model/chip/RAM and asset workflow.
+- Development-host availability is unverified. Do not equate a device-catalog entry with the intended
+  MacBook Pro or assume a Mac development host establishes the final PC operating system.
+- Confirm the Mac editor/tooling and eventual target-build workflow before setup; no cross-compilation
+  or OpenKH GUI compatibility is assumed by this decision record.
+
+The comparative research below is retained as historical rationale and alternatives, not an active
+requirement to benchmark multiple engines before proceeding. Do not silently reopen the user's engine
+choice because an implementation issue arises; first diagnose it within the selected Unreal path.
+
+## Historical shortlist (superseded by the decision above)
+
+The initial research compared Unreal's close-up animation/action-authoring strengths with Unity's
+C#/data-oriented workflow, with Godot as an optional open-source/lightweight alternative. These were
+engineering judgments rather than measured rankings. Unreal was already the proposed first candidate
+when action feel and animation authoring dominate. Unity/Godot notes remain useful context only.
 
 Simulation detail is separate from whether an enemy exists. Cheaper meshes, animation and decisions are acceptable. Identity, position, health, statuses, query participation and reachable combat existence persist. A draw instance can represent a real entity; a visual-only crowd member cannot count as an enemy. Never meet a density target by making visible enemies untargetable until the player crosses an activation radius.
 
-## Unreal
+## Unreal — selected engine
+
+### Proposed first proof of concept
+
+Start small: an Unreal Third Person foundation, authored movement/input and combo rules, Animation
+Montages for attack playback, explicit gameplay hit queries, and one simple enemy. The ongoing
+base-Sora movement/basic-attack discussion is a proposed initial slice, not a final choice between
+Sora and the BBS Knights. Use original or appropriately licensed placeholders; no commercial imports
+or implementation are performed by this documentation update.
+
+Epic's Third Person template supplies a moving/jumping character and basic environment; it does not
+supply KH combat feel. [Third Person template](https://dev.epicgames.com/documentation/en-us/unreal-engine/third-person-template-in-unreal-engine).
+Montages combine animation sequences and support runtime section playback; buffering, branching,
+cancels, movement, hit timing and damage rules remain authored gameplay.
+[Animation Montages](https://dev.epicgames.com/documentation/en-us/unreal-engine/animation-montage-in-unreal-engine)
+
+Prove movement, camera, basic attacks, hit reactions and enemy interaction before crowd engineering.
+Do not begin with Mass. Add crowd systems only when profiling and correctness tests justify them;
+the persistent-real-enemy contract still shapes the simple enemy's identity and hit handling.
+
+### Later crowd and animation validation
 
 Official MassGameplay documentation separates representation and simulation LOD. Representation can use high/low-resolution Actors, instanced static meshes or none; simulation LOD supports variable-frequency updates. Mass StateTree uses signals to arrange entity processing. The documentation labels Mass ISM animation experimental. These are useful building blocks, not a turnkey combat guarantee. [MassGameplay](https://dev.epicgames.com/documentation/en-us/unreal-engine/overview-of-mass-gameplay-in-unreal-engine)
 
@@ -22,7 +67,7 @@ Proposed path: conventional player and initial enemy character/animation tooling
 
 Small-team/Codex judgment: C++, data definitions, tests and build scripts are reviewable text artifacts. Animation assets, retargeting and Blueprint graphs still need editor authoring and visual inspection. Binary assets require disciplined ownership/versioning. Compile time and editor footprint belong in the evaluation on the eventual desktop.
 
-## Unity
+## Unity — historical alternative
 
 Unity's ECS feature set includes Entities, Entities Graphics and Unity Physics. Rendering/LOD infrastructure does not by itself establish a finished crowd-combat animation stack. [ECS feature set](https://docs.unity.com/en-us/engine/6000.7/manual/packages-list/feature-sets/ecsfeature)
 
@@ -36,7 +81,7 @@ Proposed path: conventional player controller/Animator and modest interactive ba
 
 Small-team/Codex judgment: C# mechanics, tests, editor/import scripts and data tables fit text-based iteration. The hybrid boundary and package compatibility add work. Third-party animation packages could change the tradeoff but are not assumed, purchased or recommended here.
 
-## Godot
+## Godot — historical alternative
 
 AnimationTree supports root-motion extraction and blended control. Low-level rendering/physics/navigation servers offer alternatives to per-node overhead. NavigationServer changes synchronize rather than becoming immediately visible, so ordering matters. [AnimationTree](https://docs.godotengine.org/en/stable/tutorials/animation/animation_tree.html), [Servers](https://docs.godotengine.org/en/stable/tutorials/performance/using_servers.html), [NavigationServer](https://docs.godotengine.org/en/stable/tutorials/navigation/navigation_using_navigationservers.html)
 
@@ -58,12 +103,12 @@ Checked 2026-10-13, not legal advice or a substitute for applicable terms before
 
 Engine licenses do not grant rights to Kingdom Hearts, Disney, Square Enix, Dynasty Warriors or Koei Tecmo assets/IP. Prototype with original/properly licensed content; engine choice does not resolve distribution rights.
 
-## Decision gate
+## Unreal validation gate
 
-Do not select an engine from feature lists alone. For each viable finalist, implement the same small
-controller/animation and real-entity encounter using matched placeholder complexity. Record toolchain
-setup and iteration cost, root-motion/air-combat behavior, navigation correctness, combat continuity,
-and measured performance on the intended hardware. Use the [prototype gates](prototype-plan.md) and
+Engine selection does not establish combat feel or crowd capacity. In the selected Unreal version,
+validate the small controller/animation and real-entity encounter first. Record toolchain setup and
+iteration cost, root-motion/air-combat behavior, navigation correctness, combat continuity and measured
+performance on the intended PC hardware. Preserve the one-enemy baseline when later scaling up. Use the [prototype gates](prototype-plan.md) and
 [interactive-horde matrix](interactive-horde.md). Reject an approach that requires distant enemies to
 be untouchable even if its crowd rendering is impressive.
 
@@ -76,6 +121,6 @@ Useful official profiling references: [Unreal Insights](https://dev.epicgames.co
 [Unity profiler markers](https://docs.unity.com/en-us/engine/6000.5/manual/analysis/profiler/markers),
 and [Unity custom instrumentation](https://docs.unity.com/en-us/engine/6000.6/manual/analysis/profiler/customizing/adding-information-code/intro).
 
-The engine decision record should report the tested versions/hardware/scenarios, three prototype gate
+The Unreal validation record should report the tested versions/hardware/scenarios, three prototype gate
 results, extra custom systems required, editor/asset workflow friction, license considerations and
 remaining uncertainties. A vendor crowd demo does not establish this project's capacity.

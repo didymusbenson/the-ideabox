@@ -5,6 +5,10 @@
 Standalone KH-inspired musou; Keyblade movement and ground/air combat; magic and defense; recognizable
 Heartless; musou input sequences and battlefield pressure; every visible enemy real and fightable.
 Research precedes implementation. OpenKH is the first research route; native disassembly is conditional.
+**Unreal Engine and PC are selected.** Windows is an initial-build assumption, not a confirmed OS.
+**Steam** is the selected reference distribution. The intended development host is the user's
+**MacBook Pro**, available later, not the current secondary computer. Its exact identity/connection,
+model/chip/RAM and installed toolchain are unverified.
 
 ## Combat alternatives: user direction, open selection
 
@@ -30,17 +34,21 @@ Research evidence can inform these choices; it does not make the creative decisi
 
 ## Decisions needed before an implementation spike
 
-1. **Source edition:** exact KH2/BBS edition, region, platform and build to study; do not blend data.
+1. **Source edition:** Steam is selected; verify the exact KH2/BBS title, edition, region and installed
+   build/patch before studying files. Do not blend data between editions.
 2. **Target machine and frame budget:** minimum CPU/GPU/RAM, resolution, and desired frame rate. No
    hardware or fixed 60 fps commitment has been supplied.
 3. **Crowd objective:** target simultaneous visible enemies, active attackers, map dimensions and
    attack ranges. Investigate scaling curves rather than announcing a speculative thousands count.
 4. **Player reference:** which KH movement/combat reference is authoritative, and which deviations
    make the musou version more playable?
-5. **Engine:** shortlist and spike criteria, not an inherited choice from another Ideabox project.
+5. **Unreal setup:** exact released version, MacBook Pro model/chip/RAM, editor/build toolchain and
+   PC operating system. Verify the intended development Mac when it becomes available. Engine
+   choice is settled; no installations are authorized by that choice alone.
 6. **Asset route:** original placeholders initially; what source materials can later be lawfully
    inspected locally, and what independently licensed/original assets can actually ship?
-7. **Scope and resources:** team size, time budget, intended audience/platform and release intent.
+7. **Scope and resources:** team size, time budget, intended audience and release intent; PC is the
+   selected platform. Keyboard/mouse and controller requirements remain open.
 8. **Enemy candidates:** approve contrasting types after their evidence is sufficient.
 
 ## BBS pipeline questions after source inspection
@@ -65,5 +73,8 @@ to extract or distribute those games' content.
 
 ## Recorded 2026-10-13
 
-Engine remains unselected. No benchmark, asset import, behavior reproduction, or native reverse
-engineering has been performed. Research documentation does not establish performance feasibility.
+The user explicitly selected Unreal Engine and PC. The proposed initial base-Sora movement/basic-
+attack/one-enemy experiment does not settle the full combat route or authorize implementation.
+Windows remains an assumption; no exact Unreal release, hardware specification or frame target is
+selected. No benchmark, asset import, behavior reproduction or native reverse engineering has been
+performed. Research documentation does not establish performance feasibility.
