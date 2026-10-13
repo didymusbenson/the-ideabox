@@ -1,0 +1,39 @@
+# World & Central Mechanic
+
+## 1. Jeonse, explained in-story
+The book opens with a clean two-panel explainer (in-world, via a tenant's narration) of jeonse: tenants hand over 50–80% of a unit's market value as a lump-sum deposit instead of monthly rent. No rent, no bills beyond maintenance — but the entire deposit is legally owed back, in full, the day the two-year contract ends. The landlord is free to *use* that money in the meantime. That's the hinge the whole series swings on: the deposit was never really "safe." It was always a loan the tenant didn't know they were extending.
+
+## 2. The Collapse
+Oh Tae-sung's father built a small officetel building in a middling Seoul neighborhood and ran it conservatively for twenty years. Tae-sung, thirty-one, inherits it, feels behind his peers, and gets pulled into a **"gap investment" fund** — a leveraged scheme that pools jeonse deposits from multiple landlords into a single real estate PF (project financing) bet, promising to multiply the money before contracts come due. The fund collapses in a single week (echoing real 2022–2023 Korean PF crises). Tae-sung is short **₩8.2 billion** across eleven units, with contract-end dates staggered over the next four months.
+
+## 3. Real legal protections (and where they fail)
+Korean tenants aren't defenseless — and the story is stronger for taking that seriously instead of hand-waving it. Two ordinary bureaucratic acts, done on move-in day, create a tenant's core protection: registering the move-in address (전입신고) and getting a fixed-date stamp on the contract (확정일자). Together these establish 대항력 (the right to stay against a new owner) and 우선변제권 (priority to be repaid from the property before other creditors) — meaning a properly-filed tenant is legally first in line if the building is sold or auctioned out from under them. Since 2013, a state-backed guarantee corporation, HUG (주택도시보증공사), goes further: it will pay a tenant's jeonse deposit directly if the landlord hasn't returned it within a month of the contract ending, then pursues the landlord itself to recover the money.
+
+On paper, this makes jeonse fraud recoverable, not catastrophic. In practice, three real gaps are why people still lose everything — and each gap becomes a specific character's reason for walking into the Management Office instead of just filing a claim:
+
+- **The speed gap.** HUG's process isn't instant. Claims, valuations, and payouts take time to work through the system — time a tenant with an urgent, non-negotiable expense doesn't have.
+- **The paperwork gap.** 대항력 and 우선변제권 only protect tenants who filed correctly and on time. Older tenants, informal arrangements built on personal trust rather than registry precision, and commercial leases (which sit in a legal gray zone the residential Housing Lease Protection Act doesn't fully cover) can fall outside the protection entirely.
+- **The dispute gap.** When a building is overleveraged — more owed across all units than the property is worth, exactly Tae-sung's situation — HUG can contest or delay a payout rather than approve it outright, because the guarantee corporation is on the hook for the shortfall too.
+
+This is the real-world niche the Management Office quietly occupies: it doesn't recruit tenants who don't understand their rights, it recruits tenants who understand their rights perfectly well and have concluded — correctly, in some cases — that the legitimate system will not move fast enough, or won't move at all.
+
+## 4. The Organization — 관리사무소 ("The Management Office")
+A black-market institution that positions itself as a *solution* to landlords like Tae-sung: face-to-face competitions ("정산," settlement rounds) where a defaulted landlord can win back deposit capital from a shared pool. What's hidden until late Season 1: the Office doesn't fix jeonse fraud, it **mirrors** it — running a black-market shadow of the exact function HUG already performs legally, just faster, off the books, and at predatory terms instead of regulated ones. It's not a casino bolted onto the housing crisis. It's a dark parody of the safety net that's supposed to prevent one.
+
+### How a payout actually works — the stakes of every single round
+
+Each round's stake is tied to a specific tenant's deposit amount. What happens next depends entirely on who wins:
+
+- **If Tae-sung wins:** he secures capital equal to that tenant's deposit and can pay them back directly, through ordinary legal channels — no Office involvement in the debt itself. This is the *only* outcome where the debt is actually extinguished rather than relocated. Crucially, winning the money doesn't automatically deliver it — Tae-sung still has to choose to route that capital to *this* tenant rather than another pressing deadline. Once multiple contracts start expiring in the same window (Season 2's crunch), that choice stops being easy, and "I won, so it's handled" stops being true.
+- **If Tae-sung loses:** the Office subrogates — a real, well-established legal mechanism, the same one HUG itself uses when it pays a tenant and then pursues the landlord to recover the money. The Office pays the tenant immediately and in full. The tenant's claim is now legally satisfied — nothing left to sue over, no HUG dispute pending, no risk, no wait. But the equivalent amount transfers onto Tae-sung's ledger as a debt owed to the Office instead, on whatever predatory terms Director Baek sets, with none of the legal ceilings HUG or the courts would have enforced.
+
+**The key asymmetry:** winning is the only path that actually reduces Tae-sung's real debt. Losing doesn't reduce it at all — it converts legal, capped, person-facing debt into unregulated debt to people who will hurt him for it. He is never "out of trouble" when he loses. He's traded one kind of trouble for a worse one, even though — from the tenant's side — a loss looks and feels exactly like justice finally working.
+
+This is also what makes every round a real conflict of interest rather than a clean us-vs-them fight: if Tae-sung isn't going to win a given round himself, he genuinely wants *his own tenant* to be the one who does — guaranteed, same-day, safe for them — rather than watching them walk away with nothing, still stuck waiting on a slow legitimate system while their actual, real-world deadline keeps running. His win is their loss of certainty. Their win is his loss of everything except certainty that he's now in deeper.
+
+## 5. Why tenants are in the room
+Early rounds are landlord-vs-landlord. But the show's real engine kicks in once the Office starts recruiting **tenants** into the games — pitched to them not as a scam but as "priority repayment access": beat your landlord, or beat someone else's, and you jump the queue on getting your own deposit back, faster and more certainly than HUG or the courts can promise. It's a queue-jumping scheme dressed as justice — and it works as recruitment precisely because it's aimed at the *specific* gap each tenant has already run into: Mi-jin's need for speed, Halmoni Seo's shaky paperwork, Da-eun's contested claim. The Office doesn't invent these people's desperation. It studies the real system's failure points and positions itself exactly inside them. That's what turns the tournament personal — Tae-sung's own tenants aren't random contestants, they're the specific people whose specific legal gap the Office identified and monetized.
+
+## Open threads
+- Debt-composition tracking: what % of Tae-sung's total obligation is tenant-facing vs. Office-facing at the start of each season, to make Season 2's crunch feel qualitatively (not just numerically) worse.
+- Whether/how the Office's subrogation could ever be legally challenged (e.g., by Detective Han or HUG itself) in Season 3 — is a black-market subrogation actually enforceable, or is that itself part of the con on Tae-sung?
