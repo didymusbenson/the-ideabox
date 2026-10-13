@@ -28,6 +28,15 @@ small reproducible benchmark scenarios; explicit unknowns. Pin tool versions and
 what constitutes a performance pass. If source access is absent, use clearly labeled original behavior
 proxies for engine experiments and do not claim enemy fidelity has passed.
 
+### BBS-specific compatibility check, if that source is explored
+
+Use the [pinned feasibility assessment and optional Raid spike](toolchain-research.md#bbs-feasibility-serious-head-start-not-a-complete-combat-pipeline).
+Validate model/skeleton/material export and animation playback separately from combat behavior.
+PAM → ANB has no transferred attack triggers, and the direct PAM → FBX key output is incomplete;
+therefore parser/converter presence is not an end-to-end pipeline pass. Record downstream format
+compatibility, exact edition, missing events and required original-runtime work before committing to
+an asset workflow. This recommendation neither selects Ventus nor authorizes extraction or game code.
+
 ## P1 — Controller and animation spike
 
 Use original placeholders. Implement travel/jump/landing, short ground and air chains, one ranged

@@ -59,7 +59,7 @@ These are design hypotheses and production considerations, not observations that
 | Crowd opportunity | Strikes control space; Raids test ranged paths; magic adds varied attack shapes | Chains mix crowd management and focused damage; forms change sustained crowd handling |
 | Main design risk | Archetypes blur if mapped to identical chains; deck baggage complicates inputs | Long chains become unsafe or repetitive; form activation eclipses base combat |
 | Main correctness pressure | Throw return paths, multi-target locks and follow-up target validity | Ender targeting plus form-state transitions during hit, defense, landing and expiry |
-| Research coverage | BBS command/Shotlock behavior needs its own exact-edition evidence | Existing KH2 data/AI tooling helps research, but does not prove the better player design |
+| Research coverage | Model export and PAM → ANB conversion exist; complete command/Shotlock behavior still needs exact-edition evidence and original runtime | Existing KH2 data/AI tooling helps research, but does not prove the better player design |
 
 **Decision ownership:** the user chooses the fantasy and roster direction. Research can establish
 source behavior, tool compatibility, implementation cost and prototype outcomes. It cannot convert
@@ -151,6 +151,15 @@ adopted as prototype tuning.
 The KH2 guide is primary published evidence for the listed base moves. BBS details, form nuances and
 edition distinctions above use clearly identified secondary references. No commercial game files were
 inspected and no timing, conversion or exact-build reproduction is claimed.
+
+## BBS tooling feasibility
+
+The [pinned OpenKH assessment](toolchain-research.md#bbs-feasibility-serious-head-start-not-a-complete-combat-pipeline)
+finds a serious research/asset head start: KhModels model export, PAM → ANB motion conversion and
+attack-parameter clues. Direct PAM → animated FBX remains incomplete, converted motion has no attack
+triggers, and combos/projectiles/Shotlocks need an original runtime. Exact-edition export/playback is
+unverified. An optional Ventus/Strike Raid spike would test that pipeline without choosing this route
+or reducing its three-Knight goal.
 
 ## A bounded comparison before production (recommendation)
 

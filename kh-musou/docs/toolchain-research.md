@@ -24,9 +24,81 @@ Choose the lawful reference copy actually available to the user and matching foo
 - **Attack parameters:** Atkp.cs contains attack type, power/element, reaction, knockback, reflection-related, interval, revenge-damage and combo-classification fields; it is explicitly marked unfinished. Field names do not establish formulas, units or ordering. [Atkp.cs](https://github.com/OpenKH/OpenKh/blob/master/OpenKh.Kh2/Battle/Atkp.cs)
 - **Tables/encounters:** Mod creation docs expose listpatch support including atkp, enmp, magc, objentry and cmd plus spawn/area scripts. These tables are inputs, not the engine's damage/movement implementation. [Mod creation](https://openkh.dev/tool/GUI.ModsManager/creatingMods.html)
 - **BBS formats:** PMO models and PAM animations are documented. PAM describes channel/keyframe layouts, interpolation/loops and a 30 FPS animation-header value; do not infer universal gameplay tick rate or remaster equivalence from it. [PMO](https://openkh.dev/bbs/file/type/pmo.html), [PAM](https://openkh.dev/bbs/file/type/pam.html)
-- **BBS source exists beyond the tool index:** Pam.cs, Pmo.cs, PAtk.cs and battle/event classes exist, as do PAMtoFBXConverter and PmoConverter projects. Source existence was verified; successful conversion, exact-build support and equivalent AI/runtime coverage were not. [BBS library](https://github.com/OpenKH/OpenKh/tree/master/OpenKh.Bbs), [PAM converter](https://github.com/OpenKH/OpenKh/tree/master/OpenKh.Command.PAMtoFBXConverter), [PMO converter](https://github.com/OpenKH/OpenKh/tree/master/OpenKh.Command.PmoConverter)
+- **BBS implementation was inspected beyond project existence:** KhModels implements model export, and KHAnimationConverter implements PAM → ANB motion conversion. Neither establishes a complete attack/runtime pipeline or validated export for the user’s edition. The [BBS feasibility assessment below](#bbs-feasibility-serious-head-start-not-a-complete-combat-pipeline) records supported paths, incomplete paths and exact verification limits.
 
 Keep four separate statuses: documented, source inspected, tool run, output validated. This study establishes the first two selectively. The README requests .NET 8, describes Windows-oriented UI tools and cross-platform CLI with testing primarily on Windows, and still lists compatible-engine development among future plans. Pin a release/commit, not `latest`; do not characterize OpenKH as a complete recovered KH2/BBS runtime. [Repository](https://github.com/OpenKH/OpenKh)
+
+## BBS feasibility: serious head start, not a complete combat pipeline
+
+Follow-up source inspection on 2026-10-13 pinned OpenKH commit
+[`7a3b945c538d32c6a285128c98aefba093f52ceb`](https://github.com/OpenKH/OpenKh/tree/7a3b945c538d32c6a285128c98aefba093f52ceb).
+**OpenKH is a credible starting point for the three-Knight route.** It supplies model, animation and
+combat-data research pieces; it does not establish an end-to-end “import a BBS character and its
+combat” workflow. These are source-inspection findings. No converter, tests, game extraction or
+exported asset was executed or validated in this pass.
+
+| Need | Source-inspected capability | What remains to prove or implement |
+|---|---|---|
+| Model, skeleton, skin weights and textures | KhModels reads BBS PMO v3 and builds joints, meshes, weights, UVs and TM2-derived materials; its GUI exports FBX and PNG textures [B1–B2] | Validate actual Knight files, bind pose, materials, weapon attachment and downstream import |
+| Animation data | PAM reader and implemented PAM → interpolated KH2 ANB conversion; conversion tests exist in the source [B3] | Prove selected clips play correctly in the intended downstream workflow; test scale, poses, root motion and duration |
+| Direct animation FBX | PAMtoFBXConverter contains animation processing but its translation/rotation key-writing calls are commented out [B4] | Do not promise a working direct PAM → animated FBX export; choose and validate a conversion path |
+| Attack/command clues | PAtk exposes animation references, combo/change and trigger frames, attack groups, bullet/effect references and movement fields; command parameter layouts are documented [B5–B6] | Join IDs to real actions, confirm timebase/semantics, and author timing, collisions, transitions and projectile behavior |
+| Enemy parameters | EPD parses stats/resistances and related fields [B7] | This is not BBS AI recovery; no equivalent BBS BDX/portable enemy runtime was established |
+| Shotlocks | Command identifiers and some related data provide research clues [B6] | Target acquisition, lock lifecycle, execution and prompted follow-up behavior remain original runtime work, supported by exact-edition observation |
+
+### Important pipeline distinctions
+
+- **Motion conversion does not transfer attacks.** PAM → ANB creates empty frame/range trigger lists.
+  Attack events must be reconstructed or authored; animation alone is not a playable command. [B3]
+- **Direct FBX incompleteness does not mean all animation conversion is absent.** The implemented
+  PAM → ANB route is distinct from PAMtoFBXConverter's disabled key-writing path. [B3–B4]
+- **PmoConverter is an FBX → PMO importer**, not the model-export route; use KhModels when discussing
+  export. [B8] The earlier project inventory did not establish converter direction or readiness.
+- Existing parser/conversion tests do not establish animated Knight export. Limited sample/channel
+  assertions and a dummy PMO fixture cannot validate a complete model/skeleton/animation pipeline.
+  Test presence is not a claim these tests were run here.
+- Do not blindly chain interpolated PAM → ANB output into a downstream command that expects raw
+  motion. Each stage's representation, skeleton contract and output must be checked. [B3]
+- Projectile, VFX and attack reference fields are clues, not a complete effect/collision runtime.
+  Reimplement trajectories, hit deduplication, hitstop, cancellation, targeting and recovery from an
+  evidence-backed specification; keep the original musou adaptation explicit.
+
+### Optional smallest asset-and-behavior spike
+
+**Recommendation, not a selected character, route, engine or approved implementation task:** test
+Ventus with Strike Raid, including idle and whichever constituent clips that command actually uses.
+On an authorized exact-edition reference copy:
+
+1. Identify the model, skeleton, textures, animation clips and relevant IDs; record hashes and the
+   pinned OpenKH build. Keep commercial inputs and exports outside public repositories/builds.
+2. Prove readable animation curves and correct playback in the intended downstream application.
+   Compare selected poses, scale, weapon attachment, timing and root movement against reference.
+3. Join any identifiable PAtk/command references to observed wind-up, release, flight, return and
+   recovery. Mark unconfirmed links rather than inferring runtime meaning from field names.
+4. If implementation is later approved, build an original placeholder Raid with one persistent
+   target. Preserve correct distant interaction before adding the horde or more characters.
+
+**Pass:** one visibly correct Knight animation and one convincing, explicitly specified Raid behavior,
+with every approximation and unsupported pipeline stage recorded. Failure means a bounded tool or
+implementation gap to assess, not automatic rejection of the BBS combat concept. This spike does not
+prove all three character kits or any Shotlock variant.
+
+Exact PSP, Final Mix and HD-PC compatibility remains untested. The current Mod Manager documents
+Steam/Epic collections and BBS workflows; that does not prove every PMO/PAM combination converts
+identically. Pin source edition, region, patch, asset hashes, tool commit and downstream versions.
+The PAM header's 30-FPS value still does not establish remaster gameplay tick rate.
+[Mod Manager](https://openkh.dev/tool/GUI.ModsManager/), [BBS builds](https://openkh.dev/bbs/builds.html)
+
+### Pinned BBS source references
+
+- **B1:** [KhModels PmoProcessor: model/skeleton/material conversion](https://github.com/OpenKH/OpenKh/blob/7a3b945c538d32c6a285128c98aefba093f52ceb/OpenKh.Tools.KhModels/BBS/PmoProcessor.cs)
+- **B2:** [KhModels MainWindowVM: PMO loading and FBX/PNG export](https://github.com/OpenKH/OpenKh/blob/7a3b945c538d32c6a285128c98aefba093f52ceb/OpenKh.Tools.KhModels/View/MainWindowVM.cs)
+- **B3:** [KHAnimationConverter: PAM → ANB and empty trigger lists](https://github.com/OpenKH/OpenKh/blob/7a3b945c538d32c6a285128c98aefba093f52ceb/OpenKh.Command.KHAnimationConverter/Program.cs)
+- **B4:** [PAMtoFBXConverter: disabled key-writing calls](https://github.com/OpenKH/OpenKh/blob/7a3b945c538d32c6a285128c98aefba093f52ceb/OpenKh.Command.PAMtoFBXConverter/Program.cs#L267-L292)
+- **B5:** [PAtk layout and location](https://openkh.dev/bbs/file/type/PATK.html)
+- **B6:** [Command parameters stored in the executable](https://openkh.dev/bbs/executable/CommandParam.html)
+- **B7:** [EPD implementation](https://github.com/OpenKH/OpenKh/blob/7a3b945c538d32c6a285128c98aefba093f52ceb/OpenKh.Bbs/Epd.cs)
+- **B8:** [PmoConverter importer source](https://github.com/OpenKH/OpenKh/tree/7a3b945c538d32c6a285128c98aefba093f52ceb/OpenKh.Command.PmoConverter)
 
 ## Exact-edition gate
 

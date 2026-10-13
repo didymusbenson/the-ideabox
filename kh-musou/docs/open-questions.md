@@ -43,6 +43,14 @@ Research evidence can inform these choices; it does not make the creative decisi
 7. **Scope and resources:** team size, time budget, intended audience/platform and release intent.
 8. **Enemy candidates:** approve contrasting types after their evidence is sufficient.
 
+## BBS pipeline questions after source inspection
+
+[OpenKH source inspection](toolchain-research.md#bbs-feasibility-serious-head-start-not-a-complete-combat-pipeline)
+confirms implemented model export and PAM → ANB conversion; project existence is no longer the only
+evidence. Still unresolved: actual edition compatibility, downstream animated playback, attack-event
+reconstruction, command-ID joins, collision/projectile semantics and Shotlock runtime. EPD parameters
+do not answer the BBS enemy-AI question. No export or source test was run in this research pass.
+
 ## Resolve during the first slice
 
 Root motion vs hybrid movement; airborne navigation/avoidance; crowd attack-slot policy; combo buffer

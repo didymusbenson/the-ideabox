@@ -19,6 +19,15 @@ The secondary entries support reference identification and edition cautions, not
 or runtime verification. Stun Impact is KH1 Final Mix-origin inspiration; it must not be relabeled
 as a canonical KH2 base-Sora move. No command conversion or gameplay experiment was performed.
 
+## BBS tooling supplement — 2026-10-13
+
+The [BBS feasibility assessment](toolchain-research.md#bbs-feasibility-serious-head-start-not-a-complete-combat-pipeline)
+contains B1–B8 primary source links pinned where applicable to OpenKH commit
+`7a3b945c538d32c6a285128c98aefba093f52ceb`. This source inspection establishes implemented paths and
+specific code limitations, not executed conversions, passing tests or validated game assets. It
+supersedes the earlier “converter projects exist” level of assessment without claiming a complete
+combat import pipeline.
+
 ## Public primary sources
 
 - [Object Editor](https://openkh.dev/tool/GUI.Kh2ObjectEditor/) — used in [toolchain-research.md](toolchain-research.md)
@@ -33,8 +42,8 @@ as a canonical KH2 base-Sora move. No command conversion or gameplay experiment 
 - [PMO](https://openkh.dev/bbs/file/type/pmo.html) — used in [toolchain-research.md](toolchain-research.md)
 - [PAM](https://openkh.dev/bbs/file/type/pam.html) — used in [toolchain-research.md](toolchain-research.md)
 - [BBS library](https://github.com/OpenKH/OpenKh/tree/master/OpenKh.Bbs) — used in [toolchain-research.md](toolchain-research.md)
-- [PAM converter](https://github.com/OpenKH/OpenKh/tree/master/OpenKh.Command.PAMtoFBXConverter) — used in [toolchain-research.md](toolchain-research.md)
-- [PMO converter](https://github.com/OpenKH/OpenKh/tree/master/OpenKh.Command.PmoConverter) — used in [toolchain-research.md](toolchain-research.md)
+- [Direct PAM/FBX project](https://github.com/OpenKH/OpenKh/tree/master/OpenKh.Command.PAMtoFBXConverter) — inventory link; see pinned B3–B4 above for distinct animation paths and limitations
+- [FBX/PMO importer](https://github.com/OpenKH/OpenKh/tree/master/OpenKh.Command.PmoConverter) — inventory link; KhModels is the model-export path (pinned B1–B2)
 - [Repository](https://github.com/OpenKH/OpenKh) — used in [toolchain-research.md](toolchain-research.md)
 - [KH2 builds](https://openkh.dev/kh2/builds.html) — used in [toolchain-research.md](toolchain-research.md)
 - [Editions](https://openkh.dev/kh2/editions.html) — used in [toolchain-research.md](toolchain-research.md)
