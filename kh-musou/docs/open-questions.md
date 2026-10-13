@@ -6,6 +6,28 @@ Standalone KH-inspired musou; Keyblade movement and ground/air combat; magic and
 Heartless; musou input sequences and battlefield pressure; every visible enemy real and fightable.
 Research precedes implementation. OpenKH is the first research route; native disassembly is conditional.
 
+## Combat alternatives: user direction, open selection
+
+The [side-by-side route document](combat-routes.md) records two live alternatives:
+- Three playable Knights based on Terra (heavy Strikes), Ventus (Raids/throws) and Aqua (magic-enhanced
+  attacks), translating iconic BBS commands into musou combos.
+- Sora's KH2-inspired moveset, longer-chain finishers and a possible timed Drive Form ultimate
+  (Valor is the user's example).
+
+Still open:
+1. Which route should lead, or should a bounded comparison precede the choice?
+2. Are the Knights original characters or Terra, Ventus and Aqua themselves? How is character
+   selection/switching handled, if switching is wanted at all?
+3. Which specific commands/finishers define each kit, and which imported inspirations are allowed?
+4. Does any command-deck equipping/cooldown/progression system survive the combo translation?
+5. Shotlocks: preserve targeting/follow-ups, combo ender plus reaction follow-ups, or charged ultimate?
+   What governs target selection, costs, safety windows, interruption and follow-up timing?
+6. Sora: which forms, duration/charge rules, altered moves and entry/expiry behavior? Are source
+   party/resource restrictions useful here or intentionally omitted?
+7. What input grammar exposes these moves without locking in a layout before testing?
+
+Research evidence can inform these choices; it does not make the creative decisions for the user.
+
 ## Decisions needed before an implementation spike
 
 1. **Source edition:** exact KH2/BBS edition, region, platform and build to study; do not blend data.
@@ -29,8 +51,8 @@ retargeting or original animation workflow; acceptable visual LOD; test replay s
 
 ## Deferred
 
-Full campaign structure, large roster, progression economy, elaborate story, online multiplayer,
-commercial asset pipeline, and additional KH3/DW edition research. A later question is not approval
+Full campaign structure, roster expansion beyond a selected route, progression economy, elaborate
+story, online multiplayer, commercial asset pipeline, and additional KH3/DW edition research. A later question is not approval
 to extract or distribute those games' content.
 
 ## Recorded 2026-10-13

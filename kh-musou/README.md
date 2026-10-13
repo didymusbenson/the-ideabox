@@ -18,16 +18,26 @@ Distance-based processing is allowed only if it preserves identity, position, re
 correct interactions. Scale, rendering quality, battlefield size, and roster breadth must yield to
 this requirement rather than disguising its failure.
 
+## Combat routes under consideration
+
+- Three playable Keyblade Knights inspired by Terra, Ventus and Aqua, turning BBS command attacks
+  into musou combos; Shotlock treatment remains open.
+- Sora's KH2-inspired moveset, with longer-combo finishers and a possible timed Drive Form ultimate.
+
+Neither route is selected. [Compare the routes](docs/combat-routes.md), including provisional mappings,
+source-edition cautions and a suggested small comparison before full roster production.
+
 ## First playable proof
 
-One Keyblade-wielding controller; two contrasting, research-verified Heartless behaviors; one compact
-battlefield and objective; and a genuinely interactive horde. Prove enemy fidelity, combat feel, and
+A small approved route slice (or a bounded comparison of the two routes); two contrasting,
+research-verified Heartless behaviors; one compact battlefield and objective; and a genuinely interactive horde. Prove enemy fidelity, combat feel, and
 measured performance before attempting a campaign. Begin with original/procedural placeholder assets.
 The desired scope is a research direction, not a promise to reproduce either commercial series.
 
 ## Read next
 
 - [Project charter](docs/charter.md): requirements, boundaries, and decision ownership
+- [Combat routes](docs/combat-routes.md): three Knights versus Sora, payoff options and open decisions
 - [Combat and battlefield](docs/combat-and-battlefield.md): player grammar and musou structure
 - [Enemy fidelity](docs/enemy-fidelity.md): evidence and behavior specification workflow
 - [Interactive horde](docs/interactive-horde.md): persistent entities and correctness tests

@@ -1,5 +1,9 @@
 # Combat and battlefield
 
+The player reference is now an open choice between [three BBS-inspired Knights and KH2-inspired
+Sora](combat-routes.md). The common grammar below applies to both; a short-chain spike is a stepping
+stone to evaluating longer finishers, not a replacement for either intended combat identity.
+
 ## Player-facing direction
 
 Preserve a Kingdom Hearts-inspired action vocabulary, then arrange moves into musou input sequences.

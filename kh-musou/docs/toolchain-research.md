@@ -2,9 +2,15 @@
 
 Research date: 2026-10-13. Public documentation/source inspection only. No commercial executable, disc image, asset or extracted game script was downloaded or processed. No engine is selected here. Proposed behaviors and numerical fidelity targets are not measured findings.
 
-## Decision
+## Research starting point, not a combat-route decision
 
-Select one exact Kingdom Hearts II edition/build, one player configuration and two contrasting enemies. Kingdom Hearts II Final Mix is a research candidate, not a confirmed edition choice. Use OpenKH for format knowledge/inspection and appropriately licensed tooling. Write a new standalone combat implementation from evidence-backed specifications: reading BDX or importing animations does not import the combat runtime. Dynasty Warriors decompilation is not a prerequisite.
+This document began as a KH2-first tooling investigation. The user's later [BBS three-Knight and
+Sora alternatives](combat-routes.md) remain equally open as design routes. The verified KH2 tool
+coverage below can reduce research uncertainty; it does not select the playable roster or invalidate
+BBS. Audit exact-build BBS command/Shotlock behavior separately if that route is explored.
+
+For a KH2 research slice, select one exact Kingdom Hearts II edition/build, one player configuration
+and two contrasting enemies. Kingdom Hearts II Final Mix is a research candidate, not a confirmed edition choice. Use OpenKH for format knowledge/inspection and appropriately licensed tooling. Write a new standalone combat implementation from evidence-backed specifications: reading BDX or importing animations does not import the combat runtime. Dynasty Warriors decompilation is not a prerequisite.
 
 Choose the lawful reference copy actually available to the user and matching footage. PS2 KH2FM has explicit legacy executable references; HD PC may be more convenient locally. Asset compatibility and gameplay equivalence require separate tests.
 

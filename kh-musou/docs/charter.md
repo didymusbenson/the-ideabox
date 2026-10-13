@@ -8,6 +8,18 @@ The following is the user's supplied specification, preserved verbatim (includin
 >
 > Dynasty Warriors executable decompilation is not a prerequisite.  FIRST PROTOTYPE A Keyblade controller, contrasting Heartless types, one battlefield objective, and a genuinely interactive horde. Validate enemy fidelity, combat feel, and crowd performance before expanding into a campaign.
 
+## Later user direction — 2026-10-13
+
+Two combat routes are now under consideration: three playable Keyblade Knights inspired by the
+Terra/Ventus/Aqua archetypes, translating BBS command attacks into musou combos; or Sora's KH2-inspired
+moveset with longer-combo finishers and a possible timed Drive Form ultimate. Shotlocks in the
+three-Knight route may remain distinct, become combo enders with reaction follow-ups, or become
+charged ultimates. These are alternatives, not a route selection. See [combat routes](combat-routes.md).
+
+The initial brief's KH2-focused research wording remains historical context. KH2 tool maturity does
+not decide the combat design, and no engine or exact source edition has been selected. Both routes
+retain the original interactive-horde and standalone-implementation requirements.
+
 ## What this documentation adds
 
 The brief is authoritative. Suggested enemy candidates, engine shortlist, data contracts, objective,

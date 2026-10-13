@@ -6,6 +6,19 @@ crowd size has been achieved. Detailed qualifications appear beside citations in
 Mutable documentation may change; pin release/commit and archive relevant evidence references when
 a later implementation begins. No commercial game data was inspected in this pass.
 
+## Combat-route reference supplement — 2026-10-13
+
+[Combat routes](combat-routes.md#source-provenance-and-named-move-candidates) carries direct citations
+and the source-fact versus proposed-mapping distinction for each move:
+- Primary: [Piggyback's official KH2 guide sample](https://www.piggyback.com/en/kh2_e_samplepages/),
+  printed pp. 28–29, for normal attacks and finishers.
+- Secondary: KHWiki's individual BBS command entries, Shotlock, Valor Form, Limit Form, Stun Impact,
+  Finishing Leap and Magnet Burst, linked beside the relevant claims in the route document.
+
+The secondary entries support reference identification and edition cautions, not exact-build timing
+or runtime verification. Stun Impact is KH1 Final Mix-origin inspiration; it must not be relabeled
+as a canonical KH2 base-Sora move. No command conversion or gameplay experiment was performed.
+
 ## Public primary sources
 
 - [Object Editor](https://openkh.dev/tool/GUI.Kh2ObjectEditor/) — used in [toolchain-research.md](toolchain-research.md)
