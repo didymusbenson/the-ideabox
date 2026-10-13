@@ -18,6 +18,7 @@ down, and let it develop as far as it wants to.
 | [`crimson-heart-webtoon/`](./crimson-heart-webtoon/) | *Crimson Heart* — a magical-girl webtoon about a retired, endgame-powered heroine, now a US mom, who suits back up when old threats return so a talking cat can't recruit her daughter; the monster fights end in seconds so the real story is family, PTSD, and healing | Seed (premise & docs drafted) |
 | [`loom-studio/`](./loom-studio/) | *Loom Studio* — a local, non-developer writing environment for Loom projects: a manuscript-centerpiece editor with alternate "timelines" (git branches as parallel story versions) and a woven-loom history view, presenting version control in author-friendly terms | Planning (requirements drafted; direction set) |
 | [`opposition-bot/`](./opposition-bot/) | *Opposition Bot* — an auditable, event-driven adversarial agent architecture combining probabilistic beliefs, utility objectives, HTN/GOAP planning, counterplay evaluation, and OODA tempo control | Planning (architecture and event-queue reference drafted) |
+| [`kh-musou/`](./kh-musou/) | *Kingdom Hearts Musou* — a standalone KH-inspired action game with musou battlefield pressure and a fully interactive, persistent enemy horde | Research / planning (prototype gates and toolchain research drafted; engine undecided) |
 | [`CustomSet/`](./CustomSet/) | *Unbelievable* — a custom Magic: The Gathering set-design project with worldbuilding, mechanics, draft archetypes, a card file, and a design reference library | Design in progress |
 
 ## How this repo is organized
