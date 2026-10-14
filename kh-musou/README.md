@@ -1,6 +1,6 @@
 # Kingdom Hearts Musou
 
-**Working title. Status:** Research / planning; no implementation yet. **Engine:** Unreal Engine (version TBD). **Target:** PC.
+**Working name: Keyblade Warriors. Status:** Research / planning; no implementation yet. **Engine:** Unreal Engine (version TBD). **Targets:** macOS and Windows.
 
 A standalone action game interpreting **Kingdom Hearts × Dynasty Warriors**: the expressive movement,
 aerial combat, magic, defenses, and recognizable Heartless encounters of Kingdom Hearts, organized
@@ -59,3 +59,7 @@ The desired scope is a research direction, not a promise to reproduce either com
 
 Research compiled 2026-10-13. No commercial assets or executables are included, and no extraction or
 decompilation was performed for this planning pass.
+
+## Local development setup
+
+The working name is **Keyblade Warriors**. macOS and Windows are explicit targets. See [Mac/Windows setup and validation status](docs/mac-windows-setup.md). The earlier Windows-only assumption below is superseded by this dual-platform decision; the Sora/BBS combat-route choice remains open.
