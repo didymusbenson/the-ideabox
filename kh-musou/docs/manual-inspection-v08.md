@@ -1,0 +1,17 @@
+# Keyblade Warriors V08 — one inspection pass
+
+Reference: KH2 Final Mix Standard, level 30 Sora, Kingdom Key, no optional combo abilities. Story HP bonuses remain zero for this benchmark; the final Sora build comes later.
+
+Use **Play Keyblade Warriors v08.command**. Press **R** to restart between checks. Controls: WASD, mouse camera, Space jump, left click/J attack, Tab lock-on. Controller: left stick, right stick camera, bottom face button jump, left face button attack, right-stick press lock-on.
+
+1. **Movement and jump.** Run, reverse direction, and release movement. Check that ordinary movement stops promptly. With a controller, ease the stick into a walk, then run. Jump from standing and while moving; watch the short takeoff preparation, apex, fall loop, and landing. A second jump is intentionally unavailable in this build.
+2. **Landing control.** Hold movement as you land. Sora should finish the first part of landing before moving again. Try jumping immediately after landing. Watch for foot sliding, a repeated takeoff pose, or a fall pose restarting abruptly.
+3. **Kingdom Key and animation.** Check the grip, crown, texture, and hand attachment through jumping, attacks, and reactions. Let an attack finish without another press: its followthrough should play. Watch the hips, shoulders, wrists, and weapon for deformation or snapping.
+4. **Ground combo.** Approach the Soldier and tap attack again near contact, then again during the second attack. The close forward chain should use three different attacks; the second attack has two separate damage windows, giving four damage events across the complete chain. Hold movement during the attacks and check that Sora obeys the action's movement restrictions. Whiffing should not continue a combo without Combo Master.
+5. **Distance and targeting.** Attack from farther away, from an angle, and while locked on. Turning should happen during the attack's turning windows. The forward approach attack should close distance. Check that neither the weapon nor Sora passes through a wall to reach the Soldier. A single angled enemy becomes the primary target; side variants depend on additional nearby targets.
+6. **Air combat.** Jump and attack near the Soldier while airborne. Try another press after contact. Each attack should apply its own small lift/travel behavior and then fall naturally. Landing or taking a hit should clear the old combo and its buffered input.
+7. **Reactions and restart.** Let the Soldier hit Sora. Check recoil and the return of control. A finisher should launch the Soldier and transition into its landing/get-up animation. Restart and confirm full health, zero hit count, and no queued attack.
+
+The collision launcher draws weapon attack spheres during their active windows if a hit feels too early, too late, too long, or misses visibly. Report the checklist number and what you expected versus what happened; there is no need to inspect after each item.
+
+This is a substantial native-controller integration, with remaining fidelity limits: nearest-visible target tie-break and incomplete native lock-on/camera behavior; a configurable 8-tick input buffer; partial animation blending/event semantics; arena Soldier AI; unverified native damage-formula and invulnerability details; and unfinished source death/effects/audio/facial behavior. The source movement, combo selection, motion clocks, recoil, and finisher launch rules now drive the playable core together.

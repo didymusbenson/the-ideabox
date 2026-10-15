@@ -1,4 +1,10 @@
-# Native controller recovery — in progress, 2026-10-14
+# Native controller recovery — V08 verified, 2026-10-14
+
+V08 is built and verified. The rendered Mac package passed all 21 controller checks at 30 fps, correct private asset and material loading, source collision loading, and a full restart. Editor build, all three automation suites, and normal/extended encounter checks also pass. No new manual visual acceptance is claimed. See [V08 status](native-controller-v08-status.md) and [one-pass inspection checklist](manual-inspection-v08.md).
+
+Game final checkpoint `0536028d13b21c3e7eb8e89b375a372a66f96edb` (code `748480b`), converter final checkpoint `174cd3124d5c5ac381c987757f75244f8cdc99ae` (code `5900a3f`). These two repositories have no remotes, so their source is local-only and NOT backed up to GitHub. Recovery locations are `Game/KeybladeWarriors` and `Research/PortableKHExport` beneath the local Keyblade-Warriors workspace. This planning repository contains factual notes and the checklist only.
+
+## Historical research and intermediate checkpoints — superseded by V08 status
 
 The user explicitly asked to continue through the remaining work, not stop for another V07 manual handoff. Work remains active. This supersedes the earlier inference that the available files only support table-driven approximation: the original executable retains usable MSVC native RTTI/vtables. A complete drop-in script is still absent, but native movement and combat logic can be traced locally.
 
