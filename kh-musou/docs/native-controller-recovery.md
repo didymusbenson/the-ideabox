@@ -1,0 +1,17 @@
+# Native controller recovery — in progress, 2026-10-14
+
+The user explicitly asked to continue through the remaining work, not stop for another V07 manual handoff. Work remains active. This supersedes the earlier inference that the available files only support table-driven approximation: the original executable retains usable MSVC native RTTI/vtables. A complete drop-in script is still absent, but native movement and combat logic can be traced locally.
+
+Read-only RTTI mapping found300 YS classes, later340 including kn animation providers. Headless native analysis recovered269 selected action/player functions and direct callees; subsequent targeted batches trace the selector, movement integration and animation clock. The source executable SHA256 is `9002b2de6a1f91a790bd0673de125d1cf833f7942bfec827cdcf6ba64d5849ed`. The executable is imported as data, never loaded/executed or patched. All generated decompiler bodies, addresses, analysis databases and binary-derived reports stay under ignored SourceAssets/Steam-KH/native-controller; none go to GitHub.
+
+Verified behavioral findings pending coupled implementation:
+
+- Jump ascent uses a nested sine curve to the apex, followed by quadratic descent. The native gravity constant is the float32 value0.40816327929496765 per global-frame unit squared. Apex time derives from sqrt(abs(2*height/gravity)); terminal fall is source SSTM FallMax. Ordinary locomotion sets/stops desired movement immediately, while aerial movement has separate smoothing.
+- Base attack selection uses table order, Type1 selected-target and Type2 nearby-target conditions, Type3 defaults, ability/air/finisher flags, and Sub-ID fallback when a selected motion repeats. It does not use the prototype's unconditional alternating sequence or highest-score subset. Distance far bound, height lower bound and cone lower bound are exclusive in the recovered comparisons.
+- Attack application uses PTYA jump height/min/max and travel-speed bounds, including ground-to-air routes. V07's blanket use of PLYR8/6/12 as per-stroke vertical velocity is not the recovered basic attack path and must be replaced.
+- The newer official OpenKH Motion.FrameData names are FrameStart/FrameEnd/FramesPerSecond/FrameReturn. The legacy emulator exposes first/fourth values as FrameLoop/FrameCount. Existing visual-prefix trims8/42 match actual source start frames, not arbitrary holds. Correct event-clock origin and return-frame loops are being verified against native animation provider code before implementation.
+- Target selection uses target collision type3 and its radius/height, distinct from hurt spheres. Source body collision bounds also differ from some prototype capsule values.
+
+Portable analysis tools: official Ghidra12.1.4 archive SHA256 ddac49f903da9d5bac833e5cc79395098b9c33cfd3279be5f31bd00387d2d4db, verified before extraction. Reuses installed Android Studio JDK21.0.8. Ghidra's native decompiler was built locally for mac_arm_64 with Xcode clang; no game code or DRM changes, no system installation. Tool settings/cache/temp are placed under workspace Tools. Original analysis scripts are preserved in Research/PortableKHExport.
+
+Next: finish native timing/selection/physics evidence, implement the baseline controller and asset-clock changes together, then run one combined validation/build batch. Do not claim full controller completion from research alone. V07 remains the last packaged build until its successor passes; no newer manual acceptance or visual proof exists yet.
