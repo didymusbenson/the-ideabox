@@ -1,3 +1,5 @@
+> Current implementation (2026-10-15): V09 is a private Mac wave prototype with real Soldier batches, source-timed Sora/Kingdom Key combat, source attack geometry, four Soldier patterns and Sora HUD art. See [current milestone and fidelity boundaries](docs/wave-prototype-v09-status.md). The design brief below is preserved as historical planning; its original research-only and one-enemy scope has been superseded by the user's explicit wave assignment.
+
 # Kingdom Hearts Musou
 
 **Working name: Keyblade Warriors. Status:** Research / planning; no implementation yet. **Engine:** Unreal Engine (version TBD). **Targets:** macOS and Windows.
