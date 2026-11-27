@@ -72,16 +72,18 @@ All are guaranteed base bundles. A known cultivar can be replanted freely on an 
 | `heavy_ore` | Heavywood | 44 | 2 heavy_ore, 1 litter, 1 cutting | `heavy_cultivar` |
 | `crystal_shard` | Crystalwood | 60 | 1 crystal_shard, 1 litter, 1 cutting | `crystal_cultivar` |
 
-## Technology / one-time purchases (45)
+## Technology / one-time purchases (51)
 
-Requires column is all-of; additionally check the material cost. Machine/producer/generator effects create the first corresponding slot as part of purchase; repeatable construction is listed separately. No advancement board prerequisites beyond the listed technology/material gate.
+Requires column is all-of; additionally check the material cost. Machine/producer/generator/storage module effects create the first corresponding slot or module as part of purchase; repeatable construction listed separately. Storage tiers and overflow behavior are in [storage requirements](06-storage.md). No advancement board prerequisites beyond listed technology/material gate.
 
 | Tech ID | Name | Cost | Requires | Effect |
 |---|---|---|---|---|
 | `screen` | Screen station | 4 timber, 2 dirt | — | recipe: screen_grit |
+| `storage_bin` | Wooden bins | 8 timber, 2 dirt | — | storageModule: storage_bin; storageCapacity: 160; initialSlots: 1 |
 | `stone_cultivar` | Stone cultivar | 2 grit, 1 cutting | `screen` | cultivar: stone |
 | `clay_cultivar` | Clay cultivar | 2 stone, 1 dirt, 1 cutting | `stone_cultivar` | cultivar: clay |
 | `field` | Farm | 1 field_seed, 2 dirt, 3 timber | — | zone: farm; producer: field; initialSlots: 1 |
+| `storage_silo` | Clay-lined silo | 6 clay, 6 stone, 8 timber | `storage_bin`, `clay_cultivar` | storageModule: storage_silo; storageCapacity: 640; initialSlots: 1 |
 | `kiln` | Kiln | 6 clay, 6 stone, 4 timber | `clay_cultivar` | machine: kiln; initialSlots: 1 |
 | `coal_cultivar` | Coal cultivar | 1 fired_part, 1 charcoal, 2 stone, 1 cutting | `kiln` | cultivar: coal |
 | `copper_cultivar` | Copper cultivar | 1 copper, 1 cutting | `kiln` | cultivar: copper |
@@ -90,6 +92,7 @@ Requires column is all-of; additionally check the material cost. Machine/produce
 | `silica_cultivar` | Silica cultivar | 2 silica, 1 cutting | `kiln`, `stone_cultivar` | cultivar: silica |
 | `alloy_heat` | Alloy heat lining | 3 fired_part, 2 copper, 2 charcoal | `kiln`, `copper_cultivar` | recipe: bronze_manual |
 | `iron_pick` | Iron pick and Quarry | 3 iron, 2 timber | `kiln` | zone: quarry; producer: quarry; initialSlots: 1 |
+| `storage_vault` | Reinforced warehouse | 6 iron, 4 bronze, 2 fired_part | `storage_silo`, `alloy_heat`, `iron_pick` | storageModule: storage_vault; storageCapacity: 2560; initialSlots: 1 |
 | `quartz_bed` | Quartz bed | 3 fired_part, 6 stone, 2 iron | `iron_pick` | quarryBed: quartz |
 | `quartz_cultivar` | Quartz cultivar | 2 quartz, 1 cutting | `quartz_bed` | cultivar: quartz |
 | `compost_soil` | Compost soil | 3 compost, 2 dirt | `field` | upgrade: soil_compost |
@@ -103,18 +106,20 @@ Requires column is all-of; additionally check the material cost. Machine/produce
 | `grid` | Power Grid | 4 copper, 3 iron, 2 fired_part | `kiln` | zone: grid; generator: combustion; initialSlots: 1 |
 | `factory` | Factory | 4 iron, 3 copper, 2 fired_part | `grid` | zone: factory; machine: processor; initialSlots: 1 |
 | `alloy_furnace` | Powered alloy furnace | 4 iron, 2 bronze, 2 glass | `factory`, `alloy_heat` | machine: alloy_furnace; initialSlots: 1 |
-| `router` | Sorting network | 3 copper, 2 glass, 3 iron | `factory`, `silica_cultivar` | automation: repeat_queues |
+| `router` | Sorting network | 3 copper, 2 glass, 3 iron | `factory`, `silica_cultivar`, `storage_silo` | automation: repeat_queues |
 | `circuit_bench` | Circuit bench | 3 copper, 2 quartz, 2 resin, 2 iron | `factory`, `quartz_bed`, `resin_cultivar` | machine: circuit_bench; initialSlots: 1 |
 | `ward_motor` | Ward motor | 3 iron, 2 control, 1 core | `circuit_bench`, `arena` | automation: arena_auto |
 | `deep_bed` | Deep ore bed | 4 bronze, 3 quartz, 3 iron | `quartz_bed`, `alloy_heat` | quarryBed: heavy_ore |
 | `heavy_cultivar` | Heavywood cultivar | 2 heavy_ore, 2 bronze, 1 cutting | `deep_bed` | cultivar: heavy_ore |
 | `gem_bed` | Gem bed | 4 quartz, 3 iron, 1 core | `quartz_bed`, `arena` | quarryBed: gem |
 | `gem_cultivar` | Gemwood cultivar | 2 gem, 1 quartz, 1 cutting | `gem_bed` | cultivar: gem |
+| `storage_rack` | Networked storage rack | 3 control, 8 iron, 4 glass, 2 alloy | `storage_vault`, `router`, `circuit_bench`, `alloy_furnace`, `deep_bed` | storageModule: storage_rack; storageCapacity: 10240; initialSlots: 1 |
 | `deep_drill` | Deep drill | 4 alloy, 3 control, 2 shell | `alloy_furnace`, `deep_bed`, `ward_motor`, `reinforced_armor` | automation: deep_drill |
 | `polymer_line` | Polymer line | 4 iron, 3 copper, 4 resin, 2 fired_part | `factory`, `oil_field`, `resin_cultivar` | machine: polymer_line; initialSlots: 1 |
 | `precision_line` | Precision line | 4 glass, 3 control, 4 quartz, 2 gem | `circuit_bench`, `gem_bed`, `factory` | machine: precision_line; initialSlots: 1 |
 | `stabilizer` | Catalyst stabilizer | 4 iron, 2 control, 1 glow | `glowbug_trial`, `circuit_bench` | machine: stabilizer; initialSlots: 1 |
 | `biofuel_line` | Fermenter and biofuel generator | 3 iron, 2 bronze, 3 oil | `field`, `grid`, `oil_field` | machine: fermenter; initialSlots: 1; generator: biofuel |
+| `storage_crystal` | Crystal memory vault | 8 alloy, 6 control, 4 crystal, 4 polymer | `storage_rack`, `precision_line`, `polymer_line` | storageModule: storage_crystal; storageCapacity: 40960; initialSlots: 1 |
 | `advanced_grid` | High-capacity generator | 4 alloy, 2 crystal, 3 control | `precision_line`, `alloy_furnace`, `grid`, `deep_bed` | generator: advanced |
 | `precision_soil` | Precision soil | 6 compost, 2 alloy, 1 crystal | `compost_soil`, `precision_line`, `alloy_furnace`, `deep_bed` | upgrade: soil_precision |
 | `mineral_soil` | Mineral soil | 4 compost, 4 stone, 1 bronze | `compost_soil`, `alloy_heat` | upgrade: soil_mineral |
@@ -122,11 +127,12 @@ Requires column is all-of; additionally check the material cost. Machine/produce
 | `precision_tools` | Precision tools | 3 alloy, 2 crystal | `precision_line`, `forge_tools`, `alloy_furnace`, `deep_bed` | upgrade: yield_precision |
 | `crystal_cultivar` | Crystalwood cultivar | 3 gem, 3 quartz, 1 catalyst, 1 cutting | `stabilizer`, `gem_bed` | cultivar: crystal_shard |
 | `convergence` | Convergence station | 8 alloy, 5 polymer, 4 crystal, 3 catalyst, 1 rare_core | `polymer_line`, `precision_line`, `stabilizer`, `titan_trial` | machine: convergence; initialSlots: 1 |
-| `worldseed_press` | Worldseed Press | 1 convergence_core, 8 alloy, 4 control, 4 crystal | `convergence`, `advanced_grid` | machine: worldseed_press; initialSlots: 1 |
+| `storage_fold` | Folded-space repository | 12 alloy, 8 crystal, 6 catalyst, 1 convergence_core | `storage_crystal`, `convergence`, `advanced_grid` | storageModule: storage_fold; storageCapacity: 163840; initialSlots: 1 |
+| `worldseed_press` | Worldseed Press | 1 convergence_core, 8 alloy, 4 control, 4 crystal | `convergence`, `advanced_grid`, `storage_rack` | machine: worldseed_press; initialSlots: 1 |
 
-## Repeatable constructions (28)
+## Repeatable constructions (34)
 
-Costs and maximum additional purchases, subject also to total slot/attachment caps and available target. The plot formula overrides the literal first-plot price, and caps include awarded prestige slots. Generator/machine caps include the initial free slot. Every other listed price is flat in v1.
+Costs and maximum additional purchases, subject also to total slot/attachment/module caps and available target. Plot formula overrides literal first-plot price; caps include awarded prestige slots. Generator/machine/storage caps include the initial first purchased module. Every other listed price is flat in v1.
 
 | Build ID | Name | Cost | Requires | Effect | Max additional |
 |---|---|---|---|---|---:|
@@ -158,6 +164,12 @@ Costs and maximum additional purchases, subject also to total slot/attachment ca
 | `buffer_upgrade` | Storage upgrade | 5 timber, 2 iron | `iron_pick` | bufferCycles: 3 | 32 |
 | `efficiency_upgrade` | Machine efficiency kit | 2 control, 2 bronze, 1 glass | `circuit_bench` | machineUpgrade: efficiency | 64 |
 | `speed_upgrade` | Machine speed kit | 2 control, 2 bronze, 2 copper | `circuit_bench` | machineUpgrade: speed | 64 |
+| `extra_storage_bin` | Additional wooden bins | 8 timber, 2 dirt | `storage_bin` | storageModule: storage_bin; storageCapacity: 160 | 3 |
+| `extra_storage_silo` | Additional clay-lined silo | 6 clay, 6 stone, 8 timber | `storage_silo` | storageModule: storage_silo; storageCapacity: 640 | 3 |
+| `extra_storage_vault` | Additional reinforced warehouse | 6 iron, 4 bronze, 2 fired_part | `storage_vault` | storageModule: storage_vault; storageCapacity: 2560 | 3 |
+| `extra_storage_rack` | Additional networked storage rack | 3 control, 8 iron, 4 glass, 2 alloy | `storage_rack` | storageModule: storage_rack; storageCapacity: 10240 | 3 |
+| `extra_storage_crystal` | Additional crystal memory vault | 8 alloy, 6 control, 4 crystal, 4 polymer | `storage_crystal` | storageModule: storage_crystal; storageCapacity: 40960 | 3 |
+| `extra_storage_fold` | Additional folded-space repository | 12 alloy, 8 crystal, 6 catalyst, 1 convergence_core | `storage_fold` | storageModule: storage_fold; storageCapacity: 163840 | 3 |
 
 ## Tasks and recipes (48)
 
@@ -239,9 +251,10 @@ Batteries hold 600 watt-seconds each; charging/discharging details are in engine
 
 | Rule | Candidate |
 |---|---|
-| Initial state | 1 planted starter plot, Orchard+Workshop, empty inventory, 100 HP |
+| Initial state | 1 planted starter plot, Orchard+Workshop, empty inventory, 100 HP, 160 shared storage units |
 | Tap | 250 ms per accepted tap, at most 8 per rolling second across all active tasks |
-| Buffer | 3 completed cycles/slot; storage kit +3, max 12 cycles |
+| Local buffer | 3 completed cycles/slot; buffer storage kit +3, max 12 cycles |
+| Global storage | 160 base; six module tiers +160/+640/+2,560/+10,240/+40,960/+163,840; max 4 modules per tier including first. One of each =218,560, max873,760. |
 | Plot price | For current plot count p, 3 + floor(1.5(p−1)) dirt, 2 + (p−1) timber |
 | Soil duration | base 1, compost 0.8, mineral 0.65, precision 0.5 |
 | Orchard/Quarry yield | base 1, shaped 1.25, precision 1.5 |
@@ -289,11 +302,11 @@ The catalog includes a specific example using two advanced generators, three mec
 | `stoneback` | grind | 1/3 | 1 | 0 |
 | `glowbug` | grind | 4/9 | 1 | 0 |
 
-Machine counts: worldseed_press ×1, alloy_furnace ×1, processor ×4, circuit_bench ×1, polymer_line ×1, precision_line ×1, stabilizer ×1, bench ×1, field ×2, quarry ×7, orchard ×3, grinder ×2. No speed/yield/soil upgrades are required for this witness. Alloy and bronze recipes share the one alloy furnace by quota; bench recipes are instant and demand-limited. All listed concurrent loads sum to 180 W ignoring mutually exclusive station work, conservatively below 200 W. One uninterrupted Worldseed press makes two per minute; 600 take five ideal hours after ramp-up. Build a second full input chain to scale, not just another press. Use reactor-like high capacity as a purely abstract game resource; no simulation of real-world equipment.
+Machine counts: worldseed_press ×1, alloy_furnace ×1, processor ×4, circuit_bench ×1, polymer_line ×1, precision_line ×1, stabilizer ×1, bench ×1, field ×2, quarry ×7, orchard ×3, grinder ×2. No speed/yield/soil upgrades are required for this witness. Alloy and bronze recipes share the one alloy furnace by quota; bench recipes are instant and demand-limited. One module of each of the first four storage tiers gives 13,760 total stock units; allowing 3,000 setup stock, 300 minutes of 2/min output plus positive net byproducts occupies approximately 8,842 units in the average-rate witness. It is not a discrete overflow guarantee. All listed concurrent loads sum to 180 W ignoring mutually exclusive station work, conservatively below 200 W. One uninterrupted Worldseed press makes two per minute; 600 take five ideal hours after ramp-up. Build a second full input chain to scale, not just another press. Use reactor-like high capacity as a purely abstract game resource; no simulation of real-world equipment.
 
-## Milestone boards (7 boards, 52 milestones)
+## Milestone boards (7 boards, 60 milestones)
 
-IDs are namespaced by board. Predicates are monotonic historical facts, persisted counters or unlocked technology (never require current inventory). The event contract is specified in the engine requirements. No board rewards beyond local badge/records.
+IDs are namespaced by board. Predicates are monotonic historical facts, persisted counters or unlocked technology (never require current inventory). Event contract specified in engine and [storage requirements](06-storage.md). No board rewards beyond local badge/records.
 
 | Board | Milestone ID | Label | Predicate |
 |---|---|---|---|
@@ -325,6 +338,14 @@ IDs are namespaced by board. Predicates are monotonic historical facts, persiste
 | `supply_lines` | `router` | Build sorting network | kind=tech; id=router |
 | `supply_lines` | `repeat` | Complete an automatic repeat batch | kind=event; event=machine:repeat_completed |
 | `supply_lines` | `batch_chain` | Finish a powered batch after auto-producing an input | kind=event; event=machine:automated_input_completed |
+| `supply_lines` | `storage_bin` | Build Wooden bins | kind=tech; id=storage_bin |
+| `supply_lines` | `storage_silo` | Build Clay-lined silo | kind=tech; id=storage_silo |
+| `supply_lines` | `storage_vault` | Build Reinforced warehouse | kind=tech; id=storage_vault |
+| `supply_lines` | `storage_rack` | Build Networked storage rack | kind=tech; id=storage_rack |
+| `supply_lines` | `storage_crystal` | Build Crystal memory vault | kind=tech; id=storage_crystal |
+| `supply_lines` | `storage_fold` | Build Folded-space repository | kind=tech; id=storage_fold |
+| `supply_lines` | `storage_full` | Reach the stock ceiling | kind=event; event=storage:full |
+| `supply_lines` | `storage_resumed` | Free storage and resume | kind=event; event=storage:resumed |
 | `spark` | `grid` | Build Grid | kind=tech; id=grid |
 | `spark` | `first_fuel` | Consume fuel | kind=event; event=grid:fuel_started |
 | `spark` | `battery` | Build battery | kind=event; event=build:battery |

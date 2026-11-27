@@ -79,6 +79,39 @@ def structure():
         require(effect.get("generator","combustion") in G,"missing generator build")
         require(effect.get("machine","bench") in SLOTS|{"grinder"},"missing machine build")
 
+def storage_contract():
+    cfg=CFG["storage"]; base=cfg["initialCapacity"]; tiers=cfg["tiers"]
+    require(len(tiers)==6 and base>0,"bad storage tiers")
+    total=base
+    for i,t in enumerate(tiers):
+        tid=t["id"]; spec=T[tid]; build=B["extra_"+tid]
+        require(spec["effect"]["storageCapacity"]==t["unitsPerModule"]==build["capacity"]["storageCapacity"],"capacity mismatch")
+        require(spec["cost"]==build["cost"] and build["max"]+1==t["maxModules"],"module cost or cap mismatch")
+        require(sum(spec["cost"].values())<=total,"upgrade cost cannot fit previous minimum capacity")
+        if i: require(tiers[i-1]["id"] in spec["requires"],"storage tier bypass")
+        total+=t["unitsPerModule"]
+    require(cfg["maxCapacity"]==base+sum(t["unitsPerModule"]*t["maxModules"] for t in tiers),"global cap incorrect")
+    require("storage_rack" in T["worldseed_press"]["requires"],"terminal storage gate missing")
+    require(total==218560,"one of each capacity mismatch")
+    # Accounting examples, not a real scheduler. Reservations occupy storage until consumed.
+    on_hand,reserved=155,0
+    require(on_hand+6>base,"overflow fixture invalid")
+    on_hand-=1 # explicit discard or spend; then collect the whole held bundle
+    require(on_hand+6==base,"retrieval after freeing space")
+    on_hand+=6
+    on_hand-=2; reserved+=2
+    require(on_hand+reserved==base,"reservation freed phantom space")
+    on_hand+=reserved; reserved=0
+    require(on_hand==base,"cancellation changed stock")
+    on_hand-=2; reserved=2
+    reserved=0; pending=3
+    require(on_hand+pending>base,"net-positive output should wait")
+    on_hand-=1; on_hand+=pending; pending=0
+    require(on_hand==base and not pending,"pending output delivered incorrectly")
+    on_hand-=sum(T["storage_bin"]["cost"].values()); capacity=base+tiers[0]["unitsPerModule"]
+    require(on_hand==150 and capacity==320,"atomic storage expansion incorrect")
+    print(f"Storage: six tiers, {base} starting units -> {total} with one each -> {cfg['maxCapacity']} maximum; held-output and reservation accounting examples pass")
+
 def reachable():
     # Set-level check: existence of a noncircular path, ignoring quantities.
     known = set(); res = set(); stages = 0
@@ -109,7 +142,7 @@ class Ledger:
     per-job fuel consumption. Victorious manual encounters are a witness, not average pacing.
     """
     def __init__(self):
-        self.inv=Counter()
+        self.inv=Counter(); self.capacity=CFG["storage"]["initialCapacity"]; self.peak=0; self.modules=Counter()
         self.known=set()
         self.plots=1; self.built=Counter(); self.first_wins=set(); self.wins=Counter()
         self.starter_harvests=0; self.actions=0; self.seconds=0; self.pressed=0
@@ -118,12 +151,20 @@ class Ledger:
         require(all(self.inv[k]>=v for k,v in cost.items()),f"insufficient {cost} vs {self.inv}")
         self.inv.subtract(cost)
         require(all(v>=0 for v in self.inv.values()),"negative stock")
+    def credit(self, bundle):
+        require(sum(self.inv.values())+sum(bundle.values())<=self.capacity,f"storage full ({sum(self.inv.values())}/{self.capacity}) while crediting {bundle}; tech {len(self.known)}")
+        self.inv.update(bundle); self.peak=max(self.peak,sum(self.inv.values()))
+    def storage_effect(self, effect):
+        if "storageModule" in effect:
+            id=effect["storageModule"]; spec=next(t for t in CFG["storage"]["tiers"] if t["id"]==id)
+            require(self.modules[id]<spec["maxModules"],"storage module cap")
+            self.modules[id]+=1; self.capacity+=spec["unitsPerModule"]
     def harvest(self, id):
         c=C[id]; require(set(c["requires"])<=self.known,f"locked tree {id}")
-        self.inv.update(c["out"]); self.seconds+=c["seconds"]; self.actions+=1
+        self.credit(c["out"]); self.seconds+=c["seconds"]; self.actions+=1
         if id=="starter":
             self.starter_harvests+=1
-            if self.starter_harvests==CFG["seed"]["guaranteedBy"]: self.inv["field_seed"]+=1
+            if self.starter_harvests==CFG["seed"]["guaranteedBy"]: self.credit({"field_seed":1})
     def job(self,j, trail):
         cost=dict(j["input"])
         if j["watts"]:
@@ -133,14 +174,14 @@ class Ledger:
             units=math.ceil(j["seconds"]/fuel["seconds"])
             cost[fuel["id"]]=cost.get(fuel["id"],0)+units
         self.ensure_bundle(cost,trail)
-        self.debit(cost); self.inv.update(j["output"])
+        self.debit(cost); self.credit(j["output"])
         self.seconds+=j["seconds"]; self.actions+=1
         self.pressed+=j["output"].get("worldseed",0)
     def fight(self,e,trail):
         self.ensure("food",1,trail); self.debit({"food":1})
-        self.inv.update(e["out"]); self.wins[e["id"]]+=1
+        self.credit(e["out"]); self.wins[e["id"]]+=1
         if e["id"] not in self.first_wins:
-            self.inv.update(e["firstWin"]); self.first_wins.add(e["id"])
+            self.credit(e["firstWin"]); self.first_wins.add(e["id"])
         self.seconds+=e["seconds"]; self.actions+=1
     def ensure(self,k,n,trail=()):
         require(k not in trail,f"circular quantity route: {' -> '.join(trail+(k,))}")
@@ -178,7 +219,7 @@ class Ledger:
         require(id not in trail,f"tech prerequisite loop {id}")
         t=T[id]
         for p in t["requires"]: self.unlock(p,trail+(id,))
-        self.pay(t["cost"]); self.known.add(id)
+        self.pay(t["cost"]); self.storage_effect(t["effect"]); self.known.add(id)
         self.trace.append((id,self.seconds,self.actions))
     def build(self,id):
         b=B[id]
@@ -188,7 +229,7 @@ class Ledger:
         if b["capacity"].get("requiresEnemyMastery"):
             while self.wins["burrower"]<CFG["combat"]["masteryWins"]:
                 self.fight(E["burrower"],())
-        self.pay(b["cost"]); self.built[id]+=1
+        self.pay(b["cost"]); self.storage_effect(b["capacity"]); self.built[id]+=1
     def witness(self):
         self.build("plot"); self.plots+=1
         for id in ("screen","stone_cultivar","clay_cultivar"): self.unlock(id)
@@ -202,20 +243,20 @@ class Ledger:
         require(self.pressed==CFG["singularity"]["threshold"],"terminal counter diverged")
         require(all(n>=0 for n in self.inv.values()),"negative final stock")
         print(f"Sequential quantity witness: {len(self.known)} tech, each build type sampled, "
-              f"{self.pressed} Worldseed, {self.actions} actions, {self.seconds}s summed work "
-              "(not elapsed idle pacing)")
+              f"{self.pressed} Worldseed, {self.actions} actions, {self.seconds}s summed work, "
+              f"peak stock {self.peak}, final capacity {self.capacity} (not elapsed idle pacing)")
 
 def root_route():
     # Catalog-driven exact parallel no-tap fixture; prompt manual collection.
     inv=Counter(); plots=[{"id":"starter","next":C["starter"]["seconds"]}]; now=0
-    trace={}; auto_count=0
+    trace={}; auto_count=0; peak=0
     def advance(to):
-        nonlocal now, auto_count
+        nonlocal now, auto_count, peak
         while min(p["next"] for p in plots)<=to:
             now=min(p["next"] for p in plots)
             for p in plots:
                 if p["next"]==now:
-                    crop=C[p["id"]]; inv.update(crop["out"])
+                    crop=C[p["id"]]; inv.update(crop["out"]); peak=max(peak,sum(inv.values())+1) # include possible unique seed
                     if p.get("collect") and crop["id"]=="clay": auto_count+=crop["out"]["clay"]
                     p["next"]+=crop["seconds"]*p.get("factor",1)
         now=to
@@ -243,9 +284,10 @@ def root_route():
     plots[2]["factor"]=factor; plots[2]["next"]=now+C["clay"]["seconds"]*factor
     advance(now+4*C["clay"]["seconds"]*factor)
     trace["root_capstone"]=int(now)
+    require(peak<=CFG["storage"]["initialCapacity"],f"root needs storage before capstone: {peak}")
     require(auto_count==CFG["singularity"]["proxy"]["clayAutoCollected"] and inv["clay"]==8,"root automatic clay mismatch")
     require(trace=={"plot2":36,"screen":60,"stone":60,"clay":78,"plot3":96,"collector":136,"clockwork":156,"root_capstone":220},f"root timing changed: {trace}")
-    print("Root fixture:",trace,"auto-collected clay",auto_count,"remaining clay",inv["clay"])
+    print("Root fixture:",trace,"auto-collected clay",auto_count,"remaining clay",inv["clay"],"peak stock <= ",peak)
 
 def endgame():
     example=D["endgameExample"]; net=defaultdict(Q); busy=defaultdict(Q); watt_upper=0
@@ -274,9 +316,12 @@ def endgame():
     require(watt_upper<=available,"simultaneous load exceeds installed power")
     print(f"Terminal flow: {net['worldseed']} Worldseed/min, {watt_upper}/{available} W conservative "
           "all-listed-task upper bound; nonnegative material rates and feasible slot-minutes")
+    stock=Q(example["storage"]["setupStockBudget"])+sum(net.values())*example["storage"]["runMinutes"]
+    require(stock<=example["storage"]["oneOfEachThroughRackCapacity"],f"terminal storage budget exhausted: {stock}")
+    print(f"  Terminal average-rate stock budget: {float(stock):.2f}/{example['storage']['oneOfEachThroughRackCapacity']} units including initial stock and all positive net byproducts")
     print("  Material rate slack:", ", ".join(f"{k}={n}" for k,n in net.items() if n and k!="worldseed"))
     print("  Source utilization:", ", ".join(f"{s} {float(b):.2f}/{example['slotCounts'][s]*60}s/min" for s,b in busy.items()))
 
 if __name__=="__main__":
-    structure(); reachable(); root_route(); Ledger().witness(); endgame()
+    structure(); storage_contract(); reachable(); root_route(); Ledger().witness(); endgame()
     print("PASS: design checks; real scheduler, offline replay, combat RNG, UI, and balance still require implementation/QA.")

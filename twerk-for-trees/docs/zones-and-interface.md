@@ -1,7 +1,7 @@
 # Zones & interface
 
 > For concrete build requirements, see [v1 progression](requirements/01-progression.md),
-> [interface](requirements/04-interface.md) and [simulation](requirements/03-simulation-and-state.md).
+> [interface](requirements/04-interface.md), [simulation](requirements/03-simulation-and-state.md) and [global storage progression](requirements/06-storage.md).
 
 TFT is presented as a **tabbed interface**, where each tab is a **zone** with its own idle and active
 tasks. The player works tasks to collect items, then spends those materials in the **Workshop** to

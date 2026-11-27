@@ -3,7 +3,8 @@
 > Implementation now follows the [v1 requirements package](requirements/README.md), including the
 > exact [content catalog](../data/progression-v1.json), engine semantics and acceptance tests. This
 > research-backed proposal is retained as rationale and context; where values differ, use the v1
-> requirements baseline for implementation.
+> requirements baseline for implementation. Storage is now a hard global cap with a six-tier branch
+> specified in [storage requirements](requirements/06-storage.md); earlier uncapped-stock language is superseded.
 
 **Status:** research-backed design, not implemented or playtested. This extends [progression & tech branches](progression.md), [zones & interface](zones-and-interface.md), and the author's [pitch](../README.md). It preserves the clay automation gate, seed-drop Farm, resource-tree trunk, Quarry, critical-path Arena, shared Power Grid, and Universal Paperclips-inspired singularity. See the [SF4 research](sky-factory-4-research.md) for evidence. All names, recipes, values and age labels below are TFT proposals; nothing imports Minecraft assets, recipes, proprietary naming or mods.
 
@@ -66,7 +67,7 @@ The Farm can open earlier than Clay, and the Quarry and Arena can open before a 
 - Base cycle times below include growth and harvest cooldown. A completed unautomated cycle accrues one harvest in a local buffer (capacity three cycles initially); player can collect all ready cycles. A full buffer pauses growth, no lost output. An unautomated plot can accrue three cycles offline then stops. Clay-gated mechanical collectors move finished output into the shared inventory and clear the local buffer, including during offline simulation. The slice's second clay upgrade is a mechanical auto-twerker, which accelerates a single plot's timer independently of collection, preserving the pitch's first auto-twerker payoff.
 - One tap subtracts 0.25 seconds from the focused timer during a valid active cycle. Prototype limit: no more than eight accepted taps per rolling second, so natural time plus accepted input is at most 3× base growth. At four valid taps/sec, theoretical 2× effective growth. No tap banking, no time subtracted below zero, no double harvest on concurrent completion; tapping full buffers does nothing and exposes collect control. Taps on other plots split the **one** active attention budget. No auto-clicking required to achieve comfortable pacing.
 - A harvest always produces the baseline bundle; optional bonus drops are separately rolled. First Farm seed appears on a starter harvest (chance possible on cycles 1–2, guaranteed by cycle 3 even offline). Farm remains a purchase in the Workshop, not a popup forced on the player. A bonus never replaces baseline resources.
-- Early starter materials have no global inventory cap; manual/local buffers are the first deliberate capacity lesson. Industrial storage later limits only machine buffers/queues, not the player's ability to recover a running world.
+- Starter stock is capped at 160 shared units in the implementation baseline; build scalable storage modules from timber → clay → metal → network → crystal → folded repository. Manual/local buffers remain a separate capacity lesson. See the canonical [storage branch](requirements/06-storage.md) for exact costs, hard cap and recovery.
 
 ### Initial recipe and producer baseline (numbers explicitly for prototype)
 

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "balanceVersion": "v1.0-candidate",
+  "balanceVersion": "v1.1-storage-candidate",
   "resources": [
     {
       "id": "timber",
@@ -289,6 +289,20 @@
       }
     },
     {
+      "id": "storage_bin",
+      "name": "Wooden bins",
+      "cost": {
+        "timber": 8,
+        "dirt": 2
+      },
+      "requires": [],
+      "effect": {
+        "storageModule": "storage_bin",
+        "storageCapacity": 160,
+        "initialSlots": 1
+      }
+    },
+    {
       "id": "stone_cultivar",
       "name": "Stone cultivar",
       "cost": {
@@ -329,6 +343,24 @@
       "effect": {
         "zone": "farm",
         "producer": "field",
+        "initialSlots": 1
+      }
+    },
+    {
+      "id": "storage_silo",
+      "name": "Clay-lined silo",
+      "cost": {
+        "clay": 6,
+        "stone": 6,
+        "timber": 8
+      },
+      "requires": [
+        "storage_bin",
+        "clay_cultivar"
+      ],
+      "effect": {
+        "storageModule": "storage_silo",
+        "storageCapacity": 640,
         "initialSlots": 1
       }
     },
@@ -454,6 +486,25 @@
       "effect": {
         "zone": "quarry",
         "producer": "quarry",
+        "initialSlots": 1
+      }
+    },
+    {
+      "id": "storage_vault",
+      "name": "Reinforced warehouse",
+      "cost": {
+        "iron": 6,
+        "bronze": 4,
+        "fired_part": 2
+      },
+      "requires": [
+        "storage_silo",
+        "alloy_heat",
+        "iron_pick"
+      ],
+      "effect": {
+        "storageModule": "storage_vault",
+        "storageCapacity": 2560,
         "initialSlots": 1
       }
     },
@@ -684,7 +735,8 @@
       },
       "requires": [
         "factory",
-        "silica_cultivar"
+        "silica_cultivar",
+        "storage_silo"
       ],
       "effect": {
         "automation": "repeat_queues"
@@ -788,6 +840,28 @@
       }
     },
     {
+      "id": "storage_rack",
+      "name": "Networked storage rack",
+      "cost": {
+        "control": 3,
+        "iron": 8,
+        "glass": 4,
+        "alloy": 2
+      },
+      "requires": [
+        "storage_vault",
+        "router",
+        "circuit_bench",
+        "alloy_furnace",
+        "deep_bed"
+      ],
+      "effect": {
+        "storageModule": "storage_rack",
+        "storageCapacity": 10240,
+        "initialSlots": 1
+      }
+    },
+    {
       "id": "deep_drill",
       "name": "Deep drill",
       "cost": {
@@ -877,6 +951,26 @@
         "machine": "fermenter",
         "initialSlots": 1,
         "generator": "biofuel"
+      }
+    },
+    {
+      "id": "storage_crystal",
+      "name": "Crystal memory vault",
+      "cost": {
+        "alloy": 8,
+        "control": 6,
+        "crystal": 4,
+        "polymer": 4
+      },
+      "requires": [
+        "storage_rack",
+        "precision_line",
+        "polymer_line"
+      ],
+      "effect": {
+        "storageModule": "storage_crystal",
+        "storageCapacity": 40960,
+        "initialSlots": 1
       }
     },
     {
@@ -1001,6 +1095,26 @@
       }
     },
     {
+      "id": "storage_fold",
+      "name": "Folded-space repository",
+      "cost": {
+        "alloy": 12,
+        "crystal": 8,
+        "catalyst": 6,
+        "convergence_core": 1
+      },
+      "requires": [
+        "storage_crystal",
+        "convergence",
+        "advanced_grid"
+      ],
+      "effect": {
+        "storageModule": "storage_fold",
+        "storageCapacity": 163840,
+        "initialSlots": 1
+      }
+    },
+    {
       "id": "worldseed_press",
       "name": "Worldseed Press",
       "cost": {
@@ -1011,7 +1125,8 @@
       },
       "requires": [
         "convergence",
-        "advanced_grid"
+        "advanced_grid",
+        "storage_rack"
       ],
       "effect": {
         "machine": "worldseed_press",
@@ -1481,6 +1596,110 @@
         "machineUpgrade": "speed"
       },
       "max": 64
+    },
+    {
+      "id": "extra_storage_bin",
+      "name": "Additional wooden bins",
+      "cost": {
+        "timber": 8,
+        "dirt": 2
+      },
+      "requires": [
+        "storage_bin"
+      ],
+      "capacity": {
+        "storageModule": "storage_bin",
+        "storageCapacity": 160
+      },
+      "max": 3
+    },
+    {
+      "id": "extra_storage_silo",
+      "name": "Additional clay-lined silo",
+      "cost": {
+        "clay": 6,
+        "stone": 6,
+        "timber": 8
+      },
+      "requires": [
+        "storage_silo"
+      ],
+      "capacity": {
+        "storageModule": "storage_silo",
+        "storageCapacity": 640
+      },
+      "max": 3
+    },
+    {
+      "id": "extra_storage_vault",
+      "name": "Additional reinforced warehouse",
+      "cost": {
+        "iron": 6,
+        "bronze": 4,
+        "fired_part": 2
+      },
+      "requires": [
+        "storage_vault"
+      ],
+      "capacity": {
+        "storageModule": "storage_vault",
+        "storageCapacity": 2560
+      },
+      "max": 3
+    },
+    {
+      "id": "extra_storage_rack",
+      "name": "Additional networked storage rack",
+      "cost": {
+        "control": 3,
+        "iron": 8,
+        "glass": 4,
+        "alloy": 2
+      },
+      "requires": [
+        "storage_rack"
+      ],
+      "capacity": {
+        "storageModule": "storage_rack",
+        "storageCapacity": 10240
+      },
+      "max": 3
+    },
+    {
+      "id": "extra_storage_crystal",
+      "name": "Additional crystal memory vault",
+      "cost": {
+        "alloy": 8,
+        "control": 6,
+        "crystal": 4,
+        "polymer": 4
+      },
+      "requires": [
+        "storage_crystal"
+      ],
+      "capacity": {
+        "storageModule": "storage_crystal",
+        "storageCapacity": 40960
+      },
+      "max": 3
+    },
+    {
+      "id": "extra_storage_fold",
+      "name": "Additional folded-space repository",
+      "cost": {
+        "alloy": 12,
+        "crystal": 8,
+        "catalyst": 6,
+        "convergence_core": 1
+      },
+      "requires": [
+        "storage_fold"
+      ],
+      "capacity": {
+        "storageModule": "storage_fold",
+        "storageCapacity": 163840
+      },
+      "max": 3
     }
   ],
   "cultivars": [
@@ -2749,6 +2968,57 @@
       "autosaveSeconds": 15,
       "backupSlots": 2,
       "maxImportBytes": 5242880
+    },
+    "storage": {
+      "model": "shared_item_units",
+      "initialCapacity": 160,
+      "tiers": [
+        {
+          "id": "storage_bin",
+          "unitsPerModule": 160,
+          "maxModules": 4
+        },
+        {
+          "id": "storage_silo",
+          "unitsPerModule": 640,
+          "maxModules": 4
+        },
+        {
+          "id": "storage_vault",
+          "unitsPerModule": 2560,
+          "maxModules": 4
+        },
+        {
+          "id": "storage_rack",
+          "unitsPerModule": 10240,
+          "maxModules": 4
+        },
+        {
+          "id": "storage_crystal",
+          "unitsPerModule": 40960,
+          "maxModules": 4
+        },
+        {
+          "id": "storage_fold",
+          "unitsPerModule": 163840,
+          "maxModules": 4
+        }
+      ],
+      "maxCapacity": 873760,
+      "capIncludesReserved": true,
+      "capIncludesWorldseed": true,
+      "overflowDefault": "hold",
+      "protectedResources": [
+        "field_seed",
+        "worldseed"
+      ],
+      "archiveAfterWin": true,
+      "resourceQuotaDefault": null,
+      "manualDiscard": true,
+      "autoDiscardUnlock": "router",
+      "warnAtFraction": 0.8,
+      "outputPolicy": "oldest_whole_bundle",
+      "capacityPersistsWithoutPower": true
     }
   },
   "endgameExample": {
@@ -2963,6 +3233,12 @@
       "quarry": 7,
       "orchard": 3,
       "grinder": 2
+    },
+    "storage": {
+      "minimumTier": "storage_rack",
+      "oneOfEachThroughRackCapacity": 13760,
+      "setupStockBudget": 3000,
+      "runMinutes": 300
     }
   },
   "boards": [
@@ -3211,6 +3487,70 @@
           "predicate": {
             "kind": "event",
             "event": "machine:automated_input_completed"
+          }
+        },
+        {
+          "id": "storage_bin",
+          "name": "Build Wooden bins",
+          "predicate": {
+            "kind": "tech",
+            "id": "storage_bin"
+          }
+        },
+        {
+          "id": "storage_silo",
+          "name": "Build Clay-lined silo",
+          "predicate": {
+            "kind": "tech",
+            "id": "storage_silo"
+          }
+        },
+        {
+          "id": "storage_vault",
+          "name": "Build Reinforced warehouse",
+          "predicate": {
+            "kind": "tech",
+            "id": "storage_vault"
+          }
+        },
+        {
+          "id": "storage_rack",
+          "name": "Build Networked storage rack",
+          "predicate": {
+            "kind": "tech",
+            "id": "storage_rack"
+          }
+        },
+        {
+          "id": "storage_crystal",
+          "name": "Build Crystal memory vault",
+          "predicate": {
+            "kind": "tech",
+            "id": "storage_crystal"
+          }
+        },
+        {
+          "id": "storage_fold",
+          "name": "Build Folded-space repository",
+          "predicate": {
+            "kind": "tech",
+            "id": "storage_fold"
+          }
+        },
+        {
+          "id": "storage_full",
+          "name": "Reach the stock ceiling",
+          "predicate": {
+            "kind": "event",
+            "event": "storage:full"
+          }
+        },
+        {
+          "id": "storage_resumed",
+          "name": "Free storage and resume",
+          "predicate": {
+            "kind": "event",
+            "event": "storage:resumed"
           }
         }
       ]
