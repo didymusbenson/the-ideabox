@@ -43,8 +43,8 @@ advancing at once.
 1. **Automation — gate: Clay.**
    The first branch. Reaching clay unlocks **simple automation: self-harvesting trees**
    via clay-era mechanical collectors, so plots produce without constant manual collection. The
-   detailed proposal separates this unpowered attachment from later powered auto-twerkers, which
-   accelerate growth after the Grid opens. This is the start of the pitch's
+   detailed proposal separates this unpowered attachment from a clay-era clockwork auto-twerker
+   and later powered auto-twerkers, which accelerate growth after the Grid opens. This is the start of the pitch's
    "earn the right to stop tapping" — idle viability begins here and deepens through the game.
 
 2. **Farming — gate: seeds drop from a tree (can trigger early).**

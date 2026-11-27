@@ -8,7 +8,7 @@ zones may be added later).
 
 The [detailed progression proposal](progression-design.md) adds the concrete first-run route, gate
 materials, signature tasks, storage model, and shared-power/automation behavior. See also the
-[SF4 systems research](sky-factory-4-research.md). Early clay collection is proposed as an explicit
+[SF4 systems research](sky-factory-4-research.md). Early clay collection and clockwork twerking are proposed as an explicit
 mechanical exception to the electric power rules below; the Grid starts in the metal phase.
 
 At a glance, TFT sits at the intersection of **Melvor Idle** (multi-skill tabbed idle structure +
