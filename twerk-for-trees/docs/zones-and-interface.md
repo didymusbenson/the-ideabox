@@ -1,5 +1,8 @@
 # Zones & interface
 
+> For concrete build requirements, see [v1 progression](requirements/01-progression.md),
+> [interface](requirements/04-interface.md) and [simulation](requirements/03-simulation-and-state.md).
+
 TFT is presented as a **tabbed interface**, where each tab is a **zone** with its own idle and active
 tasks. The player works tasks to collect items, then spends those materials in the **Workshop** to
 **build expansions** — unlocking new zones, tools, crafting recipes, and upgrades that remove or raise

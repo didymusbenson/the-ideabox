@@ -1,5 +1,8 @@
 # Progression & tech branches
 
+> Start here for the original macro vision; start with the [v1 implementation requirements](requirements/README.md)
+> for actual build decisions, exact recipe and unlock data, simulation rules, and acceptance tests.
+
 The macro shape of the game: a **resource-tree trunk** that sprouts **tech branches** as you reach key
 materials, all feeding toward **large-scale automated production**. Resources are never just a score —
 they're the currency you spend on the tools and machines that upgrade your infrastructure, which in

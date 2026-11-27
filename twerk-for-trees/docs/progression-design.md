@@ -1,5 +1,10 @@
 # TFT — detailed progression design (proposal)
 
+> Implementation now follows the [v1 requirements package](requirements/README.md), including the
+> exact [content catalog](../data/progression-v1.json), engine semantics and acceptance tests. This
+> research-backed proposal is retained as rationale and context; where values differ, use the v1
+> requirements baseline for implementation.
+
 **Status:** research-backed design, not implemented or playtested. This extends [progression & tech branches](progression.md), [zones & interface](zones-and-interface.md), and the author's [pitch](../README.md). It preserves the clay automation gate, seed-drop Farm, resource-tree trunk, Quarry, critical-path Arena, shared Power Grid, and Universal Paperclips-inspired singularity. See the [SF4 research](sky-factory-4-research.md) for evidence. All names, recipes, values and age labels below are TFT proposals; nothing imports Minecraft assets, recipes, proprietary naming or mods.
 
 ## 1. Player experience and hard constraints

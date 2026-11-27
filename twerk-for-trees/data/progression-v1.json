@@ -1,0 +1,3434 @@
+{
+  "schemaVersion": 1,
+  "balanceVersion": "v1.0-candidate",
+  "resources": [
+    {
+      "id": "timber",
+      "name": "Timber",
+      "zone": "orchard",
+      "initial": 0
+    },
+    {
+      "id": "litter",
+      "name": "Leaf litter",
+      "zone": "orchard",
+      "initial": 0
+    },
+    {
+      "id": "cutting",
+      "name": "Cutting",
+      "zone": "orchard",
+      "initial": 0
+    },
+    {
+      "id": "dirt",
+      "name": "Dirt",
+      "zone": "workshop",
+      "initial": 0
+    },
+    {
+      "id": "grit",
+      "name": "Grit",
+      "zone": "workshop",
+      "initial": 0
+    },
+    {
+      "id": "stone",
+      "name": "Stone",
+      "zone": "orchard/quarry",
+      "initial": 0
+    },
+    {
+      "id": "clay",
+      "name": "Clay",
+      "zone": "orchard",
+      "initial": 0
+    },
+    {
+      "id": "field_seed",
+      "name": "Field seed",
+      "zone": "orchard",
+      "initial": 0
+    },
+    {
+      "id": "crop",
+      "name": "Crop",
+      "zone": "farm",
+      "initial": 0
+    },
+    {
+      "id": "fiber",
+      "name": "Fiber",
+      "zone": "farm",
+      "initial": 0
+    },
+    {
+      "id": "waste",
+      "name": "Organic waste",
+      "zone": "farm",
+      "initial": 0
+    },
+    {
+      "id": "compost",
+      "name": "Compost",
+      "zone": "farm/workshop",
+      "initial": 0
+    },
+    {
+      "id": "feed",
+      "name": "Feed",
+      "zone": "farm/workshop",
+      "initial": 0
+    },
+    {
+      "id": "animal_product",
+      "name": "Animal produce",
+      "zone": "farm",
+      "initial": 0
+    },
+    {
+      "id": "oil",
+      "name": "Plant oil",
+      "zone": "farm",
+      "initial": 0
+    },
+    {
+      "id": "food",
+      "name": "Rations",
+      "zone": "workshop",
+      "initial": 0
+    },
+    {
+      "id": "charcoal",
+      "name": "Charcoal",
+      "zone": "workshop/factory",
+      "initial": 0
+    },
+    {
+      "id": "fired_part",
+      "name": "Fired part",
+      "zone": "workshop/factory",
+      "initial": 0
+    },
+    {
+      "id": "coal",
+      "name": "Coal",
+      "zone": "orchard/quarry",
+      "initial": 0
+    },
+    {
+      "id": "copper_raw",
+      "name": "Copper concentrate",
+      "zone": "orchard/quarry/workshop",
+      "initial": 0
+    },
+    {
+      "id": "copper",
+      "name": "Copper ingot",
+      "zone": "workshop/factory",
+      "initial": 0
+    },
+    {
+      "id": "iron_raw",
+      "name": "Iron ore",
+      "zone": "orchard/quarry/workshop",
+      "initial": 0
+    },
+    {
+      "id": "iron",
+      "name": "Iron ingot",
+      "zone": "workshop/factory",
+      "initial": 0
+    },
+    {
+      "id": "tin_raw",
+      "name": "Tin ore",
+      "zone": "orchard/quarry/workshop",
+      "initial": 0
+    },
+    {
+      "id": "tin",
+      "name": "Tin ingot",
+      "zone": "workshop/factory",
+      "initial": 0
+    },
+    {
+      "id": "bronze",
+      "name": "Bronze",
+      "zone": "workshop/factory",
+      "initial": 0
+    },
+    {
+      "id": "silica",
+      "name": "Silica",
+      "zone": "orchard/quarry/workshop",
+      "initial": 0
+    },
+    {
+      "id": "glass",
+      "name": "Glass",
+      "zone": "workshop/factory",
+      "initial": 0
+    },
+    {
+      "id": "quartz",
+      "name": "Quartz",
+      "zone": "orchard/quarry",
+      "initial": 0
+    },
+    {
+      "id": "resin",
+      "name": "Resin",
+      "zone": "orchard",
+      "initial": 0
+    },
+    {
+      "id": "gem",
+      "name": "Gem fragments",
+      "zone": "orchard/quarry",
+      "initial": 0
+    },
+    {
+      "id": "heavy_ore",
+      "name": "Heavy ore",
+      "zone": "quarry/orchard",
+      "initial": 0
+    },
+    {
+      "id": "alloy",
+      "name": "Advanced alloy",
+      "zone": "factory",
+      "initial": 0
+    },
+    {
+      "id": "core",
+      "name": "Burrower core",
+      "zone": "arena",
+      "initial": 0
+    },
+    {
+      "id": "shell",
+      "name": "Stoneback shell",
+      "zone": "arena",
+      "initial": 0
+    },
+    {
+      "id": "glow",
+      "name": "Glowbug dust",
+      "zone": "arena",
+      "initial": 0
+    },
+    {
+      "id": "rare_core",
+      "name": "Titan core",
+      "zone": "arena",
+      "initial": 0
+    },
+    {
+      "id": "catalyst",
+      "name": "Stabilized catalyst",
+      "zone": "factory",
+      "initial": 0
+    },
+    {
+      "id": "biofuel",
+      "name": "Biofuel",
+      "zone": "farm/factory",
+      "initial": 0
+    },
+    {
+      "id": "control",
+      "name": "Control parts",
+      "zone": "factory",
+      "initial": 0
+    },
+    {
+      "id": "polymer",
+      "name": "Polymer",
+      "zone": "factory",
+      "initial": 0
+    },
+    {
+      "id": "crystal",
+      "name": "Precision crystal",
+      "zone": "factory",
+      "initial": 0
+    },
+    {
+      "id": "convergence_core",
+      "name": "Convergence core",
+      "zone": "factory",
+      "initial": 0
+    },
+    {
+      "id": "worldseed",
+      "name": "Worldseed",
+      "zone": "factory",
+      "initial": 0
+    },
+    {
+      "id": "crystal_shard",
+      "name": "Crystal shard",
+      "zone": "orchard/factory",
+      "initial": 0
+    }
+  ],
+  "tech": [
+    {
+      "id": "screen",
+      "name": "Screen station",
+      "cost": {
+        "timber": 4,
+        "dirt": 2
+      },
+      "requires": [],
+      "effect": {
+        "recipe": [
+          "screen_grit"
+        ]
+      }
+    },
+    {
+      "id": "stone_cultivar",
+      "name": "Stone cultivar",
+      "cost": {
+        "grit": 2,
+        "cutting": 1
+      },
+      "requires": [
+        "screen"
+      ],
+      "effect": {
+        "cultivar": "stone"
+      }
+    },
+    {
+      "id": "clay_cultivar",
+      "name": "Clay cultivar",
+      "cost": {
+        "stone": 2,
+        "dirt": 1,
+        "cutting": 1
+      },
+      "requires": [
+        "stone_cultivar"
+      ],
+      "effect": {
+        "cultivar": "clay"
+      }
+    },
+    {
+      "id": "field",
+      "name": "Farm",
+      "cost": {
+        "field_seed": 1,
+        "dirt": 2,
+        "timber": 3
+      },
+      "requires": [],
+      "effect": {
+        "zone": "farm",
+        "producer": "field",
+        "initialSlots": 1
+      }
+    },
+    {
+      "id": "kiln",
+      "name": "Kiln",
+      "cost": {
+        "clay": 6,
+        "stone": 6,
+        "timber": 4
+      },
+      "requires": [
+        "clay_cultivar"
+      ],
+      "effect": {
+        "machine": "kiln",
+        "initialSlots": 1
+      }
+    },
+    {
+      "id": "coal_cultivar",
+      "name": "Coal cultivar",
+      "cost": {
+        "fired_part": 1,
+        "charcoal": 1,
+        "stone": 2,
+        "cutting": 1
+      },
+      "requires": [
+        "kiln"
+      ],
+      "effect": {
+        "cultivar": "coal"
+      }
+    },
+    {
+      "id": "copper_cultivar",
+      "name": "Copper cultivar",
+      "cost": {
+        "copper": 1,
+        "cutting": 1
+      },
+      "requires": [
+        "kiln"
+      ],
+      "effect": {
+        "cultivar": "copper"
+      }
+    },
+    {
+      "id": "iron_cultivar",
+      "name": "Iron cultivar",
+      "cost": {
+        "iron": 1,
+        "cutting": 1
+      },
+      "requires": [
+        "coal_cultivar",
+        "kiln"
+      ],
+      "effect": {
+        "cultivar": "iron"
+      }
+    },
+    {
+      "id": "tin_cultivar",
+      "name": "Tin cultivar",
+      "cost": {
+        "tin": 1,
+        "cutting": 1
+      },
+      "requires": [
+        "kiln",
+        "copper_cultivar"
+      ],
+      "effect": {
+        "cultivar": "tin"
+      }
+    },
+    {
+      "id": "silica_cultivar",
+      "name": "Silica cultivar",
+      "cost": {
+        "silica": 2,
+        "cutting": 1
+      },
+      "requires": [
+        "kiln",
+        "stone_cultivar"
+      ],
+      "effect": {
+        "cultivar": "silica"
+      }
+    },
+    {
+      "id": "alloy_heat",
+      "name": "Alloy heat lining",
+      "cost": {
+        "fired_part": 3,
+        "copper": 2,
+        "charcoal": 2
+      },
+      "requires": [
+        "kiln",
+        "copper_cultivar"
+      ],
+      "effect": {
+        "recipe": [
+          "bronze_manual"
+        ]
+      }
+    },
+    {
+      "id": "iron_pick",
+      "name": "Iron pick and Quarry",
+      "cost": {
+        "iron": 3,
+        "timber": 2
+      },
+      "requires": [
+        "kiln"
+      ],
+      "effect": {
+        "zone": "quarry",
+        "producer": "quarry",
+        "initialSlots": 1
+      }
+    },
+    {
+      "id": "quartz_bed",
+      "name": "Quartz bed",
+      "cost": {
+        "fired_part": 3,
+        "stone": 6,
+        "iron": 2
+      },
+      "requires": [
+        "iron_pick"
+      ],
+      "effect": {
+        "quarryBed": "quartz"
+      }
+    },
+    {
+      "id": "quartz_cultivar",
+      "name": "Quartz cultivar",
+      "cost": {
+        "quartz": 2,
+        "cutting": 1
+      },
+      "requires": [
+        "quartz_bed"
+      ],
+      "effect": {
+        "cultivar": "quartz"
+      }
+    },
+    {
+      "id": "compost_soil",
+      "name": "Compost soil",
+      "cost": {
+        "compost": 3,
+        "dirt": 2
+      },
+      "requires": [
+        "field"
+      ],
+      "effect": {
+        "upgrade": "soil_compost"
+      }
+    },
+    {
+      "id": "animal_pen",
+      "name": "Animal pen",
+      "cost": {
+        "timber": 6,
+        "fired_part": 2,
+        "crop": 5
+      },
+      "requires": [
+        "field",
+        "kiln"
+      ],
+      "effect": {
+        "producer": "animal",
+        "initialSlots": 1
+      }
+    },
+    {
+      "id": "oil_field",
+      "name": "Oil crop",
+      "cost": {
+        "fiber": 4,
+        "iron": 2,
+        "compost": 3
+      },
+      "requires": [
+        "field",
+        "kiln"
+      ],
+      "effect": {
+        "farmTask": "oil"
+      }
+    },
+    {
+      "id": "resin_cultivar",
+      "name": "Resinwood cultivar",
+      "cost": {
+        "fiber": 4,
+        "compost": 2,
+        "copper": 1,
+        "cutting": 1
+      },
+      "requires": [
+        "field",
+        "copper_cultivar"
+      ],
+      "effect": {
+        "cultivar": "resin"
+      }
+    },
+    {
+      "id": "arena",
+      "name": "Arena",
+      "cost": {
+        "timber": 5,
+        "iron": 4,
+        "fiber": 4,
+        "food": 4
+      },
+      "requires": [
+        "field",
+        "kiln"
+      ],
+      "effect": {
+        "zone": "arena",
+        "enemy": "burrower",
+        "hp": 100
+      }
+    },
+    {
+      "id": "reinforced_armor",
+      "name": "Reinforced armor",
+      "cost": {
+        "iron": 5,
+        "bronze": 3,
+        "food": 4
+      },
+      "requires": [
+        "arena",
+        "alloy_heat"
+      ],
+      "effect": {
+        "enemy": "stoneback",
+        "hp": 130
+      }
+    },
+    {
+      "id": "glowbug_trial",
+      "name": "Glowbug trial",
+      "cost": {
+        "quartz": 3,
+        "bronze": 3,
+        "food": 5
+      },
+      "requires": [
+        "arena",
+        "quartz_bed",
+        "reinforced_armor"
+      ],
+      "effect": {
+        "enemy": "glowbug",
+        "hp": 160
+      }
+    },
+    {
+      "id": "titan_trial",
+      "name": "Titan trial",
+      "cost": {
+        "alloy": 4,
+        "crystal": 2,
+        "food": 8
+      },
+      "requires": [
+        "glowbug_trial",
+        "precision_line",
+        "deep_bed",
+        "alloy_furnace"
+      ],
+      "effect": {
+        "enemy": "titan",
+        "hp": 200
+      }
+    },
+    {
+      "id": "grid",
+      "name": "Power Grid",
+      "cost": {
+        "copper": 4,
+        "iron": 3,
+        "fired_part": 2
+      },
+      "requires": [
+        "kiln"
+      ],
+      "effect": {
+        "zone": "grid",
+        "generator": "combustion",
+        "initialSlots": 1
+      }
+    },
+    {
+      "id": "factory",
+      "name": "Factory",
+      "cost": {
+        "iron": 4,
+        "copper": 3,
+        "fired_part": 2
+      },
+      "requires": [
+        "grid"
+      ],
+      "effect": {
+        "zone": "factory",
+        "machine": "processor",
+        "initialSlots": 1
+      }
+    },
+    {
+      "id": "alloy_furnace",
+      "name": "Powered alloy furnace",
+      "cost": {
+        "iron": 4,
+        "bronze": 2,
+        "glass": 2
+      },
+      "requires": [
+        "factory",
+        "alloy_heat"
+      ],
+      "effect": {
+        "machine": "alloy_furnace",
+        "initialSlots": 1
+      }
+    },
+    {
+      "id": "router",
+      "name": "Sorting network",
+      "cost": {
+        "copper": 3,
+        "glass": 2,
+        "iron": 3
+      },
+      "requires": [
+        "factory",
+        "silica_cultivar"
+      ],
+      "effect": {
+        "automation": "repeat_queues"
+      }
+    },
+    {
+      "id": "circuit_bench",
+      "name": "Circuit bench",
+      "cost": {
+        "copper": 3,
+        "quartz": 2,
+        "resin": 2,
+        "iron": 2
+      },
+      "requires": [
+        "factory",
+        "quartz_bed",
+        "resin_cultivar"
+      ],
+      "effect": {
+        "machine": "circuit_bench",
+        "initialSlots": 1
+      }
+    },
+    {
+      "id": "ward_motor",
+      "name": "Ward motor",
+      "cost": {
+        "iron": 3,
+        "control": 2,
+        "core": 1
+      },
+      "requires": [
+        "circuit_bench",
+        "arena"
+      ],
+      "effect": {
+        "automation": "arena_auto"
+      }
+    },
+    {
+      "id": "deep_bed",
+      "name": "Deep ore bed",
+      "cost": {
+        "bronze": 4,
+        "quartz": 3,
+        "iron": 3
+      },
+      "requires": [
+        "quartz_bed",
+        "alloy_heat"
+      ],
+      "effect": {
+        "quarryBed": "heavy_ore"
+      }
+    },
+    {
+      "id": "heavy_cultivar",
+      "name": "Heavywood cultivar",
+      "cost": {
+        "heavy_ore": 2,
+        "bronze": 2,
+        "cutting": 1
+      },
+      "requires": [
+        "deep_bed"
+      ],
+      "effect": {
+        "cultivar": "heavy_ore"
+      }
+    },
+    {
+      "id": "gem_bed",
+      "name": "Gem bed",
+      "cost": {
+        "quartz": 4,
+        "iron": 3,
+        "core": 1
+      },
+      "requires": [
+        "quartz_bed",
+        "arena"
+      ],
+      "effect": {
+        "quarryBed": "gem"
+      }
+    },
+    {
+      "id": "gem_cultivar",
+      "name": "Gemwood cultivar",
+      "cost": {
+        "gem": 2,
+        "quartz": 1,
+        "cutting": 1
+      },
+      "requires": [
+        "gem_bed"
+      ],
+      "effect": {
+        "cultivar": "gem"
+      }
+    },
+    {
+      "id": "deep_drill",
+      "name": "Deep drill",
+      "cost": {
+        "alloy": 4,
+        "control": 3,
+        "shell": 2
+      },
+      "requires": [
+        "alloy_furnace",
+        "deep_bed",
+        "ward_motor",
+        "reinforced_armor"
+      ],
+      "effect": {
+        "automation": "deep_drill"
+      }
+    },
+    {
+      "id": "polymer_line",
+      "name": "Polymer line",
+      "cost": {
+        "iron": 4,
+        "copper": 3,
+        "resin": 4,
+        "fired_part": 2
+      },
+      "requires": [
+        "factory",
+        "oil_field",
+        "resin_cultivar"
+      ],
+      "effect": {
+        "machine": "polymer_line",
+        "initialSlots": 1
+      }
+    },
+    {
+      "id": "precision_line",
+      "name": "Precision line",
+      "cost": {
+        "glass": 4,
+        "control": 3,
+        "quartz": 4,
+        "gem": 2
+      },
+      "requires": [
+        "circuit_bench",
+        "gem_bed",
+        "factory"
+      ],
+      "effect": {
+        "machine": "precision_line",
+        "initialSlots": 1
+      }
+    },
+    {
+      "id": "stabilizer",
+      "name": "Catalyst stabilizer",
+      "cost": {
+        "iron": 4,
+        "control": 2,
+        "glow": 1
+      },
+      "requires": [
+        "glowbug_trial",
+        "circuit_bench"
+      ],
+      "effect": {
+        "machine": "stabilizer",
+        "initialSlots": 1
+      }
+    },
+    {
+      "id": "biofuel_line",
+      "name": "Fermenter and biofuel generator",
+      "cost": {
+        "iron": 3,
+        "bronze": 2,
+        "oil": 3
+      },
+      "requires": [
+        "field",
+        "grid",
+        "oil_field"
+      ],
+      "effect": {
+        "machine": "fermenter",
+        "initialSlots": 1,
+        "generator": "biofuel"
+      }
+    },
+    {
+      "id": "advanced_grid",
+      "name": "High-capacity generator",
+      "cost": {
+        "alloy": 4,
+        "crystal": 2,
+        "control": 3
+      },
+      "requires": [
+        "precision_line",
+        "alloy_furnace",
+        "grid",
+        "deep_bed"
+      ],
+      "effect": {
+        "generator": "advanced"
+      }
+    },
+    {
+      "id": "precision_soil",
+      "name": "Precision soil",
+      "cost": {
+        "compost": 6,
+        "alloy": 2,
+        "crystal": 1
+      },
+      "requires": [
+        "compost_soil",
+        "precision_line",
+        "alloy_furnace",
+        "deep_bed"
+      ],
+      "effect": {
+        "upgrade": "soil_precision"
+      }
+    },
+    {
+      "id": "mineral_soil",
+      "name": "Mineral soil",
+      "cost": {
+        "compost": 4,
+        "stone": 4,
+        "bronze": 1
+      },
+      "requires": [
+        "compost_soil",
+        "alloy_heat"
+      ],
+      "effect": {
+        "upgrade": "soil_mineral"
+      }
+    },
+    {
+      "id": "forge_tools",
+      "name": "Shaped tools",
+      "cost": {
+        "bronze": 3,
+        "timber": 3
+      },
+      "requires": [
+        "alloy_heat"
+      ],
+      "effect": {
+        "upgrade": "yield_shaped"
+      }
+    },
+    {
+      "id": "precision_tools",
+      "name": "Precision tools",
+      "cost": {
+        "alloy": 3,
+        "crystal": 2
+      },
+      "requires": [
+        "precision_line",
+        "forge_tools",
+        "alloy_furnace",
+        "deep_bed"
+      ],
+      "effect": {
+        "upgrade": "yield_precision"
+      }
+    },
+    {
+      "id": "crystal_cultivar",
+      "name": "Crystalwood cultivar",
+      "cost": {
+        "gem": 3,
+        "quartz": 3,
+        "catalyst": 1,
+        "cutting": 1
+      },
+      "requires": [
+        "stabilizer",
+        "gem_bed"
+      ],
+      "effect": {
+        "cultivar": "crystal_shard"
+      }
+    },
+    {
+      "id": "convergence",
+      "name": "Convergence station",
+      "cost": {
+        "alloy": 8,
+        "polymer": 5,
+        "crystal": 4,
+        "catalyst": 3,
+        "rare_core": 1
+      },
+      "requires": [
+        "polymer_line",
+        "precision_line",
+        "stabilizer",
+        "titan_trial"
+      ],
+      "effect": {
+        "machine": "convergence",
+        "initialSlots": 1
+      }
+    },
+    {
+      "id": "worldseed_press",
+      "name": "Worldseed Press",
+      "cost": {
+        "convergence_core": 1,
+        "alloy": 8,
+        "control": 4,
+        "crystal": 4
+      },
+      "requires": [
+        "convergence",
+        "advanced_grid"
+      ],
+      "effect": {
+        "machine": "worldseed_press",
+        "initialSlots": 1
+      }
+    }
+  ],
+  "builds": [
+    {
+      "id": "plot",
+      "name": "Additional plot",
+      "cost": {
+        "dirt": 3,
+        "timber": 2
+      },
+      "requires": [],
+      "capacity": {
+        "plots": 1
+      },
+      "max": 63
+    },
+    {
+      "id": "collector",
+      "name": "Mechanical collector",
+      "cost": {
+        "clay": 4,
+        "timber": 4,
+        "stone": 2
+      },
+      "requires": [
+        "clay_cultivar"
+      ],
+      "capacity": {
+        "attachment": "collector"
+      },
+      "max": 64
+    },
+    {
+      "id": "clockwork_twerker",
+      "name": "Clockwork auto-twerker",
+      "cost": {
+        "clay": 2,
+        "timber": 2,
+        "stone": 1
+      },
+      "requires": [
+        "clay_cultivar"
+      ],
+      "capacity": {
+        "attachment": "clockwork",
+        "requiresBuild": "collector"
+      },
+      "max": 64
+    },
+    {
+      "id": "field_slot",
+      "name": "Additional field",
+      "cost": {
+        "dirt": 3,
+        "timber": 3,
+        "compost": 1
+      },
+      "requires": [
+        "field"
+      ],
+      "capacity": {
+        "fields": 1
+      },
+      "max": 31
+    },
+    {
+      "id": "pen_slot",
+      "name": "Additional animal pen",
+      "cost": {
+        "timber": 6,
+        "fired_part": 2,
+        "feed": 4
+      },
+      "requires": [
+        "animal_pen"
+      ],
+      "capacity": {
+        "pens": 1
+      },
+      "max": 15
+    },
+    {
+      "id": "quarry_slot",
+      "name": "Additional quarry work gang",
+      "cost": {
+        "iron": 3,
+        "timber": 2
+      },
+      "requires": [
+        "iron_pick"
+      ],
+      "capacity": {
+        "quarrySlots": 1
+      },
+      "max": 31
+    },
+    {
+      "id": "auto_twerker",
+      "name": "Powered auto-twerker",
+      "cost": {
+        "iron": 2,
+        "copper": 2,
+        "control": 1
+      },
+      "requires": [
+        "grid",
+        "circuit_bench"
+      ],
+      "capacity": {
+        "attachment": "powered_twerker"
+      },
+      "max": 64
+    },
+    {
+      "id": "farm_harvester",
+      "name": "Field harvester",
+      "cost": {
+        "iron": 2,
+        "copper": 1,
+        "control": 1
+      },
+      "requires": [
+        "field",
+        "router",
+        "circuit_bench"
+      ],
+      "capacity": {
+        "attachment": "farm_auto"
+      },
+      "max": 32
+    },
+    {
+      "id": "pen_harvester",
+      "name": "Pen feeder",
+      "cost": {
+        "iron": 2,
+        "copper": 2,
+        "control": 1
+      },
+      "requires": [
+        "animal_pen",
+        "router",
+        "circuit_bench"
+      ],
+      "capacity": {
+        "attachment": "pen_auto"
+      },
+      "max": 16
+    },
+    {
+      "id": "quarry_drill",
+      "name": "Quarry drill",
+      "cost": {
+        "iron": 3,
+        "bronze": 2,
+        "control": 1
+      },
+      "requires": [
+        "iron_pick",
+        "router",
+        "circuit_bench"
+      ],
+      "capacity": {
+        "attachment": "quarry_auto"
+      },
+      "max": 32
+    },
+    {
+      "id": "mob_grinder",
+      "name": "Mob grinder",
+      "cost": {
+        "alloy": 3,
+        "control": 2,
+        "shell": 1
+      },
+      "requires": [
+        "ward_motor",
+        "alloy_furnace",
+        "reinforced_armor"
+      ],
+      "capacity": {
+        "machine": "grinder",
+        "requiresEnemyMastery": true
+      },
+      "max": 16
+    },
+    {
+      "id": "battery",
+      "name": "Battery",
+      "cost": {
+        "copper": 3,
+        "iron": 2,
+        "glass": 1
+      },
+      "requires": [
+        "grid",
+        "silica_cultivar"
+      ],
+      "capacity": {
+        "energyCapacity": 600
+      },
+      "max": 16
+    },
+    {
+      "id": "combustion_generator",
+      "name": "Combustion generator",
+      "cost": {
+        "copper": 4,
+        "iron": 3,
+        "fired_part": 2
+      },
+      "requires": [
+        "grid"
+      ],
+      "capacity": {
+        "generator": "combustion"
+      },
+      "max": 31
+    },
+    {
+      "id": "biofuel_generator",
+      "name": "Biofuel generator",
+      "cost": {
+        "iron": 4,
+        "bronze": 3,
+        "control": 1
+      },
+      "requires": [
+        "biofuel_line",
+        "circuit_bench"
+      ],
+      "capacity": {
+        "generator": "biofuel"
+      },
+      "max": 31
+    },
+    {
+      "id": "advanced_generator",
+      "name": "High-capacity generator",
+      "cost": {
+        "alloy": 4,
+        "crystal": 2,
+        "control": 3
+      },
+      "requires": [
+        "advanced_grid"
+      ],
+      "capacity": {
+        "generator": "advanced"
+      },
+      "max": 31
+    },
+    {
+      "id": "extra_kiln",
+      "name": "Additional kiln",
+      "cost": {
+        "clay": 6,
+        "stone": 6,
+        "timber": 4
+      },
+      "requires": [
+        "kiln"
+      ],
+      "capacity": {
+        "machine": "kiln"
+      },
+      "max": 15
+    },
+    {
+      "id": "extra_processor",
+      "name": "Additional processor",
+      "cost": {
+        "iron": 3,
+        "copper": 2,
+        "fired_part": 1
+      },
+      "requires": [
+        "factory"
+      ],
+      "capacity": {
+        "machine": "processor"
+      },
+      "max": 15
+    },
+    {
+      "id": "extra_alloy_furnace",
+      "name": "Additional alloy furnace",
+      "cost": {
+        "iron": 4,
+        "bronze": 2,
+        "glass": 2
+      },
+      "requires": [
+        "alloy_furnace"
+      ],
+      "capacity": {
+        "machine": "alloy_furnace"
+      },
+      "max": 15
+    },
+    {
+      "id": "extra_circuit_bench",
+      "name": "Additional circuit bench",
+      "cost": {
+        "copper": 3,
+        "quartz": 2,
+        "resin": 2,
+        "iron": 2
+      },
+      "requires": [
+        "circuit_bench"
+      ],
+      "capacity": {
+        "machine": "circuit_bench"
+      },
+      "max": 15
+    },
+    {
+      "id": "extra_polymer_line",
+      "name": "Additional polymer line",
+      "cost": {
+        "iron": 4,
+        "copper": 3,
+        "resin": 4,
+        "fired_part": 2
+      },
+      "requires": [
+        "polymer_line"
+      ],
+      "capacity": {
+        "machine": "polymer_line"
+      },
+      "max": 15
+    },
+    {
+      "id": "extra_precision_line",
+      "name": "Additional precision line",
+      "cost": {
+        "glass": 4,
+        "control": 3,
+        "quartz": 4,
+        "gem": 2
+      },
+      "requires": [
+        "precision_line"
+      ],
+      "capacity": {
+        "machine": "precision_line"
+      },
+      "max": 15
+    },
+    {
+      "id": "extra_stabilizer",
+      "name": "Additional stabilizer",
+      "cost": {
+        "iron": 4,
+        "control": 2,
+        "glow": 1
+      },
+      "requires": [
+        "stabilizer"
+      ],
+      "capacity": {
+        "machine": "stabilizer"
+      },
+      "max": 15
+    },
+    {
+      "id": "extra_fermenter",
+      "name": "Additional fermenter",
+      "cost": {
+        "iron": 3,
+        "bronze": 2,
+        "oil": 3
+      },
+      "requires": [
+        "biofuel_line"
+      ],
+      "capacity": {
+        "machine": "fermenter"
+      },
+      "max": 15
+    },
+    {
+      "id": "extra_convergence",
+      "name": "Additional convergence",
+      "cost": {
+        "alloy": 8,
+        "polymer": 5,
+        "crystal": 4,
+        "catalyst": 3,
+        "rare_core": 1
+      },
+      "requires": [
+        "convergence"
+      ],
+      "capacity": {
+        "machine": "convergence"
+      },
+      "max": 15
+    },
+    {
+      "id": "extra_worldseed_press",
+      "name": "Additional worldseed press",
+      "cost": {
+        "convergence_core": 1,
+        "alloy": 8,
+        "control": 4,
+        "crystal": 4
+      },
+      "requires": [
+        "worldseed_press"
+      ],
+      "capacity": {
+        "machine": "worldseed_press"
+      },
+      "max": 15
+    },
+    {
+      "id": "buffer_upgrade",
+      "name": "Storage upgrade",
+      "cost": {
+        "timber": 5,
+        "iron": 2
+      },
+      "requires": [
+        "iron_pick"
+      ],
+      "capacity": {
+        "bufferCycles": 3
+      },
+      "max": 32
+    },
+    {
+      "id": "efficiency_upgrade",
+      "name": "Machine efficiency kit",
+      "cost": {
+        "control": 2,
+        "bronze": 2,
+        "glass": 1
+      },
+      "requires": [
+        "circuit_bench"
+      ],
+      "capacity": {
+        "machineUpgrade": "efficiency"
+      },
+      "max": 64
+    },
+    {
+      "id": "speed_upgrade",
+      "name": "Machine speed kit",
+      "cost": {
+        "control": 2,
+        "bronze": 2,
+        "copper": 2
+      },
+      "requires": [
+        "circuit_bench"
+      ],
+      "capacity": {
+        "machineUpgrade": "speed"
+      },
+      "max": 64
+    }
+  ],
+  "cultivars": [
+    {
+      "id": "starter",
+      "name": "Starter tree",
+      "seconds": 12,
+      "out": {
+        "timber": 3,
+        "litter": 2,
+        "cutting": 1
+      },
+      "requires": []
+    },
+    {
+      "id": "stone",
+      "name": "Stonewood",
+      "seconds": 18,
+      "out": {
+        "stone": 2,
+        "litter": 1,
+        "cutting": 1
+      },
+      "requires": [
+        "stone_cultivar"
+      ]
+    },
+    {
+      "id": "clay",
+      "name": "Claywood",
+      "seconds": 20,
+      "out": {
+        "clay": 2,
+        "litter": 1,
+        "cutting": 1
+      },
+      "requires": [
+        "clay_cultivar"
+      ]
+    },
+    {
+      "id": "coal",
+      "name": "Fuelwood",
+      "seconds": 24,
+      "out": {
+        "coal": 2,
+        "litter": 1,
+        "cutting": 1
+      },
+      "requires": [
+        "coal_cultivar"
+      ]
+    },
+    {
+      "id": "copper",
+      "name": "Copperwood",
+      "seconds": 28,
+      "out": {
+        "copper_raw": 3,
+        "litter": 1,
+        "cutting": 1
+      },
+      "requires": [
+        "copper_cultivar"
+      ]
+    },
+    {
+      "id": "iron",
+      "name": "Ironwood",
+      "seconds": 30,
+      "out": {
+        "iron_raw": 3,
+        "litter": 1,
+        "cutting": 1
+      },
+      "requires": [
+        "iron_cultivar"
+      ]
+    },
+    {
+      "id": "tin",
+      "name": "Tinwood",
+      "seconds": 32,
+      "out": {
+        "tin_raw": 3,
+        "litter": 1,
+        "cutting": 1
+      },
+      "requires": [
+        "tin_cultivar"
+      ]
+    },
+    {
+      "id": "silica",
+      "name": "Sandwood",
+      "seconds": 24,
+      "out": {
+        "silica": 3,
+        "litter": 1,
+        "cutting": 1
+      },
+      "requires": [
+        "silica_cultivar"
+      ]
+    },
+    {
+      "id": "quartz",
+      "name": "Quartzwood",
+      "seconds": 36,
+      "out": {
+        "quartz": 2,
+        "litter": 1,
+        "cutting": 1
+      },
+      "requires": [
+        "quartz_cultivar"
+      ]
+    },
+    {
+      "id": "resin",
+      "name": "Resinwood",
+      "seconds": 30,
+      "out": {
+        "resin": 3,
+        "litter": 2,
+        "cutting": 1
+      },
+      "requires": [
+        "resin_cultivar"
+      ]
+    },
+    {
+      "id": "gem",
+      "name": "Gemwood",
+      "seconds": 42,
+      "out": {
+        "gem": 2,
+        "litter": 1,
+        "cutting": 1
+      },
+      "requires": [
+        "gem_cultivar"
+      ]
+    },
+    {
+      "id": "heavy_ore",
+      "name": "Heavywood",
+      "seconds": 44,
+      "out": {
+        "heavy_ore": 2,
+        "litter": 1,
+        "cutting": 1
+      },
+      "requires": [
+        "heavy_cultivar"
+      ]
+    },
+    {
+      "id": "crystal_shard",
+      "name": "Crystalwood",
+      "seconds": 60,
+      "out": {
+        "crystal_shard": 1,
+        "litter": 1,
+        "cutting": 1
+      },
+      "requires": [
+        "crystal_cultivar"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "make_dirt",
+      "zone": "workshop",
+      "slot": "bench",
+      "seconds": 0,
+      "input": {
+        "litter": 2
+      },
+      "output": {
+        "dirt": 1
+      },
+      "requires": [],
+      "watts": 0,
+      "repeat": "manual"
+    },
+    {
+      "id": "screen_grit",
+      "zone": "workshop",
+      "slot": "bench",
+      "seconds": 0,
+      "input": {
+        "dirt": 1
+      },
+      "output": {
+        "grit": 2
+      },
+      "requires": [
+        "screen"
+      ],
+      "watts": 0,
+      "repeat": "manual"
+    },
+    {
+      "id": "compost",
+      "zone": "workshop",
+      "slot": "bench",
+      "seconds": 0,
+      "input": {
+        "litter": 2,
+        "waste": 2
+      },
+      "output": {
+        "compost": 1
+      },
+      "requires": [
+        "field"
+      ],
+      "watts": 0,
+      "repeat": "manual"
+    },
+    {
+      "id": "ration",
+      "zone": "workshop",
+      "slot": "bench",
+      "seconds": 0,
+      "input": {
+        "crop": 2
+      },
+      "output": {
+        "food": 1
+      },
+      "requires": [
+        "field"
+      ],
+      "watts": 0,
+      "repeat": "manual"
+    },
+    {
+      "id": "feed",
+      "zone": "workshop",
+      "slot": "bench",
+      "seconds": 0,
+      "input": {
+        "crop": 2
+      },
+      "output": {
+        "feed": 1
+      },
+      "requires": [
+        "field"
+      ],
+      "watts": 0,
+      "repeat": "manual"
+    },
+    {
+      "id": "ration_rich",
+      "zone": "workshop",
+      "slot": "bench",
+      "seconds": 0,
+      "input": {
+        "animal_product": 1,
+        "crop": 1
+      },
+      "output": {
+        "food": 3
+      },
+      "requires": [
+        "animal_pen"
+      ],
+      "watts": 0,
+      "repeat": "manual"
+    },
+    {
+      "id": "field_crop",
+      "zone": "farm",
+      "slot": "field",
+      "seconds": 18,
+      "input": {},
+      "output": {
+        "crop": 3,
+        "fiber": 2,
+        "waste": 2
+      },
+      "requires": [
+        "field"
+      ],
+      "watts": 0,
+      "repeat": "buffered"
+    },
+    {
+      "id": "field_oil",
+      "zone": "farm",
+      "slot": "field",
+      "seconds": 24,
+      "input": {},
+      "output": {
+        "oil": 3,
+        "waste": 1,
+        "fiber": 1
+      },
+      "requires": [
+        "oil_field"
+      ],
+      "watts": 0,
+      "repeat": "buffered"
+    },
+    {
+      "id": "pen_product",
+      "zone": "farm",
+      "slot": "animal",
+      "seconds": 30,
+      "input": {
+        "feed": 1
+      },
+      "output": {
+        "animal_product": 2,
+        "waste": 2
+      },
+      "requires": [
+        "animal_pen"
+      ],
+      "watts": 0,
+      "repeat": "buffered"
+    },
+    {
+      "id": "charcoal",
+      "zone": "workshop",
+      "slot": "kiln",
+      "seconds": 8,
+      "input": {
+        "timber": 2
+      },
+      "output": {
+        "charcoal": 1
+      },
+      "requires": [
+        "kiln"
+      ],
+      "watts": 0,
+      "repeat": "manual"
+    },
+    {
+      "id": "fired_part",
+      "zone": "workshop",
+      "slot": "kiln",
+      "seconds": 8,
+      "input": {
+        "clay": 2,
+        "charcoal": 1
+      },
+      "output": {
+        "fired_part": 1
+      },
+      "requires": [
+        "kiln"
+      ],
+      "watts": 0,
+      "repeat": "manual"
+    },
+    {
+      "id": "copper_concentrate",
+      "zone": "workshop",
+      "slot": "kiln",
+      "seconds": 10,
+      "input": {
+        "clay": 2,
+        "stone": 2,
+        "charcoal": 1
+      },
+      "output": {
+        "copper_raw": 2
+      },
+      "requires": [
+        "kiln"
+      ],
+      "watts": 0,
+      "repeat": "manual"
+    },
+    {
+      "id": "iron_concentrate",
+      "zone": "workshop",
+      "slot": "kiln",
+      "seconds": 12,
+      "input": {
+        "coal": 2,
+        "stone": 2,
+        "fired_part": 1
+      },
+      "output": {
+        "iron_raw": 2
+      },
+      "requires": [
+        "coal_cultivar",
+        "kiln"
+      ],
+      "watts": 0,
+      "repeat": "manual"
+    },
+    {
+      "id": "tin_concentrate",
+      "zone": "workshop",
+      "slot": "kiln",
+      "seconds": 12,
+      "input": {
+        "stone": 2,
+        "fired_part": 1,
+        "copper": 1
+      },
+      "output": {
+        "tin_raw": 2
+      },
+      "requires": [
+        "kiln",
+        "copper_cultivar"
+      ],
+      "watts": 0,
+      "repeat": "manual"
+    },
+    {
+      "id": "silica_bootstrap",
+      "zone": "workshop",
+      "slot": "kiln",
+      "seconds": 8,
+      "input": {
+        "grit": 2,
+        "clay": 1
+      },
+      "output": {
+        "silica": 2
+      },
+      "requires": [
+        "kiln"
+      ],
+      "watts": 0,
+      "repeat": "manual"
+    },
+    {
+      "id": "smelt_copper",
+      "zone": "workshop",
+      "slot": "kiln",
+      "seconds": 10,
+      "input": {
+        "copper_raw": 2,
+        "charcoal": 1
+      },
+      "output": {
+        "copper": 1
+      },
+      "requires": [
+        "kiln"
+      ],
+      "watts": 0,
+      "repeat": "manual"
+    },
+    {
+      "id": "smelt_copper_coal",
+      "zone": "workshop",
+      "slot": "kiln",
+      "seconds": 10,
+      "input": {
+        "copper_raw": 2,
+        "coal": 1
+      },
+      "output": {
+        "copper": 1
+      },
+      "requires": [
+        "kiln",
+        "coal_cultivar"
+      ],
+      "watts": 0,
+      "repeat": "manual"
+    },
+    {
+      "id": "electric_copper",
+      "zone": "factory",
+      "slot": "processor",
+      "seconds": 8,
+      "input": {
+        "copper_raw": 2
+      },
+      "output": {
+        "copper": 2
+      },
+      "requires": [
+        "factory"
+      ],
+      "watts": 8,
+      "repeat": "powered"
+    },
+    {
+      "id": "smelt_iron",
+      "zone": "workshop",
+      "slot": "kiln",
+      "seconds": 10,
+      "input": {
+        "iron_raw": 2,
+        "charcoal": 1
+      },
+      "output": {
+        "iron": 1
+      },
+      "requires": [
+        "kiln"
+      ],
+      "watts": 0,
+      "repeat": "manual"
+    },
+    {
+      "id": "smelt_iron_coal",
+      "zone": "workshop",
+      "slot": "kiln",
+      "seconds": 10,
+      "input": {
+        "iron_raw": 2,
+        "coal": 1
+      },
+      "output": {
+        "iron": 1
+      },
+      "requires": [
+        "kiln",
+        "coal_cultivar"
+      ],
+      "watts": 0,
+      "repeat": "manual"
+    },
+    {
+      "id": "electric_iron",
+      "zone": "factory",
+      "slot": "processor",
+      "seconds": 8,
+      "input": {
+        "iron_raw": 2
+      },
+      "output": {
+        "iron": 2
+      },
+      "requires": [
+        "factory"
+      ],
+      "watts": 8,
+      "repeat": "powered"
+    },
+    {
+      "id": "smelt_tin",
+      "zone": "workshop",
+      "slot": "kiln",
+      "seconds": 10,
+      "input": {
+        "tin_raw": 2,
+        "charcoal": 1
+      },
+      "output": {
+        "tin": 1
+      },
+      "requires": [
+        "kiln"
+      ],
+      "watts": 0,
+      "repeat": "manual"
+    },
+    {
+      "id": "smelt_tin_coal",
+      "zone": "workshop",
+      "slot": "kiln",
+      "seconds": 10,
+      "input": {
+        "tin_raw": 2,
+        "coal": 1
+      },
+      "output": {
+        "tin": 1
+      },
+      "requires": [
+        "kiln",
+        "coal_cultivar"
+      ],
+      "watts": 0,
+      "repeat": "manual"
+    },
+    {
+      "id": "electric_tin",
+      "zone": "factory",
+      "slot": "processor",
+      "seconds": 8,
+      "input": {
+        "tin_raw": 2
+      },
+      "output": {
+        "tin": 2
+      },
+      "requires": [
+        "factory"
+      ],
+      "watts": 8,
+      "repeat": "powered"
+    },
+    {
+      "id": "glass_manual",
+      "zone": "workshop",
+      "slot": "kiln",
+      "seconds": 10,
+      "input": {
+        "silica": 2,
+        "charcoal": 1
+      },
+      "output": {
+        "glass": 2
+      },
+      "requires": [
+        "kiln"
+      ],
+      "watts": 0,
+      "repeat": "manual"
+    },
+    {
+      "id": "bronze_manual",
+      "zone": "workshop",
+      "slot": "kiln",
+      "seconds": 12,
+      "input": {
+        "copper": 2,
+        "tin": 1,
+        "charcoal": 1
+      },
+      "output": {
+        "bronze": 3
+      },
+      "requires": [
+        "alloy_heat"
+      ],
+      "watts": 0,
+      "repeat": "manual"
+    },
+    {
+      "id": "bronze_powered",
+      "zone": "factory",
+      "slot": "alloy_furnace",
+      "seconds": 10,
+      "input": {
+        "copper": 2,
+        "tin": 1
+      },
+      "output": {
+        "bronze": 4
+      },
+      "requires": [
+        "alloy_furnace"
+      ],
+      "watts": 10,
+      "repeat": "powered"
+    },
+    {
+      "id": "advanced_alloy",
+      "zone": "factory",
+      "slot": "alloy_furnace",
+      "seconds": 16,
+      "input": {
+        "iron": 2,
+        "bronze": 2,
+        "heavy_ore": 2
+      },
+      "output": {
+        "alloy": 4
+      },
+      "requires": [
+        "alloy_furnace",
+        "deep_bed"
+      ],
+      "watts": 12,
+      "repeat": "powered"
+    },
+    {
+      "id": "glass_powered",
+      "zone": "factory",
+      "slot": "processor",
+      "seconds": 8,
+      "input": {
+        "silica": 2
+      },
+      "output": {
+        "glass": 3
+      },
+      "requires": [
+        "factory"
+      ],
+      "watts": 6,
+      "repeat": "powered"
+    },
+    {
+      "id": "fired_powered",
+      "zone": "factory",
+      "slot": "processor",
+      "seconds": 8,
+      "input": {
+        "clay": 2
+      },
+      "output": {
+        "fired_part": 2
+      },
+      "requires": [
+        "factory"
+      ],
+      "watts": 6,
+      "repeat": "powered"
+    },
+    {
+      "id": "charcoal_powered",
+      "zone": "factory",
+      "slot": "processor",
+      "seconds": 8,
+      "input": {
+        "timber": 3
+      },
+      "output": {
+        "charcoal": 2
+      },
+      "requires": [
+        "factory"
+      ],
+      "watts": 5,
+      "repeat": "powered"
+    },
+    {
+      "id": "mine_stone",
+      "zone": "quarry",
+      "slot": "quarry",
+      "seconds": 15,
+      "input": {},
+      "output": {
+        "stone": 6
+      },
+      "requires": [
+        "iron_pick"
+      ],
+      "watts": 0,
+      "repeat": "buffered"
+    },
+    {
+      "id": "mine_coal",
+      "zone": "quarry",
+      "slot": "quarry",
+      "seconds": 18,
+      "input": {},
+      "output": {
+        "coal": 6
+      },
+      "requires": [
+        "iron_pick"
+      ],
+      "watts": 0,
+      "repeat": "buffered"
+    },
+    {
+      "id": "mine_copper_raw",
+      "zone": "quarry",
+      "slot": "quarry",
+      "seconds": 20,
+      "input": {},
+      "output": {
+        "copper_raw": 8
+      },
+      "requires": [
+        "iron_pick"
+      ],
+      "watts": 0,
+      "repeat": "buffered"
+    },
+    {
+      "id": "mine_iron_raw",
+      "zone": "quarry",
+      "slot": "quarry",
+      "seconds": 22,
+      "input": {},
+      "output": {
+        "iron_raw": 8
+      },
+      "requires": [
+        "iron_pick"
+      ],
+      "watts": 0,
+      "repeat": "buffered"
+    },
+    {
+      "id": "mine_tin_raw",
+      "zone": "quarry",
+      "slot": "quarry",
+      "seconds": 24,
+      "input": {},
+      "output": {
+        "tin_raw": 8
+      },
+      "requires": [
+        "iron_pick"
+      ],
+      "watts": 0,
+      "repeat": "buffered"
+    },
+    {
+      "id": "mine_silica",
+      "zone": "quarry",
+      "slot": "quarry",
+      "seconds": 15,
+      "input": {},
+      "output": {
+        "silica": 8
+      },
+      "requires": [
+        "iron_pick"
+      ],
+      "watts": 0,
+      "repeat": "buffered"
+    },
+    {
+      "id": "mine_quartz",
+      "zone": "quarry",
+      "slot": "quarry",
+      "seconds": 26,
+      "input": {},
+      "output": {
+        "quartz": 6
+      },
+      "requires": [
+        "quartz_bed"
+      ],
+      "watts": 0,
+      "repeat": "buffered"
+    },
+    {
+      "id": "mine_gem",
+      "zone": "quarry",
+      "slot": "quarry",
+      "seconds": 32,
+      "input": {},
+      "output": {
+        "gem": 5
+      },
+      "requires": [
+        "gem_bed"
+      ],
+      "watts": 0,
+      "repeat": "buffered"
+    },
+    {
+      "id": "mine_heavy_ore",
+      "zone": "quarry",
+      "slot": "quarry",
+      "seconds": 36,
+      "input": {},
+      "output": {
+        "heavy_ore": 5
+      },
+      "requires": [
+        "deep_bed"
+      ],
+      "watts": 0,
+      "repeat": "buffered"
+    },
+    {
+      "id": "make_control",
+      "zone": "factory",
+      "slot": "circuit_bench",
+      "seconds": 12,
+      "input": {
+        "copper": 2,
+        "quartz": 1,
+        "resin": 1
+      },
+      "output": {
+        "control": 2
+      },
+      "requires": [
+        "circuit_bench"
+      ],
+      "watts": 8,
+      "repeat": "powered"
+    },
+    {
+      "id": "make_polymer",
+      "zone": "factory",
+      "slot": "polymer_line",
+      "seconds": 12,
+      "input": {
+        "oil": 2,
+        "resin": 2,
+        "fired_part": 1
+      },
+      "output": {
+        "polymer": 3
+      },
+      "requires": [
+        "polymer_line"
+      ],
+      "watts": 8,
+      "repeat": "powered"
+    },
+    {
+      "id": "make_crystal",
+      "zone": "factory",
+      "slot": "precision_line",
+      "seconds": 16,
+      "input": {
+        "quartz": 2,
+        "gem": 2,
+        "control": 1
+      },
+      "output": {
+        "crystal": 3
+      },
+      "requires": [
+        "precision_line"
+      ],
+      "watts": 12,
+      "repeat": "powered"
+    },
+    {
+      "id": "make_crystal_shard",
+      "zone": "factory",
+      "slot": "precision_line",
+      "seconds": 12,
+      "input": {
+        "crystal_shard": 2,
+        "control": 1
+      },
+      "output": {
+        "crystal": 3
+      },
+      "requires": [
+        "precision_line",
+        "crystal_cultivar"
+      ],
+      "watts": 10,
+      "repeat": "powered"
+    },
+    {
+      "id": "stabilize",
+      "zone": "factory",
+      "slot": "stabilizer",
+      "seconds": 14,
+      "input": {
+        "glow": 2,
+        "shell": 1,
+        "compost": 1
+      },
+      "output": {
+        "catalyst": 3
+      },
+      "requires": [
+        "stabilizer"
+      ],
+      "watts": 10,
+      "repeat": "powered"
+    },
+    {
+      "id": "ferment",
+      "zone": "farm",
+      "slot": "fermenter",
+      "seconds": 10,
+      "input": {
+        "crop": 3,
+        "waste": 2
+      },
+      "output": {
+        "biofuel": 3
+      },
+      "requires": [
+        "biofuel_line"
+      ],
+      "watts": 5,
+      "repeat": "powered"
+    },
+    {
+      "id": "make_convergence_core",
+      "zone": "factory",
+      "slot": "convergence",
+      "seconds": 30,
+      "input": {
+        "alloy": 3,
+        "polymer": 3,
+        "crystal": 3,
+        "catalyst": 2,
+        "rare_core": 1
+      },
+      "output": {
+        "convergence_core": 1
+      },
+      "requires": [
+        "convergence"
+      ],
+      "watts": 18,
+      "repeat": "powered"
+    },
+    {
+      "id": "press_worldseed",
+      "zone": "factory",
+      "slot": "worldseed_press",
+      "seconds": 30,
+      "input": {
+        "alloy": 2,
+        "polymer": 2,
+        "crystal": 2,
+        "catalyst": 1,
+        "compost": 1
+      },
+      "output": {
+        "worldseed": 1
+      },
+      "requires": [
+        "worldseed_press"
+      ],
+      "watts": 20,
+      "repeat": "powered"
+    }
+  ],
+  "enemies": [
+    {
+      "id": "burrower",
+      "name": "Burrower",
+      "requires": [
+        "arena"
+      ],
+      "seconds": 12,
+      "winChance": 0.85,
+      "damageWin": 12,
+      "damageLoss": 25,
+      "out": {
+        "core": 2
+      },
+      "firstWin": {
+        "core": 1
+      },
+      "grindSeconds": 16,
+      "grindWatts": 8
+    },
+    {
+      "id": "stoneback",
+      "name": "Stoneback",
+      "requires": [
+        "reinforced_armor"
+      ],
+      "seconds": 18,
+      "winChance": 0.8,
+      "damageWin": 20,
+      "damageLoss": 35,
+      "out": {
+        "shell": 2
+      },
+      "firstWin": {
+        "shell": 1
+      },
+      "grindSeconds": 22,
+      "grindWatts": 10
+    },
+    {
+      "id": "glowbug",
+      "name": "Glowbug",
+      "requires": [
+        "glowbug_trial"
+      ],
+      "seconds": 22,
+      "winChance": 0.78,
+      "damageWin": 25,
+      "damageLoss": 40,
+      "out": {
+        "glow": 3
+      },
+      "firstWin": {
+        "glow": 1
+      },
+      "grindSeconds": 26,
+      "grindWatts": 12
+    },
+    {
+      "id": "titan",
+      "name": "Titan",
+      "requires": [
+        "titan_trial"
+      ],
+      "seconds": 30,
+      "winChance": 0.72,
+      "damageWin": 30,
+      "damageLoss": 50,
+      "out": {
+        "rare_core": 1
+      },
+      "firstWin": {
+        "rare_core": 1
+      },
+      "grindSeconds": 36,
+      "grindWatts": 16
+    }
+  ],
+  "generators": [
+    {
+      "id": "combustion",
+      "watts": 20,
+      "fuel": [
+        {
+          "id": "timber",
+          "seconds": 15
+        },
+        {
+          "id": "charcoal",
+          "seconds": 35
+        },
+        {
+          "id": "coal",
+          "seconds": 45
+        }
+      ]
+    },
+    {
+      "id": "biofuel",
+      "watts": 45,
+      "fuel": [
+        {
+          "id": "biofuel",
+          "seconds": 45
+        }
+      ]
+    },
+    {
+      "id": "advanced",
+      "watts": 100,
+      "fuel": [
+        {
+          "id": "coal",
+          "seconds": 60
+        },
+        {
+          "id": "biofuel",
+          "seconds": 90
+        }
+      ]
+    }
+  ],
+  "config": {
+    "initial": {
+      "plots": 1,
+      "cultivar": "starter",
+      "unlockedZones": [
+        "orchard",
+        "workshop"
+      ],
+      "hp": 100,
+      "maxPlots": 64,
+      "maxFields": 32,
+      "maxPens": 16,
+      "maxQuarrySlots": 32
+    },
+    "seed": {
+      "chance": 0.2,
+      "guaranteedBy": 3,
+      "onePerRun": true,
+      "guaranteedStarterHarvests": 3
+    },
+    "timing": {
+      "activeTapMs": 250,
+      "maxAcceptedTapsPerSecond": 8,
+      "clockworkDurationMultiplier": 0.8,
+      "poweredTwerkerDurationMultiplier": 0.6,
+      "poweredTwerkerWatts": 3,
+      "fieldHarvesterWatts": 3,
+      "penHarvesterWatts": 4,
+      "quarryDrillWatts": 6,
+      "quarryDrillDurationMultiplier": 0.75,
+      "deepDrillWatts": 10,
+      "deepDrillDurationMultiplier": 0.5,
+      "offlineCapSeconds": 43200,
+      "bufferCycles": 3,
+      "bufferUpgradeMax": 3,
+      "storageBufferMaxCycles": 12,
+      "manualFieldAutoRepeatRequiresAttachment": true,
+      "manualTaskBufferCycles": 3,
+      "maxQueuedBatches": 99,
+      "maxStock": 9007199254740991
+    },
+    "soil": {
+      "base": 1,
+      "soil_compost": 0.8,
+      "soil_mineral": 0.65,
+      "soil_precision": 0.5
+    },
+    "yield": {
+      "base": 1,
+      "yield_shaped": 1.25,
+      "yield_precision": 1.5
+    },
+    "machineUpgrade": {
+      "speed": {
+        "durationMultiplier": 0.75,
+        "wattsMultiplier": 1.5
+      },
+      "efficiency": {
+        "durationMultiplier": 1,
+        "wattsMultiplier": 0.75
+      },
+      "perMachineMaxEach": 1
+    },
+    "combat": {
+      "foodPerFight": 1,
+      "foodHealsHP": 40,
+      "regenPerSecond": 2,
+      "deathCooldownSeconds": 60,
+      "guaranteedWinAfterLosses": 2,
+      "autoAllowedHpMin": 0.6,
+      "masteryWins": 5,
+      "autoBattleWatts": 6,
+      "grindInput": {
+        "food": 1
+      },
+      "grinderUnlockPerEnemyWins": 5,
+      "cooldownFullHeal": true,
+      "firstWinBonusGuaranteed": true,
+      "autoLossLimit": 2,
+      "seedAlgorithm": "xorshift32"
+    },
+    "plotCost": {
+      "dirtBase": 3,
+      "dirtPerPrevious": 1.5,
+      "timberBase": 2,
+      "timberPerPrevious": 1
+    },
+    "singularity": {
+      "resource": "worldseed",
+      "threshold": 600,
+      "proxy": {
+        "cultivars": 3,
+        "plots": 2,
+        "collectors": 1,
+        "clockwork": 1,
+        "clayAutoCollected": 10
+      },
+      "maxPrestigePerkLevel": 3,
+      "starterOptions": [
+        "starter_dirt",
+        "starter_timer",
+        "starter_buffer",
+        "extra_plot"
+      ],
+      "prestigePerks": {
+        "starter_dirt": {
+          "perLevel": 2,
+          "max": 3
+        },
+        "starter_timer": {
+          "durationFactorPerLevel": 0.9,
+          "max": 3
+        },
+        "starter_buffer": {
+          "perLevel": 1,
+          "max": 3
+        },
+        "extra_plot": {
+          "perLevel": 1,
+          "max": 3
+        }
+      },
+      "prestigePointPerWorld": 1
+    },
+    "save": {
+      "schemaVersion": 1,
+      "autosaveSeconds": 15,
+      "backupSlots": 2,
+      "maxImportBytes": 5242880
+    }
+  },
+  "endgameExample": {
+    "targetWorldseedPerMinute": 2,
+    "generators": {
+      "advanced": 2
+    },
+    "fuelPerMinute": {
+      "coal": 2
+    },
+    "flows": [
+      {
+        "id": "press_worldseed",
+        "rate": 2,
+        "slots": 1,
+        "kind": "task",
+        "automationWatts": 0
+      },
+      {
+        "id": "advanced_alloy",
+        "rate": 1,
+        "slots": 1,
+        "kind": "task",
+        "automationWatts": 0
+      },
+      {
+        "id": "bronze_powered",
+        "rate": 0.5,
+        "slots": 1,
+        "kind": "task",
+        "automationWatts": 0
+      },
+      {
+        "id": "electric_iron",
+        "rate": 1,
+        "slots": 1,
+        "kind": "task",
+        "automationWatts": 0
+      },
+      {
+        "id": "electric_copper",
+        "rate": "7/6",
+        "slots": 1,
+        "kind": "task",
+        "automationWatts": 0
+      },
+      {
+        "id": "electric_tin",
+        "rate": "1/4",
+        "slots": 1,
+        "kind": "task",
+        "automationWatts": 0
+      },
+      {
+        "id": "make_control",
+        "rate": "2/3",
+        "slots": 1,
+        "kind": "task",
+        "automationWatts": 0
+      },
+      {
+        "id": "make_polymer",
+        "rate": "4/3",
+        "slots": 1,
+        "kind": "task",
+        "automationWatts": 0
+      },
+      {
+        "id": "make_crystal",
+        "rate": "4/3",
+        "slots": 1,
+        "kind": "task",
+        "automationWatts": 0
+      },
+      {
+        "id": "fired_powered",
+        "rate": "2/3",
+        "slots": 1,
+        "kind": "task",
+        "automationWatts": 0
+      },
+      {
+        "id": "stabilize",
+        "rate": "2/3",
+        "slots": 1,
+        "kind": "task",
+        "automationWatts": 0
+      },
+      {
+        "id": "compost",
+        "rate": "8/3",
+        "slots": 1,
+        "kind": "task",
+        "automationWatts": 0
+      },
+      {
+        "id": "ration",
+        "rate": "7/9",
+        "slots": 1,
+        "kind": "task",
+        "automationWatts": 0
+      },
+      {
+        "id": "field_crop",
+        "rate": "9/4",
+        "slots": 1,
+        "kind": "task",
+        "automationWatts": 3
+      },
+      {
+        "id": "field_oil",
+        "rate": "8/9",
+        "slots": 1,
+        "kind": "task",
+        "automationWatts": 3
+      },
+      {
+        "id": "mine_coal",
+        "rate": "1/3",
+        "slots": 1,
+        "kind": "task",
+        "automationWatts": 6
+      },
+      {
+        "id": "mine_iron_raw",
+        "rate": "1/4",
+        "slots": 1,
+        "kind": "task",
+        "automationWatts": 6
+      },
+      {
+        "id": "mine_copper_raw",
+        "rate": "7/24",
+        "slots": 1,
+        "kind": "task",
+        "automationWatts": 6
+      },
+      {
+        "id": "mine_tin_raw",
+        "rate": "1/16",
+        "slots": 1,
+        "kind": "task",
+        "automationWatts": 6
+      },
+      {
+        "id": "mine_heavy_ore",
+        "rate": "2/5",
+        "slots": 1,
+        "kind": "task",
+        "automationWatts": 6
+      },
+      {
+        "id": "mine_quartz",
+        "rate": "5/9",
+        "slots": 1,
+        "kind": "task",
+        "automationWatts": 6
+      },
+      {
+        "id": "mine_gem",
+        "rate": "8/15",
+        "slots": 1,
+        "kind": "task",
+        "automationWatts": 6
+      },
+      {
+        "id": "resin",
+        "rate": "10/9",
+        "slots": 1,
+        "kind": "cultivar",
+        "automationWatts": 0
+      },
+      {
+        "id": "clay",
+        "rate": "2/3",
+        "slots": 1,
+        "kind": "cultivar",
+        "automationWatts": 0
+      },
+      {
+        "id": "starter",
+        "rate": "5/4",
+        "slots": 1,
+        "kind": "cultivar",
+        "automationWatts": 0
+      },
+      {
+        "id": "stoneback",
+        "rate": "1/3",
+        "slots": 1,
+        "kind": "grind",
+        "automationWatts": 0
+      },
+      {
+        "id": "glowbug",
+        "rate": "4/9",
+        "slots": 1,
+        "kind": "grind",
+        "automationWatts": 0
+      }
+    ],
+    "slotCounts": {
+      "worldseed_press": 1,
+      "alloy_furnace": 1,
+      "processor": 4,
+      "circuit_bench": 1,
+      "polymer_line": 1,
+      "precision_line": 1,
+      "stabilizer": 1,
+      "bench": 1,
+      "field": 2,
+      "quarry": 7,
+      "orchard": 3,
+      "grinder": 2
+    }
+  },
+  "boards": [
+    {
+      "id": "rootwork",
+      "name": "Rootwork",
+      "milestones": [
+        {
+          "id": "first_harvest",
+          "name": "First harvest",
+          "predicate": {
+            "kind": "event",
+            "event": "harvest:starter"
+          }
+        },
+        {
+          "id": "first_dirt",
+          "name": "Make dirt",
+          "predicate": {
+            "kind": "event",
+            "event": "craft:make_dirt"
+          }
+        },
+        {
+          "id": "second_plot",
+          "name": "Build a second plot",
+          "predicate": {
+            "kind": "event",
+            "event": "build:plot"
+          }
+        },
+        {
+          "id": "stone",
+          "name": "Discover Stonewood",
+          "predicate": {
+            "kind": "tech",
+            "id": "stone_cultivar"
+          }
+        },
+        {
+          "id": "clay",
+          "name": "Discover Claywood",
+          "predicate": {
+            "kind": "tech",
+            "id": "clay_cultivar"
+          }
+        },
+        {
+          "id": "collector",
+          "name": "Build a collector",
+          "predicate": {
+            "kind": "event",
+            "event": "build:collector"
+          }
+        },
+        {
+          "id": "clockwork",
+          "name": "Build a clockwork twerker",
+          "predicate": {
+            "kind": "event",
+            "event": "build:clockwork_twerker"
+          }
+        },
+        {
+          "id": "auto_clay",
+          "name": "Ten auto-collected clay",
+          "predicate": {
+            "kind": "counter",
+            "key": "clayAutoCollected",
+            "threshold": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "cultivation",
+      "name": "Cultivation",
+      "milestones": [
+        {
+          "id": "first_field",
+          "name": "Open Farm",
+          "predicate": {
+            "kind": "tech",
+            "id": "field"
+          }
+        },
+        {
+          "id": "first_crop",
+          "name": "Harvest crops",
+          "predicate": {
+            "kind": "event",
+            "event": "harvest:field_crop"
+          }
+        },
+        {
+          "id": "soil",
+          "name": "Unlock compost soil",
+          "predicate": {
+            "kind": "tech",
+            "id": "compost_soil"
+          }
+        },
+        {
+          "id": "pen",
+          "name": "Open animal pen",
+          "predicate": {
+            "kind": "tech",
+            "id": "animal_pen"
+          }
+        },
+        {
+          "id": "animal",
+          "name": "Harvest animal produce",
+          "predicate": {
+            "kind": "event",
+            "event": "harvest:pen_product"
+          }
+        },
+        {
+          "id": "oil",
+          "name": "Unlock oil crop",
+          "predicate": {
+            "kind": "tech",
+            "id": "oil_field"
+          }
+        },
+        {
+          "id": "resin",
+          "name": "Discover Resinwood",
+          "predicate": {
+            "kind": "tech",
+            "id": "resin_cultivar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "metallurgy",
+      "name": "Metallurgy",
+      "milestones": [
+        {
+          "id": "kiln",
+          "name": "Build kiln",
+          "predicate": {
+            "kind": "tech",
+            "id": "kiln"
+          }
+        },
+        {
+          "id": "coal",
+          "name": "Discover Fuelwood",
+          "predicate": {
+            "kind": "tech",
+            "id": "coal_cultivar"
+          }
+        },
+        {
+          "id": "first_copper",
+          "name": "Refine copper",
+          "predicate": {
+            "kind": "event",
+            "event": "produce:copper"
+          }
+        },
+        {
+          "id": "first_iron",
+          "name": "Refine iron",
+          "predicate": {
+            "kind": "event",
+            "event": "produce:iron"
+          }
+        },
+        {
+          "id": "first_tin",
+          "name": "Refine tin",
+          "predicate": {
+            "kind": "event",
+            "event": "produce:tin"
+          }
+        },
+        {
+          "id": "first_bronze",
+          "name": "Make bronze",
+          "predicate": {
+            "kind": "event",
+            "event": "produce:bronze"
+          }
+        },
+        {
+          "id": "quarry",
+          "name": "Open Quarry",
+          "predicate": {
+            "kind": "tech",
+            "id": "iron_pick"
+          }
+        },
+        {
+          "id": "electric_bronze",
+          "name": "Powered alloy batch",
+          "predicate": {
+            "kind": "event",
+            "event": "craft:bronze_powered"
+          }
+        }
+      ]
+    },
+    {
+      "id": "supply_lines",
+      "name": "Supply Lines",
+      "milestones": [
+        {
+          "id": "buffer_full",
+          "name": "Fill a manual buffer",
+          "predicate": {
+            "kind": "event",
+            "event": "buffer:full"
+          }
+        },
+        {
+          "id": "buffer_resume",
+          "name": "Recover from full buffer",
+          "predicate": {
+            "kind": "event",
+            "event": "buffer:resumed"
+          }
+        },
+        {
+          "id": "router",
+          "name": "Build sorting network",
+          "predicate": {
+            "kind": "tech",
+            "id": "router"
+          }
+        },
+        {
+          "id": "repeat",
+          "name": "Complete an automatic repeat batch",
+          "predicate": {
+            "kind": "event",
+            "event": "machine:repeat_completed"
+          }
+        },
+        {
+          "id": "batch_chain",
+          "name": "Finish a powered batch after auto-producing an input",
+          "predicate": {
+            "kind": "event",
+            "event": "machine:automated_input_completed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "spark",
+      "name": "Spark",
+      "milestones": [
+        {
+          "id": "grid",
+          "name": "Build Grid",
+          "predicate": {
+            "kind": "tech",
+            "id": "grid"
+          }
+        },
+        {
+          "id": "first_fuel",
+          "name": "Consume fuel",
+          "predicate": {
+            "kind": "event",
+            "event": "grid:fuel_started"
+          }
+        },
+        {
+          "id": "battery",
+          "name": "Build battery",
+          "predicate": {
+            "kind": "event",
+            "event": "build:battery"
+          }
+        },
+        {
+          "id": "power_recovered",
+          "name": "Recover a stalled powered task",
+          "predicate": {
+            "kind": "event",
+            "event": "grid:task_resumed"
+          }
+        },
+        {
+          "id": "biofuel",
+          "name": "Build fermentation line",
+          "predicate": {
+            "kind": "tech",
+            "id": "biofuel_line"
+          }
+        },
+        {
+          "id": "advanced",
+          "name": "High-capacity generator",
+          "predicate": {
+            "kind": "tech",
+            "id": "advanced_grid"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fieldwork",
+      "name": "Fieldwork",
+      "milestones": [
+        {
+          "id": "quartz",
+          "name": "Find quartz bed",
+          "predicate": {
+            "kind": "tech",
+            "id": "quartz_bed"
+          }
+        },
+        {
+          "id": "deep",
+          "name": "Find deep ore bed",
+          "predicate": {
+            "kind": "tech",
+            "id": "deep_bed"
+          }
+        },
+        {
+          "id": "gem",
+          "name": "Find gem bed",
+          "predicate": {
+            "kind": "tech",
+            "id": "gem_bed"
+          }
+        },
+        {
+          "id": "win_burrower",
+          "name": "Defeat Burrower",
+          "predicate": {
+            "kind": "event",
+            "event": "arena:win:burrower"
+          }
+        },
+        {
+          "id": "win_stoneback",
+          "name": "Defeat Stoneback",
+          "predicate": {
+            "kind": "event",
+            "event": "arena:win:stoneback"
+          }
+        },
+        {
+          "id": "win_glowbug",
+          "name": "Defeat Glowbug",
+          "predicate": {
+            "kind": "event",
+            "event": "arena:win:glowbug"
+          }
+        },
+        {
+          "id": "win_titan",
+          "name": "Defeat Titan",
+          "predicate": {
+            "kind": "event",
+            "event": "arena:win:titan"
+          }
+        },
+        {
+          "id": "master_burrower",
+          "name": "Master Burrower",
+          "predicate": {
+            "kind": "counter",
+            "key": "wins:burrower",
+            "threshold": 5
+          }
+        },
+        {
+          "id": "master_stoneback",
+          "name": "Master Stoneback",
+          "predicate": {
+            "kind": "counter",
+            "key": "wins:stoneback",
+            "threshold": 5
+          }
+        },
+        {
+          "id": "master_glowbug",
+          "name": "Master Glowbug",
+          "predicate": {
+            "kind": "counter",
+            "key": "wins:glowbug",
+            "threshold": 5
+          }
+        },
+        {
+          "id": "master_titan",
+          "name": "Master Titan",
+          "predicate": {
+            "kind": "counter",
+            "key": "wins:titan",
+            "threshold": 5
+          }
+        },
+        {
+          "id": "first_grinder",
+          "name": "Fabricate first combat drop",
+          "predicate": {
+            "kind": "event",
+            "event": "grinder:first_complete"
+          }
+        }
+      ]
+    },
+    {
+      "id": "convergence",
+      "name": "Convergence",
+      "milestones": [
+        {
+          "id": "polymer",
+          "name": "Make polymer",
+          "predicate": {
+            "kind": "event",
+            "event": "produce:polymer"
+          }
+        },
+        {
+          "id": "crystal",
+          "name": "Make precision crystal",
+          "predicate": {
+            "kind": "event",
+            "event": "produce:crystal"
+          }
+        },
+        {
+          "id": "catalyst",
+          "name": "Stabilize catalyst",
+          "predicate": {
+            "kind": "event",
+            "event": "produce:catalyst"
+          }
+        },
+        {
+          "id": "core",
+          "name": "Make convergence core",
+          "predicate": {
+            "kind": "event",
+            "event": "produce:convergence_core"
+          }
+        },
+        {
+          "id": "press",
+          "name": "Build Worldseed Press",
+          "predicate": {
+            "kind": "tech",
+            "id": "worldseed_press"
+          }
+        },
+        {
+          "id": "win",
+          "name": "Make 600 Worldseed",
+          "predicate": {
+            "kind": "counter",
+            "key": "worldseedProduced",
+            "threshold": 600
+          }
+        }
+      ]
+    }
+  ]
+}

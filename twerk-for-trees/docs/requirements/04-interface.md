@@ -1,0 +1,81 @@
+# 04 — Interface, accessibility and presentation requirements
+
+The interface is a touch-first tabbed idle game, not a Minecraft world, spreadsheet or dense inventory management simulation. Art and motion should carry the joke. UI makes production, gates, automation and blockers legible without a tutorial for every action.
+
+## Shell and navigation
+
+**UX-01:** Responsive full-viewport app. On phone (320–767 CSS px) use a compact top resource/power summary, bottom or horizontally scrolling tab strip that never covers gameplay, and one primary panel. Keep the selected tab always visible. On tablet (768–1199) two columns where useful (e.g. Workshop recipes + selected details); on desktop (>=1200) persistent navigation plus main content with a contextual side panel. Exact visual breakpoint may adapt to content width; test portrait/landscape and 200% text/zoom. Never rotate a device-required layout or depend on hover. Main content scrolls vertically as needed, not nested scroll traps.
+
+Persistent shell:
+- Current world number/short name and visible active phase; settings button; local save status.
+- Collapsible resource bar showing a contextual handful of most relevant materials (available amount and small reserved indicator). Full inventory opens from bar; not 45 persistent chips. The selected tab defines its relevant resources, plus player-pinned resources. Power badge visible from Grid unlock: allocated/desired/supply (compact if needed), battery band, an accessible status for waiting tasks.
+- Tabs Orchard, Workshop, Farm, Quarry, Arena, Factory, Power Grid. Orchard/Workshop enabled initially. Locked tabs remain visible as subtle disabled-looking invitations with a lock icon and accessible "How to unlock" action opening requirements; no unexplained disabled button. Unlock tab only on actual purchase. Navigation never stops ongoing tasks.
+- A persistent "Next goal" chip opens advancement/technology detail (not a blocking modal). Milestone list uses progress facts; optional goals have separate label. No flashing alert, "you missed X" pressure or unsolicited notification permission prompts.
+
+**UX-02:** Global inventory panel has search, category filter (organic/raw/refined/combat/industrial/terminal), sort acquisition/category/name, and per-resource detail: owned, reserved, safe minimum, recent +/- per minute, produced/used tasks, first unlocked source if not owned. Selecting a source links to the relevant tab/recipe/producer with selection retained; "Back" returns to previous context. A shift from zero to positive quantity doesn't rearrange rows randomly. Number formatting: up to 999 normal integer; 1K/1M/1B compact after thousand, with 2–3 significant digits, always exact quantity exposed in details/accessibility; do not render Infinity or scientific notation until a later explicitly supported tier.
+
+## New game and onboarding
+
+**UX-03:** Launch directly into Orchard with one tree, timer, cheerful twerker, one compact instruction: "Tap to grow faster." Avoid splash gates and account prompts. First successful harvest reveals Collect and suggests making dirt; after enough dirt Workshop chip highlights Plot purchase. The next locked recipe explains its inputs in context, not a long mandatory coach-mark sequence. Skipping onboarding never skips resources or requirements. Reopening existing world restores selected tab and relevant selection; first-time tutorial flags are saved, user can replay short hints in settings.
+
+**UX-04:** New user can see clear action hierarchy: tap twerker primary, collect ready bundles nearby, plant and upgrades secondary. Never overload double-tap or long-press with a hidden critical action. Active twerking animation responds to accepted tap and capped inputs still provide subtle non-economic visual feedback only if not misleading. Timer updates dynamically with current eligible work; show cycle duration and ready count. Valid tap input only when timer advances/hasten eligible. If ready buffer full, primary action becomes Collect; no unresponsive click zone presented as productive.
+
+## Zone interaction specifications
+
+### Orchard
+
+**UX-OR-01:** Grid of plot cards. Each card shows cultivar icon/name, twerker mascot, progress/timer, ready count, per-cycle guaranteed bundle preview, current upgrades and status (growing, ready, full, paused or speed unpowered). Primary tap area large and distinct from Collect, details, switch cultivar and attachment controls. Tapping mascot affects only its plot and never a neighboring control. Selection/scroll state stable on completion. On compact phone, avoid reducing touch targets to fit more cards; 1–2 columns on handset, responsive larger grid on tablet/desktop. Show total plots and current added-plot cost; "Build plot" deep link to Workshop if insufficient.
+
+**UX-OR-02:** Plot details: choose any known cultivar, see locked ones with discovery recipe link, soil/tool selection, attachment assignment (collector and one twerker), base/actual cycle, output preview and rates. Changing cultivar with incomplete work prompts a short local warning that the current progress resets; collect ready bundles first. Empty plot selectable, starter always available. Detaching attachment preserves item for reassignment; no sell/delete button in v1. Drag-reorder optional later, not necessary to progress.
+
+### Workshop
+
+**UX-WS-01:** One source of truth for purchases and recipes. Sections: Next unlocks (reachable prerequisites), Crafting, Cultivars, Capacity/Buildings, Upgrades, Automations, Locked future. Search by item name/ID alias, input, effect. Recipe list shows output/quantity, known/locked/owned, cost with available amount, and direct unmet reason. "Can afford" filter never hides next milestone by default. Every missing ingredient click opens source detail. Details include prerequisite tech links, hand-vs-powered route options, expected cycle/power effects and output. No circular navigation; breadcrumb/back returns to Workshop recipe list.
+
+**UX-WS-02:** Buy tech/build is one action when sufficient resources and target available; quantity selector 1, 5, 10, Max (<=99) for repeat builds/bench crafting, disabled if zero affordable. For escalating plot cost, preview true accumulated cost including all previous additional slots. One-time tech has no qty selector. Confirm only irreversible reset/import or canceling partial work/switching; ordinary purchases immediate with clear material and visual change, no repeated dialog or toast. On a stale action rejected due to stock, show inline missing requirement and leave state unchanged. Owned recipe remains visible when viewing prerequisite and can navigate to the newly enabled zone.
+
+**UX-WS-03:** Manual kiln station shows current recipe/timer, queue and start/cancel. Queue only reserves inputs when a batch starts. Router enables repeating with target stock and minimum input reserves; the user can create queues without committing every ingredient. An affordance to "Use max" must respect safety reserves on automatic setup. Show explicitly why an item cannot start: not enough input, occupied, output full, power or locked.
+
+### Farm
+
+**UX-FA-01:** Field cards: crop or oil (locked until tech), timer, ready/auto status, output, manual collect, attachment. Primary tap "Tend" speeds selected field using same global active cap; no animation that suggests free yields without completed cycle. Add fields in Workshop. Pen cards show feed consumption, animal produce/waste, feed stock and stop reason; change target only after safe release. Interaction remains viable with no powered harvester. Oil requirements and compost destination visible via links. Avoid separate species breeding minigame in v1.
+
+### Quarry
+
+**UX-QU-01:** Work gang cards list selectable known ore beds, yield/time, tier tool, manual gather control, ready buffer count, optional drill status and power. Locked deep bed lists prerequisites. Distinguish actual mined concentrate from refined ingot; direct source links to processing recipe. Quarry may continue mining at manual base rate into buffer when drill loses power; visible speed/collection status. Show "8 raw/min" rather than a decorative mining animation implying output when blocked.
+
+### Arena
+
+**UX-AR-01:** Enemy list (four) with readable locked criteria, HP, win chance, duration, expected win/loss damage, one-ration cost and loot; clear normal vs first-win bonus and wins/mastery progress. Start one fight button; Fight timer/resolution and result update local area, no forced modal. On defeat show cooldown timer and explicit state that no equipment lost. Display guaranteed-next-win pity when applicable. Disabled reasons: power (auto only), HP/cooldown, food, ongoing fight. User sees that auto-battle pauses after two consecutive auto losses; Resume explicitly resets auto suppression, not enemy pity.
+
+**UX-AR-02:** Auto battle toggle appears after Ward motor; visible safe HP threshold and power draw; does not start a fight while missing ration/power. Grinder panel appears after at least one mastery and built grinder. Assign only mastered enemy, show output and ration/watts, priority and progress; distinct from real fight UI; no damage or mastery from grinder. Accessible summary of most recent results, win/loss history and cumulative useful drops (keep last 10 result entries by world, not unbounded log).
+
+### Factory
+
+**UX-FC-01:** Compact cards/groups by station type, expandable details; individual instance stable ID and selected recipe. Per station: input recipe, batch duration, output, on/off, blocked state, power priority and reserved ingredients. Select recipe/switch with explicit effect; add more stations via Workshop. After Router, repeat mode can target inventory level or keep executing while inputs above reserve (choose one), with current/next jobs and remaining count. Avoid automated resource starvation by making target stock and fuel safety minimum visible. Display output/min actual, theoretical, required input/min; if machine paused, no "actual" production rate fabricated. Add speed or efficiency kit preview: before/after rate/time/W, cannot stack same kit. Reserve priority settings accessible but not required for first use.
+
+**UX-FC-02:** Terminal Press special panel above standard list after unlocked: cumulative Worldseed/600, current output/min, ETA when measurable, bottleneck source link, press count and supply adequacy. Use celebratory visual at first win; only one congratulations event, no mandatory reset. After win label Endless and Replant clearly. Asset/motion limited for low-power devices. Aggregate material flows by input, reserved, net and source; optional rate detail expands. No spreadsheet needed for ordinary player.
+
+### Power Grid
+
+**UX-PG-01:** Top supply/allocated/desired, charge/capacity and demand indicators. Distinguish generators active/burning/idle/no fuel; fuel selector and available stock/estimated burn time; output W plus attachment to load view. Battery display stored watt-seconds or % (both exact in details). Load list grouped by zone, priority control (1 highest), on/off and actual status. Power deprivation communicated as "Waiting for power"; faster speed settings show changed watt demand. Select overloaded badge opens Grid filtered to waiting tasks. No need to manually build wires or click individual fuel ticks; user chooses fuel and reserve. Simple Recovery CTA routes to hand fuel production after outage, no impossible recommendation to use an unpowered press.
+
+## Advancement / win / persistence UI
+
+**UX-05:** Goals view has seven boards with small milestone groups, clear done/open/locked and material links. Board progress may be completed in any order; no repeat claim button, no separate currencies required by ordinary recipes. Completion visual is brief (reduced motion alternative). When goal accomplished, reflect immediately without stealing focus. View filter All/Next/Done; optional mastery is distinct from required path.
+
+**UX-06:** Resume offline summary once per committed reconciliation; list elapsed time used/capped, production and consumed material totals, stalled/full/HP/fuel reasons, state ready now. Dismiss restores last selected tab. If no elapsed or no changes and no cap/block reason, skip disruptive summary. The user never presses "claim" to double-credit. Time reversal/corrupt save info is meaningful warning, not routine pop-up. Save status in header; copy/download JSON backup via Settings. Import preflight preview before destructive replacement. Full reset and replant confirm exactly what resets/persists; cancel leaves state unchanged. Win screen shows world first completion, point earned, records, optional choices Endless/Replant (back/close retains existing world); Replant later available in settings/history once won. Perk preview compares next world starting attributes and shows point balance. No forced choice immediately after winning.
+
+**UX-07:** Settings: sound/music (default off for music and nonessential sounds until opt-in), reduced motion (respect system by default), animation quality low/normal, number format compact/exact, accessibility hold-to-hasten, reset tutorial, export/import, local save status/version, credits/licensing, erase data. No ads, paid IAP, sign-in or registration sections. If browser storage blocked, persistent save failure indicator and Export CTA. Do not silently claim save success.
+
+## Interaction and accessibility
+
+**UX-08:** Buttons use semantic accessible roles and labels; keyboard tab order matches visual order, Space/Enter activate focused action, Escape closes overlay without committing. Visible focus state. Minimum target 44×44 CSS px for core controls (with adequate separation); do not reduce hit area to icon bounds. Color never sole indicator of status. Text contrast WCAG AA minimum, obvious disabled explanation, focus management for dialogs, restore previous focus on close. Test 200% zoom and screen reader on iOS/desktop. Respect portrait safe-area insets; menus/counters stay usable with OS zoom or dynamic type. No horizontal overflow except intentionally scrollable tab strip with visible selected item and keyboard navigation.
+
+**UX-09:** Tap input uses pointer events, debounced intent and global cap, not double fire pointerup+click. Keyboard/hold alternative equivalent to normal active input, not unlimited resource generation. Pointer cancellation/swipe does not tap. Timer updates not live-announced continuously (screen reader summary on demand or completed action); accessible timer text and button state. No time-critical mandatory input, no penalty for motor disabilities: passive loop is viable, onboarding supports slower taps, press-and-hold alternative four accepted intents/sec while held. Reduced motion turns off shaking/particles/bounces, retains static mascot and subtle progress indicator; gameplay unchanged. No flashing effects or abrupt loud sounds.
+
+## Visual identity
+
+**ART-01:** Entirely original, wholesome cartoon/farming mascots: exaggerated cute pose, rounded shapes, comedic shimmy rather than sexualization. No Minecraft tree silhouettes/textures/UI/icon copying, no SF4 advancement jokes/branding in shipped interface. Whimsical original species and machine silhouettes. Starter demo art simple placeholder with unmistakable tap affordance; prioritize readable progress and satisfying timing over expensive asset pipeline. Palette warm earthy greens/browns early, brighter machine/metal accents in industrial era, cohesive high-contrast UI. Simple original SVG/vector icons and limited sprite sheets; no external art request to run core app.
+
+**ART-02:** Define state animations (idle, tap response, completed growth, ready, automated bob, paused) with duration under 250ms for responsive tap feedback; loop exactly while applicable, use CSS/renderer transforms instead of forcing layout. Multiple visible plots animate efficiently; offscreen/background paused rendering cannot affect simulation. Sound optional soft tap/harvest ding with rate cap; never spam per batch offline. Renders red/amber status with text/icon not color alone. Art acceptance: no copying, readable at phone scale, nonsexual silhouette and animates as a humorous cultivation task.
