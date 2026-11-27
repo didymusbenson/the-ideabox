@@ -5,8 +5,12 @@ materials, all feeding toward **large-scale automated production**. Resources ar
 they're the currency you spend on the tools and machines that upgrade your infrastructure, which in
 turn produce more resources. Every branch is both *paid for by* and *feeds back into* that loop.
 
-Specific numbers (gate costs, timers, yields, tiers) are deferred to the detailed progression design;
-this doc fixes the **structure and unlock order**, not the math.
+This doc fixes the original macro structure and unlock order. The proposed detailed first-run route,
+recipe dependencies, prototype costs/timers, power/automation rules, advancement boards, and endgame
+are now in [progression-design.md](progression-design.md), grounded in
+[Sky Factory 4 systems research](sky-factory-4-research.md). Values in that proposal are tuning
+candidates, not playtested balance. The legacy open questions below retain their original context;
+the detailed design proposes answers rather than silently treating those questions as final decisions.
 
 ## The trunk — the resource-tree phase
 
@@ -37,8 +41,10 @@ advancing at once.
 > draws from — see [`zones-and-interface.md`](zones-and-interface.md)).
 
 1. **Automation — gate: Clay.**
-   The first branch. Reaching clay unlocks **simple automation: faster / self-harvesting trees**
-   (auto-twerkers) so plots produce without constant manual tapping. This is the start of the pitch's
+   The first branch. Reaching clay unlocks **simple automation: self-harvesting trees**
+   via clay-era mechanical collectors, so plots produce without constant manual collection. The
+   detailed proposal separates this unpowered attachment from later powered auto-twerkers, which
+   accelerate growth after the Grid opens. This is the start of the pitch's
    "earn the right to stop tapping" — idle viability begins here and deepens through the game.
 
 2. **Farming — gate: seeds drop from a tree (can trigger early).**

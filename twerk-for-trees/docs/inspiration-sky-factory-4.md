@@ -1,5 +1,10 @@
 # Inspiration reference — Sky Factory 4 advancements
 
+> This is the original partial pasted reference. For a pinned primary-source review covering all
+> seven boards, recipe dependencies, automation, storage, power, prestige, and the late game, see
+> [Sky Factory 4 systems research](sky-factory-4-research.md). Its TFT-specific implications are
+> captured in [progression-design.md](progression-design.md).
+
 **What this is:** a captured reference of Sky Factory 4's advancement (achievement) system, kept as
 *inspiration* for TFT's own progression and advancement design. It is **not** a spec to copy. Per the
 pitch's "original everything" pillar, TFT ships its **own** advancement names, resources, and art — the
